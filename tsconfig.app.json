@@ -6,14 +6,6 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-{
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"]
-    }
-  }
-
 
     /* Bundler mode */
     "moduleResolution": "Bundler",
@@ -23,12 +15,12 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    /* IMPORTANT: baseUrl and paths for alias */
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["src/*"]
     },
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
