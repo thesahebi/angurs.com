@@ -14,12 +14,8 @@ const BlogCardV1: React.FC<Article> = ({
     <div className="blog-card">
       <div className="img-div ">
         <img
-<<<<<<< HEAD
           src={`${image}?w=1200&h=300&quality=30`}
 
-=======
-          src={image}
->>>>>>> 36b0a5c (firt commit)
           alt={title}
           className="rounded-lg h-50 w-100 hover:-zoom-in-50 "
         />
