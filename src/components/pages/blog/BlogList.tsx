@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 
 function BlogList({ slice, isSeeMore, path = "" , displayClass =""}: any) {
   return (
+<<<<<<< HEAD
     <section className="py-24 lg:py-32  dark:bg-main-bg">
+=======
+    <section className="py-24   lg:py-32  dark:bg-main-bg">
+>>>>>>> 36b0a5c (firt commit)
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h2 className=" text-center pb-12 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl xl:text-5xl ">
           Our Blog
