@@ -6,20 +6,12 @@ function BlogDetails() {
   const article = articles.find((a) => a.id === Number(id)); // Find the article by `id`
 
   return (
-<<<<<<< HEAD
     <section className="dark:bg-black py-24">
-=======
-    <section className="dark:bg-black">
->>>>>>> 36b0a5c (firt commit)
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {article ? (
           <div className="blog-card">
             <img
-<<<<<<< HEAD
               src={article.image} 
-=======
-              src={article.image}
->>>>>>> 36b0a5c (firt commit)
               alt={article.title}
               className="rounded-lg lg:h-[400px] h-[300px] w-full hover:-zoom-in-50"
             />
@@ -53,11 +45,7 @@ function BlogDetails() {
                         return (
                           <div key={index} className="py-4">
                             <img
-<<<<<<< HEAD
                               src={`${block.url}`}
-=======
-                              src={block.url}
->>>>>>> 36b0a5c (firt commit)
                               alt={block.caption || "Article Image"}
                               className="rounded-lg w-full lg:h-[600px] md:h-[400px]"
                             />
