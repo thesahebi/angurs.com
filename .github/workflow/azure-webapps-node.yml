@@ -2,12 +2,12 @@ name: Build and Deploy Node.js App to Azure Web App
 
 on:
   push:
-    branches: [ "master" ]  # Adjust if using another branch
+    branches: [ "master" ]
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: anugrs-webapp01        # Your Azure Web App name
-  NODE_VERSION: '20.x'                      # Node.js version
+  AZURE_WEBAPP_NAME: anugrs-webapp01        # Replace with your actual app name
+  NODE_VERSION: '20.x'
 
 permissions:
   contents: read
@@ -32,10 +32,10 @@ jobs:
       - name: Build app
         run: npm run build
 
-      - name: Upload dist folder as artifact
+      - name: Upload build output
         uses: actions/upload-artifact@v4
         with:
-          name: node-app
+          name: dist-artifact
           path: dist
 
   deploy:
@@ -46,7 +46,8 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
-          name: node-app
+          name: dist-artifact
+          path: dist
 
       - name: Azure Login
         uses: azure/login@v1
@@ -57,4 +58,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: ./dist
+          package: dist
