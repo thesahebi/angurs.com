@@ -7,18 +7,17 @@ on:
 
 env:
   NODE_VERSION: '20.x'
-  AZURE_STORAGE_ACCOUNT: angursweb01         # Your storage account name
-  AZURE_STORAGE_CONTAINER: '$web'            # Static website container is always $web
+  AZURE_STORAGE_ACCOUNT: angursweb01
+  AZURE_STORAGE_CONTAINER: '$web'
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -32,9 +31,9 @@ jobs:
       - name: Login to Azure CLI
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}    # JSON creds for a Service Principal with Storage Blob Contributor role
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Upload dist folder to Azure Storage $web container
+      - name: Upload dist folder to Azure Storage Static Website
         run: |
           az storage blob upload-batch \
             --account-name ${{ env.AZURE_STORAGE_ACCOUNT }} \
