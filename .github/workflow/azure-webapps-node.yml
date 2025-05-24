@@ -1,13 +1,14 @@
-name: Build and Deploy to Azure Static Web App
+name: Build and Deploy to Azure Storage Static Website
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
   workflow_dispatch:
 
 env:
   NODE_VERSION: '20.x'
+  AZURE_STORAGE_ACCOUNT: angursweb01         # Your storage account name
+  AZURE_STORAGE_CONTAINER: '$web'            # Static website container is always $web
 
 jobs:
   build_and_deploy:
@@ -28,10 +29,15 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Deploy to Azure Static Web App
-        uses: azure/static-web-apps-deploy@v1
+      - name: Login to Azure CLI
+        uses: azure/login@v1
         with:
-          app_location: "."
-          output_location: "dist"
-          skip_app_build: true
-          azure_static_web_apps_api_token: ${{ secrets.ANGURSWEB01 }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}    # JSON creds for a Service Principal with Storage Blob Contributor role
+
+      - name: Upload dist folder to Azure Storage $web container
+        run: |
+          az storage blob upload-batch \
+            --account-name ${{ env.AZURE_STORAGE_ACCOUNT }} \
+            --destination ${{ env.AZURE_STORAGE_CONTAINER }} \
+            --source ./dist \
+            --overwrite
