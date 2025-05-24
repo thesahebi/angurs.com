@@ -2,19 +2,22 @@ name: Build and Deploy to Azure Static Website
 
 on:
   push:
-    branches: [ "master" ]
-  workflow_dispatch:
+    branches: [ "master" ]  # Trigger on push to main branch
+  workflow_dispatch:        # Allow manual trigger
 
 env:
   NODE_VERSION: '20.x'
-  AZURE_STORAGE_ACCOUNT_NAME: angursweb01   # your storage account name
+  AZURE_STORAGE_ACCOUNT_NAME: angursweb01   # <-- replace with your storage account name
+
+permissions:
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout source code
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -26,10 +29,10 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build app
+      - name: Build the project
         run: npm run build
 
-      - name: Upload artifact
+      - name: Upload dist folder
         uses: actions/upload-artifact@v4
         with:
           name: site-dist
@@ -40,7 +43,7 @@ jobs:
     needs: build
 
     steps:
-      - name: Download artifact
+      - name: Download dist artifact
         uses: actions/download-artifact@v4
         with:
           name: site-dist
