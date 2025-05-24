@@ -24,13 +24,13 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build app
+      - name: Build the app
         run: npm run build
 
       - name: Deploy to Azure Static Web App
         uses: azure/static-web-apps-deploy@v1
         with:
-          app_location: "."                     # Root of your project
-          output_location: "dist"               # Folder with static files
-          skip_app_build: true                  # Skip internal build because you're doing it manually
+          app_location: "."                      # Root of your app
+          output_location: "dist"                # The build folder
+          skip_app_build: true                   # Skip Azure’s internal build step
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_TOKEN }}
