@@ -1,4 +1,4 @@
-name: Build and Deploy to Azure Storage Static Website
+name: Build and Deploy to Azure Static Website
 
 on:
   push:
@@ -7,36 +7,56 @@ on:
 
 env:
   NODE_VERSION: '20.x'
-  AZURE_STORAGE_ACCOUNT: angursweb01
-  AZURE_STORAGE_CONTAINER: '$web'
+  AZURE_STORAGE_ACCOUNT_NAME: angursweb01   # your storage account name
 
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build the app
+      - name: Build app
         run: npm run build
 
-      - name: Login to Azure CLI
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-dist
+          path: dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-dist
+          path: dist
+
+      - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Upload dist folder to Azure Storage Static Website
-        run: |
-          az storage blob upload-batch \
-            --account-name ${{ env.AZURE_STORAGE_ACCOUNT }} \
-            --destination ${{ env.AZURE_STORAGE_CONTAINER }} \
-            --source ./dist \
-            --overwrite
+      - name: Deploy to Azure Static Website ($web)
+        uses: azure/cli@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --destination '$web' \
+              --source ./dist \
+              --auth-mode login
