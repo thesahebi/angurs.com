@@ -49,8 +49,8 @@ export const brandinfData: FeatureModelProps[] = [
     {
         id: 3,
         icon: FaCode,
-        title: "Digital Marketing",
-        content: "Sit Back and Watch Your Business Grow. What if we came to your business, handled all the hard work, and made growing and advertising online feel like a normal day for you? We’ll manage your digital marketing—from social media to website optimization—while you focus on what you do best.",
+        title: "Cloud migration",
+        content: "Seamlessly migrate your business to the cloud with minimal downtime and maximum security.",
         iconColor: "#059669",
         bgColor: "#d1fae5"
     },
