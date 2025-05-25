@@ -62,4 +62,5 @@ jobs:
               --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
               --destination '$web' \
               --source ./dist \
-              --auth-mode login
+              --auth-mode login \
+              --overwrite true
