@@ -13,17 +13,17 @@ function HeroV1() {
         <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center grid-cols-1 gap-12 ">
           <div>
             <GradualSpacing
-              text="A Cloud and Security"
+              text="Cloud and Security"
               className="text-base  font-semibold tracking-wider ubun-text uppercase"
               classNameDIV="justify-start"
             />
 
             <h1 className="mt-4 text-4xl  font-bold text-black dark:text-white lg:mt-8 sm:text-6xl xl:text-8xl">
-              Angurs Talented Force LLC
+              Angurs Cloud & Security Solutions
             </h1>
             <p className="mt-4  text-base text-black lg:mt-8 sm:text-xl dark:text-white flex ">
-              Angurs Web Boost Solutions: Helping Small Businesses Get Online
-              and Grow
+              Cloud, IT & Security Solutions for Small Businesses
+
               {/* {" "} */}
               {/* <WordRotate
                 className="ubun-text ps-2 py-0"
