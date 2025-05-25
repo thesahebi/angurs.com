@@ -2,8 +2,8 @@ name: Build and Deploy to Azure Static Website
 
 on:
   push:
-    branches: [ "master" ]  # Trigger on push to main branch
-  workflow_dispatch:        # Allow manual trigger
+    branches: [ "master" ]
+  workflow_dispatch:
 
 env:
   NODE_VERSION: '20.x'
