@@ -22,7 +22,7 @@ function HeroV1() {
               Angurs Cloud & Security Solutions
             </h1>
             <p className="mt-4  text-base text-black lg:mt-8 sm:text-xl dark:text-white flex ">
-              Cloud, IT & Security Solutions for Small Businesses
+              Helping your business stay connected, secure, and supported.
 
               {/* {" "} */}
               {/* <WordRotate

@@ -13,7 +13,10 @@ const FooterV1 = () => {
            <Link to="/"  onClick={scrollToTheTopOfPage}> <img className="w-auto h-36" src={logo1} alt="" /></Link>
 
             <p className="text-base leading-relaxed text-gray-600 mt-7">
-              A Digital Creative <br></br> Angurs Talented Force LLC
+              Angurs Cloud & Security Solutions  <br></br>
+              Helping your business stay connected, secure, and supported.
+
+
             </p>
 
             {/* <ul className="flex items-center space-x-3 mt-9">
