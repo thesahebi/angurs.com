@@ -18,7 +18,7 @@ const LandingPage = () => {
 
       <VelocityScroll
         default_velocity={3}
-        text="Creative Design, Development, Digital Marketing"
+        text="Creative Design, Development, Cloud, Security"
         className="bg-ubun py-2  font-mono  text-white text-5xl  uppercase  "
       />
 

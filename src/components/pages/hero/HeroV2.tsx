@@ -92,11 +92,11 @@ function HeroV2() {
               A Digital Creative Agency
             </p>
             <h1 ref={titleRef} className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
-              Angurs Talented Force LLC
+              Angurs Cloud & Security Solutions
             </h1>
             <p ref={subtitleRef} className="max-w-md mx-auto mt-6 text-base leading-7 text-gray-600 font-inter">
-              Angurs Web Boost Solutions: Helping Small Businesses Get Online
-              and Grow
+              Helping your business stay connected, secure, and supported.
+
             </p>
 
             <div className="relative inline-flex mt-10 group">
