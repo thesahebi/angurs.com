@@ -13,7 +13,7 @@ function HeroV1() {
         <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center grid-cols-1 gap-12 ">
           <div>
             <GradualSpacing
-              text="A digital Creative"
+              text="A Cloud and Security"
               className="text-base  font-semibold tracking-wider ubun-text uppercase"
               classNameDIV="justify-start"
             />
