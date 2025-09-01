@@ -1,0 +1,498 @@
+
+.wrapper {
+  width: 100%;
+}
+body {
+  /* background-color: red; */
+  /* font-family: "Noto Sans TC", sans-serif !important; */
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* CSS */
+
+.bg-ubun {
+  background: #e95420;
+}
+.ubun-text {
+  color: #e95420;
+}
+
+.container {
+  /* max-width: 1400px; */
+}
+
+.hero-title {
+  font-size: 50px;
+}
+
+.hero-img {
+  height: 500px;
+}
+
+.profile-img {
+  height: 320px;
+}
+.profile-img-1 {
+  height: 420px;
+}
+
+/* team CSS */
+.team-card-1 {
+}
+.team-card-1 .card-img:hover {
+  zoom: 1;
+}
+.team-card-f {
+  top: auto;
+  /* backdrop-filter: blur(1px); */
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.profile-img-1:hover,
+.profile-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Text */
+.text-10 {
+  font-size: 10px;
+}
+
+.text-11 {
+  font-size: 11px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-13 {
+  font-size: 13px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-15 {
+  font-size: 15px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-17 {
+  font-size: 17px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+.text-19 {
+  font-size: 19px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-21 {
+  font-size: 21px;
+}
+
+.text-22 {
+  font-size: 22px;
+}
+
+.text-23 {
+  font-size: 23px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-25 {
+  font-size: 25px;
+}
+
+.text-26 {
+  font-size: 26px;
+}
+
+.text-27 {
+  font-size: 27px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.text-29 {
+  font-size: 29px;
+}
+
+.text-30 {
+  font-size: 30px;
+}
+
+.text-31 {
+  font-size: 31px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.text-33 {
+  font-size: 33px;
+}
+
+.text-34 {
+  font-size: 34px;
+}
+
+.text-35 {
+  font-size: 35px;
+}
+
+.text-36 {
+  font-size: 36px;
+}
+
+.text-37 {
+  font-size: 37px;
+}
+
+.text-38 {
+  font-size: 38px;
+}
+
+.text-39 {
+  font-size: 39px;
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+/* Padding  */
+
+/* Margin */
+
+/* Margin classes from 10px to 100px */
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.my-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.my-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.my-70 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.my-90 {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.my-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-90 {
+  margin-top: 90px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mb-90 {
+  margin-bottom: 90px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+/* Padding classes from 10px to 100px */
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.py-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.py-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.py-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-70 {
+  padding-top: 70px;
+}
+.pt-80 {
+  padding-top: 80px;
+}
+.pt-90 {
+  padding-top: 90px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.pb-60 {
+  padding-bottom: 60px;
+}
+.pb-70 {
+  padding-bottom: 70px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+/* Team  */
+.team-f-v1 {
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.cursor-follower {
+  position: fixed; 
+  z-index: 9999; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease; 
+}
+
+
+/* Screen loader  */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  z-index: 9999; /* Ensures it's above all other elements */
+}
+
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  position: relative;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+.loader:after {
+  color: #FF3D00;
+  transform: rotateY(70deg);
+  animation-delay: 0.4s;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: 0.2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 0.2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -0.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -0.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
+  }
+}
