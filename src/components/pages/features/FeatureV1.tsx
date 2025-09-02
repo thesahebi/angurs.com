@@ -15,13 +15,12 @@ const FeatureV1 = () => {
       <div className="lg:my-12 text-center">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl xl:text-5xl ">
-            Our Unique Features
+            Our Unique Solutions
           </h2>
         </div>
 
         <p className="text-xl pt-3 text-black dark:text-white">
-          Fueling Growth for Small Businesses Through Expert Web Design and
-          Development
+          Fueling Growth for Small Businesses with Smart, Scalable Technology
         </p>
       </div>
 

@@ -6,26 +6,34 @@ import { FaJsSquare, FaPencilRuler } from "react-icons/fa";
 export const featureData: FeatureModelProps[] = [
     {
         id: 1,
-        icon: FaUser,
-        title: "Staff as a Service (StaaS)",
-        content: "Get Our Expert Team to Help You with Your Projects – From Start to Finish",
-        iconColor: "#2563eb",
+        icon: FaCloud,
+        title: "Cloud as a Service (CSP)",
+        content: "Scale smarter with secure, reliable, and cost-efficient cloud solutions",
+        iconColor: "#ea580c",
         bgColor: "#dbeafe"
     },
     {
         id: 2,
+        icon: FaUser,
+        title: "Staff as a Service (StaaS)",
+        content: "Extend your team with our experts, from strategy to delivery",
+        iconColor: "#2563eb",
+        bgColor: "#dbeafe"
+    },
+    {
+        id: 3,
         icon: FaCode,
         title: "Code as a Service (CaaS)",
-        content: "Turn Your Ideas Into Websites and Apps with Our Expert Team",
+        content: "Transform your ideas into powerful apps and websites, built to scale",
         iconColor: "#ea580c",
         bgColor: "#ffedd5"
     },
     {
-        id: 3,
-        icon: FaCloud,
+        id: 4,
+        icon: FaCode,
         title: "Software as a Service (SaaS)",
-        content: "Easy Hosting and Storage for Your Apps with Our Reliable Servers",
-        iconColor: "#059669",
+        content: "Seamless hosting and storage with secure, reliable cloud infrastructure",
+        iconColor: "#2563eb",
         bgColor: "#d1fae5"
     }
 ];
@@ -33,32 +41,32 @@ export const brandinfData: FeatureModelProps[] = [
     {
         id: 1,
         icon: FaChartLine,
-        title: "Creative Design",
-        content: "Design That Brings Your Brand to Life We create websites, web apps, mobile applications, and surveys—all designed to reflect your brand and engage your audience. Our designs attract visitors, build trust, and leave a lasting impression across every platform.",
+        title: "Creative Design, Bring Your Brand to Life",
+        content: "Websites, apps, and digital experiences built to reflect your brand, engage your audience, and leave a lasting impression everywhere",
         iconColor: "#2563eb",
         bgColor: "#dbeafe"
     },
     {
         id: 2,
         icon: FaPencilRuler,
-        title: "Development",
-        content: "From Your Ideas to the Web Anything in your mind can be turned into something amazing on the internet. We make your ideas come to life through websites, apps, and systems, giving you the power to easily manage and update everything with a simple web browser.",
+        title: "Development, Ideas Into Digital Reality",
+        content: "We turn your vision into scalable websites, apps, and systems — all easy to manage, update, and evolve as your business grows.",
         iconColor: "#ea580c",
         bgColor: "#ffedd5"
     },
     {
         id: 3,
         icon: FaCode,
-        title: "Cloud migration",
-        content: "Seamlessly migrate your business to the cloud with minimal downtime and maximum security.",
+        title: "Cloud migration, Seamless, Secure, Scalable",
+        content: "Move to the cloud with minimal downtime and maximum security. Unlock reliability, flexibility, and growth powered by cloud technology.",
         iconColor: "#059669",
         bgColor: "#d1fae5"
     },
     {
         id: 4,
         icon: FaCloud,
-        title: "Space & Business Name",
-        content: "We Handle the Essentials We take care of everything to get your website online, including finding the perfect space for it and choosing the best name for your business. This means your website is always live, easy to find, and ready to represent you, while you focus on growing your business.",
+        title: "Domain & Hosting, The Essentials, Covered",
+        content: "From the perfect name to secure hosting, we handle the foundation that keeps your business online, discoverable, and ready to scale.",
         iconColor: "#352542",
         bgColor: "#dbeafe"
     }

@@ -27,20 +27,17 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
           {isTitle && (
             <div className={`${titleClass}`}>
               <p className="text-base font-semibold tracking-wider ubun-text uppercase">
-                How can we help you
+                Future-ready solutions
               </p>
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white ">
-                We Make Your Business Look Great Everywhere!
+                 Built to scale with your business.
               </h2>
             </div>
           )}
 
           {isContent && (
             <p className="text-xl  py-3 lg:px-36 ">
-              Your website is your brand’s face online. It works perfectly on
-              any device—phones, tablets, or laptops—and looks amazing every
-              time. People from around the world can find you easily and get to
-              know your business with just a few clicks.
+              We deliver seamless digital solutions that connect, protect, and scale with your business. From cloud and development to design and hosting, everything works together to help your brand grow confidently
             </p>
           )}
         </div>

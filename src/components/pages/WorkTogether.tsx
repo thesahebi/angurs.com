@@ -79,7 +79,7 @@ function WorkTogether() {
           >
             Let's <span className="ubun-text inline-block">Team Up</span>{" "}
             <br />
-            Let's Make Something <span className="ubun-text inline-block">Amazing Together</span>
+             <span className="ubun-text inline-block">Together, We’ll Build Something Amazing</span>
           </p>
         </div>
       </div>
