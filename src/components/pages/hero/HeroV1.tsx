@@ -19,11 +19,6 @@ function HeroV1() {
             />
 
             <h1 className="mt-4 text-4xl  font-bold text-black dark:text-white lg:mt-8 sm:text-6xl xl:text-8xl">
-<<<<<<< HEAD
-              Angurs Cloud & Security Solutions
-=======
-              Building Smarter Solutions with Angurs
->>>>>>> f8e6fc8 (First commit - fixed header and logo)
             </h1>
             <p className="mt-4  text-base text-black lg:mt-8 sm:text-xl dark:text-white flex ">
               Helping your business stay connected, secure, and supported.

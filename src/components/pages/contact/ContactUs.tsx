@@ -78,11 +78,6 @@ const ContactUs: React.FC = () => {
           Contact Us
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-<<<<<<< HEAD
-          Got a technical issue? Want to send feedback about a beta feature?
-=======
-          IED HERE ntechnical issue? Want about a beta feature?
->>>>>>> f8e6fc8 (First commit - fixed header and logo)
           Need details about our Business plan? Let us know.
         </p>
         <form onSubmit={handleSubmit}  className="space-y-8">

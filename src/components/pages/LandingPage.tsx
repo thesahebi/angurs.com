@@ -15,17 +15,12 @@ const LandingPage = () => {
       {/* <HeroV1 /> */}
       <HeroV2 />
   
-
+ 
       <VelocityScroll
-        default_velocity={3}
-<<<<<<< HEAD
-        text="Creative Design, Development, Cloud, Security"
-        className="bg-ubun py-2  font-mono  text-white text-5xl  uppercase  "
-=======
+       default_velocity={3} 
         text="Beautiful Web Design, Smart Software Development, Seamless Server Migration, Scalable Microservices, Cloud Solutions That Grow, "
         className="bg-ubun py-2  font-mono  text-white text-5xl    "
->>>>>>> f8e6fc8 (First commit - fixed header and logo)
-      />
+            />
 
       <FeatureV1 />
 
