@@ -29,9 +29,9 @@ const MobileFooterNav = () => {
     },
 
     {
-      label: "Portfolio",
+      label: "Solutions",
       icon: <GoProjectRoadmap className="w-6 h-6" />,
-      path: "/portfolio"
+      path: "/Solutions"
     },
     {
       label: "About",

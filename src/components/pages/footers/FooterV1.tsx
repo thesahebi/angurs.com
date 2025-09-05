@@ -10,17 +10,15 @@ const FooterV1 = () => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl py-12">
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-           <Link to="/"  onClick={scrollToTheTopOfPage}> <img className="w-auto h-36" src={logo1} alt="" /></Link>
+            <Link to="/" onClick={scrollToTheTopOfPage}> <img className="w-auto h-36" src={logo1} alt="" /></Link>
 
-            <p className="text-base leading-relaxed text-gray-600 mt-7">
-            Cloud-first solutions that scale with your business<br></br>
-            
+            {/* <p className="text-base leading-relaxed text-gray-600 mt-7">
+              Cloud-first solutions that scale with your business<br></br>
 
+            </p> */}
 
-            </p>
+            <ul className="flex items-center space-x-3 mt-9">
 
-            {/* <ul className="flex items-center space-x-3 mt-9">
-          
 
               <li>
                 <a
@@ -43,62 +41,10 @@ const FooterV1 = () => {
                 </a>
               </li>
 
-            
-            </ul> */}
-          </div>
 
-          <div>
-            <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
-              Company
-            </p>
-
-            <ul className="mt-6 space-y-4">
-              <li>
-                <Link
-                  to="/about"
-                  title=""
-                  className="flex text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white "
-                >
-                  {" "}
-                  About{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  to="/portfolio"
-                  title=""
-                  className="flex text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
-                >
-                  {" "}
-                  Portfolio{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  to="/contact"
-                  title=""
-                  className="flex text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
-                >
-                  {" "}
-                  Contact Us{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  to="/blogs"
-                  title=""
-                  className="flex text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
-                >
-                  {" "}
-                  Blog{" "}
-                </Link>
-              </li>
             </ul>
           </div>
-
+          {/* SOlutions */}
           <div>
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
               Solutions
@@ -139,25 +85,73 @@ const FooterV1 = () => {
               </li>
             </ul>
           </div>
+          {/* Resources */}
+          <div>
+            <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
+              Resources
+            </p>
 
-            <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+            <ul className="mt-6 space-y-4">
+              <li>
+                <Link
+                  to="/Resources/Blog"
+                  title=""
+                  className="flex text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white "
+                >
+                  {" "}
+                  Blog{" "}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/Resources/Case Studies"
+                  title=""
+                  className="flex text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
+                >
+                  {" "}
+                  Case Studies{" "}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
               Connect
             </p>
             <ul className="mt-6 space-y-4">
               {/* Email */}
               <li>
-              <a
-                href="mailto:Support@angurs.com"
-                title="Email Support"
-                className="text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
-              >
-                Email: Support@angurs.com
-              </a>
-            </li>
+                <a
+                  href="mailto:Support@angurs.com"
+                  title="Email Support"
+                  className="text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
+                >
+                  Email: Support@angurs.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:Support@angurs.com"
+                  title="Email Support"
+                  className="text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
+                >
+                  Address: 1355 n sandburg ter 2307, Chicago, IL 60610
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:Support@angurs.com"
+                  title="Email Support"
+                  className="text-base text-black transition-all duration-200 hover:ubun-text focus:ubun-text dark:text-white"
+                >
+                  Phone: +1 (630) 923-4653
+                </a>
+              </li>
 
               {/* Social Media */}
-              <li className="flex space-x-3 mt-2">
+              {/* <li className="flex space-x-3 mt-2">
                 <a
                   href="https://www.instagram.com/angursofficial/"
                   target="_blank"
@@ -174,7 +168,7 @@ const FooterV1 = () => {
                 >
                   <FaLinkedin fontSize={20} />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -224,7 +218,7 @@ const FooterV1 = () => {
           © Copyright {year}, All Rights Reserved by Angurs Solutions LLC
         </p>
       </div>
-    </section>
+    </section >
   );
 };
 

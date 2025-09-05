@@ -13,11 +13,46 @@ const TopHeaderV1 = () => {
 
   const navigationItems = [
     { path: "/", label: "Home" },
-    { path: "/portfolio", label: "Portfolio" },
-    { path: "/about", label: "About" },
-    { path: "/blogs", label: "Blog" },
+    {
+      path: "/Solutions",
+      label: "Solutions",
+      children: [
+        { path: "/Cloud Migration", label: "Cloud Migration" },
+        { path: "/Virtualization", label: "Virtualization" },
+        { path: "/Backup", label: "Backup" },
+        { path: "/Networking", label: "Networking" },
+      ]
+    },
+    {
+      path: "/About Us",
+      label: "About Us",
+      children: [
+        { path: "/Our Company", label: "Our Company" },
+        { path: "/Our Capabilities", label: "Our Capabilities" },
+        { path: "/Our People", label: "Our People" },
+        { path: "/Careers", label: "Careers" },
+      ]
+    },
+    {
+      path: "/Automation",
+      label: "Automation",
+      children: [
+        { path: "/DevOps", label: "DevOps" },
+        { path: "/IT", label: "IT" },
+      ]
+    },
+    {
+      path: "/Resources",
+      label: "Resources",
+      children: [
+        { path: "/Blog", label: "Blog" },
+        { path: "/Case Studies", label: "Case Studies" },
+      ]
+    },
+
     { path: "/contact", label: "Contact Us" }
   ];
+
 
   const isActivePath = (path: unknown) => {
     return location.pathname === path;
@@ -77,7 +112,118 @@ const TopHeaderV1 = () => {
           </button>
 
           {/* Desktop Navigation */}
+          {/* Desktop Navigation */}
           <nav className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-8">
+            {navigationItems.map((item) => (
+              <div key={item.label} className="relative group">
+                <Link
+                  to={item.path}
+                  className={`text-base transition-all duration-200 relative ${isActivePath(item.path)
+                      ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
+                      : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+                    }`}
+                >
+                  {item.label}
+                </Link>
+
+                {/* Submenu */}
+                {item.children && (
+                  <div
+                    className="absolute left-0 mt-2 hidden group-hover:block bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+                  >
+                    <ul className="py-2 w-48">
+                      {item.children.map((child) => (
+                        <li key={child.label}>
+                          <Link
+                            to={child.path}
+                            className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                          >
+                            {child.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+          </nav>
+
+          {/* <nav className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-8">
+  {navigationItems.map((item) => (
+    <div key={item.label} className="relative group">
+      <Link
+        to={item.path}
+        className={`text-base transition-all duration-200 relative ${
+          isActivePath(item.path)
+            ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
+            : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+        }`}
+      >
+        {item.label}
+      </Link>
+
+      {/* Submenu */}
+          {/* {item.children && (
+        <div
+          className="absolute left-0 mt-2 hidden group-hover:block bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+          onMouseEnter={(e) => e.currentTarget.classList.add("block")}
+          onMouseLeave={(e) => e.currentTarget.classList.remove("block")}
+        >
+          <ul className="py-2 w-48">
+            {item.children.map((child) => (
+              <li key={child.label}>
+                <Link
+                  to={child.path}
+                  className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  {child.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  ))}
+          </nav> } */}
+
+          {/* <nav className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-8">
+  {navigationItems.map((item) => (
+    <div key={item.label} className="relative group">
+      <Link
+        to={item.path}
+        className={`text-base transition-all duration-200 relative ${
+          isActivePath(item.path)
+            ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
+            : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+        }`}
+      >
+        {item.label}
+      </Link> */}
+
+          {/* Submenu (only if children exist)
+      {item.children && (
+        <div className="absolute left-0 mt-2 hidden group-hover:block bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+          <ul className="py-2 w-48">
+            {item.children.map((child) => (
+              <li key={child.label}>
+                <Link
+                  to={child.path}
+                  className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  {child.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  ))}
+          </nav> */}
+
+          {/* <nav className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-8">
             {navigationItems.map((item) => (
               <Link
                 key={item.label}
@@ -91,7 +237,7 @@ const TopHeaderV1 = () => {
                 {item.label}
               </Link>
             ))}
-          </nav>
+          </nav> */}
 
           {/* Desktop CTA Button */}
           <div className="hidden lg:block">
@@ -107,22 +253,20 @@ const TopHeaderV1 = () => {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`lg:hidden absolute top-16 left-0 right-0 bg-ubun text-white dark:bg-main-bg shadow-lg transition-all duration-300 ease-in-out transform ${
-            isMenuOpen
+          className={`lg:hidden absolute top-16 left-0 right-0 bg-ubun text-white dark:bg-main-bg shadow-lg transition-all duration-300 ease-in-out transform ${isMenuOpen
               ? "opacity-100 translate-y-0 h-lvh z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
-          }`}
+            }`}
         >
           <nav className="px-4 py-2">
             {navigationItems.map((item) => (
               <Link
                 key={item.label}
                 to={item.path}
-                className={`block py-3 text-base px-4 rounded-lg transition-all duration-200 ${
-                  isActivePath(item.path)
+                className={`block py-3 text-base px-4 rounded-lg transition-all duration-200 ${isActivePath(item.path)
                     ? "text-orange-400 bg-white font-semibold"
                     : "text-white hover:bg-white hover:text-orange-400"
-                }`}
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
