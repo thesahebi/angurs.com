@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/pages/LandingPage";
 // import AboutPage from "./components/pages/about/AboutPage";
 import "./App.css";
+import CookieConsent from "./components/pages/CookieConsent";
 
 import NotFoundPage from "./components/pages/NotFoundPage";
 import LayoutPage from "./components/pages/LayoutPage";
@@ -24,6 +25,10 @@ function App() {
   
   return (
     <>
+    <>
+      {/* Your existing routes/layout */}
+      <CookieConsent />
+    </>
       <Router>
 
         <ScrollToTopAl/>
@@ -44,10 +49,12 @@ function App() {
             <Route path="/blogs/:id" element={<BlogDetails />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
+          
         </Routes>
       </Router>
     </>
   );
 }
+
 
 export default App;
