@@ -13,7 +13,7 @@ const Backup: React.FC = () => {
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
               Your data is the lifeline of your business. Angurs delivers enterprise-grade backup and replication 
-              — on-premises and in the cloud, to keep you secure, compliant, and resilient.
+              , on-premises and in the cloud, to keep you secure, compliant, and resilient.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
