@@ -106,7 +106,7 @@ const Backup: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-[#e95420] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <p className="text-gray-600">High-performance local backups</p>
+                <p className="text-gray-600">High-performance local backups 0 downtime</p>
               </div>
               <div className="flex items-start">
                 <div className="w-2 h-2 bg-[#e95420] rounded-full mt-2 mr-3 flex-shrink-0"></div>
