@@ -14,23 +14,23 @@ const TopHeaderV1 = () => {
   const navigationItems = [
     { path: "/", label: "Home" },
     {
-      path: "/Solutions",
+      path: "/solutions/backup",
       label: "Solutions",
       children: [
-        { path: "/Cloud Migration", label: "Cloud Migration" },
-        { path: "/Virtualization", label: "Virtualization" },
-        { path: "/Backup", label: "Backup" },
-        { path: "/Networking", label: "Networking" },
+        { path: "/solutions/cloud", label: "Cloud" },
+        { path: "/solutions/virtualization", label: "Virtualization" },
+        { path: "/solutions/backup", label: "Backup" },
+        { path: "/solutions/networking", label: "Networking" },
       ]
     },
     {
-      path: "/About Us",
+      path: "/about/our-company",
       label: "About Us",
       children: [
-        { path: "/Our Company", label: "Our Company" },
-        { path: "/Our Capabilities", label: "Our Capabilities" },
-        { path: "/Our People", label: "Our People" },
-        { path: "/Careers", label: "Careers" },
+        { path: "/about/our-company", label: "Our Company" },
+        { path: "/about/capabilities", label: "Our Capabilities" },
+        { path: "/about/people", label: "Our People" },
+        { path: "/about/careers", label: "Careers" },
       ]
     },
     {
@@ -115,7 +115,7 @@ const TopHeaderV1 = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-8">
             {navigationItems.map((item) => (
-              <div key={item.label} className="relative group">
+              <div key={item.label} className="relative group pb-2">
                 <Link
                   to={item.path}
                   className={`text-base transition-all duration-200 relative ${isActivePath(item.path)
@@ -129,7 +129,7 @@ const TopHeaderV1 = () => {
                 {/* Submenu */}
                 {item.children && (
                   <div
-                    className="absolute left-0 mt-2 hidden group-hover:block bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+                    className="absolute left-0 top-full hidden group-hover:block bg-white dark:bg-gray-800 rounded-lg shadow-lg pt-2"
                   >
                     <ul className="py-2 w-48">
                       {item.children.map((child) => (

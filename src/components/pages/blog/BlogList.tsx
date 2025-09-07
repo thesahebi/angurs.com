@@ -4,39 +4,41 @@ import { Link } from "react-router-dom";
 
 function BlogList({ slice, isSeeMore, path = "" , displayClass =""}: any) {
   return (
-    <section className="py-24 lg:py-32  dark:bg-main-bg">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h2 className=" text-center pb-12 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl xl:text-5xl ">
-          Our Blog
-        </h2>
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Latest Insights
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Stay updated with the latest trends, tips, and insights from our team
+          </p>
+        </div>
 
-        <div className={`grid ${displayClass }`}>
+        <div className={`grid ${displayClass || 'lg:grid-cols-3 md:grid-cols-2 gap-8'}`}>
           {articles?.slice(0, slice).map((data, index) => (
             <BlogCardV1 key={index} {...data} blogLink={`${path}/${data.id}`} />
           ))}
         </div>
 
         {isSeeMore && (
-          <div className=" flex justify-center my-3">
+          <div className="text-center mt-12">
             <Link
               to="/blogs"
-              title=""
-              className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#e95420] rounded-full lg:mt-16 hover:bg-black "
-              role="button"
+              className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-[#e95420] rounded-full hover:bg-orange-600 transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
-              See More
+              View All Articles
               <svg
-                className="w-6 h-6 ml-8 -mr-2"
-                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 ml-2"
                 fill="none"
-                viewBox="0 0 24 24"
                 stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
             </Link>

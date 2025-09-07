@@ -107,13 +107,10 @@ export function VelocityScroll({
   }
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full bg-gradient-to-r from-[#e95420] to-orange-600 py-4">
       <ParallaxText baseVelocity={default_velocity} className={className}>
         {text}
       </ParallaxText>
-      {/* <ParallaxText baseVelocity={-default_velocity} className={className}>
-        {text}
-      </ParallaxText> */}
     </section>
   );
 }

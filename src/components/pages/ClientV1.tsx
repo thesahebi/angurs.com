@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import Marquee from "../ui/marquee";
 
 import clientLogo1 from "../../assets/imgs/clients/client1.webp";
@@ -32,13 +31,13 @@ export const clientData: any[] = [
 ];
 const ClientV1Card = ({ imgUrl }: any) => {
   return (
-    <figure
-      className={cn(
-        "relative lg:w-52 cursor-pointer overflow-hidden  bg-transparent  p-5"
-      )}
-    >
-      <div className="flex flex-row items-center gap-6">
-        <img className=" h-24 w-24" alt="" src={imgUrl} />
+    <figure className="relative mx-8 flex items-center justify-center">
+      <div className="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+        <img 
+          className="h-16 w-auto max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300" 
+          alt="Client logo" 
+          src={imgUrl} 
+        />
       </div>
     </figure>
   );
@@ -46,14 +45,19 @@ const ClientV1Card = ({ imgUrl }: any) => {
 
 export function ClientV1() {
   return (
-    <div className="relative  flex h-[150px] w-full flex-col items-center justify-center overflow-hidden bg-ubun  ">
-      <Marquee pauseOnHover className="[--duration:10s]">
-        {clientData.map((data) => (
-          <ClientV1Card key={data.id} {...data} />
-        ))}
-      </Marquee>
-
-     
-    </div>
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h3 className="text-lg font-medium text-gray-400 mb-8">Trusted by leading companies</h3>
+        </div>
+        <div className="relative">
+          <Marquee pauseOnHover className="[--duration:15s]">
+            {clientData.map((data) => (
+              <ClientV1Card key={data.id} {...data} />
+            ))}
+          </Marquee>
+        </div>
+      </div>
+    </section>
   );
 }

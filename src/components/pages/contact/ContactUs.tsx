@@ -23,7 +23,6 @@ const ContactUs: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [submitStatus, setSubmitStatus] = useState<string>('');
-  console.log(submitStatus);
   
 
   const handleChange = (
@@ -35,8 +34,6 @@ const ContactUs: React.FC = () => {
       [name]: value,
     }));
   };
-
-  console.log(handleChange);
   
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
@@ -91,6 +88,9 @@ const ContactUs: React.FC = () => {
             <input
               type="email"
               id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               placeholder="name@gmail.com"
               required
@@ -106,6 +106,9 @@ const ContactUs: React.FC = () => {
             <input
               type="text"
               id="subject"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
               className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               placeholder="Let us know how we can help you"
               required
@@ -120,9 +123,13 @@ const ContactUs: React.FC = () => {
             </label>
             <textarea
               id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
               placeholder="Leave a comment..."
               rows={5}
+              required
             ></textarea>
           </div>
           <button
@@ -132,10 +139,21 @@ const ContactUs: React.FC = () => {
           >
            {isSubmitting ? 'Sending...' : 'Send message'}
           </button>
+          
+          {submitStatus && (
+            <div className={`mt-4 p-4 rounded-lg ${
+              submitStatus.includes('successfully') 
+                ? 'bg-green-100 text-green-800 border border-green-200' 
+                : 'bg-red-100 text-red-800 border border-red-200'
+            }`}>
+              {submitStatus}
+            </div>
+          )}
         </form>
       </div>
     </section>
   );
 };
+
 
 export default ContactUs;

@@ -17,10 +17,10 @@ const LandingPage = () => {
   
  
       <VelocityScroll
-       default_velocity={3} 
-        text="Beautiful Web Design, Smart Software Development, Seamless Server Migration, Scalable Microservices, Cloud Solutions That Grow, "
-        className="bg-ubun py-2  font-mono  text-white text-5xl    "
-            />
+        default_velocity={2} 
+        text="Beautiful Web Design • Smart Software Development • Seamless Server Migration • Scalable Microservices • Cloud Solutions That Grow • "
+        className="text-white text-2xl md:text-3xl lg:text-4xl font-medium tracking-wide"
+      />
 
       <FeatureV1 />
 
