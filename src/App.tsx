@@ -19,6 +19,11 @@ import OurCompany from "./components/pages/about/OurCompany";
 import OurCapabilities from "./components/pages/about/OurCapabilities";
 import OurPeople from "./components/pages/about/OurPeople";
 import Careers from "./components/pages/about/Careers";
+import Automation from "./components/pages/automation/Automation";
+import DevOps from "./components/pages/automation/DevOps";
+import ITAutomation from "./components/pages/automation/ITAutomation";
+import ResourcesBlog from "./components/pages/resources/ResourcesBlog";
+import CaseStudies from "./components/pages/resources/CaseStudies";
 import ScrollToTopAl from "./lib/ScrollToTop";
 
 function App() {
@@ -44,6 +49,11 @@ function App() {
             <Route path="/about/capabilities" element={<OurCapabilities />} />
             <Route path="/about/people" element={<OurPeople />} />
             <Route path="/about/careers" element={<Careers />} />
+            <Route path="/automation" element={<Automation />} />
+            <Route path="/automation/devops" element={<DevOps />} />
+            <Route path="/automation/it" element={<ITAutomation />} />
+            <Route path="/resources/blog" element={<ResourcesBlog />} />
+            <Route path="/resources/case-studies" element={<CaseStudies />} />
             <Route path="/portfolio" element={<OurWorks />} />
             <Route path="/blogs" element={<BlogLayout />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />

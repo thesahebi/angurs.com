@@ -34,19 +34,19 @@ const TopHeaderV1 = () => {
       ]
     },
     {
-      path: "/Automation",
+      path: "/automation",
       label: "Automation",
       children: [
-        { path: "/DevOps", label: "DevOps" },
-        { path: "/IT", label: "IT" },
+        { path: "/automation/devops", label: "DevOps" },
+        { path: "/automation/it", label: "IT" },
       ]
     },
     {
-      path: "/Resources",
+      path: "/resources/blog",
       label: "Resources",
       children: [
-        { path: "/Blog", label: "Blog" },
-        { path: "/Case Studies", label: "Case Studies" },
+        { path: "/resources/blog", label: "Blog" },
+        { path: "/resources/case-studies", label: "Case Studies" },
       ]
     },
 
