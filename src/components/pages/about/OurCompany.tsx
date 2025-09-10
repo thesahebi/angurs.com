@@ -1,40 +1,25 @@
 import React from "react";
+import PageHero from "../../reusable/PageHero";
 
 const OurCompany: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white pt-24 pb-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              About
-              <span className="block text-[#e95420]">Angurs</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-              We are a team of passionate technology experts dedicated to transforming 
-              businesses through innovative infrastructure solutions and digital excellence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[#e95420] rounded-full hover:bg-orange-600 transition-colors shadow-lg"
-              >
-                Work With Us
-              </a>
-              <a
-                href="#story"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#e95420] bg-white border-2 border-[#e95420] rounded-full hover:bg-orange-50 transition-colors"
-              >
-                Our Story
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="About Angurs"
+        subtitle="Passionate technology experts"
+        description="We are a team of passionate technology experts dedicated to transforming businesses through innovative infrastructure solutions and digital excellence."
+        primaryButtonText="Work With Us"
+        primaryButtonLink="/contact"
+        secondaryButtonText="Our Story"
+        secondaryButtonLink="#story"
+        accentColor="#e95420"
+        backgroundPattern="dots"
+        showGraph={true}
+        graphType="pie"
+      />
 
       {/* Our Story Section */}
-      <section id="story" className="py-20 bg-white">
+      <section id="story" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Our Story</h2>
@@ -53,9 +38,9 @@ const OurCompany: React.FC = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Foundation</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               The principles that guide everything we do
@@ -110,9 +95,9 @@ const OurCompany: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose Angurs</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               What sets us apart in the technology landscape

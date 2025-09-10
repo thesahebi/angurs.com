@@ -1,42 +1,27 @@
 import React from "react";
+import PageHero from "../../reusable/PageHero";
 
 const ITAutomation: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-50 to-white pt-24 pb-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              IT
-              <span className="block text-purple-600">Automation</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-              Streamline your IT operations with intelligent automation solutions. From infrastructure 
-              management to service delivery, we automate the complex to maximize efficiency and reliability.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-purple-600 rounded-full hover:bg-purple-700 transition-colors shadow-lg"
-              >
-                Automate IT Operations
-              </a>
-              <a
-                href="#solutions"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-purple-600 bg-white border-2 border-purple-600 rounded-full hover:bg-purple-50 transition-colors"
-              >
-                View Solutions
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="IT Automation"
+        subtitle="Streamline your IT operations"
+        description="Streamline your IT operations with intelligent automation solutions. From infrastructure management to service delivery, we automate the complex to maximize efficiency and reliability."
+        primaryButtonText="Automate IT Operations"
+        primaryButtonLink="/contact"
+        secondaryButtonText="View Solutions"
+        secondaryButtonLink="#solutions"
+        accentColor="#8b5cf6"
+        backgroundPattern="dots"
+        showGraph={true}
+        graphType="bar"
+      />
 
       {/* IT Automation Benefits */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why IT Automation?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               IT automation transforms how organizations manage infrastructure, reducing costs and improving service delivery
@@ -90,7 +75,7 @@ const ITAutomation: React.FC = () => {
       {/* IT Automation Solutions */}
       <section id="solutions" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">IT Automation Solutions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive automation services to streamline your IT infrastructure and operations
@@ -342,9 +327,9 @@ const ITAutomation: React.FC = () => {
       </section>
 
       {/* Automation Tools */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Automation Tools & Platforms</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We work with industry-leading automation tools to deliver robust and scalable solutions
@@ -412,7 +397,7 @@ const ITAutomation: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
+      <section className="py-24 bg-gradient-to-r from-purple-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Automate Your IT Operations?

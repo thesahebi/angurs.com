@@ -1,42 +1,27 @@
 import React from "react";
+import PageHero from "../../reusable/PageHero";
 
 const OurPeople: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 to-white pt-24 pb-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              Our
-              <span className="block text-green-600">People</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-              Meet the passionate experts behind Angurs - a diverse team of engineers, 
-              architects, and innovators dedicated to your success.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-green-600 rounded-full hover:bg-green-700 transition-colors shadow-lg"
-              >
-                Meet Our Team
-              </a>
-              <a
-                href="#culture"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-green-600 bg-white border-2 border-green-600 rounded-full hover:bg-green-50 transition-colors"
-              >
-                Our Culture
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Our People"
+        subtitle="Meet the passionate experts"
+        description="Meet the passionate experts behind Angurs - a diverse team of engineers, architects, and innovators dedicated to your success."
+        primaryButtonText="Meet Our Team"
+        primaryButtonLink="/contact"
+        secondaryButtonText="Our Culture"
+        secondaryButtonLink="#culture"
+        accentColor="#10b981"
+        backgroundPattern="waves"
+        showGraph={true}
+        graphType="network"
+      />
 
       {/* Team Values */}
       <section id="culture" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Drives Us</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               The values and principles that unite our team and guide our work
@@ -88,9 +73,9 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Expertise */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Expertise</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               A diverse team with deep expertise across multiple technology domains
@@ -181,9 +166,9 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Culture */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Culture</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               What makes working at Angurs special and how we foster growth and innovation
@@ -271,7 +256,7 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600">
+      <section className="py-24 bg-gradient-to-r from-green-600 to-emerald-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Join Our Team

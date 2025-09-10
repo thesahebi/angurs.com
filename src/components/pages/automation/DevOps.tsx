@@ -1,42 +1,27 @@
 import React from "react";
+import PageHero from "../../reusable/PageHero";
 
 const DevOps: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-white pt-24 pb-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              DevOps
-              <span className="block text-blue-600">Automation</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-              Accelerate your development lifecycle with comprehensive DevOps automation. 
-              From code commit to production deployment, we streamline every step of your software delivery pipeline.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-lg"
-              >
-                Transform Your DevOps
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white border-2 border-blue-600 rounded-full hover:bg-blue-50 transition-colors"
-              >
-                View Services
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="DevOps Automation"
+        subtitle="Accelerate your development lifecycle"
+        description="Accelerate your development lifecycle with comprehensive DevOps automation. From code commit to production deployment, we streamline every step of your software delivery pipeline."
+        primaryButtonText="Transform Your DevOps"
+        primaryButtonLink="/contact"
+        secondaryButtonText="View Services"
+        secondaryButtonLink="#services"
+        accentColor="#3b82f6"
+        backgroundPattern="grid"
+        showGraph={true}
+        graphType="line"
+      />
 
       {/* DevOps Benefits */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why DevOps Automation?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               DevOps automation transforms how teams build, test, and deploy software, delivering measurable business value
@@ -90,7 +75,7 @@ const DevOps: React.FC = () => {
       {/* DevOps Services */}
       <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">DevOps Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               End-to-end DevOps automation solutions to accelerate your software delivery
@@ -343,9 +328,9 @@ const DevOps: React.FC = () => {
       </section>
 
       {/* DevOps Process */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our DevOps Process</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               A proven methodology to transform your development and operations workflow
@@ -389,7 +374,7 @@ const DevOps: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Transform Your DevOps?

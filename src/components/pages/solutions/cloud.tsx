@@ -1,43 +1,28 @@
 import React from "react";
+import PageHero from "../../reusable/PageHero";
 
 const Cloud: React.FC = () => {
   return (
     <div>
-      {/* Hero Section - Full width below header */}
-      <section className="bg-gradient-to-r from-orange-50 to-blue-50 pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              Seamless, Secure, Scalable
-              <span className="block text-orange-500">Cloud Migration</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-5xl mx-auto mb-12 leading-relaxed">
-              Move your business to the cloud with confidence. At Angurs, we help you modernize applications, 
-              migrate workloads, and transform operations — with minimal downtime and maximum security.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-500 rounded-full hover:bg-orange-600 transition-colors shadow-lg"
-              >
-                Start Your Migration
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-orange-500 bg-white border-2 border-orange-500 rounded-full hover:bg-orange-50 transition-colors"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Cloud Migration Made Simple"
+        subtitle="Transform your infrastructure"
+        description="Move your business to the cloud with confidence. At Angurs, we help you modernize applications, migrate workloads, and transform operations — with minimal downtime and maximum security."
+        primaryButtonText="Start Your Migration"
+        primaryButtonLink="/contact"
+        secondaryButtonText="Learn More"
+        secondaryButtonLink="#services"
+        accentColor="#e95420"
+        backgroundPattern="waves"
+        showGraph={true}
+        graphType="cloud"
+      />
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-16">
 
       {/* Why Cloud Migration Matters */}
-      <section className="mb-16">
+      <section className="mb-20">
         <h2 className="text-3xl font-bold mb-8 text-center">Why Cloud Migration Matters</h2>
         <p className="text-lg text-gray-600 mb-8 max-w-4xl mx-auto text-center">
           The cloud is no longer optional — it's essential. Businesses today need agility, security, and global reach. 
@@ -70,7 +55,7 @@ const Cloud: React.FC = () => {
 
       {/* Our Cloud Migration Services */}
       <section id="services" className="mb-16">
-        <h2 className="text-3xl font-bold mb-12 text-center">Our Cloud Migration Services</h2>
+        <h2 className="text-3xl font-bold mb-16 text-center">Our Cloud Migration Services</h2>
         
         <div className="space-y-12">
           {/* AWS Cloud Migration */}
@@ -176,7 +161,7 @@ const Cloud: React.FC = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="mb-16">
+      <section className="mb-20">
         <h2 className="text-3xl font-bold mb-8 text-center">Our Approach</h2>
         <p className="text-lg text-gray-600 mb-8 text-center">
           We follow a proven 4-step migration framework:
@@ -207,7 +192,7 @@ const Cloud: React.FC = () => {
       </section>
 
       {/* Benefits */}
-      <section className="mb-16">
+      <section className="mb-20">
         <h2 className="text-3xl font-bold mb-8 text-center">Benefits of Migrating with Angurs</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

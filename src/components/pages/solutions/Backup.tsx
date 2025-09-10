@@ -1,44 +1,29 @@
 import React from "react";
+import PageHero from "../../reusable/PageHero";
 
 const Backup: React.FC = () => {
   return (
     <div>
-      {/* Hero Section - Clean design with website colors */}
-      <section className="bg-gradient-to-br from-gray-50 to-white pt-24 pb-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              Protect What
-              <span className="block text-[#e95420]">Matters Most</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-              Your data is the lifeline of your business. Angurs delivers enterprise-grade backup and replication 
-              , on-premises and in the cloud, to keep you secure, compliant, and resilient.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[#e95420] rounded-full hover:bg-orange-600 transition-colors shadow-lg"
-              >
-                Get Protected Now
-              </a>
-              <a
-                href="#solutions"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#e95420] bg-white border-2 border-[#e95420] rounded-full hover:bg-orange-50 transition-colors"
-              >
-                View Solutions
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Protect What Matters Most"
+        subtitle="Enterprise-grade data protection"
+        description="Your data is the lifeline of your business. Angurs delivers enterprise-grade backup and replication solutions, on-premises and in the cloud, to keep you secure, compliant, and resilient."
+        primaryButtonText="Get Protected Now"
+        primaryButtonLink="/contact"
+        secondaryButtonText="View Solutions"
+        secondaryButtonLink="#solutions"
+        accentColor="#e95420"
+        backgroundPattern="grid"
+        showGraph={true}
+        graphType="bar"
+      />
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
 
       {/* Why Backup & Replication Matters */}
-      <section className="mb-20">
-        <div className="text-center mb-12">
+      <section className="mb-24">
+        <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-gray-900">Why Backup & Replication Matters</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Disruptions happen. Without reliable backup and recovery, businesses face data loss, 
@@ -91,7 +76,7 @@ const Backup: React.FC = () => {
 
       {/* Our Backup & Replication Solutions */}
       <section id="solutions" className="mb-20">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Our Backup & Replication Solutions</h2>
+        <h2 className="text-4xl font-bold mb-16 text-center text-gray-900">Our Backup & Replication Solutions</h2>
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* On-Prem Backup & Replication */}
@@ -147,8 +132,8 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Benefits */}
-      <section className="mb-20">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">Benefits of Backup with Angurs</h2>
+      <section className="mb-24">
+        <h2 className="text-4xl font-bold mb-16 text-center text-gray-900">Benefits of Backup with Angurs</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-100">

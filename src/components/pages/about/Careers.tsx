@@ -1,42 +1,170 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import PageHero from "../../reusable/PageHero";
 
 const Careers: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleJobClick = (jobPath: string) => {
+    navigate(jobPath);
+  };
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-50 to-white pt-24 pb-20">
+      <PageHero
+        title="Join Our Team"
+        subtitle="Build the future of technology"
+        description="Build the future of technology with us. Join a team that values innovation, growth, and making a real impact in the world of infrastructure and cloud solutions."
+        primaryButtonText="View Open Positions"
+        primaryButtonLink="#open-positions"
+        secondaryButtonText="Our Benefits"
+        secondaryButtonLink="#benefits"
+        accentColor="#8b5cf6"
+        backgroundPattern="circuits"
+        showGraph={true}
+        graphType="line"
+      />
+
+      {/* Open Positions */}
+      <section id="open-positions" className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              Join Our
-              <span className="block text-purple-600">Team</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed">
-              Build the future of technology with us. Join a team that values innovation, 
-              growth, and making a real impact in the world of infrastructure and cloud solutions.
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-4">Open Positions</h2>
+            <p className="text-xl text-[#6b7280] max-w-3xl mx-auto">
+              Join our team and help shape the future of technology infrastructure
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#open-positions"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-purple-600 rounded-full hover:bg-purple-700 transition-colors shadow-lg"
+          </div>
+
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* UI/UX Designer Job */}
+              <div 
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
+                onClick={() => handleJobClick('/about/careers/ui-ux-designer')}
               >
-                View Open Positions
-              </a>
-              <a
-                href="#benefits"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-purple-600 bg-white border-2 border-purple-600 rounded-full hover:bg-purple-50 transition-colors"
+              <div className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#e95420] to-[#d1451a] rounded-xl flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-[#1f2937] mb-2 group-hover:text-[#e95420] transition-colors">UI/UX Designer</h3>
+                    <div className="flex flex-wrap gap-1">
+                      <span className="px-2 py-1 bg-[#e95420]/10 text-[#e95420] rounded-full text-xs font-medium">
+                        Full-time
+                      </span>
+                      <span className="px-2 py-1 bg-[#3b82f6]/10 text-[#3b82f6] rounded-full text-xs font-medium">
+                        Remote
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-[#6b7280] text-sm leading-relaxed mb-4">
+                  Design intuitive, user-friendly interfaces for our cloud infrastructure and automation solutions.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-[#9ca3af] text-xs">Posted: Dec 2024</span>
+                  <div className="flex items-center text-[#e95420] group-hover:text-[#d1451a] transition-colors">
+                    <span className="text-sm font-medium mr-1">View Details</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+              {/* AI Agent Developer Job */}
+              <div 
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
+                onClick={() => handleJobClick('/about/careers/ai-agent-developer')}
               >
-                Our Benefits
-              </a>
+              <div className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-xl flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-[#1f2937] mb-2 group-hover:text-[#3b82f6] transition-colors">AI Agent Developer</h3>
+                    <div className="flex flex-wrap gap-1">
+                      <span className="px-2 py-1 bg-[#3b82f6]/10 text-[#3b82f6] rounded-full text-xs font-medium">
+                        Full-time
+                      </span>
+                      <span className="px-2 py-1 bg-[#10b981]/10 text-[#10b981] rounded-full text-xs font-medium">
+                        Remote
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-[#6b7280] text-sm leading-relaxed mb-4">
+                  Develop intelligent AI agents that automate complex business processes and enhance our cloud infrastructure solutions.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-[#9ca3af] text-xs">Posted: Dec 2024</span>
+                  <div className="flex items-center text-[#3b82f6] group-hover:text-[#2563eb] transition-colors">
+                    <span className="text-sm font-medium mr-1">View Details</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+              {/* Backend Developer Job */}
+              <div 
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
+                onClick={() => handleJobClick('/about/careers/backend-developer')}
+              >
+              <div className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-xl flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-[#1f2937] mb-2 group-hover:text-[#10b981] transition-colors">Backend Developer</h3>
+                    <div className="flex flex-wrap gap-1">
+                      <span className="px-2 py-1 bg-[#10b981]/10 text-[#10b981] rounded-full text-xs font-medium">
+                        Full-time
+                      </span>
+                      <span className="px-2 py-1 bg-[#3b82f6]/10 text-[#3b82f6] rounded-full text-xs font-medium">
+                        Remote
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-[#6b7280] text-sm leading-relaxed mb-4">
+                  Build robust, scalable backend systems that power our cloud infrastructure solutions with high-performance APIs and microservices.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-[#9ca3af] text-xs">Posted: Dec 2024</span>
+                  <div className="flex items-center text-[#10b981] group-hover:text-[#059669] transition-colors">
+                    <span className="text-sm font-medium mr-1">View Details</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Why Work With Us */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose Angurs?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover what makes Angurs a great place to grow your career and make an impact
@@ -107,24 +235,6 @@ const Careers: React.FC = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Join Our Team?
-          </h2>
-          <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
-            Don't see a position that matches your skills? We're always looking for talented 
-            individuals. Send us your resume and let's start a conversation.
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-purple-600 bg-white rounded-full hover:bg-gray-50 transition-colors shadow-lg"
-          >
-            Send Your Resume
-          </a>
-        </div>
-      </section>
     </div>
   );
 };

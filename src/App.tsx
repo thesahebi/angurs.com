@@ -19,6 +19,9 @@ import OurCompany from "./components/pages/about/OurCompany";
 import OurCapabilities from "./components/pages/about/OurCapabilities";
 import OurPeople from "./components/pages/about/OurPeople";
 import Careers from "./components/pages/about/Careers";
+import UIUXDesigner from "./components/pages/about/jobs/UIUXDesigner";
+import AIAgentDeveloper from "./components/pages/about/jobs/AIAgentDeveloper";
+import BackendDeveloper from "./components/pages/about/jobs/BackendDeveloper";
 import Automation from "./components/pages/automation/Automation";
 import DevOps from "./components/pages/automation/DevOps";
 import ITAutomation from "./components/pages/automation/ITAutomation";
@@ -49,6 +52,9 @@ function App() {
             <Route path="/about/capabilities" element={<OurCapabilities />} />
             <Route path="/about/people" element={<OurPeople />} />
             <Route path="/about/careers" element={<Careers />} />
+            <Route path="/about/careers/ui-ux-designer" element={<UIUXDesigner />} />
+            <Route path="/about/careers/ai-agent-developer" element={<AIAgentDeveloper />} />
+            <Route path="/about/careers/backend-developer" element={<BackendDeveloper />} />
             <Route path="/automation" element={<Automation />} />
             <Route path="/automation/devops" element={<DevOps />} />
             <Route path="/automation/it" element={<ITAutomation />} />

@@ -29,14 +29,14 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
               <p className="text-base font-semibold tracking-wider ubun-text uppercase">
                 Future-ready solutions
               </p>
-              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl dark:text-white ">
+              <h2 className="text-3xl font-bold text-[#1f2937] sm:text-4xl xl:text-5xl dark:text-white ">
                  Built to scale with your business.
               </h2>
             </div>
           )}
 
           {isContent && (
-            <p className="text-xl  py-3 lg:px-36 ">
+            <p className="text-xl text-[#6b7280] py-3 lg:px-36 ">
               We deliver seamless digital solutions that connect, protect, and scale with your business. From cloud and development to design and hosting, everything works together to help your brand grow confidently
             </p>
           )}

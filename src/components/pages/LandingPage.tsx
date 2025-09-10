@@ -3,6 +3,7 @@ import FeatureV2 from "./features/FeatureV2";
 import FeatureV1 from "./features/FeatureV1";
 // import { Testimonial } from "../reusable/Testimonial";
 import { ClientV1 } from "./ClientV1";
+import { CustomerRating } from "./CustomerRating";
 
 import { VelocityScroll } from "../ui/scroll-based-velocity";
 import WorkTogether from "./WorkTogether";
@@ -27,6 +28,7 @@ const LandingPage = () => {
       <WorkTogether />
       <FeatureV2 isContent isTitle isBoth isLeft />
       {/* <Testimonial /> */}
+      <CustomerRating />
       <ClientV1 />
       <BlogList
         slice={3}

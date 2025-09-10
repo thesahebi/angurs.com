@@ -1,43 +1,28 @@
 import React from "react";
+import PageHero from "../../reusable/PageHero";
 
 const Virtualization: React.FC = () => {
   return (
     <div>
-      {/* Hero Section - Full width below header */}
-      <section className="bg-gradient-to-r from-blue-50 to-purple-50 pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900">
-              Virtualization for the
-              <span className="block text-blue-600">Modern Enterprise</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-5xl mx-auto mb-12 leading-relaxed">
-              Maximize resources, reduce costs, and scale on demand. With Angurs, you gain access to the industry's 
-              leading virtualization platforms — designed for performance, flexibility, and reliability.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-lg"
-              >
-                Get Started
-              </a>
-              <a
-                href="#solutions"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white border-2 border-blue-600 rounded-full hover:bg-blue-50 transition-colors"
-              >
-                View Solutions
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title="Virtualization for the Modern Enterprise"
+        subtitle="Maximize resources, reduce costs"
+        description="Maximize resources, reduce costs, and scale on demand. With Angurs, you gain access to the industry's leading virtualization platforms — designed for performance, flexibility, and reliability."
+        primaryButtonText="Get Started"
+        primaryButtonLink="/contact"
+        secondaryButtonText="View Solutions"
+        secondaryButtonLink="#solutions"
+        accentColor="#3b82f6"
+        backgroundPattern="dots"
+        showGraph={true}
+        graphType="line"
+      />
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-16">
 
       {/* Why Virtualization Matters */}
-      <section className="mb-16">
+      <section className="mb-20">
         <h2 className="text-3xl font-bold mb-8 text-center">Why Virtualization Matters</h2>
         <p className="text-lg text-gray-600 mb-8 max-w-4xl mx-auto text-center">
           Virtualization is the foundation of modern IT. It allows you to run multiple operating systems and 
@@ -66,7 +51,7 @@ const Virtualization: React.FC = () => {
 
       {/* Our Virtualization Solutions */}
       <section id="solutions" className="mb-16">
-        <h2 className="text-3xl font-bold mb-12 text-center">Our Virtualization Solutions</h2>
+        <h2 className="text-3xl font-bold mb-16 text-center">Our Virtualization Solutions</h2>
         
         <div className="space-y-12">
           {/* VMware Partner */}
@@ -156,7 +141,7 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Benefits */}
-      <section className="mb-16">
+      <section className="mb-20">
         <h2 className="text-3xl font-bold mb-8 text-center">Benefits of Virtualization with Angurs</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

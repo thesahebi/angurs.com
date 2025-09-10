@@ -6,3 +6,15 @@
  <!-- Build project  -->
 
  # npm run build 
+
+
+
+ /* Text Colors */
+Primary Text: #1f2937 (dark gray)
+Secondary Text: #6b7280 (medium gray)
+Light Text: #9ca3af (light gray)
+
+/* Accent Colors */
+Blue Accent: #3b82f6 (blue-500)
+Success Green: #10b981 (emerald-500)
+Warning: #f59e0b (amber-500)

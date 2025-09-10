@@ -5,16 +5,24 @@ import { Link, useLocation } from "react-router-dom";
 
 const TopHeaderV1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [expandedMenuItems, setExpandedMenuItems] = useState<string[]>([]);
   const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleMobileMenuItem = (itemLabel: string) => {
+    setExpandedMenuItems(prev => 
+      prev.includes(itemLabel) 
+        ? prev.filter(item => item !== itemLabel)
+        : [...prev, itemLabel]
+    );
+  };
+
   const navigationItems = [
     { path: "/", label: "Home" },
     {
-      path: "/solutions/backup",
       label: "Solutions",
       children: [
         { path: "/solutions/cloud", label: "Cloud" },
@@ -24,7 +32,6 @@ const TopHeaderV1 = () => {
       ]
     },
     {
-      path: "/about/our-company",
       label: "About Us",
       children: [
         { path: "/about/our-company", label: "Our Company" },
@@ -34,7 +41,6 @@ const TopHeaderV1 = () => {
       ]
     },
     {
-      path: "/automation",
       label: "Automation",
       children: [
         { path: "/automation/devops", label: "DevOps" },
@@ -42,7 +48,6 @@ const TopHeaderV1 = () => {
       ]
     },
     {
-      path: "/resources/blog",
       label: "Resources",
       children: [
         { path: "/resources/blog", label: "Blog" },
@@ -112,19 +117,26 @@ const TopHeaderV1 = () => {
           </button>
 
           {/* Desktop Navigation */}
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-8">
             {navigationItems.map((item) => (
               <div key={item.label} className="relative group pb-2">
-                <Link
-                  to={item.path}
-                  className={`text-base transition-all duration-200 relative ${isActivePath(item.path)
-                      ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-                      : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
-                    }`}
-                >
-                  {item.label}
-                </Link>
+                {item.path ? (
+                  <Link
+                    to={item.path}
+                    className={`text-base transition-all duration-200 relative ${isActivePath(item.path)
+                        ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
+                        : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+                      }`}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <div
+                    className="text-base transition-all duration-200 relative cursor-pointer text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+                  >
+                    {item.label}
+                  </div>
+                )}
 
                 {/* Submenu */}
                 {item.children && (
@@ -260,17 +272,58 @@ const TopHeaderV1 = () => {
         >
           <nav className="px-4 py-2">
             {navigationItems.map((item) => (
-              <Link
-                key={item.label}
-                to={item.path}
-                className={`block py-3 text-base px-4 rounded-lg transition-all duration-200 ${isActivePath(item.path)
-                    ? "text-orange-400 bg-white font-semibold"
-                    : "text-white hover:bg-white hover:text-orange-400"
-                  }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
+              <div key={item.label}>
+                {item.path ? (
+                  <Link
+                    to={item.path}
+                    className={`block py-3 text-base px-4 rounded-lg transition-all duration-200 ${isActivePath(item.path)
+                        ? "text-orange-400 bg-white font-semibold"
+                        : "text-white hover:bg-white hover:text-orange-400"
+                      }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <div>
+                    <button
+                      onClick={() => toggleMobileMenuItem(item.label)}
+                      className="flex items-center justify-between w-full py-3 text-base px-4 rounded-lg transition-all duration-200 text-white hover:bg-white hover:text-orange-400"
+                    >
+                      <span>{item.label}</span>
+                      <svg
+                        className={`w-4 h-4 transition-transform duration-200 ${
+                          expandedMenuItems.includes(item.label) ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    {item.children && expandedMenuItems.includes(item.label) && (
+                      <div className="ml-4">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.label}
+                            to={child.path}
+                            className="block py-2 text-sm px-4 rounded-lg transition-all duration-200 text-white hover:bg-white hover:text-orange-400"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
             ))}
             <div className="p-4">
               <a

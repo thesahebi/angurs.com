@@ -70,17 +70,57 @@ function WorkTogether() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="dark:bg-black  flex items-center">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="lg:p-12 md:p-12 py-12 text-center">
+    <section ref={sectionRef} className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 opacity-5">
+        <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
+          <defs>
+            <pattern id="waves" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M0 20 Q10 0 20 20 T40 20" stroke="#1f2937" strokeWidth="0.5" fill="none"/>
+            </pattern>
+          </defs>
+          <rect width="100" height="100" fill="url(#waves)" />
+        </svg>
+      </div>
+
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center">
+          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#e95420] bg-[#e95420]/10 rounded-full mb-8">
+            🤝 Partnership
+          </div>
           <p 
             ref={textRef}
-            className="lg:text-8xl md:text-6xl text-5xl font-bold font-mono dark:text-white overflow-hidden"
+            className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#1f2937] leading-tight overflow-hidden"
           >
-            Let's <span className="ubun-text inline-block">Team Up</span>{" "}
+            Let's <span className="ubun-text inline-block bg-gradient-to-r from-[#e95420] to-[#d1451a] bg-clip-text text-transparent">Team Up</span>{" "}
             <br />
-             <span className="ubun-text inline-block">Together, We’ll Build Something Amazing</span>
+            <span className="ubun-text inline-block">Together, We'll Build Something Amazing</span>
           </p>
+          <p className="mt-8 text-xl text-[#6b7280] max-w-3xl mx-auto leading-relaxed">
+            Ready to transform your business? Let's collaborate and create solutions that drive real results and sustainable growth.
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+16309234653"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[#e95420] hover:bg-[#d1451a] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              Start Your Project
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#1f2937] border-2 border-gray-200 hover:border-[#e95420] rounded-xl transition-all duration-200 hover:text-[#e95420]"
+            >
+              Schedule Consultation
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
