@@ -139,13 +139,13 @@ function HeroV2() {
             <p ref={taglineRef} className="inline-flex px-6 py-3 text-sm font-medium text-[#1f2937] bg-white border border-gray-200 rounded-full shadow-sm backdrop-blur-sm">
               ✨ Trusted source of integration
             </p>
-            <h1 ref={titleRef} className="mt-8 text-5xl font-bold leading-tight text-[#1f2937] sm:text-6xl sm:leading-tight lg:text-7xl lg:leading-tight">
+            <h1 ref={titleRef} className="mt-8 text-4xl font-bold leading-tight text-[#1f2937] sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
               Building Smarter Solutions with{' '}
               <span className="bg-gradient-to-r from-[#e95420] to-[#d1451a] bg-clip-text text-transparent">
                 Angurs
               </span>
             </h1>
-            <p ref={subtitleRef} className="mt-6 text-xl text-[#6b7280] max-w-2xl mx-auto leading-relaxed">
+            <p ref={subtitleRef} className="mt-6 text-lg text-[#6b7280] max-w-2xl mx-auto leading-relaxed">
               Transform your business with cutting-edge cloud infrastructure, automation solutions, and scalable technology that grows with you.
             </p>
 
@@ -154,7 +154,7 @@ function HeroV2() {
                 <button
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
-                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#1f2937] border-2 border-gray-200 hover:border-[#e95420] rounded-xl transition-all duration-200 hover:text-[#e95420]"
+                  className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#1f2937] border-2 border-gray-200 hover:border-[#e95420] rounded-xl transition-all duration-200 hover:text-[#e95420]"
                 >
                   Solutions
                   <svg className={`w-5 h-5 ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">

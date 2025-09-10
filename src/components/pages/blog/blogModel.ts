@@ -85,7 +85,7 @@ export const articles: Article[] = [
   },
   {
     id: 2,
-    category: "Growth",
+    category: "Technology",
     date: "April 09, 2022",
     title: "What Do I Need for a Business Website to Be Legit?",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
@@ -112,9 +112,9 @@ export const articles: Article[] = [
   },
   {
     id: 3,
-    category: "Growth",
+    category: "Cloud Solutions",
     date: "April 09, 2022",
-    title: "Already Have a Website? Here’s How to Make Changes",
+    title: "Already Have a Website? Here's How to Make Changes",
     image: "https://plus.unsplash.com/premium_photo-1661281282296-3fa2a9f73dbe",
     details: {
       content: [
@@ -139,7 +139,7 @@ export const articles: Article[] = [
   },
   {
     id: 4,
-    category: "Growth",
+    category: "Automation",
     date: "April 09, 2022",
     title: "Lessons and insights from 8 years of Pixelgrade",
     image: "https://plus.unsplash.com/premium_photo-1661274202754-abde708db7d0",
@@ -166,7 +166,7 @@ export const articles: Article[] = [
   },
   {
     id: 5,
-    category: "Growth",
+    category: "Networking",
     date: "April 09, 2022",
     title: "Travelling as a way of self-discovery and progress",
     image: "https://plus.unsplash.com/premium_photo-1661284836545-3a6ec65fcffc",
@@ -193,7 +193,7 @@ export const articles: Article[] = [
   },
   {
     id: 6,
-    category: "Growth",
+    category: "Security",
     date: "April 09, 2022",
     title: "The unseen of spending three years at Pixelgrade",
     image: "https://plus.unsplash.com/premium_photo-1661277712617-1e46eac647e8",

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import logo1 from "../../../assets/imgs/Angurs1.svg";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 import { scrollToTheTopOfPage } from "@/lib/utils";
@@ -7,6 +8,49 @@ const currentdata = new Date();
 const year = currentdata.getFullYear();
 
 const FooterV1 = () => {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) {
+      setSubmitStatus('Please enter a valid email address');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus('');
+
+    try {
+      const response = await fetch('/api/newsletter-subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('Successfully subscribed! Thank you.');
+        setEmail('');
+      } else {
+        setSubmitStatus(data.message || 'Failed to subscribe. Please try again.');
+      }
+    } catch (error) {
+      setSubmitStatus('An error occurred. Please try again later.');
+      console.error('Error subscribing to newsletter:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer className="relative bg-gradient-to-br from-[#1f2937] via-gray-900 to-[#111827] text-white overflow-hidden">
       {/* Background Pattern */}
@@ -213,17 +257,35 @@ const FooterV1 = () => {
                 <p className="text-[#9ca3af] mb-6">
                   Get the latest technology trends, case studies, and industry insights delivered to your inbox.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#e95420] focus:border-transparent"
-                  />
-                  <button className="px-6 py-3 bg-[#e95420] hover:bg-[#d1451a] text-white font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center">
-                    Subscribe
-                    <FaArrowRight className="ml-2" />
-                  </button>
-                </div>
+                <form onSubmit={handleSubscribe} className="max-w-md mx-auto">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={handleEmailChange}
+                      placeholder="Enter your email address"
+                      className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#e95420] focus:border-transparent"
+                      required
+                    />
+                    <button 
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="px-6 py-3 bg-[#e95420] hover:bg-[#d1451a] text-white font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                      <FaArrowRight className="ml-2" />
+                    </button>
+                  </div>
+                  {submitStatus && (
+                    <div className={`mt-3 text-sm text-center ${
+                      submitStatus.includes('Successfully') 
+                        ? 'text-green-400' 
+                        : 'text-red-400'
+                    }`}>
+                      {submitStatus}
+                    </div>
+                  )}
+                </form>
               </div>
             </div>
           </div>

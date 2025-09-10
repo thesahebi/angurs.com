@@ -161,18 +161,18 @@ const PageHero: React.FC<PageHeroProps> = ({
             {subtitle}
           </p>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-[#1f2937] font-pj">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#1f2937] font-pj">
             {title}
           </h1>
           
-          <p className="text-xl md:text-2xl text-[#6b7280] mb-12 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-[#6b7280] mb-10 leading-relaxed max-w-3xl mx-auto">
             {description}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={primaryButtonLink}
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white rounded-full hover:opacity-90 transition-all duration-200 shadow-lg"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-full hover:opacity-90 transition-all duration-200 shadow-lg"
               style={{ backgroundColor: accentColor }}
             >
               {primaryButtonText}
@@ -181,7 +181,7 @@ const PageHero: React.FC<PageHeroProps> = ({
             {secondaryButtonText && secondaryButtonLink && (
               <a
                 href={secondaryButtonLink}
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-white border-2 rounded-full hover:bg-gray-50 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold bg-white border-2 rounded-full hover:bg-gray-50 transition-colors"
                 style={{ 
                   color: accentColor, 
                   borderColor: accentColor 

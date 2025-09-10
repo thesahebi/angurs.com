@@ -70,7 +70,7 @@ function WorkTogether() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">

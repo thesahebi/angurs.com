@@ -7,7 +7,7 @@ import { featureData } from "./feature-data";
 
 const FeatureV1 = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden" id="features">
+    <section className="py-16 bg-white relative overflow-hidden" id="features">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">

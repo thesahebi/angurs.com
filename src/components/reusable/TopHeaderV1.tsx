@@ -66,7 +66,7 @@ const TopHeaderV1 = () => {
   return (
     <header className="fixed mx-auto w-[100%] bg-white z-20 dark:bg-main-bg">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-14 lg:h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
@@ -74,7 +74,7 @@ const TopHeaderV1 = () => {
               onClick={scrollToTheTopOfPage}
               className={`flex`}
             >
-              <img className="w-auto h-12 lg:h-16" src={logo1} alt="Logo" />
+              <img className="w-auto h-10 lg:h-12" src={logo1} alt="Logo" />
             </Link>
           </div>
 

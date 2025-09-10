@@ -66,6 +66,50 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
+// Newsletter subscription endpoint
+app.post('/api/newsletter-subscribe', async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    // Validate email
+    if (!email || !email.includes('@')) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid email address'
+      });
+    }
+
+    // Email content for newsletter subscription
+    const mailOptions = {
+      from: process.env.EMAIL_USER || 'sahebiramazan@gmail.com',
+      to: 'sahebiramazan@gmail.com',
+      subject: `Newsletter Subscription: ${email}`,
+      html: `
+        <h3>New Newsletter Subscription</h3>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subscribed at:</strong> ${new Date().toLocaleString()}</p>
+        <hr>
+        <p><em>This subscription was made from the Angurs website newsletter signup.</em></p>
+      `
+    };
+
+    // Send email notification
+    await transporter.sendMail(mailOptions);
+
+    res.json({
+      success: true,
+      message: 'Successfully subscribed to newsletter!'
+    });
+
+  } catch (error) {
+    console.error('Error subscribing to newsletter:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to subscribe. Please try again.'
+    });
+  }
+});
+
 // Serve React app for all other routes
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
