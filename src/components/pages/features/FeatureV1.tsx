@@ -56,21 +56,27 @@ const FeatureV1 = () => {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Let's discuss how our solutions can help you achieve your goals and scale your operations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-md mx-auto sm:max-w-none">
+              <div className="relative inline-flex group w-full sm:w-auto">
+                <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-white via-gray-100 to-white rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
+                <a
+                  href="tel:+16309234653"
+                  className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-semibold text-[#1f2937] bg-white hover:bg-gray-100 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                >
+                  Get a Demo Consultant Call
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
               <a
-                href="tel:+16309234653"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#1f2937] bg-white hover:bg-gray-100 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                href="/contact"
+                className="inline-flex items-center justify-center w-full px-8 py-4 text-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-[#1f2937] rounded-xl transition-all duration-200"
               >
-                Get a Demo Consultant Call
+                Learn More
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-[#1f2937] rounded-xl transition-all duration-200"
-              >
-                Learn More
               </a>
             </div>
           </div>

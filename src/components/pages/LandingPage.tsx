@@ -7,7 +7,6 @@ import { CustomerRating } from "./CustomerRating";
 
 import { VelocityScroll } from "../ui/scroll-based-velocity";
 import WorkTogether from "./WorkTogether";
-import BlogList from "./blog/BlogList";
 import HeroV2 from "./hero/HeroV2";
 
 const LandingPage = () => {
@@ -30,12 +29,6 @@ const LandingPage = () => {
       {/* <Testimonial /> */}
       <CustomerRating />
       <ClientV1 />
-      <BlogList
-        slice={3}
-        isSeeMore
-        path="/blogs"
-        displayClass="lg:grid-cols-3 md:grid-cols-2 gap-12"
-      />
     </>
   );
 };
