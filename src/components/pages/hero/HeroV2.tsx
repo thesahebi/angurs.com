@@ -149,27 +149,14 @@ function HeroV2() {
               Transform your business with cutting-edge cloud infrastructure, automation solutions, and scalable technology that grows with you.
             </p>
 
-            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-md mx-auto sm:max-w-none">
-              <div className="relative inline-flex group w-full sm:w-auto">
-                <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#e95420] via-[#d1451a] to-[#e95420] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
-                <a
-                  ref={buttonRef}
-                  href="tel:+16309234653"
-                  className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-semibold text-white bg-[#e95420] hover:bg-[#d1451a] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
-                >
-                  Let's Talk
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <div className="relative group w-full sm:w-auto">
+            <div className="mt-12 flex justify-center">
+              <div className="relative group">
                 <button
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
-                  className="inline-flex items-center justify-center w-full px-8 py-4 text-lg font-semibold text-[#1f2937] border-2 border-gray-200 hover:border-[#e95420] rounded-xl transition-all duration-200 hover:text-[#e95420]"
+                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#1f2937] border-2 border-gray-200 hover:border-[#e95420] rounded-xl transition-all duration-200 hover:text-[#e95420]"
                 >
-                  Explore Solutions
+                  Solutions
                   <svg className={`w-5 h-5 ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -184,7 +171,7 @@ function HeroV2() {
                   onMouseLeave={() => setIsDropdownOpen(false)}
                 >
                   <div className="p-2">
-                    {solutions.map((solution, index) => (
+                    {solutions.map((solution) => (
                       <a
                         key={solution.name}
                         href={solution.href}
