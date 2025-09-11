@@ -16,6 +16,7 @@ const UIUXDesigner: React.FC = () => {
         showGraph={true}
         graphType="pie"
         isHomepage={false}
+        isAboutUs={true}
       />
 
       {/* Job Details */}

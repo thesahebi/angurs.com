@@ -13,6 +13,7 @@ interface PageHeroProps {
   showGraph?: boolean;
   graphType?: 'bar' | 'line' | 'pie' | 'network' | 'cloud';
   isHomepage?: boolean;
+  isAboutUs?: boolean;
 }
 
 const PageHero: React.FC<PageHeroProps> = ({
@@ -27,7 +28,8 @@ const PageHero: React.FC<PageHeroProps> = ({
   backgroundPattern = 'dots',
   showGraph = true,
   graphType = 'bar',
-  isHomepage = false
+  isHomepage = false,
+  isAboutUs = false
 }) => {
   const renderBackgroundPattern = () => {
     switch (backgroundPattern) {
@@ -153,7 +155,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20' : 'pt-24'} pb-16 overflow-hidden`}>
+    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20' : isAboutUs ? 'pt-40' : 'pt-24'} pb-16 overflow-hidden`} style={{ scrollMarginTop: '4rem' }}>
       {renderBackgroundPattern()}
       {renderGraph()}
       

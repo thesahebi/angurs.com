@@ -17,6 +17,7 @@ const OurCompany: React.FC = () => {
         showGraph={true}
         graphType="pie"
         isHomepage={false}
+        isAboutUs={true}
       />
 
       {/* Our Story Section */}

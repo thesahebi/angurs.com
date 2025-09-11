@@ -17,6 +17,7 @@ const OurCapabilities: React.FC = () => {
         showGraph={true}
         graphType="bar"
         isHomepage={false}
+        isAboutUs={true}
       />
 
       {/* Core Services */}

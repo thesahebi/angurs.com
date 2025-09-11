@@ -24,6 +24,7 @@ const Careers: React.FC = () => {
         showGraph={true}
         graphType="line"
         isHomepage={false}
+        isAboutUs={true}
       />
 
       {/* Open Positions */}

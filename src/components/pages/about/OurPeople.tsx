@@ -17,6 +17,7 @@ const OurPeople: React.FC = () => {
         showGraph={true}
         graphType="network"
         isHomepage={false}
+        isAboutUs={true}
       />
 
       {/* Team Values */}

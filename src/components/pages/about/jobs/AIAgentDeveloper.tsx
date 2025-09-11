@@ -16,6 +16,7 @@ const AIAgentDeveloper: React.FC = () => {
         showGraph={true}
         graphType="network"
         isHomepage={false}
+        isAboutUs={true}
       />
 
       {/* Job Details */}

@@ -32,7 +32,7 @@ export const clientData: any[] = [
 const ClientV1Card = ({ imgUrl }: any) => {
   return (
     <figure className="relative mx-8 flex items-center justify-center">
-      <div className="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+      <div className="flex items-center justify-center p-6 rounded-lg hover:bg-[#1E293B] transition-colors duration-200">
         <img 
           className="h-16 w-auto max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300" 
           alt="Client logo" 
@@ -45,10 +45,10 @@ const ClientV1Card = ({ imgUrl }: any) => {
 
 export function ClientV1() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[#121212]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h3 className="text-lg font-medium text-[#6b7280] mb-8">Trusted by leading companies</h3>
+          <h3 className="text-lg font-medium text-[#E2E8F0] mb-8">Trusted by leading companies</h3>
         </div>
         <div className="relative">
           <Marquee pauseOnHover className="[--duration:15s]">
