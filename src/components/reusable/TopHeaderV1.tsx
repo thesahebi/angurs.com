@@ -66,7 +66,7 @@ const TopHeaderV1 = () => {
   return (
     <header className="fixed mx-auto w-[100%] bg-white z-20 dark:bg-main-bg">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14 lg:h-16">
+        <div className="flex items-center justify-between h-12 lg:h-14">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
@@ -74,7 +74,7 @@ const TopHeaderV1 = () => {
               onClick={scrollToTheTopOfPage}
               className={`flex`}
             >
-              <img className="w-auto h-10 lg:h-12" src={logo1} alt="Logo" />
+              <img className="w-auto h-8 lg:h-10" src={logo1} alt="Logo" />
             </Link>
           </div>
 
@@ -123,7 +123,7 @@ const TopHeaderV1 = () => {
                 {item.path ? (
                   <Link
                     to={item.path}
-                    className={`text-base transition-all duration-200 relative ${isActivePath(item.path)
+                    className={`text-sm transition-all duration-200 relative ${isActivePath(item.path)
                         ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
                         : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
                       }`}
@@ -132,7 +132,7 @@ const TopHeaderV1 = () => {
                   </Link>
                 ) : (
                   <div
-                    className="text-base transition-all duration-200 relative cursor-pointer text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+                    className="text-sm transition-all duration-200 relative cursor-pointer text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
                   >
                     {item.label}
                   </div>

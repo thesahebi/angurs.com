@@ -16,6 +16,7 @@ const ITAutomation: React.FC = () => {
         backgroundPattern="dots"
         showGraph={true}
         graphType="bar"
+        isHomepage={false}
       />
 
       {/* IT Automation Benefits */}

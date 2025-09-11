@@ -15,6 +15,7 @@ const UIUXDesigner: React.FC = () => {
         backgroundPattern="dots"
         showGraph={true}
         graphType="pie"
+        isHomepage={false}
       />
 
       {/* Job Details */}

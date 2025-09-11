@@ -16,6 +16,7 @@ const CaseStudies: React.FC = () => {
         backgroundPattern="dots"
         showGraph={true}
         graphType="pie"
+        isHomepage={false}
       />
 
       {/* Case Studies Grid */}

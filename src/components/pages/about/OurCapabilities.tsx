@@ -16,6 +16,7 @@ const OurCapabilities: React.FC = () => {
         backgroundPattern="grid"
         showGraph={true}
         graphType="bar"
+        isHomepage={false}
       />
 
       {/* Core Services */}

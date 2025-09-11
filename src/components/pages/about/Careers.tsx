@@ -23,6 +23,7 @@ const Careers: React.FC = () => {
         backgroundPattern="circuits"
         showGraph={true}
         graphType="line"
+        isHomepage={false}
       />
 
       {/* Open Positions */}

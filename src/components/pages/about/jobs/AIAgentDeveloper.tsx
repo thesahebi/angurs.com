@@ -15,6 +15,7 @@ const AIAgentDeveloper: React.FC = () => {
         backgroundPattern="circuits"
         showGraph={true}
         graphType="network"
+        isHomepage={false}
       />
 
       {/* Job Details */}

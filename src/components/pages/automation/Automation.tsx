@@ -16,6 +16,7 @@ const Automation: React.FC = () => {
         backgroundPattern="circuits"
         showGraph={true}
         graphType="network"
+        isHomepage={false}
       />
 
       {/* Why Automation Matters */}

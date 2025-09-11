@@ -16,6 +16,7 @@ const OurCompany: React.FC = () => {
         backgroundPattern="dots"
         showGraph={true}
         graphType="pie"
+        isHomepage={false}
       />
 
       {/* Our Story Section */}

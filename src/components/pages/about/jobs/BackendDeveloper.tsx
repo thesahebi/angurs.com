@@ -15,6 +15,7 @@ const BackendDeveloper: React.FC = () => {
         backgroundPattern="grid"
         showGraph={true}
         graphType="bar"
+        isHomepage={false}
       />
 
       {/* Job Details */}

@@ -16,6 +16,7 @@ const Backup: React.FC = () => {
         backgroundPattern="grid"
         showGraph={true}
         graphType="bar"
+        isHomepage={false}
       />
 
       {/* Main Content */}

@@ -12,6 +12,7 @@ interface PageHeroProps {
   backgroundPattern?: 'dots' | 'grid' | 'waves' | 'circuits';
   showGraph?: boolean;
   graphType?: 'bar' | 'line' | 'pie' | 'network' | 'cloud';
+  isHomepage?: boolean;
 }
 
 const PageHero: React.FC<PageHeroProps> = ({
@@ -25,7 +26,8 @@ const PageHero: React.FC<PageHeroProps> = ({
   accentColor = '#e95420',
   backgroundPattern = 'dots',
   showGraph = true,
-  graphType = 'bar'
+  graphType = 'bar',
+  isHomepage = false
 }) => {
   const renderBackgroundPattern = () => {
     switch (backgroundPattern) {
@@ -151,28 +153,28 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-gray-50 to-white pt-24 pb-20 overflow-hidden">
+    <section className={`relative bg-gradient-to-br from-gray-50 to-white ${isHomepage ? 'pt-20' : 'pt-40'} pb-16 overflow-hidden`}>
       {renderBackgroundPattern()}
       {renderGraph()}
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <p className="inline-flex px-4 py-2 text-base text-[#1f2937] border border-[#e5e7eb] rounded-full font-pj mb-6">
+          <p className="inline-flex px-3 py-1.5 text-sm text-[#1f2937] border border-[#e5e7eb] rounded-full font-pj mb-4">
             {subtitle}
           </p>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#1f2937] font-pj">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#1f2937] font-pj">
             {title}
           </h1>
           
-          <p className="text-lg md:text-xl text-[#6b7280] mb-10 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-[#6b7280] mb-8 leading-relaxed max-w-3xl mx-auto">
             {description}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={primaryButtonLink}
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-full hover:opacity-90 transition-all duration-200 shadow-lg"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:opacity-90 transition-all duration-200 shadow-lg"
               style={{ backgroundColor: accentColor }}
             >
               {primaryButtonText}
@@ -181,7 +183,7 @@ const PageHero: React.FC<PageHeroProps> = ({
             {secondaryButtonText && secondaryButtonLink && (
               <a
                 href={secondaryButtonLink}
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold bg-white border-2 rounded-full hover:bg-gray-50 transition-colors"
+                className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold bg-white border-2 rounded-full hover:bg-gray-50 transition-colors"
                 style={{ 
                   color: accentColor, 
                   borderColor: accentColor 

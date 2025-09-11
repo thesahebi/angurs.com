@@ -16,6 +16,7 @@ const DevOps: React.FC = () => {
         backgroundPattern="grid"
         showGraph={true}
         graphType="line"
+        isHomepage={false}
       />
 
       {/* DevOps Benefits */}

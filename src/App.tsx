@@ -27,6 +27,9 @@ import DevOps from "./components/pages/automation/DevOps";
 import ITAutomation from "./components/pages/automation/ITAutomation";
 import ResourcesBlog from "./components/pages/resources/ResourcesBlog";
 import CaseStudies from "./components/pages/resources/CaseStudies";
+import PrivacyPolicy from "./components/pages/legal/PrivacyPolicy";
+import TermsOfService from "./components/pages/legal/TermsOfService";
+import CookiePolicy from "./components/pages/legal/CookiePolicy";
 import ScrollToTopAl from "./lib/ScrollToTop";
 
 function App() {
@@ -63,6 +66,9 @@ function App() {
             <Route path="/portfolio" element={<OurWorks />} />
             <Route path="/blogs" element={<BlogLayout />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/cookies" element={<CookiePolicy />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
           

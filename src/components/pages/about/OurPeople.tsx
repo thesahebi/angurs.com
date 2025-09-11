@@ -16,6 +16,7 @@ const OurPeople: React.FC = () => {
         backgroundPattern="waves"
         showGraph={true}
         graphType="network"
+        isHomepage={false}
       />
 
       {/* Team Values */}
