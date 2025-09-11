@@ -1,7 +1,8 @@
 // feature-data.ts
-import { FaUser, FaCode, FaCloud, FaChartLine, FaReact, FaNodeJs, FaAngular, FaVuejs, FaPython, FaPhp, FaGitAlt, FaDatabase, FaCss3, FaHtml5, FaSwift, FaJava, FaLinux, FaDocker, FaFigma } from "react-icons/fa6";
+import { FaUser, FaCode, FaCloud, FaChartLine, FaReact, FaNodeJs, FaAngular, FaVuejs, FaPython, FaPhp, FaCss3, FaHtml5, FaSwift, FaJava, FaFigma } from "react-icons/fa6";
 import { FeatureModelProps, ProgramModelProps } from "./feature-model";
 import { FaJsSquare, FaPencilRuler } from "react-icons/fa";
+import { SiTypescript, SiCsharp, SiGo, SiRuby } from "react-icons/si";
 
 export const featureData: FeatureModelProps[] = [
     {
@@ -110,63 +111,48 @@ export const programmingData: ProgramModelProps[] = [
         icon: FaJava,
         name: "Java",
     },
-    // {
-    //     id: 8,
-    //     icon: FaRust,
-    //     name: "Rust",
-    // },
     {
-        id: 9,
+        id: 8,
         icon: FaSwift,
         name: "Swift",
     },
     {
-        id: 10,
+        id: 9,
         icon: FaHtml5,
         name: "HTML5",
     },
     {
-        id: 11,
+        id: 10,
         icon: FaCss3,
         name: "CSS3",
     },
     {
-        id: 12,
+        id: 11,
         icon: FaJsSquare,
         name: "JavaScript",
     },
     {
+        id: 12,
+        icon: SiTypescript,
+        name: "TypeScript",
+    },
+    {
         id: 13,
-        icon: FaDatabase,
-        name: "SQL",
+        icon: SiCsharp,
+        name: "C#",
     },
     {
         id: 14,
-        icon: FaGitAlt,
-        name: "Git",
-    },
-    // {
-    //     id: 15,
-    //     icon: FaCuttlefish,
-    //     name: "C",
-    // },
-    // {
-    //     id: 16,
-    //     icon: FaCode,
-    //     name: "C++",
-    // },
-    {
-        id: 17,
-        icon: FaLinux,
-        name: "Linux",
+        icon: SiGo,
+        name: "Go",
     },
     {
-        id: 18,
-        icon: FaDocker,
-        name: "Docker",
+        id: 15,
+        icon: SiRuby,
+        name: "Ruby",
     },
     {
-        id: 19,
+        id: 16,
         icon: FaFigma,
         name: "Figma",
     },

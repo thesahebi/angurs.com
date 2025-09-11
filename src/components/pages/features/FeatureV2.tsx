@@ -71,8 +71,9 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
 
           {/* {isLeft ? <AnimatedListDemo1 /> : ""} */}
           {isLeft ? (<div className="py-5">
-
-{/* <h1>Technology</h1> */}
+            <h3 className="text-2xl font-bold text-[#1f2937] mb-6 text-center dark:text-white">
+              Language and tools we are using for design and development
+            </h3>
             <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-3 gap-2 text-center">
             {programmingData.map((data) => {
                 return (
