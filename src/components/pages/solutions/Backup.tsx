@@ -1,23 +1,50 @@
 import React from "react";
-import PageHero from "../../reusable/PageHero";
 
 const Backup: React.FC = () => {
   return (
-    <div>
-      <PageHero
-        title="Protect What Matters Most"
-        subtitle="Enterprise-grade data protection"
-        description="Your data is the lifeline of your business. Angurs delivers enterprise-grade backup and replication solutions, on-premises and in the cloud, to keep you secure, compliant, and resilient."
-        primaryButtonText="Get Protected Now"
-        primaryButtonLink="/contact"
-        secondaryButtonText="View Solutions"
-        secondaryButtonLink="#solutions"
-        accentColor="#3B82F6"
-        backgroundPattern="grid"
-        showGraph={true}
-        graphType="bar"
-        isHomepage={false}
-      />
+    <div className="min-h-screen bg-[#121212]">
+      {/* Header */}
+      <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-[#121212] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }} />
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/20 border border-[#3B82F6]/30 rounded-full mb-6 backdrop-blur-sm">
+              💾 Backup Solutions
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F1F5F9] mb-6 leading-tight">
+              Protect What{' '}
+              <span className="bg-gradient-to-r from-[#3B82F6] to-[#2563EB] bg-clip-text text-transparent">
+                Matters Most
+              </span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8">
+              Your data is the lifeline of your business. Angurs delivers enterprise-grade backup and replication solutions, on-premises and in the cloud, to keep you secure, compliant, and resilient.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#F1F5F9] bg-[#3B82F6] hover:bg-[#2563EB] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                Get Protected Now
+              </a>
+              <a
+                href="#solutions"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#3B82F6] border-2 border-[#3B82F6] hover:bg-[#3B82F6] hover:text-[#F1F5F9] rounded-xl transition-all duration-200"
+              >
+                View Solutions
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16 bg-[#121212]">
@@ -34,8 +61,8 @@ const Backup: React.FC = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center p-8 bg-[#1E293B] rounded-xl shadow-sm border border-gray-100">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 bg-[#1E293B] rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -44,8 +71,8 @@ const Backup: React.FC = () => {
           </div>
           
           <div className="text-center p-8 bg-[#1E293B] rounded-xl shadow-sm border border-gray-100">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 bg-[#1E293B] rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
@@ -54,8 +81,8 @@ const Backup: React.FC = () => {
           </div>
           
           <div className="text-center p-8 bg-[#1E293B] rounded-xl shadow-sm border border-gray-100">
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 bg-[#1E293B] rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
@@ -64,8 +91,8 @@ const Backup: React.FC = () => {
           </div>
           
           <div className="text-center p-8 bg-[#1E293B] rounded-xl shadow-sm border border-gray-100">
-            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 bg-[#1E293B] rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </div>
@@ -83,7 +110,7 @@ const Backup: React.FC = () => {
           {/* On-Prem Backup & Replication */}
           <div className="bg-[#1E293B] p-10 rounded-2xl shadow-sm border border-gray-100">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-[#1E293B] rounded-lg flex items-center justify-center mr-4">
                 <span className="text-2xl">💽</span>
               </div>
               <h3 className="text-2xl font-bold text-[#F1F5F9]">On-Prem Backup & Replication</h3>
@@ -108,7 +135,7 @@ const Backup: React.FC = () => {
           {/* Cloud Backup & Replication */}
           <div className="bg-[#1E293B] p-10 rounded-2xl shadow-sm border border-gray-100">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-[#1E293B] rounded-lg flex items-center justify-center mr-4">
                 <span className="text-2xl">☁️</span>
               </div>
               <h3 className="text-2xl font-bold text-[#F1F5F9]">Cloud Backup & Replication</h3>
@@ -161,7 +188,7 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center bg-gradient-to-r from-gray-50 to-white p-16 rounded-2xl border border-gray-100">
+      <section className="text-center bg-[#1E293B] p-16 rounded-2xl border border-[#1E293B]">
         <h2 className="text-4xl font-bold mb-6 text-[#F1F5F9]">
           Keep your business running — no matter what happens.
         </h2>

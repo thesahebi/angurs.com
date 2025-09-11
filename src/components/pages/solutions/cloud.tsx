@@ -4,7 +4,7 @@ const Cloud: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       {/* Header */}
-      <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-gradient-to-br from-[#1f2937] via-gray-800 to-[#111827] relative overflow-hidden">
+      <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-[#121212] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -24,7 +24,7 @@ const Cloud: React.FC = () => {
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8">
               Scale infinitely, secure everything, and innovate faster with our comprehensive cloud migration and management services.
             </p>
             
@@ -47,7 +47,7 @@ const Cloud: React.FC = () => {
       <section className="py-12 md:py-16 bg-[#1E293B]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1f2937] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
               Why Choose Our{' '}
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
                 Cloud Solutions
@@ -66,8 +66,8 @@ const Cloud: React.FC = () => {
             ].map((feature, index) => (
               <div key={index} className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
                 <div className="text-3xl mb-4">{feature.icon}</div>
-                <h3 className="text-lg font-bold text-[#1f2937] mb-3">{feature.title}</h3>
-                <ul className="space-y-1 text-sm text-[#6b7280]">
+                <h3 className="text-lg font-bold text-[#F1F5F9] mb-3">{feature.title}</h3>
+                <ul className="space-y-1 text-sm text-[#E2E8F0]">
                   {feature.items.map((item, i) => (
                     <li key={i} className="flex items-center">
                       <span className="w-1.5 h-1.5 bg-[#3B82F6] rounded-full mr-2"></span>
@@ -82,10 +82,10 @@ const Cloud: React.FC = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 md:py-16 bg-gray-50">
+      <section className="py-12 md:py-16 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1f2937] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
               What Our{' '}
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
                 Clients Say
@@ -105,8 +105,8 @@ const Cloud: React.FC = () => {
                     {testimonial.name.split(' ').map(n => n[0]).join('')}
                   </div>
                   <div className="ml-3">
-                    <h4 className="font-semibold text-[#1f2937] text-sm">{testimonial.name}</h4>
-                    <p className="text-xs text-[#6b7280]">{testimonial.role}</p>
+                    <h4 className="font-semibold text-[#F1F5F9] text-sm">{testimonial.name}</h4>
+                    <p className="text-xs text-[#E2E8F0]">{testimonial.role}</p>
                   </div>
                 </div>
                 <div className="flex mb-3">
@@ -116,7 +116,7 @@ const Cloud: React.FC = () => {
                     </svg>
                   ))}
                 </div>
-                <p className="text-sm text-[#6b7280] leading-relaxed">"{testimonial.quote}"</p>
+                <p className="text-sm text-[#E2E8F0] leading-relaxed">"{testimonial.quote}"</p>
               </div>
             ))}
           </div>
@@ -128,13 +128,13 @@ const Cloud: React.FC = () => {
         <div className="container mx-auto px-4">
           {/* CTA and Certificates */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1f2937] mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
               Scale your APIs with{' '}
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
                 confidence.
               </span>
             </h2>
-            <p className="text-lg text-[#6b7280] mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-[#E2E8F0] mb-8 max-w-2xl mx-auto">
               Start for free or book a demo with our team.
             </p>
             
@@ -238,7 +238,7 @@ const Cloud: React.FC = () => {
           {/* Code & Setup Section */}
           <div>
             <div className="text-center mb-8 md:mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1f2937] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
                 Secure Cloud{' '}
                 <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
                   Implementation
@@ -255,11 +255,11 @@ const Cloud: React.FC = () => {
                     <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   </div>
-                  <span className="text-xs text-gray-400">api_setup.py</span>
+                  <span className="text-xs text-[#94A3B8]">api_setup.py</span>
                 </div>
                 
                 <div className="bg-[#0a0e1a] rounded-lg p-4 overflow-x-auto">
-                  <pre className="text-xs text-gray-300 leading-relaxed">
+                  <pre className="text-xs text-[#E2E8F0] leading-relaxed">
                     <code>
 {`from cloud_gateway import Gateway
 
@@ -292,8 +292,8 @@ print("API live in 30 seconds!")`}
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-[#1f2937] mb-2">Set up In Minutes</h3>
-                      <p className="text-[#6b7280] leading-relaxed">
+                      <h3 className="text-xl font-bold text-[#F1F5F9] mb-2">Set up In Minutes</h3>
+                      <p className="text-[#E2E8F0] leading-relaxed">
                         Import your API spec—or start from scratch in minutes.
                       </p>
                     </div>
@@ -308,8 +308,8 @@ print("API live in 30 seconds!")`}
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-[#1f2937] mb-2">Define your rules</h3>
-                      <p className="text-[#6b7280] leading-relaxed">
+                      <h3 className="text-xl font-bold text-[#F1F5F9] mb-2">Define your rules</h3>
+                      <p className="text-[#E2E8F0] leading-relaxed">
                         Add auth, rate limiting, logging, and more—code or no-code.
                       </p>
                     </div>
@@ -324,8 +324,8 @@ print("API live in 30 seconds!")`}
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-[#1f2937] mb-2">Deploy to the Edge</h3>
-                      <p className="text-[#6b7280] leading-relaxed">
+                      <h3 className="text-xl font-bold text-[#F1F5F9] mb-2">Deploy to the Edge</h3>
+                      <p className="text-[#E2E8F0] leading-relaxed">
                         Go live instantly, with global scale by default.
                       </p>
                     </div>
