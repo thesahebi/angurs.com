@@ -82,30 +82,30 @@ const CustomerRatingCard = ({
 
 export function CustomerRating() {
   return (
-    <section className="py-16 md:py-20 bg-white relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-[#121212] relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         {/* Header Stats - Zuplo Style */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1f2937] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
             Trusted by Fast-Moving Teams Worldwide
           </h2>
-          <p className="text-lg text-[#6b7280] max-w-3xl mx-auto mb-12">
+          <p className="text-lg text-[#E2E8F0] max-w-3xl mx-auto mb-12">
             From startups to enterprises, teams around the world rely on Angurs to simplify IT management and move faster
           </p>
           
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-2">50M+</div>
-              <div className="text-lg text-[#6b7280]">Monthly Requests</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-2">50M+</div>
+              <div className="text-lg text-[#E2E8F0]">Monthly Requests</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-2">100%</div>
-              <div className="text-lg text-[#6b7280]">Security Compliance</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-2">100%</div>
+              <div className="text-lg text-[#E2E8F0]">Security Compliance</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-2">2-3 Weeks</div>
-              <div className="text-lg text-[#6b7280]">Rollout</div>
+              <div className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-2">2-3 Weeks</div>
+              <div className="text-lg text-[#E2E8F0]">Rollout</div>
             </div>
           </div>
         </div>
@@ -113,18 +113,18 @@ export function CustomerRating() {
         {/* Customer Testimonials - Zuplo Style */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* Testimonial 1 */}
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
             <div className="flex items-start space-x-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-[#e95420] to-[#d1451a] rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-white font-bold text-xs">SJ</span>
               </div>
               <div className="flex-1">
-                <h4 className="font-semibold text-[#1f2937] text-sm">Sarah Johnson</h4>
-                <p className="text-xs text-[#6b7280]">CTO | TechCorp</p>
+                <h4 className="font-semibold text-[#F1F5F9] text-sm">Sarah Johnson</h4>
+                <p className="text-xs text-[#E2E8F0]">CTO | TechCorp</p>
               </div>
             </div>
             
-            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
               "Angurs gives us the flexibility to scale efficiently, ensures security and compliance, and reduces operational complexity."
             </blockquote>
             
@@ -134,29 +134,29 @@ export function CustomerRating() {
             
             <div className="space-y-2">
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Hardware nodes:</span>
-                <span className="font-bold text-[#1f2937]">90% fewer</span>
+                <span className="text-[#E2E8F0]">Hardware nodes:</span>
+                <span className="font-bold text-[#F1F5F9]">90% fewer</span>
               </div>
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Cost reduction:</span>
-                <span className="font-bold text-[#1f2937]">70%</span>
+                <span className="text-[#E2E8F0]">Cost reduction:</span>
+                <span className="font-bold text-[#F1F5F9]">70%</span>
               </div>
             </div>
           </div>
 
           {/* Testimonial 2 */}
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
             <div className="flex items-start space-x-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-white font-bold text-xs">MC</span>
               </div>
               <div className="flex-1">
-                <h4 className="font-semibold text-[#1f2937] text-sm">Michael Chen</h4>
-                <p className="text-xs text-[#6b7280]">IT Director | Global Ent.</p>
+                <h4 className="font-semibold text-[#F1F5F9] text-sm">Michael Chen</h4>
+                <p className="text-xs text-[#E2E8F0]">IT Director | Global Ent.</p>
               </div>
             </div>
             
-            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
               "The move to Angurs was easy, taking just over 2 months to switch mission critical systems, and we're saving over 70% on costs."
             </blockquote>
             
@@ -166,29 +166,29 @@ export function CustomerRating() {
             
             <div className="space-y-2">
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Time saved:</span>
-                <span className="font-bold text-[#1f2937]">2+ weeks</span>
+                <span className="text-[#E2E8F0]">Time saved:</span>
+                <span className="font-bold text-[#F1F5F9]">2+ weeks</span>
               </div>
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Deployments:</span>
-                <span className="font-bold text-[#1f2937]">Instant</span>
+                <span className="text-[#E2E8F0]">Deployments:</span>
+                <span className="font-bold text-[#F1F5F9]">Instant</span>
               </div>
             </div>
           </div>
 
           {/* Testimonial 3 */}
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
             <div className="flex items-start space-x-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-white font-bold text-xs">ER</span>
               </div>
               <div className="flex-1">
-                <h4 className="font-semibold text-[#1f2937] text-sm">Emily Rodriguez</h4>
-                <p className="text-xs text-[#6b7280]">Ops Manager | InnovateTech</p>
+                <h4 className="font-semibold text-[#F1F5F9] text-sm">Emily Rodriguez</h4>
+                <p className="text-xs text-[#E2E8F0]">Ops Manager | InnovateTech</p>
               </div>
             </div>
             
-            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
               "Angurs is the ultimate one-stop shop for all your IT needs. With automation and infrastructure management, it saved us weeks of engineering time."
             </blockquote>
             
@@ -198,29 +198,29 @@ export function CustomerRating() {
             
             <div className="space-y-2">
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Deployments:</span>
-                <span className="font-bold text-[#1f2937]">20 seconds</span>
+                <span className="text-[#E2E8F0]">Deployments:</span>
+                <span className="font-bold text-[#F1F5F9]">20 seconds</span>
               </div>
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Innovation:</span>
-                <span className="font-bold text-[#1f2937]">Boosted</span>
+                <span className="text-[#E2E8F0]">Innovation:</span>
+                <span className="font-bold text-[#F1F5F9]">Boosted</span>
               </div>
             </div>
           </div>
 
           {/* Testimonial 4 */}
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
             <div className="flex items-start space-x-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-[#8b5cf6] to-[#7c3aed] rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-white font-bold text-xs">DT</span>
               </div>
               <div className="flex-1">
-                <h4 className="font-semibold text-[#1f2937] text-sm">David Thompson</h4>
-                <p className="text-xs text-[#6b7280]">CEO | StartupHub</p>
+                <h4 className="font-semibold text-[#F1F5F9] text-sm">David Thompson</h4>
+                <p className="text-xs text-[#E2E8F0]">CEO | StartupHub</p>
               </div>
             </div>
             
-            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
               "Angurs' built-in policies, automation tools, and version control all make managing our backend infrastructure a breeze."
             </blockquote>
             
@@ -230,12 +230,12 @@ export function CustomerRating() {
             
             <div className="space-y-2">
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Deployment:</span>
-                <span className="font-bold text-[#1f2937]">80% faster</span>
+                <span className="text-[#E2E8F0]">Deployment:</span>
+                <span className="font-bold text-[#F1F5F9]">80% faster</span>
               </div>
               <div className="flex justify-between text-xs">
-                <span className="text-[#6b7280]">Downtime:</span>
-                <span className="font-bold text-[#1f2937]">Zero</span>
+                <span className="text-[#E2E8F0]">Downtime:</span>
+                <span className="font-bold text-[#F1F5F9]">Zero</span>
               </div>
             </div>
           </div>

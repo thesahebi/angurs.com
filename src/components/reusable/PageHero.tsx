@@ -153,7 +153,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20' : 'pt-40'} pb-16 overflow-hidden`}>
+    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20' : 'pt-24'} pb-16 overflow-hidden`}>
       {renderBackgroundPattern()}
       {renderGraph()}
       

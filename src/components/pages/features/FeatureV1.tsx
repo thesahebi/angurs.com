@@ -57,18 +57,15 @@ const FeatureV1 = () => {
               Let's discuss how our solutions can help you achieve your goals and scale your operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
-              <div className="relative inline-flex group w-full sm:w-1/2">
-                <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-white via-gray-100 to-white rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
-                <a
-                  href="tel:+16309234653"
-                  className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-semibold text-[#F1F5F9] bg-[#3B82F6] hover:bg-[#2563EB] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
-                >
-                  Get a Demo Consultant Call
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
+              <a
+                href="tel:+16309234653"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] bg-[#3B82F6] hover:bg-[#2563EB] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                Get a Demo Consultant Call
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:bg-[#1E293B] hover:text-[#F1F5F9] rounded-xl transition-all duration-200"
