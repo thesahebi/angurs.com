@@ -82,74 +82,160 @@ const CustomerRatingCard = ({
 
 export function CustomerRating() {
   return (
-    <section className="py-16 bg-white relative overflow-hidden">
-
+    <section className="py-16 md:py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-20">
-          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#e95420] bg-[#e95420]/10 rounded-full mb-6">
-            ⭐ Customer Stories
-          </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1f2937] mb-6">
-            What Our Customers{' '}
-            <span className="bg-gradient-to-r from-[#e95420] to-[#d1451a] bg-clip-text text-transparent">
-              Say
-            </span>
+        {/* Header Stats - Zuplo Style */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1f2937] mb-4">
+            Trusted by Fast-Moving Teams Worldwide
           </h2>
-          <p className="text-xl text-[#6b7280] max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied customers have to say about our services and the impact we've made on their businesses.
+          <p className="text-lg text-[#6b7280] max-w-3xl mx-auto mb-12">
+            From startups to enterprises, teams around the world rely on Angurs to simplify IT management and move faster
           </p>
+          
+          {/* Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-2">50M+</div>
+              <div className="text-lg text-[#6b7280]">Monthly Requests</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-2">100%</div>
+              <div className="text-lg text-[#6b7280]">Security Compliance</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-2">2-3 Weeks</div>
+              <div className="text-lg text-[#6b7280]">Rollout</div>
+            </div>
+          </div>
         </div>
 
-        <div className="relative">
-          <Marquee pauseOnHover className="[--duration:30s]">
-            {customerRatingData.map((data) => (
-              <CustomerRatingCard key={data.id} {...data} />
-            ))}
-          </Marquee>
-        </div>
-
-        {/* Enhanced Stats Section */}
-        <div className="mt-24">
-          <div className="bg-white rounded-3xl shadow-2xl p-12 border border-gray-100">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-[#1f2937] mb-4">Trusted by Businesses Worldwide</h3>
-              <p className="text-lg text-[#6b7280] max-w-2xl mx-auto">
-                Our commitment to excellence is reflected in the numbers and the satisfaction of our clients.
-              </p>
+        {/* Customer Testimonials - Zuplo Style */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {/* Testimonial 1 */}
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#e95420] to-[#d1451a] rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-xs">SJ</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-semibold text-[#1f2937] text-sm">Sarah Johnson</h4>
+                <p className="text-xs text-[#6b7280]">CTO | TechCorp</p>
+              </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center group">
-                <div className="w-20 h-20 bg-gradient-to-br from-[#e95420] to-[#d1451a] rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                  </svg>
-                </div>
-                <div className="text-4xl font-bold text-[#1f2937] mb-2">4.9/5</div>
-                <div className="text-lg font-semibold text-[#1f2937] mb-1">Average Rating</div>
-                <div className="text-sm text-[#6b7280]">Based on 500+ reviews</div>
+            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+              "Angurs gives us the flexibility to scale efficiently, ensures security and compliance, and reduces operational complexity."
+            </blockquote>
+            
+            <div className="mb-4">
+              <StarRating rating={5} />
+            </div>
+            
+            <div className="space-y-2">
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Hardware nodes:</span>
+                <span className="font-bold text-[#1f2937]">90% fewer</span>
               </div>
-              
-              <div className="text-center group">
-                <div className="w-20 h-20 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div className="text-4xl font-bold text-[#1f2937] mb-2">98%</div>
-                <div className="text-lg font-semibold text-[#1f2937] mb-1">Customer Satisfaction</div>
-                <div className="text-sm text-[#6b7280]">Happy clients worldwide</div>
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Cost reduction:</span>
+                <span className="font-bold text-[#1f2937]">70%</span>
               </div>
-              
-              <div className="text-center group">
-                <div className="w-20 h-20 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div className="text-4xl font-bold text-[#1f2937] mb-2">24/7</div>
-                <div className="text-lg font-semibold text-[#1f2937] mb-1">Support Available</div>
-                <div className="text-sm text-[#6b7280]">Round-the-clock assistance</div>
+            </div>
+          </div>
+
+          {/* Testimonial 2 */}
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-xs">MC</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-semibold text-[#1f2937] text-sm">Michael Chen</h4>
+                <p className="text-xs text-[#6b7280]">IT Director | Global Ent.</p>
+              </div>
+            </div>
+            
+            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+              "The move to Angurs was easy, taking just over 2 months to switch mission critical systems, and we're saving over 70% on costs."
+            </blockquote>
+            
+            <div className="mb-4">
+              <StarRating rating={5} />
+            </div>
+            
+            <div className="space-y-2">
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Time saved:</span>
+                <span className="font-bold text-[#1f2937]">2+ weeks</span>
+              </div>
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Deployments:</span>
+                <span className="font-bold text-[#1f2937]">Instant</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonial 3 */}
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-xs">ER</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-semibold text-[#1f2937] text-sm">Emily Rodriguez</h4>
+                <p className="text-xs text-[#6b7280]">Ops Manager | InnovateTech</p>
+              </div>
+            </div>
+            
+            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+              "Angurs is the ultimate one-stop shop for all your IT needs. With automation and infrastructure management, it saved us weeks of engineering time."
+            </blockquote>
+            
+            <div className="mb-4">
+              <StarRating rating={5} />
+            </div>
+            
+            <div className="space-y-2">
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Deployments:</span>
+                <span className="font-bold text-[#1f2937]">20 seconds</span>
+              </div>
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Innovation:</span>
+                <span className="font-bold text-[#1f2937]">Boosted</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonial 4 */}
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#8b5cf6] to-[#7c3aed] rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold text-xs">DT</span>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-semibold text-[#1f2937] text-sm">David Thompson</h4>
+                <p className="text-xs text-[#6b7280]">CEO | StartupHub</p>
+              </div>
+            </div>
+            
+            <blockquote className="text-[#6b7280] text-sm leading-relaxed mb-4">
+              "Angurs' built-in policies, automation tools, and version control all make managing our backend infrastructure a breeze."
+            </blockquote>
+            
+            <div className="mb-4">
+              <StarRating rating={5} />
+            </div>
+            
+            <div className="space-y-2">
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Deployment:</span>
+                <span className="font-bold text-[#1f2937]">80% faster</span>
+              </div>
+              <div className="flex justify-between text-xs">
+                <span className="text-[#6b7280]">Downtime:</span>
+                <span className="font-bold text-[#1f2937]">Zero</span>
               </div>
             </div>
           </div>
