@@ -3,7 +3,7 @@ import PageHero from "../../reusable/PageHero";
 
 const OurPeople: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#1E293B]">
+    <div className="min-h-screen bg-[#121212]">
       <PageHero
         title="Our People"
         subtitle="Meet the passionate experts"
@@ -21,7 +21,7 @@ const OurPeople: React.FC = () => {
       />
 
       {/* Team Values */}
-      <section id="culture" className="py-20 bg-[#1E293B]">
+      <section id="culture" className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">What Drives Us</h2>
@@ -75,7 +75,7 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Expertise */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Expertise</h2>
@@ -85,7 +85,7 @@ const OurPeople: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-[#121212] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
@@ -98,7 +98,7 @@ const OurPeople: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-[#121212] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -112,7 +112,7 @@ const OurPeople: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-[#121212] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -125,7 +125,7 @@ const OurPeople: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-[#121212] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
@@ -138,7 +138,7 @@ const OurPeople: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-[#121212] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
@@ -151,7 +151,7 @@ const OurPeople: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+            <div className="bg-[#121212] rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -168,7 +168,7 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Culture */}
-      <section className="py-24 bg-[#1E293B]">
+      <section className="py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Culture</h2>
@@ -269,7 +269,7 @@ const OurPeople: React.FC = () => {
           </p>
           <a
             href="/about/careers"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-green-600 bg-[#1E293B] rounded-full hover:bg-gray-50 transition-colors shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-green-600 bg-[#121212] rounded-full hover:bg-[#1E293B] transition-colors shadow-lg"
           >
             View Open Positions
           </a>

@@ -10,7 +10,7 @@ const Careers: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1E293B]">
+    <div className="min-h-screen bg-[#121212]">
       <PageHero
         title="Join Our Team"
         subtitle="Build the future of technology"
@@ -28,11 +28,11 @@ const Careers: React.FC = () => {
       />
 
       {/* Open Positions */}
-      <section id="open-positions" className="py-24 bg-gray-50">
+      <section id="open-positions" className="py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-4">Open Positions</h2>
-            <p className="text-xl text-[#6b7280] max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Open Positions</h2>
+            <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               Join our team and help shape the future of technology infrastructure
             </p>
           </div>
@@ -41,7 +41,7 @@ const Careers: React.FC = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* UI/UX Designer Job */}
               <div 
-                className="bg-[#1E293B] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
+                className="bg-[#121212] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
                 onClick={() => handleJobClick('/about/careers/ui-ux-designer')}
               >
               <div className="p-6">
@@ -81,7 +81,7 @@ const Careers: React.FC = () => {
 
               {/* AI Agent Developer Job */}
               <div 
-                className="bg-[#1E293B] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
+                className="bg-[#121212] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
                 onClick={() => handleJobClick('/about/careers/ai-agent-developer')}
               >
               <div className="p-6">
@@ -121,7 +121,7 @@ const Careers: React.FC = () => {
 
               {/* Backend Developer Job */}
               <div 
-                className="bg-[#1E293B] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
+                className="bg-[#121212] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer group"
                 onClick={() => handleJobClick('/about/careers/backend-developer')}
               >
               <div className="p-6">
@@ -164,7 +164,7 @@ const Careers: React.FC = () => {
       </section>
 
       {/* Why Work With Us */}
-      <section className="py-24 bg-[#1E293B]">
+      <section className="py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Angurs?</h2>
