@@ -3,7 +3,7 @@ import PageHero from "../../reusable/PageHero";
 
 const OurCompany: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#1E293B]">
+    <div className="min-h-screen bg-[#121212]">
       <PageHero
         title="About Angurs"
         subtitle="Passionate technology experts"
@@ -21,7 +21,7 @@ const OurCompany: React.FC = () => {
       />
 
       {/* Our Story Section */}
-      <section id="story" className="py-24 bg-[#1E293B]">
+      <section id="story" className="py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-8">Our Story</h2>

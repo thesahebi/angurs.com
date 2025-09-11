@@ -155,7 +155,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20' : isAboutUs ? 'pt-40' : 'pt-24'} pb-16 overflow-hidden`} style={{ scrollMarginTop: '4rem' }}>
+    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-24' : isAboutUs ? 'pt-44' : 'pt-28'} pb-16 overflow-hidden`} id="hero-section">
       {renderBackgroundPattern()}
       {renderGraph()}
       
