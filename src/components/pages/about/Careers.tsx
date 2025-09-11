@@ -52,7 +52,7 @@ const Careers: React.FC = () => {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-[#1f2937] mb-2 group-hover:text-[#3B82F6] transition-colors">UI/UX Designer</h3>
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#3B82F6] transition-colors">UI/UX Designer</h3>
                     <div className="flex flex-wrap gap-1">
                       <span className="px-2 py-1 bg-[#3B82F6]/10 text-[#3B82F6] rounded-full text-xs font-medium">
                         Full-time
@@ -92,7 +92,7 @@ const Careers: React.FC = () => {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-[#1f2937] mb-2 group-hover:text-[#3b82f6] transition-colors">AI Agent Developer</h3>
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#3b82f6] transition-colors">AI Agent Developer</h3>
                     <div className="flex flex-wrap gap-1">
                       <span className="px-2 py-1 bg-[#3b82f6]/10 text-[#3b82f6] rounded-full text-xs font-medium">
                         Full-time
@@ -132,7 +132,7 @@ const Careers: React.FC = () => {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-[#1f2937] mb-2 group-hover:text-[#10b981] transition-colors">Backend Developer</h3>
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#10b981] transition-colors">Backend Developer</h3>
                     <div className="flex flex-wrap gap-1">
                       <span className="px-2 py-1 bg-[#10b981]/10 text-[#10b981] rounded-full text-xs font-medium">
                         Full-time
