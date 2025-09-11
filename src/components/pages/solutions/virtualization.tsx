@@ -2,7 +2,7 @@ import React from "react";
 
 const Virtualization: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#121212]">
       {/* Header */}
       <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-gradient-to-br from-[#1f2937] via-gray-800 to-[#111827] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -17,7 +17,7 @@ const Virtualization: React.FC = () => {
               🖥️ VIRTUALIZATION
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F1F5F9] mb-6 leading-tight">
               Self-Serve{' '}
               <span className="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] bg-clip-text text-transparent">
                 Virtualization
@@ -31,13 +31,13 @@ const Virtualization: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#F1F5F9] bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Read the Docs
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#3b82f6] border-2 border-[#3b82f6] hover:bg-[#3b82f6] hover:text-white rounded-xl transition-all duration-200"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#3b82f6] border-2 border-[#3b82f6] hover:bg-[#3b82f6] hover:text-[#F1F5F9] rounded-xl transition-all duration-200"
               >
                 Start for Free
               </a>
@@ -47,13 +47,13 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Key Features - Zuplo Style */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-[#1E293B]">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {/* Feature 1 */}
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -66,7 +66,7 @@ const Virtualization: React.FC = () => {
             {/* Feature 2 */}
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -79,7 +79,7 @@ const Virtualization: React.FC = () => {
             {/* Feature 3 */}
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8b5cf6] to-[#7c3aed] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -111,7 +111,7 @@ const Virtualization: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-lg border border-gray-100">
               <div className="bg-[#f8fafc] rounded-lg p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
@@ -132,7 +132,7 @@ const Virtualization: React.FC = () => {
           {/* Robust VM Management */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="order-2 lg:order-1">
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="bg-[#1E293B] rounded-2xl p-8 shadow-lg border border-gray-100">
                 <div className="bg-[#f8fafc] rounded-lg p-6">
                   <div className="flex items-center mb-4">
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
@@ -142,9 +142,9 @@ const Virtualization: React.FC = () => {
                   </div>
                   <div className="space-y-2 text-sm">
                     <div className="text-[#3b82f6]">vm = create_vm(&#123;</div>
-                    <div className="ml-4 text-gray-600">name: "web-server",</div>
-                    <div className="ml-4 text-gray-600">cpu: 4,</div>
-                    <div className="ml-4 text-gray-600">memory: "8GB"</div>
+                    <div className="ml-4 text-[#E2E8F0]">name: "web-server",</div>
+                    <div className="ml-4 text-[#E2E8F0]">cpu: 4,</div>
+                    <div className="ml-4 text-[#E2E8F0]">memory: "8GB"</div>
                     <div className="text-[#3b82f6]">&#125;)</div>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ const Virtualization: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-lg border border-gray-100">
               <div className="bg-[#f8fafc] rounded-lg p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-semibold text-[#1f2937]">Resource Usage</h3>
@@ -224,11 +224,11 @@ const Virtualization: React.FC = () => {
           {/* Maximize Your Infrastructure's Efficiency */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="bg-[#1E293B] rounded-2xl p-8 shadow-lg border border-gray-100">
                 <div className="bg-[#f8fafc] rounded-lg p-6">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                       </svg>
                     </div>
@@ -257,7 +257,7 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Let's Get Started - Zuplo Style */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-[#1E293B]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1f2937] mb-6">
@@ -273,7 +273,7 @@ const Virtualization: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#F1F5F9] bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Check other Templates
               </a>
@@ -282,7 +282,7 @@ const Virtualization: React.FC = () => {
 
           {/* Template Card */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div className="bg-[#1E293B] rounded-2xl p-8 shadow-lg border border-gray-100">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-bold text-[#1f2937] mb-4">
@@ -335,13 +335,13 @@ const Virtualization: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#F1F5F9] bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Book a demo
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#3b82f6] border-2 border-[#3b82f6] hover:bg-[#3b82f6] hover:text-white rounded-xl transition-all duration-200"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#3b82f6] border-2 border-[#3b82f6] hover:bg-[#3b82f6] hover:text-[#F1F5F9] rounded-xl transition-all duration-200"
               >
                 Start for Free
               </a>

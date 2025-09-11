@@ -7,7 +7,7 @@ import { featureData } from "./feature-data";
 
 const FeatureV1 = () => {
   return (
-    <section className="py-16 bg-white relative overflow-hidden" id="features">
+    <section className="py-16 bg-[#121212] relative overflow-hidden" id="features">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
@@ -22,16 +22,16 @@ const FeatureV1 = () => {
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#e95420] bg-[#e95420]/10 rounded-full mb-6">
+          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#1E293B] rounded-full mb-6 border border-[#1E293B]">
             🚀 Our Solutions
           </div>
-          <h2 className="text-4xl font-bold text-[#1f2937] sm:text-5xl xl:text-6xl mb-6">
+          <h2 className="text-4xl font-bold text-[#F1F5F9] sm:text-5xl xl:text-6xl mb-6">
             Empowering Your Business with{' '}
-            <span className="bg-gradient-to-r from-[#e95420] to-[#d1451a] bg-clip-text text-transparent">
+            <span className="text-[#3B82F6]">
               Smart Technology
             </span>
           </h2>
-          <p className="text-xl text-[#6b7280] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#F1F5F9] max-w-3xl mx-auto leading-relaxed">
             Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
           </p>
         </div>
@@ -42,7 +42,7 @@ const FeatureV1 = () => {
               <div key={data.id} className="group">
                 <FeatureCardV1 
                   {...data} 
-                  cardClass="text-center rounded-3xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 bg-white border border-gray-100 group-hover:border-[#e95420]/20" 
+                  cardClass="text-center rounded-3xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 bg-gray-900 border border-gray-800 group-hover:border-[#e95420]/20" 
                 />
               </div>
             );
@@ -51,7 +51,7 @@ const FeatureV1 = () => {
 
         {/* Bottom CTA */}
         <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-[#1f2937] to-[#374151] rounded-3xl p-12 text-white">
+          <div className="bg-gradient-to-r from-[#1f2937] to-[#374151] rounded-3xl p-12 text-[#F1F5F9]">
             <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h3>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Let's discuss how our solutions can help you achieve your goals and scale your operations.
@@ -61,7 +61,7 @@ const FeatureV1 = () => {
                 <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-white via-gray-100 to-white rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
                 <a
                   href="tel:+16309234653"
-                  className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-semibold text-[#1f2937] bg-white hover:bg-gray-100 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-semibold text-[#F1F5F9] bg-[#3B82F6] hover:bg-[#2563EB] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   Get a Demo Consultant Call
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ const FeatureV1 = () => {
               </div>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-[#1f2937] rounded-xl transition-all duration-200"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:bg-[#1E293B] hover:text-[#F1F5F9] rounded-xl transition-all duration-200"
               >
                 Learn More
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

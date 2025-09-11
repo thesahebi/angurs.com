@@ -64,7 +64,7 @@ const TopHeaderV1 = () => {
   };
 
   return (
-    <header className="fixed mx-auto w-[100%] bg-white z-20 dark:bg-main-bg">
+    <header className="fixed mx-auto w-[100%] bg-[#121212] z-20 border-b border-[#1E293B]">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-12 lg:h-14">
           {/* Logo */}
@@ -82,7 +82,7 @@ const TopHeaderV1 = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="lg:hidden p-2 text-black dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
+            className="lg:hidden p-2 text-[#F1F5F9] rounded-md hover:bg-[#1E293B] focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -125,14 +125,14 @@ const TopHeaderV1 = () => {
                     to={item.path}
                     className={`text-sm transition-all duration-200 relative ${isActivePath(item.path)
                         ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-                        : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+                        : "text-[#F1F5F9] hover:text-[#e95420]"
                       }`}
                   >
                     {item.label}
                   </Link>
                 ) : (
                   <div
-                    className="text-sm transition-all duration-200 relative cursor-pointer text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+                    className="text-sm transition-all duration-200 relative cursor-pointer text-[#F1F5F9] hover:text-[#e95420]"
                   >
                     {item.label}
                   </div>
@@ -148,7 +148,7 @@ const TopHeaderV1 = () => {
                         <li key={child.label}>
                           <Link
                             to={child.path}
-                            className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                            className="block px-4 py-2 text-sm text-[#F1F5F9] hover:bg-[#1E293B]"
                           >
                             {child.label}
                           </Link>
@@ -169,7 +169,7 @@ const TopHeaderV1 = () => {
         className={`text-base transition-all duration-200 relative ${
           isActivePath(item.path)
             ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-            : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+            : "text-[#F1F5F9] hover:text-[#e95420]"
         }`}
       >
         {item.label}
@@ -187,7 +187,7 @@ const TopHeaderV1 = () => {
               <li key={child.label}>
                 <Link
                   to={child.path}
-                  className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm text-[#F1F5F9] hover:bg-[#1E293B]"
                 >
                   {child.label}
                 </Link>
@@ -208,7 +208,7 @@ const TopHeaderV1 = () => {
         className={`text-base transition-all duration-200 relative ${
           isActivePath(item.path)
             ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-            : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+            : "text-[#F1F5F9] hover:text-[#e95420]"
         }`}
       >
         {item.label}
@@ -222,7 +222,7 @@ const TopHeaderV1 = () => {
               <li key={child.label}>
                 <Link
                   to={child.path}
-                  className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm text-[#F1F5F9] hover:bg-[#1E293B]"
                 >
                   {child.label}
                 </Link>
@@ -243,7 +243,7 @@ const TopHeaderV1 = () => {
                 className={`text-base transition-all duration-200 relative ${
                   isActivePath(item.path)
                     ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-                    : "text-black dark:text-white hover:text-[#e95420] dark:hover:text-[#e95420]"
+                    : "text-[#F1F5F9] hover:text-[#e95420]"
                 }`}
               >
                 {item.label}
@@ -255,7 +255,7 @@ const TopHeaderV1 = () => {
           <div className="hidden lg:block">
             <a
               href="tel:+16309234653"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-black hover:text-white focus:text-black focus:bg-yellow-300 font-semibold text-white bg-[#e95420] rounded-full"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-[#1E293B] hover:text-[#F1F5F9] focus:text-[#F1F5F9] focus:bg-yellow-300 font-semibold text-[#F1F5F9] bg-[#e95420] rounded-full"
               role="button"
             >
               Let's Talk
@@ -265,7 +265,7 @@ const TopHeaderV1 = () => {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`lg:hidden absolute top-16 left-0 right-0 bg-ubun text-white dark:bg-main-bg shadow-lg transition-all duration-300 ease-in-out transform ${isMenuOpen
+          className={`lg:hidden absolute top-16 left-0 right-0 bg-[#121212] text-[#F1F5F9] shadow-lg transition-all duration-300 ease-in-out transform ${isMenuOpen
               ? "opacity-100 translate-y-0 h-lvh z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
             }`}
@@ -277,8 +277,8 @@ const TopHeaderV1 = () => {
                   <Link
                     to={item.path}
                     className={`block py-3 text-base px-4 rounded-lg transition-all duration-200 ${isActivePath(item.path)
-                        ? "text-orange-400 bg-white font-semibold"
-                        : "text-white hover:bg-white hover:text-orange-400"
+                        ? "text-[#3B82F6] bg-[#1E293B] font-semibold"
+                        : "text-[#F1F5F9] hover:bg-[#1E293B] hover:text-[#3B82F6]"
                       }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -288,7 +288,7 @@ const TopHeaderV1 = () => {
                   <div>
                     <button
                       onClick={() => toggleMobileMenuItem(item.label)}
-                      className="flex items-center justify-between w-full py-3 text-base px-4 rounded-lg transition-all duration-200 text-white hover:bg-white hover:text-orange-400"
+                      className="flex items-center justify-between w-full py-3 text-base px-4 rounded-lg transition-all duration-200 text-[#F1F5F9] hover:bg-[#1E293B] hover:text-[#3B82F6]"
                     >
                       <span>{item.label}</span>
                       <svg
@@ -313,7 +313,7 @@ const TopHeaderV1 = () => {
                           <Link
                             key={child.label}
                             to={child.path}
-                            className="block py-2 text-sm px-4 rounded-lg transition-all duration-200 text-white hover:bg-white hover:text-orange-400"
+                            className="block py-2 text-sm px-4 rounded-lg transition-all duration-200 text-[#F1F5F9] hover:bg-[#1E293B] hover:text-[#3B82F6]"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {child.label}
@@ -328,7 +328,7 @@ const TopHeaderV1 = () => {
             <div className="p-4">
               <a
                 href="#"
-                className="block w-full text-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-black hover:text-white focus:text-black focus:bg-yellow-300 font-semibold ubun-text bg-white rounded-full"
+                className="block w-full text-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-[#3B82F6] hover:text-[#F1F5F9] focus:text-[#F1F5F9] focus:bg-[#3B82F6] font-semibold ubun-text bg-[#1E293B] rounded-full border border-[#1E293B]"
                 role="button"
                 onClick={() => setIsMenuOpen(false)}
               >

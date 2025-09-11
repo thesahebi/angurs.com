@@ -3,6 +3,7 @@ import LandingPage from "./components/pages/LandingPage";
 // import AboutPage from "./components/pages/about/AboutPage";
 import "./App.css";
 import CookieConsent from "./components/pages/CookieConsent";
+import { useEffect } from "react";
 
 import NotFoundPage from "./components/pages/NotFoundPage";
 import LayoutPage from "./components/pages/LayoutPage";
@@ -33,6 +34,10 @@ import CookiePolicy from "./components/pages/legal/CookiePolicy";
 import ScrollToTopAl from "./lib/ScrollToTop";
 
 function App() {
+  useEffect(() => {
+    // Force dark mode by default
+    document.documentElement.classList.add('dark');
+  }, []);
   
   return (
     <>

@@ -19,11 +19,11 @@ const AIAgentDeveloper: React.FC = () => {
       />
 
       {/* Job Details */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {/* Job Header */}
-            <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden mb-12">
+            <div className="bg-[#1E293B] rounded-3xl shadow-lg border border-gray-100 overflow-hidden mb-12">
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                   <div className="flex-1">

@@ -153,28 +153,28 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <section className={`relative bg-gradient-to-br from-gray-50 to-white ${isHomepage ? 'pt-20' : 'pt-40'} pb-16 overflow-hidden`}>
+    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20' : 'pt-40'} pb-16 overflow-hidden`}>
       {renderBackgroundPattern()}
       {renderGraph()}
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <p className="inline-flex px-3 py-1.5 text-sm text-[#1f2937] border border-[#e5e7eb] rounded-full font-pj mb-4">
+          <p className="inline-flex px-3 py-1.5 text-sm text-[#F1F5F9] border border-[#1E293B] rounded-full font-pj mb-4 bg-[#1E293B]">
             {subtitle}
           </p>
           
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#1f2937] font-pj">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#F1F5F9] font-pj">
             {title}
           </h1>
           
-          <p className="text-base md:text-lg text-[#6b7280] mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-[#F1F5F9] mb-8 leading-relaxed max-w-3xl mx-auto">
             {description}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={primaryButtonLink}
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:opacity-90 transition-all duration-200 shadow-lg"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-[#F1F5F9] rounded-full hover:opacity-90 transition-all duration-200 shadow-lg"
               style={{ backgroundColor: accentColor }}
             >
               {primaryButtonText}
@@ -183,7 +183,7 @@ const PageHero: React.FC<PageHeroProps> = ({
             {secondaryButtonText && secondaryButtonLink && (
               <a
                 href={secondaryButtonLink}
-                className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold bg-white border-2 rounded-full hover:bg-gray-50 transition-colors"
+                className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold bg-[#1E293B] border-2 border-[#1E293B] rounded-full hover:bg-[#3B82F6] transition-colors text-[#F1F5F9]"
                 style={{ 
                   color: accentColor, 
                   borderColor: accentColor 

@@ -11,7 +11,7 @@ const UIUXDesigner: React.FC = () => {
         title="UI/UX Designer"
         subtitle="Design the Future of Technology"
         description="Join our team to create intuitive, user-friendly interfaces for our cloud infrastructure and automation solutions."
-        accentColor="#e95420"
+        accentColor="#3B82F6"
         backgroundPattern="dots"
         showGraph={true}
         graphType="pie"
@@ -19,16 +19,16 @@ const UIUXDesigner: React.FC = () => {
       />
 
       {/* Job Details */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {/* Job Header */}
-            <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden mb-12">
+            <div className="bg-[#1E293B] rounded-3xl shadow-lg border border-gray-100 overflow-hidden mb-12">
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                   <div className="flex-1">
                     <div className="flex items-center mb-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-[#e95420] to-[#d1451a] rounded-2xl flex items-center justify-center mr-4">
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#d1451a] rounded-2xl flex items-center justify-center mr-4">
                         <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
                         </svg>
@@ -36,7 +36,7 @@ const UIUXDesigner: React.FC = () => {
                       <div>
                         <h1 className="text-3xl font-bold text-[#1f2937] mb-2">UI/UX Designer</h1>
                         <div className="flex flex-wrap gap-2">
-                          <span className="px-3 py-1 bg-[#e95420]/10 text-[#e95420] rounded-full text-sm font-medium border border-[#e95420]/20">
+                          <span className="px-3 py-1 bg-[#3B82F6]/10 text-[#3B82F6] rounded-full text-sm font-medium border border-[#3B82F6]/20">
                             Full-time
                           </span>
                           <span className="px-3 py-1 bg-[#3b82f6]/10 text-[#3b82f6] rounded-full text-sm font-medium border border-[#3b82f6]/20">
@@ -56,7 +56,7 @@ const UIUXDesigner: React.FC = () => {
                   <div className="lg:ml-8 lg:flex-shrink-0">
                     <button 
                       onClick={() => setIsApplicationFormOpen(true)}
-                      className="w-full lg:w-auto px-8 py-3 bg-[#e95420] hover:bg-[#d1451a] text-white font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center"
+                      className="w-full lg:w-auto px-8 py-3 bg-[#3B82F6] hover:bg-[#d1451a] text-white font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center"
                     >
                       Apply Now
                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ const UIUXDesigner: React.FC = () => {
                   {/* Requirements */}
                   <div>
                     <h4 className="text-lg font-semibold text-[#1f2937] mb-4 flex items-center">
-                      <svg className="w-5 h-5 text-[#e95420] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#3B82F6] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       Requirements

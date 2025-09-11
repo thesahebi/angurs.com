@@ -20,7 +20,7 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
   isBoth
 }) => {
   return (
-    <section className="  dark:bg-black py-12" id="solutions">
+    <section className="bg-[#121212] py-12" id="solutions">
       {/* bg-blue-100 */}
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="lg:my-12 text-center">
@@ -29,14 +29,14 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
               <p className="text-base font-semibold tracking-wider ubun-text uppercase">
                 Future-ready solutions
               </p>
-              <h2 className="text-3xl font-bold text-[#1f2937] sm:text-4xl xl:text-5xl dark:text-white ">
+              <h2 className="text-3xl font-bold text-[#F1F5F9] sm:text-4xl xl:text-5xl">
                  Built to scale with your business.
               </h2>
             </div>
           )}
 
           {isContent && (
-            <p className="text-xl text-[#6b7280] py-3 lg:px-36 ">
+            <p className="text-xl text-[#F1F5F9] py-3 lg:px-36">
               We deliver seamless digital solutions that connect, protect, and scale with your business. From cloud and development to design and hosting, everything works together to help your brand grow confidently
             </p>
           )}
@@ -71,7 +71,7 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
 
           {/* {isLeft ? <AnimatedListDemo1 /> : ""} */}
           {isLeft ? (<div className="py-5">
-            <h3 className="text-2xl font-bold text-[#1f2937] mb-6 text-center dark:text-white">
+            <h3 className="text-2xl font-bold text-[#F1F5F9] mb-6 text-center">
               Language and tools we are using for design and development
             </h3>
             <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-3 gap-2 text-center">

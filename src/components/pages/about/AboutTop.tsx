@@ -15,19 +15,19 @@ function AboutTop() {
             <p className="text-3xl py-5">
             Focused on You
             </p>
-            <p className="text-gray-600">
+            <p className="text-[#E2E8F0]">
             Our goal is simple: we’re here to help you succeed. With a clear plan and a focus on results, we work to make your business thrive.
             </p>
             <p className="text-3xl py-5">
             Building Strong Relationships
             </p>
-            <p className="text-gray-600">
+            <p className="text-[#E2E8F0]">
             We believe in strong, lasting relationships. We invest in initiatives that help us connect with and support you every step of the way.
             </p>
             <p className="text-3xl py-5">
             Helping You Shape Your Future
             </p>
-            <p className="text-gray-600">
+            <p className="text-[#E2E8F0]">
             We guide you with education and clear insights, helping you create a path to success and growth when working with us.
             </p>
 
