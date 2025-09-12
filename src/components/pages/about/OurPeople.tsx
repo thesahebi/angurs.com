@@ -75,7 +75,7 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Expertise */}
-      <section className="py-24 bg-[#121212]">
+      <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Expertise</h2>
@@ -168,7 +168,7 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Culture */}
-      <section className="py-24 bg-[#121212]">
+      <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Culture</h2>
@@ -258,18 +258,18 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gradient-to-r from-green-600 to-emerald-600">
+      <section className="py-20 bg-gradient-to-r from-[#10B981] to-[#059669]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Join Our Team
           </h2>
-          <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Ready to work with passionate experts and make a real impact? 
             Explore career opportunities at Angurs and be part of our innovative team.
           </p>
           <a
             href="/about/careers"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-green-600 bg-[#121212] rounded-full hover:bg-[#1E293B] transition-colors shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#10B981] bg-[#121212] rounded-full hover:bg-[#1E293B] transition-colors shadow-lg"
           >
             View Open Positions
           </a>

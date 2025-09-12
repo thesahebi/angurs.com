@@ -28,7 +28,7 @@ const Careers: React.FC = () => {
       />
 
       {/* Open Positions */}
-      <section id="open-positions" className="py-24 bg-[#121212]">
+      <section id="open-positions" className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Open Positions</h2>
@@ -164,7 +164,7 @@ const Careers: React.FC = () => {
       </section>
 
       {/* Why Work With Us */}
-      <section className="py-24 bg-[#121212]">
+      <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Angurs?</h2>

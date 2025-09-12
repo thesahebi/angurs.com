@@ -21,7 +21,7 @@ const OurCompany: React.FC = () => {
       />
 
       {/* Our Story Section */}
-      <section id="story" className="py-24 bg-[#121212]">
+      <section id="story" className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-8">Our Story</h2>
@@ -40,7 +40,7 @@ const OurCompany: React.FC = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-24 bg-[#121212]">
+      <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Foundation</h2>
@@ -97,7 +97,7 @@ const OurCompany: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-[#121212]">
+      <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Angurs</h2>
@@ -143,12 +143,12 @@ const OurCompany: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-[#3B82F6] to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-[#3B82F6] to-[#10B981]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Transform Your Infrastructure?
           </h2>
-          <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Let's discuss how Angurs can help your organization achieve its technology goals 
             and drive digital transformation success.
           </p>

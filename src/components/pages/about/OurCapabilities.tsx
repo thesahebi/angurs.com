@@ -21,7 +21,7 @@ const OurCapabilities: React.FC = () => {
       />
 
       {/* Core Services */}
-      <section id="services" className="py-24 bg-[#121212]">
+      <section id="services" className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Core Services</h2>
@@ -138,18 +138,18 @@ const OurCapabilities: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-20 bg-gradient-to-r from-[#3B82F6] to-[#2563EB]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Leverage Our Expertise?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Let's discuss how our comprehensive capabilities can help transform your 
             technology infrastructure and drive business success.
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-[#121212] rounded-full hover:bg-[#1E293B] transition-colors shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#3B82F6] bg-[#121212] rounded-full hover:bg-[#1E293B] transition-colors shadow-lg"
           >
             Start Your Project
           </a>
