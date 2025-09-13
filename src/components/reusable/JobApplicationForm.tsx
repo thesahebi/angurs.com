@@ -113,20 +113,20 @@ Job Application Details:
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+      <div className="bg-[#1E293B] rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-white/10">
         {/* Header */}
-        <div className="sticky top-0 bg-white border-b border-gray-100 px-8 py-6 rounded-t-3xl">
+        <div className="sticky top-0 bg-[#1E293B] border-b border-white/10 px-8 py-6 rounded-t-3xl">
           <div className="flex items-center justify-between">
             <div>
-              <h2 className="text-2xl font-bold text-[#1f2937]">Apply for {jobTitle}</h2>
-              <p className="text-[#6b7280] mt-1">Join our team and make an impact</p>
+              <h2 className="text-2xl font-bold text-[#F1F5F9]">Apply for {jobTitle}</h2>
+              <p className="text-[#94A3B8] mt-1">Join our team and make an impact</p>
             </div>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="p-2 hover:bg-white/10 rounded-full transition-colors"
             >
-              <svg className="w-6 h-6 text-[#6b7280]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-[#94A3B8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -142,8 +142,8 @@ Job Application Details:
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1f2937] mb-2">Application Submitted!</h3>
-              <p className="text-[#6b7280]">Thank you for your interest. We'll review your application and get back to you soon.</p>
+              <h3 className="text-xl font-semibold text-[#F1F5F9] mb-2">Application Submitted!</h3>
+              <p className="text-[#94A3B8]">Thank you for your interest. We'll review your application and get back to you soon.</p>
             </div>
           ) : submitStatus === 'error' ? (
             <div className="text-center py-12">
@@ -152,61 +152,61 @@ Job Application Details:
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1f2937] mb-2">Submission Failed</h3>
-              <p className="text-[#6b7280]">Please try again or contact us directly.</p>
+              <h3 className="text-xl font-semibold text-[#F1F5F9] mb-2">Submission Failed</h3>
+              <p className="text-[#94A3B8]">Please try again or contact us directly.</p>
             </div>
           ) : (
             <>
               {/* Personal Information */}
               <div className="mb-8">
-                <h3 className="text-lg font-semibold text-[#1f2937] mb-4">Personal Information</h3>
+                <h3 className="text-lg font-semibold text-[#F1F5F9] mb-4">Personal Information</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">First Name *</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">First Name *</label>
                     <input
                       type="text"
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="Enter your first name"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Last Name *</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Last Name *</label>
                     <input
                       type="text"
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="Enter your last name"
                     />
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4 mt-4">
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Email Address *</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Email Address *</label>
                     <input
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Phone Number</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Phone Number</label>
                     <input
                       type="tel"
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
@@ -215,39 +215,39 @@ Job Application Details:
 
               {/* Professional Information */}
               <div className="mb-8">
-                <h3 className="text-lg font-semibold text-[#1f2937] mb-4">Professional Information</h3>
+                <h3 className="text-lg font-semibold text-[#F1F5F9] mb-4">Professional Information</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">LinkedIn Profile</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">LinkedIn Profile</label>
                     <input
                       type="url"
                       name="linkedin"
                       value={formData.linkedin}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="https://linkedin.com/in/yourprofile"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Portfolio/Website</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Portfolio/Website</label>
                     <input
                       type="url"
                       name="portfolio"
                       value={formData.portfolio}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="https://yourportfolio.com"
                     />
                   </div>
                 </div>
                 <div className="mt-4">
-                  <label className="block text-sm font-medium text-[#1f2937] mb-2">Years of Experience *</label>
+                  <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Years of Experience *</label>
                   <select
                     name="experience"
                     value={formData.experience}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                    className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                   >
                     <option value="">Select experience level</option>
                     <option value="0-1">0-1 years</option>
@@ -261,8 +261,8 @@ Job Application Details:
 
               {/* Resume Upload */}
               <div className="mb-8">
-                <h3 className="text-lg font-semibold text-[#1f2937] mb-4">Resume</h3>
-                <div className="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-[#e95420] transition-colors">
+                <h3 className="text-lg font-semibold text-[#F1F5F9] mb-4">Resume</h3>
+                <div className="border-2 border-dashed border-white/20 rounded-xl p-6 text-center hover:border-[#3B82F6] transition-colors bg-[#121212]">
                   <input
                     type="file"
                     name="resume"
@@ -272,11 +272,11 @@ Job Application Details:
                     id="resume-upload"
                   />
                   <label htmlFor="resume-upload" className="cursor-pointer">
-                    <svg className="w-12 h-12 text-[#6b7280] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-12 h-12 text-[#94A3B8] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                     </svg>
-                    <p className="text-[#1f2937] font-medium mb-1">Upload your resume</p>
-                    <p className="text-[#6b7280] text-sm">PDF, DOC, or DOCX (Max 10MB)</p>
+                    <p className="text-[#F1F5F9] font-medium mb-1">Upload your resume</p>
+                    <p className="text-[#94A3B8] text-sm">PDF, DOC, or DOCX (Max 10MB)</p>
                     {formData.resume && (
                       <p className="text-[#10b981] text-sm mt-2">✓ {formData.resume.name}</p>
                     )}
@@ -286,28 +286,28 @@ Job Application Details:
 
               {/* Cover Letter */}
               <div className="mb-8">
-                <h3 className="text-lg font-semibold text-[#1f2937] mb-4">Cover Letter</h3>
+                <h3 className="text-lg font-semibold text-[#F1F5F9] mb-4">Cover Letter</h3>
                 <textarea
                   name="coverLetter"
                   value={formData.coverLetter}
                   onChange={handleInputChange}
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors resize-none"
                   placeholder="Tell us why you're interested in this position and what makes you a great fit..."
                 />
               </div>
 
               {/* Additional Information */}
               <div className="mb-8">
-                <h3 className="text-lg font-semibold text-[#1f2937] mb-4">Additional Information</h3>
+                <h3 className="text-lg font-semibold text-[#F1F5F9] mb-4">Additional Information</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Availability</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Availability</label>
                     <select
                       name="availability"
                       value={formData.availability}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                     >
                       <option value="">Select availability</option>
                       <option value="immediate">Immediate</option>
@@ -317,25 +317,25 @@ Job Application Details:
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Expected Salary</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Expected Salary</label>
                     <input
                       type="text"
                       name="salary"
                       value={formData.salary}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="e.g., $80,000 - $100,000"
                     />
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4 mt-4">
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Willing to Relocate?</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Willing to Relocate?</label>
                     <select
                       name="relocate"
                       value={formData.relocate}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                     >
                       <option value="">Select option</option>
                       <option value="yes">Yes</option>
@@ -344,13 +344,13 @@ Job Application Details:
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[#1f2937] mb-2">Notice Period</label>
+                    <label className="block text-sm font-medium text-[#E2E8F0] mb-2">Notice Period</label>
                     <input
                       type="text"
                       name="noticePeriod"
                       value={formData.noticePeriod}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e95420] focus:border-[#e95420] transition-colors"
+                      className="w-full px-4 py-3 bg-[#121212] border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
                       placeholder="e.g., 2 weeks, 1 month"
                     />
                   </div>
@@ -362,14 +362,14 @@ Job Application Details:
                 <button
                   type="button"
                   onClick={onClose}
-                  className="px-6 py-3 border border-gray-200 text-[#6b7280] hover:text-[#1f2937] hover:border-gray-300 rounded-xl transition-colors"
+                  className="px-6 py-3 border border-white/20 text-[#94A3B8] hover:text-[#F1F5F9] hover:border-white/30 rounded-xl transition-colors"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-8 py-3 bg-[#e95420] hover:bg-[#d1451a] text-white font-semibold rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+                  className="px-8 py-3 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-semibold rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
                 >
                   {isSubmitting ? (
                     <>
