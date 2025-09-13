@@ -13,7 +13,7 @@ const BlogCategoryFilter: React.FC<BlogCategoryFilterProps> = ({
 }) => {
   return (
     <div className="mb-10 md:mb-16">
-      <h3 className="text-2xl font-bold text-[#1f2937] mb-6 text-center">
+      <h3 className="text-2xl font-bold text-[#F1F5F9] mb-6 text-center">
         Blog Categories
       </h3>
       <div className="flex flex-wrap justify-center gap-3">
@@ -21,8 +21,8 @@ const BlogCategoryFilter: React.FC<BlogCategoryFilterProps> = ({
           onClick={() => onCategoryChange('All')}
           className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${
             selectedCategory === 'All'
-              ? 'bg-[#e95420] text-white shadow-lg'
-              : 'bg-white text-[#6b7280] border border-gray-200 hover:border-[#e95420] hover:text-[#e95420]'
+              ? 'bg-[#3B82F6] text-white shadow-lg'
+              : 'bg-[#1E293B] text-[#E2E8F0] border border-[#1E293B] hover:border-[#3B82F6] hover:text-[#3B82F6]'
           }`}
         >
           All
@@ -33,8 +33,8 @@ const BlogCategoryFilter: React.FC<BlogCategoryFilterProps> = ({
             onClick={() => onCategoryChange(category)}
             className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${
               selectedCategory === category
-                ? 'bg-[#e95420] text-white shadow-lg'
-                : 'bg-white text-[#6b7280] border border-gray-200 hover:border-[#e95420] hover:text-[#e95420]'
+                ? 'bg-[#3B82F6] text-white shadow-lg'
+                : 'bg-[#1E293B] text-[#E2E8F0] border border-[#1E293B] hover:border-[#3B82F6] hover:text-[#3B82F6]'
             }`}
           >
             {category}

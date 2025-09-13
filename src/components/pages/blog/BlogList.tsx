@@ -51,7 +51,7 @@ function BlogList({ slice, isSeeMore, path = "", displayClass = "", showCategori
         <div className="text-center mt-12">
           <Link
             to="/blogs"
-            className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-[#e95420] rounded-full hover:bg-orange-600 transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-[#3B82F6] rounded-full hover:bg-[#2563EB] transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             View All Articles
             <svg
