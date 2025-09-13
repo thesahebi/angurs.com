@@ -39,12 +39,8 @@ const ContactUs: React.FC = () => {
     setSubmitStatus('');
 
     try {
-      // For Azure Static Web Apps, use the Azure Function endpoint
-      const apiUrl = process.env.NODE_ENV === 'production' 
-        ? '/api/send-email'  // Azure Function endpoint
-        : 'http://localhost:3001/api/send-email'; // Local development
-
-      const response = await fetch(apiUrl, {
+      // Use Formspree for reliable email delivery
+      const response = await fetch('https://formspree.io/f/xgvlqqdv', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,13 +48,11 @@ const ContactUs: React.FC = () => {
         body: JSON.stringify(formData),
       });
 
-      const data: EmailResponse = await response.json();
-
       if (response.ok) {
         setSubmitStatus('Message sent successfully!');
         setFormData({ email: '', subject: '', message: '' });
       } else {
-        setSubmitStatus(data.message || 'Failed to send message. Please try again.');
+        setSubmitStatus('Failed to send message. Please try again.');
       }
     } catch (error) {
       setSubmitStatus('An error occurred. Please try again later.');

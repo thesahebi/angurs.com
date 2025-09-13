@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "EMAIL_USER": "sahebiramazan@gmail.com",
+    "EMAIL_PASS": "umma ytaw hwni cjay"
+  }
+}
