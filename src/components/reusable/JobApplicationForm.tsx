@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 interface JobApplicationFormProps {
@@ -26,6 +27,7 @@ const JobApplicationForm: React.FC<JobApplicationFormProps> = ({ isOpen, onClose
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [isDragOver, setIsDragOver] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -37,10 +39,52 @@ const JobApplicationForm: React.FC<JobApplicationFormProps> = ({ isOpen, onClose
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null;
+    processFile(file);
+  };
+
+  const processFile = (file: File | null) => {
+    if (file) {
+      // Check file size (10MB limit)
+      const maxSize = 10 * 1024 * 1024; // 10MB in bytes
+      if (file.size > maxSize) {
+        alert('File size must be less than 10MB');
+        return;
+      }
+      
+      // Check file type
+      const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+      if (!allowedTypes.includes(file.type)) {
+        alert('Please upload a PDF, DOC, or DOCX file');
+        return;
+      }
+      
+      console.log('File selected:', file.name, 'Size:', file.size, 'Type:', file.type);
+    }
+    
     setFormData(prev => ({
       ...prev,
       resume: file
     }));
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(true);
+  };
+
+  const handleDragLeave = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(false);
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragOver(false);
+    
+    const files = e.dataTransfer.files;
+    if (files.length > 0) {
+      processFile(files[0]);
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -262,7 +306,17 @@ Job Application Details:
               {/* Resume Upload */}
               <div className="mb-8">
                 <h3 className="text-lg font-semibold text-[#F1F5F9] mb-4">Resume</h3>
-                <div className="border-2 border-dashed border-white/20 rounded-xl p-6 text-center hover:border-[#3B82F6] transition-colors bg-[#121212]">
+                <div 
+                  className={`border-2 border-dashed rounded-xl p-6 text-center transition-colors bg-[#121212] cursor-pointer ${
+                    isDragOver 
+                      ? 'border-[#3B82F6] bg-[#3B82F6]/10' 
+                      : 'border-white/20 hover:border-[#3B82F6]'
+                  }`}
+                  onClick={() => document.getElementById('resume-upload')?.click()}
+                  onDragOver={handleDragOver}
+                  onDragLeave={handleDragLeave}
+                  onDrop={handleDrop}
+                >
                   <input
                     type="file"
                     name="resume"
@@ -271,16 +325,25 @@ Job Application Details:
                     className="hidden"
                     id="resume-upload"
                   />
-                  <label htmlFor="resume-upload" className="cursor-pointer">
+                  <div>
                     <svg className="w-12 h-12 text-[#94A3B8] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                     </svg>
-                    <p className="text-[#F1F5F9] font-medium mb-1">Upload your resume</p>
-                    <p className="text-[#94A3B8] text-sm">PDF, DOC, or DOCX (Max 10MB)</p>
-                    {formData.resume && (
-                      <p className="text-[#10b981] text-sm mt-2">✓ {formData.resume.name}</p>
+                    {formData.resume ? (
+                      <div>
+                        <p className="text-[#10b981] font-medium mb-1">✓ {formData.resume.name}</p>
+                        <p className="text-[#94A3B8] text-sm">Click to change file</p>
+                        <p className="text-[#94A3B8] text-xs mt-1">Size: {(formData.resume.size / 1024 / 1024).toFixed(2)} MB</p>
+                      </div>
+                    ) : (
+                      <div>
+                        <p className="text-[#F1F5F9] font-medium mb-1">
+                          {isDragOver ? 'Drop your resume here' : 'Click to upload or drag & drop your resume'}
+                        </p>
+                        <p className="text-[#94A3B8] text-sm">PDF, DOC, or DOCX (Max 10MB)</p>
+                      </div>
                     )}
-                  </label>
+                  </div>
                 </div>
               </div>
 
