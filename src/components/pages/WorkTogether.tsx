@@ -85,7 +85,7 @@ function WorkTogether() {
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#1E293B] border border-[#1E293B] rounded-full mb-8">
+          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#1E293B] border border-[#1E293B] rounded-full mb-8 md:mb-12">
             🤝 Partnership
           </div>
           <p 

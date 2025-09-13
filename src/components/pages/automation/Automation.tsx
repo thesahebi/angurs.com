@@ -20,9 +20,9 @@ const Automation: React.FC = () => {
       />
 
       {/* Why Automation Matters */}
-      <section className="py-24 bg-[#1E293B]">
+      <section className="py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Automation Matters</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               In today's fast-paced digital world, automation isn't just an option—it's a necessity for competitive advantage
@@ -74,9 +74,9 @@ const Automation: React.FC = () => {
       </section>
 
       {/* Automation Solutions */}
-      <section id="solutions" className="py-20 bg-gray-50">
+      <section id="solutions" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Automation Solutions</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               Comprehensive automation services designed to streamline your operations and accelerate growth
@@ -347,9 +347,9 @@ const Automation: React.FC = () => {
       </section>
 
       {/* Technology Stack */}
-      <section className="py-24 bg-[#1E293B]">
+      <section className="py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Automation Technologies</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               We work with industry-leading automation tools and platforms to deliver robust solutions
@@ -417,12 +417,12 @@ const Automation: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gradient-to-r from-green-600 to-emerald-600">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-green-600 to-emerald-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Automate Your Operations?
           </h2>
-          <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-green-100 mb-8 md:mb-12 max-w-3xl mx-auto">
             Let's discuss how automation can transform your business processes, 
             reduce costs, and accelerate your digital transformation journey.
           </p>

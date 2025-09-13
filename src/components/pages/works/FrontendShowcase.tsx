@@ -12,7 +12,7 @@ const FrontendShowcase: React.FC<FrontendShowcaseProps> = ({
   imgUrl = ""
 }) => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center p-12 shadow-ms bg-white dark:bg-black rounded-xl mb-12 border">
+    <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center p-12 shadow-ms bg-white dark:bg-black rounded-xl mb-10 md:mb-16 border">
       {/* Left Side Content */}
 
       <div className={`space-y-6 order-${orderContent} `}>

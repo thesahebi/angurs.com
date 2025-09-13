@@ -21,9 +21,9 @@ const OurPeople: React.FC = () => {
       />
 
       {/* Team Values */}
-      <section id="culture" className="py-20 bg-[#121212]">
+      <section id="culture" className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">What Drives Us</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               The values and principles that unite our team and guide our work
@@ -75,9 +75,9 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Expertise */}
-      <section className="py-20 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Expertise</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               A diverse team with deep expertise across multiple technology domains
@@ -168,9 +168,9 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Team Culture */}
-      <section className="py-20 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Culture</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               What makes working at Angurs special and how we foster growth and innovation
@@ -258,12 +258,12 @@ const OurPeople: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-[#10B981] to-[#059669]">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#10B981] to-[#059669]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Join Our Team
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 md:mb-12 max-w-3xl mx-auto">
             Ready to work with passionate experts and make a real impact? 
             Explore career opportunities at Angurs and be part of our innovative team.
           </p>

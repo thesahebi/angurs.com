@@ -92,7 +92,7 @@ const ContactUs: React.FC = () => {
       <section className="py-16 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-10 md:mb-16">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-[#3B82F6] to-orange-500 rounded-2xl mb-4">
                 <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z" />
@@ -159,7 +159,7 @@ const ContactUs: React.FC = () => {
         </div>
       </section>
 
-      <section id="contact-form" className="py-20 bg-[#121212]">
+      <section id="contact-form" className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -220,7 +220,7 @@ const ContactUs: React.FC = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 via-[#3B82F6]/5 to-[#3B82F6]/5 rounded-3xl blur-3xl"></div>
                 <div className="relative bg-[#1E293B]/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-[#1E293B]">
-                  <div className="mb-8">
+                  <div className="mb-8 md:mb-12">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-[#3B82F6] rounded-2xl mb-4">
                       <svg className="w-6 h-6 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />

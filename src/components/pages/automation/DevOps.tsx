@@ -20,9 +20,9 @@ const DevOps: React.FC = () => {
       />
 
       {/* DevOps Benefits */}
-      <section className="py-24 bg-[#1E293B]">
+      <section className="py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why DevOps Automation?</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               DevOps automation transforms how teams build, test, and deploy software, delivering measurable business value
@@ -74,9 +74,9 @@ const DevOps: React.FC = () => {
       </section>
 
       {/* DevOps Services */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">DevOps Services</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               End-to-end DevOps automation solutions to accelerate your software delivery
@@ -329,9 +329,9 @@ const DevOps: React.FC = () => {
       </section>
 
       {/* DevOps Process */}
-      <section className="py-24 bg-[#1E293B]">
+      <section className="py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our DevOps Process</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               A proven methodology to transform your development and operations workflow
@@ -375,12 +375,12 @@ const DevOps: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Transform Your DevOps?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-blue-100 mb-8 md:mb-12 max-w-3xl mx-auto">
             Let's accelerate your software delivery with comprehensive DevOps automation. 
             From CI/CD pipelines to infrastructure management, we'll streamline your entire workflow.
           </p>

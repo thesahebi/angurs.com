@@ -20,11 +20,11 @@ const UIUXDesigner: React.FC = () => {
       />
 
       {/* Job Details */}
-      <section className="py-20 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {/* Job Header */}
-            <div className="bg-[#121212] rounded-3xl shadow-lg border border-gray-100 overflow-hidden mb-12">
+            <div className="bg-[#121212] rounded-3xl shadow-lg border border-gray-100 overflow-hidden mb-10 md:mb-16">
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                   <div className="flex-1">

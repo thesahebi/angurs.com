@@ -155,7 +155,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-24' : isAboutUs ? 'pt-44' : 'pt-28'} pb-16 overflow-hidden`} id="hero-section">
+    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20 md:pt-24' : isAboutUs ? 'pt-32 md:pt-44' : 'pt-24 md:pt-28'} pb-12 md:pb-16 overflow-hidden`} id="hero-section">
       {renderBackgroundPattern()}
       {renderGraph()}
       
@@ -165,11 +165,11 @@ const PageHero: React.FC<PageHeroProps> = ({
             {subtitle}
           </p>
           
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#F1F5F9] font-pj">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-[#F1F5F9] font-pj">
             {title}
           </h1>
           
-          <p className="text-base md:text-lg text-[#F1F5F9] mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-[#F1F5F9] mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
             {description}
           </p>
           

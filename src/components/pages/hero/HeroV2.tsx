@@ -140,7 +140,7 @@ function HeroV2() {
               ✨ Trusted source of integration
             </p>
             <h1 ref={titleRef} className="mt-8 text-4xl font-bold leading-tight text-[#F1F5F9] sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
-              Building Smarter Solutions with{' '}
+              Building Smarter AI Solutions with{' '}
               <span className="text-[#3B82F6]">
                 Angurs
               </span>
@@ -149,7 +149,7 @@ function HeroV2() {
               Transform your business with cutting-edge cloud infrastructure, automation solutions, and scalable technology that grows with you.
             </p>
 
-            <div className="mt-12 flex justify-center">
+            <div className="mt-8 md:mt-12 flex justify-center">
               <div className="relative group">
                 <button
                   onMouseEnter={() => setIsDropdownOpen(true)}
@@ -209,7 +209,7 @@ function HeroV2() {
             </div>
 
             {/* Stats */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+            <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-3xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-[#F1F5F9]">500+</div>
                 <div className="text-sm text-[#F1F5F9] mt-1">Projects Completed</div>

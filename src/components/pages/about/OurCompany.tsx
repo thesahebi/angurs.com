@@ -21,11 +21,11 @@ const OurCompany: React.FC = () => {
       />
 
       {/* Our Story Section */}
-      <section id="story" className="py-20 bg-[#121212]">
+      <section id="story" className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-8">Our Story</h2>
-            <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-8 md:mb-12">Our Story</h2>
+            <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
               Founded with a vision to bridge the gap between complex technology and business success, 
               Angurs has grown from a small team of engineers to a trusted partner for organizations 
               seeking to modernize their infrastructure and embrace digital transformation.
@@ -40,9 +40,9 @@ const OurCompany: React.FC = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Foundation</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               The principles that guide everything we do
@@ -97,9 +97,9 @@ const OurCompany: React.FC = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Angurs</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               What sets us apart in the technology landscape
@@ -142,24 +142,6 @@ const OurCompany: React.FC = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-[#3B82F6] to-[#10B981]">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your Infrastructure?
-          </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Let's discuss how Angurs can help your organization achieve its technology goals 
-            and drive digital transformation success.
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#3B82F6] bg-[#121212] rounded-full hover:bg-[#1E293B] transition-colors shadow-lg"
-          >
-            Start Your Journey
-          </a>
-        </div>
-      </section>
     </div>
   );
 };

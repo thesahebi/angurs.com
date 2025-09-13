@@ -66,7 +66,7 @@ const TopHeaderV1 = () => {
   return (
     <header className="fixed mx-auto w-[100%] bg-[#121212] z-20 border-b border-[#1E293B]">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-12 lg:h-14">
+        <div className="flex items-center justify-between h-12 md:h-14">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
@@ -74,7 +74,7 @@ const TopHeaderV1 = () => {
               onClick={scrollToTheTopOfPage}
               className={`flex`}
             >
-              <img className="w-auto h-8 lg:h-10" src={logo1} alt="Logo" />
+              <img className="w-auto h-8 md:h-10" src={logo1} alt="Logo" />
             </Link>
           </div>
 
@@ -82,7 +82,7 @@ const TopHeaderV1 = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="lg:hidden p-2 text-[#F1F5F9] rounded-md hover:bg-[#1E293B] focus:outline-none"
+            className="md:hidden p-2 text-[#F1F5F9] rounded-md hover:bg-[#1E293B] focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -117,7 +117,7 @@ const TopHeaderV1 = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-8">
+          <nav className="hidden md:flex md:items-center md:justify-center md:space-x-6 lg:space-x-8">
             {navigationItems.map((item) => (
               <div key={item.label} className="relative group pb-2">
                 {item.path ? (
@@ -252,7 +252,7 @@ const TopHeaderV1 = () => {
           </nav> */}
 
           {/* Desktop CTA Button */}
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <a
               href="tel:+16309234653"
               className="inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-[#1E293B] hover:text-[#F1F5F9] focus:text-[#F1F5F9] focus:bg-yellow-300 font-semibold text-[#F1F5F9] bg-[#e95420] rounded-full"
@@ -265,7 +265,7 @@ const TopHeaderV1 = () => {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`lg:hidden absolute top-16 left-0 right-0 bg-[#121212] text-[#F1F5F9] shadow-lg transition-all duration-300 ease-in-out transform ${isMenuOpen
+          className={`md:hidden absolute top-12 left-0 right-0 bg-[#121212] text-[#F1F5F9] shadow-lg transition-all duration-300 ease-in-out transform ${isMenuOpen
               ? "opacity-100 translate-y-0 h-lvh z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
             }`}

@@ -20,9 +20,9 @@ const CaseStudies: React.FC = () => {
       />
 
       {/* Case Studies Grid */}
-      <section id="case-studies" className="py-24 bg-[#1E293B]">
+      <section id="case-studies" className="py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-4">Featured Case Studies</h2>
             <p className="text-xl text-[#6b7280] max-w-3xl mx-auto">
               Real-world examples of how we've delivered exceptional results for our clients
@@ -317,9 +317,9 @@ const CaseStudies: React.FC = () => {
       </section>
 
       {/* Results Summary */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-4">Proven Results</h2>
             <p className="text-xl text-[#6b7280] max-w-3xl mx-auto">
               Our track record speaks for itself - delivering measurable value across diverse industries
@@ -363,9 +363,9 @@ const CaseStudies: React.FC = () => {
       </section>
 
       {/* Industries Served */}
-      <section className="py-24 bg-[#1E293B]">
+      <section className="py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-4">Industries We Serve</h2>
             <p className="text-xl text-[#6b7280] max-w-3xl mx-auto">
               Our expertise spans across multiple industries, delivering tailored solutions for unique challenges
@@ -437,12 +437,12 @@ const CaseStudies: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gradient-to-r from-[#10b981] to-teal-600">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#10b981] to-teal-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Write Your Success Story?
           </h2>
-          <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-emerald-100 mb-8 md:mb-12 max-w-3xl mx-auto">
             Join the ranks of successful organizations that have transformed their technology 
             infrastructure with Angurs. Let's discuss how we can help you achieve similar results.
           </p>

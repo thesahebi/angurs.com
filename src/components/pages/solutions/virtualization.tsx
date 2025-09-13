@@ -24,7 +24,7 @@ const Virtualization: React.FC = () => {
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8 md:mb-12">
               Allow your teams to deploy, manage, and scale virtual infrastructure—all in one place. Angurs provides all the tools you need to build a VMware-like virtualization experience.
             </p>
             
@@ -47,7 +47,7 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Key Features - Zuplo Style */}
-      <section className="py-16 md:py-20 bg-[#1E293B]">
+      <section className="py-16 md:py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {/* Feature 1 */}
@@ -93,15 +93,15 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Feature Sections - Zuplo Style */}
-      <section className="py-16 md:py-20 bg-[#121212]">
+      <section className="py-16 md:py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           {/* Automatic, Beautiful Management */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-8 md:mb-12 md:mb-20">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
                 Automatic, Beautiful Management
               </h2>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8">
+              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
                 Built directly from infrastructure specifications, Angurs ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
               </p>
               <div className="flex items-center text-[#3b82f6] font-semibold">
@@ -130,7 +130,7 @@ const Virtualization: React.FC = () => {
           </div>
 
           {/* Robust VM Management */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-8 md:mb-12 md:mb-20">
             <div className="order-2 lg:order-1">
               <div className="bg-[#1E293B] rounded-2xl p-8 shadow-lg border border-gray-100">
                 <div className="bg-[#f8fafc] rounded-lg p-6">
@@ -154,7 +154,7 @@ const Virtualization: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
                 Robust VM Management
               </h2>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8">
+              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
                 Secure your infrastructure with Angurs' VM management. Authorized users can effortlessly view, create, and manage virtual machines right from the portal.
               </p>
               <div className="flex items-center text-[#3b82f6] font-semibold">
@@ -167,12 +167,12 @@ const Virtualization: React.FC = () => {
           </div>
 
           {/* Provide Usage Analytics */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-8 md:mb-12 md:mb-20">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
                 Provide Usage Analytics
               </h2>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8">
+              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
                 Allow teams to monitor their infrastructure usage in real-time, and debug any performance issues they encounter. Avoid support tickets about resource allocation errors.
               </p>
               <div className="flex items-center text-[#3b82f6] font-semibold">
@@ -242,7 +242,7 @@ const Virtualization: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
                 Maximize Your Infrastructure's Efficiency
               </h2>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8">
+              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
                 Ready to turn your infrastructure into a cost-effective powerhouse? Effortlessly create and manage diverse resource plans and limits, all while monitoring performance with comprehensive usage analytics.
               </p>
               <div className="flex items-center text-[#3b82f6] font-semibold">
@@ -257,20 +257,20 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Let's Get Started - Zuplo Style */}
-      <section className="py-16 md:py-20 bg-[#1E293B]">
+      <section className="py-16 md:py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
               Let's Get Started
             </h2>
-            <p className="text-lg text-[#E2E8F0] mb-8 max-w-3xl mx-auto">
+            <p className="text-lg text-[#E2E8F0] mb-8 md:mb-12 max-w-3xl mx-auto">
               Start quickly with templates built for the most essential use cases. They're ready to go and help you get set up fast—no extra configuration needed.
             </p>
-            <p className="text-base text-[#E2E8F0] mb-12 max-w-4xl mx-auto">
+            <p className="text-base text-[#E2E8F0] mb-10 md:mb-16 max-w-4xl mx-auto">
               You can deploy directly in the browser or run everything locally. Check out the code in our GitHub repository to explore, customize, and build on top of it.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 md:mb-16">
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#F1F5F9] bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -281,7 +281,7 @@ const Virtualization: React.FC = () => {
           </div>
 
           {/* Template Card */}
-          <div className="max-w-4xl mx-auto mb-16">
+          <div className="max-w-4xl mx-auto mb-8 md:mb-12 md:mb-20">
             <div className="bg-[#1E293B] rounded-2xl p-8 shadow-lg border border-gray-100">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
@@ -328,11 +328,11 @@ const Virtualization: React.FC = () => {
                 confidence.
               </span>
             </h2>
-            <p className="text-lg text-[#E2E8F0] mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-[#E2E8F0] mb-8 md:mb-12 max-w-2xl mx-auto">
               Start for free or book a demo with our team.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 md:mb-16">
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#F1F5F9] bg-[#3b82f6] hover:bg-[#2563eb] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -348,24 +348,60 @@ const Virtualization: React.FC = () => {
             </div>
 
             {/* Certificates */}
-            <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-[#E2E8F0]">
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full font-medium">SOC 2 TYPE 2</span>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#3B82F6] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">SOC 2 TYPE 2</h3>
+                <p className="text-xs text-[#94A3B8]">Security</p>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">High Performer Spring 2025</span>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#10B981] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">High Performer</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full font-medium">Momentum Leader Spring 2025</span>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#8B5CF6] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Momentum Leader</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full font-medium">Best Estimated ROI Spring 2025</span>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#F59E0B] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Best ROI</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full font-medium">Easiest To Use Spring 2025</span>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#EC4899] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Easiest To Use</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full font-medium">Fastest Implementation Spring 2025</span>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#EF4444] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Fastest Implementation</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
             </div>
           </div>

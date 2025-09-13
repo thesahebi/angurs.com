@@ -51,9 +51,9 @@ const PricingCard = () => {
  
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-24 dark:bg-black:">
+    <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 dark:bg-black:">
       {/* Cards View (Mobile) */}
-      <div className="grid  lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16 ">
+      <div className="grid  lg:grid-cols-3 md:grid-cols-2 gap-8 mb-8 md:mb-12 md:mb-20 ">
         {plans.map((plan, index) => (
           <div key={index} className={`${plan.bgColor} rounded-2xl shadow-xl p-8`}>
             <div className={`${plan.textColor}`}>
@@ -62,7 +62,7 @@ const PricingCard = () => {
               <div className="text-center mb-6">
                 <span className="text-4xl font-bold">{plan.price}</span>
               </div>
-              <ul className="space-y-4 mb-8 text-dark">
+              <ul className="space-y-4 mb-8 md:mb-12 text-dark">
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center">
                     <svg className="w-5 h-5 mr-2 ubun-text" fill="currentColor" viewBox="0 0 20 20">

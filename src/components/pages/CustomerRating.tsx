@@ -82,19 +82,19 @@ const CustomerRatingCard = ({
 
 export function CustomerRating() {
   return (
-    <section className="py-16 md:py-20 bg-[#121212] relative overflow-hidden">
+    <section className="py-16 md:py-16 md:py-24 bg-[#121212] relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         {/* Header Stats - Zuplo Style */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-12 md:mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
             Trusted by Fast-Moving Teams Worldwide
           </h2>
-          <p className="text-lg text-[#E2E8F0] max-w-3xl mx-auto mb-12">
+          <p className="text-lg text-[#E2E8F0] max-w-3xl mx-auto mb-10 md:mb-16">
             From startups to enterprises, teams around the world rely on Angurs to simplify IT management and move faster
           </p>
           
           {/* Stats Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-8 md:mb-12 md:mb-20">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-2">50M+</div>
               <div className="text-lg text-[#E2E8F0]">Monthly Requests</div>

@@ -24,7 +24,7 @@ const Cloud: React.FC = () => {
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8 md:mb-12">
               Scale infinitely, secure everything, and innovate faster with our comprehensive cloud migration and management services.
             </p>
             
@@ -46,7 +46,7 @@ const Cloud: React.FC = () => {
       {/* Key Features */}
       <section className="py-12 md:py-16 bg-[#1E293B]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-12">
+          <div className="text-center mb-8 md:mb-12 md:mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
               Why Choose Our{' '}
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
@@ -84,7 +84,7 @@ const Cloud: React.FC = () => {
       {/* Testimonials */}
       <section className="py-12 md:py-16 bg-[#121212]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-12">
+          <div className="text-center mb-8 md:mb-12 md:mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
               What Our{' '}
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
@@ -124,21 +124,21 @@ const Cloud: React.FC = () => {
       </section>
 
       {/* CTA, Certificates & Code Section */}
-      <section className="py-16 md:py-20 bg-[#1E293B]">
+      <section className="py-16 md:py-16 md:py-24 bg-[#1E293B]">
         <div className="container mx-auto px-4">
           {/* CTA and Certificates */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
               Scale your APIs with{' '}
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
                 confidence.
               </span>
             </h2>
-            <p className="text-lg text-[#E2E8F0] mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-[#E2E8F0] mb-8 md:mb-12 max-w-2xl mx-auto">
               Start for free or book a demo with our team.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 md:mb-16">
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#F1F5F9] bg-[#3B82F6] hover:bg-[#d1451a] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -154,90 +154,78 @@ const Cloud: React.FC = () => {
             </div>
 
             {/* Certificates */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
               {/* SOC 2 Certificate */}
-              <div className="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-green-800 mb-2">SOC 2 TYPE 2</h3>
-                  <p className="text-sm text-green-700">Security & Compliance</p>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#3B82F6] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
                 </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">SOC 2 TYPE 2</h3>
+                <p className="text-xs text-[#94A3B8]">Security</p>
               </div>
 
               {/* High Performer Certificate */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-blue-800 mb-2">High Performer</h3>
-                  <p className="text-sm text-blue-700">Spring 2025</p>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#10B981] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">High Performer</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
 
               {/* Momentum Leader Certificate */}
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-2 border-purple-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-purple-800 mb-2">Momentum Leader</h3>
-                  <p className="text-sm text-purple-700">Spring 2025</p>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#8B5CF6] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                  </svg>
                 </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Momentum Leader</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
 
               {/* Best ROI Certificate */}
-              <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-2 border-yellow-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-yellow-800 mb-2">Best Estimated ROI</h3>
-                  <p className="text-sm text-yellow-700">Spring 2025</p>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#F59E0B] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
                 </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Best ROI</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
 
               {/* Easiest To Use Certificate */}
-              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-indigo-800 mb-2">Easiest To Use</h3>
-                  <p className="text-sm text-indigo-700">Spring 2025</p>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#EC4899] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
                 </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Easiest To Use</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
 
               {/* Fastest Implementation Certificate */}
-              <div className="bg-gradient-to-br from-pink-50 to-pink-100 border-2 border-pink-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-pink-800 mb-2">Fastest Implementation</h3>
-                  <p className="text-sm text-pink-700">Spring 2025</p>
+              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+                <div className="w-12 h-12 bg-[#EF4444] rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
+                <h3 className="text-sm font-semibold text-[#F1F5F9] mb-1">Fastest Implementation</h3>
+                <p className="text-xs text-[#94A3B8]">Spring 2025</p>
               </div>
             </div>
           </div>
 
           {/* Code & Setup Section */}
           <div>
-            <div className="text-center mb-8 md:mb-12">
+            <div className="text-center mb-8 md:mb-12 md:mb-10 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">
                 Secure Cloud{' '}
                 <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">

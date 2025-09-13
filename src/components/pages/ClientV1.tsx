@@ -47,8 +47,8 @@ export function ClientV1() {
   return (
     <section className="py-16 bg-[#121212]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h3 className="text-lg font-medium text-[#E2E8F0] mb-8">Trusted by leading companies</h3>
+        <div className="text-center mb-10 md:mb-16">
+          <h3 className="text-lg font-medium text-[#E2E8F0] mb-8 md:mb-12">Trusted by leading companies</h3>
         </div>
         <div className="relative">
           <Marquee pauseOnHover className="[--duration:15s]">

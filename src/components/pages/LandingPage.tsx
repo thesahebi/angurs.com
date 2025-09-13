@@ -19,7 +19,7 @@ const LandingPage = () => {
       <VelocityScroll
         default_velocity={2} 
         text="Beautiful Web Design • Smart Software Development • Seamless Server Migration • Scalable Microservices • Cloud Solutions That Grow • "
-        className="text-white text-2xl md:text-3xl lg:text-4xl font-medium tracking-wide"
+        className="text-white text-lg md:text-2xl lg:text-3xl xl:text-4xl font-medium tracking-wide"
       />
 
       <FeatureV1 />

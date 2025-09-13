@@ -21,7 +21,7 @@ const FeatureV1 = () => {
       </div>
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#1E293B] rounded-full mb-6 border border-[#1E293B]">
             🚀 Our Solutions
           </div>
@@ -36,13 +36,13 @@ const FeatureV1 = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 md:gap-8">
           {featureData.map((data, index) => {
             return (
               <div key={data.id} className="group">
                 <FeatureCardV1 
                   {...data} 
-                  cardClass="text-center rounded-3xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 bg-gray-900 border border-gray-800 group-hover:border-[#e95420]/20" 
+                  cardClass="text-center rounded-3xl p-6 md:p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 bg-[#1E293B] border border-[#1E293B] group-hover:border-[#3B82F6]/30 group-hover:bg-[#1E293B]/80 backdrop-blur-sm" 
                 />
               </div>
             );
@@ -53,7 +53,7 @@ const FeatureV1 = () => {
         <div className="mt-20 text-center">
           <div className="bg-gradient-to-r from-[#1f2937] to-[#374151] rounded-3xl p-12 text-[#F1F5F9]">
             <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-300 mb-8 md:mb-12 max-w-2xl mx-auto">
               Let's discuss how our solutions can help you achieve your goals and scale your operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">

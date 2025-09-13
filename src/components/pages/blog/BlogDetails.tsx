@@ -6,7 +6,7 @@ function BlogDetails() {
   const article = articles.find((a) => a.id === Number(id)); // Find the article by `id`
 
   return (
-    <section className="dark:bg-black py-24">
+    <section className="dark:bg-black py-16 md:py-24">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {article ? (
           <div className="blog-card">

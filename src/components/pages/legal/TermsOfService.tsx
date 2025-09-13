@@ -20,12 +20,12 @@ const TermsOfService: React.FC = () => {
       />
 
       {/* Main Content */}
-      <section className="py-20 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             
             {/* Last Updated */}
-            <div className="bg-[#1E293B] rounded-2xl p-6 mb-12 border border-[#1E293B]">
+            <div className="bg-[#1E293B] rounded-2xl p-6 mb-10 md:mb-16 border border-[#1E293B]">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-[#3B82F6] rounded-xl flex items-center justify-center">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Introduction */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Agreement to Terms</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-[#E2E8F0] leading-relaxed mb-4">
@@ -53,7 +53,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Services Description */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Our Services</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="grid md:grid-cols-2 gap-8">
@@ -82,7 +82,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* User Responsibilities */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">User Responsibilities</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-[#121212] rounded-2xl p-6 border border-[#1E293B] shadow-sm">
@@ -144,7 +144,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Intellectual Property */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Intellectual Property</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="flex items-start space-x-4">
@@ -170,7 +170,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Limitation of Liability */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Limitation of Liability</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="flex items-start space-x-4">
@@ -193,7 +193,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Payment Terms */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Payment Terms</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-[#121212] rounded-2xl p-6 border border-[#1E293B] shadow-sm">
@@ -218,7 +218,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Termination */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Termination</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="grid md:grid-cols-2 gap-8">
@@ -249,7 +249,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Governing Law */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Governing Law</h2>
               <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B]">
                 <p className="text-[#E2E8F0] leading-relaxed">
@@ -259,7 +259,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Contact Information</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="text-center">
@@ -289,7 +289,7 @@ const TermsOfService: React.FC = () => {
             </div>
 
             {/* Changes to Terms */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Changes to Terms</h2>
               <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B]">
                 <p className="text-[#E2E8F0] leading-relaxed">

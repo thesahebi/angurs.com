@@ -18,13 +18,13 @@ const Networking: React.FC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             {/* Badge */}
-            <div className="inline-flex items-center px-6 py-3 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-8 backdrop-blur-sm">
+            <div className="inline-flex items-center px-6 py-3 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-8 md:mb-12 backdrop-blur-sm">
               <span className="w-2 h-2 bg-[#3B82F6] rounded-full mr-3 animate-pulse"></span>
               🌐 Enterprise Networking Solutions
             </div>
             
             {/* Main Title */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#F1F5F9] mb-8 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#F1F5F9] mb-8 md:mb-12 leading-tight">
               Smarter Networks,{' '}
               <span className="relative">
                 <span className="bg-gradient-to-r from-[#3B82F6] via-[#10B981] to-[#8B5CF6] bg-clip-text text-transparent">
@@ -35,13 +35,13 @@ const Networking: React.FC = () => {
             </h1>
             
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
+            <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
               From branch offices to entire campuses, Angurs designs and deploys networks that are fast, secure, 
               and built for growth. Connect your future today.
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8 md:mb-12 md:mb-20">
               <a
                 href="/contact"
                 className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#10B981] rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-[#3B82F6]/25 hover:scale-105"
@@ -81,9 +81,9 @@ const Networking: React.FC = () => {
       </section>
 
       {/* Network Architecture Diagram */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F1F5F9]">
               Enterprise Network{' '}
               <span className="text-[#3B82F6]">Architecture</span>
@@ -100,7 +100,7 @@ const Networking: React.FC = () => {
             {/* Network Diagram */}
             <div className="relative z-10">
               {/* Internet/Cloud Layer */}
-              <div className="text-center mb-12">
+              <div className="text-center mb-10 md:mb-16">
                 <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#3B82F6] to-[#2563EB] rounded-2xl text-white font-semibold">
                   <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -110,7 +110,7 @@ const Networking: React.FC = () => {
               </div>
 
               {/* Firewall Layer */}
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-8 md:mb-12">
                 <div className="bg-gradient-to-r from-[#EF4444] to-[#DC2626] rounded-2xl p-6 text-white">
                   <div className="flex items-center">
                     <svg className="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,7 +125,7 @@ const Networking: React.FC = () => {
               </div>
 
               {/* Core Network Layer */}
-              <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div className="grid md:grid-cols-3 gap-8 mb-8 md:mb-12">
                 {/* Domain Controller */}
                 <div className="bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl p-6 text-white">
                   <div className="text-center">
@@ -205,9 +205,9 @@ const Networking: React.FC = () => {
       </section>
 
       {/* Network Services */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#F1F5F9]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Core Network{' '}
             <span className="text-[#3B82F6]">Services</span>
           </h2>
@@ -285,9 +285,9 @@ const Networking: React.FC = () => {
       </section>
 
       {/* Solutions Section */}
-      <section id="solutions" className="py-20 relative">
+      <section id="solutions" className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#F1F5F9]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Our Networking{' '}
             <span className="text-[#3B82F6]">Solutions</span>
           </h2>
@@ -297,7 +297,7 @@ const Networking: React.FC = () => {
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-10 bg-[#1E293B] rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10">
-                <div className="flex items-center mb-8">
+                <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">🏢</span>
               </div>
@@ -316,7 +316,7 @@ const Networking: React.FC = () => {
                         <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                      </div>
+              </div>
                       <p className="text-[#E2E8F0] text-lg">{feature}</p>
               </div>
                   ))}
@@ -328,7 +328,7 @@ const Networking: React.FC = () => {
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-10 bg-[#1E293B] rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10">
-                <div className="flex items-center mb-8">
+                <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">🎓</span>
               </div>
@@ -359,9 +359,9 @@ const Networking: React.FC = () => {
       </section>
 
       {/* Technology Stack */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#F1F5F9]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Cutting-Edge{' '}
             <span className="text-[#3B82F6]">Technologies</span>
           </h2>
@@ -387,9 +387,9 @@ const Networking: React.FC = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#F1F5F9]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Benefits of Networking with{' '}
             <span className="text-[#3B82F6]">Angurs</span>
           </h2>
@@ -417,7 +417,7 @@ const Networking: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
           <div className="relative overflow-hidden rounded-3xl">
             <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#1E293B]"></div>

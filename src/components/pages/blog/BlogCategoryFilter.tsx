@@ -12,7 +12,7 @@ const BlogCategoryFilter: React.FC<BlogCategoryFilterProps> = ({
   onCategoryChange,
 }) => {
   return (
-    <div className="mb-12">
+    <div className="mb-10 md:mb-16">
       <h3 className="text-2xl font-bold text-[#1f2937] mb-6 text-center">
         Blog Categories
       </h3>

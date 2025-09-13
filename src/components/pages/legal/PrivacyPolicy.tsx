@@ -20,12 +20,12 @@ const PrivacyPolicy: React.FC = () => {
       />
 
       {/* Main Content */}
-      <section className="py-20 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             
             {/* Last Updated */}
-            <div className="bg-[#1E293B] rounded-2xl p-6 mb-12 border border-[#1E293B]">
+            <div className="bg-[#1E293B] rounded-2xl p-6 mb-10 md:mb-16 border border-[#1E293B]">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-[#3B82F6] rounded-xl flex items-center justify-center">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* Introduction */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Introduction</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-[#E2E8F0] leading-relaxed mb-4">
@@ -53,10 +53,10 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* Information We Collect */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Information We Collect</h2>
               
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="grid md:grid-cols-2 gap-8 mb-8 md:mb-12">
                 <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B]">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center">
@@ -96,7 +96,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* How We Use Information */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">How We Use Your Information</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -123,7 +123,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* Data Protection */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Data Protection & Security</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="flex items-start space-x-4">
@@ -149,7 +149,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* Your Rights */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Your Rights</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B] shadow-sm hover:shadow-md transition-shadow">
@@ -186,7 +186,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Contact Us</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="text-center">
@@ -216,7 +216,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* Changes to Policy */}
-            <div className="mb-12">
+            <div className="mb-10 md:mb-16">
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Changes to This Privacy Policy</h2>
               <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B]">
                 <p className="text-[#E2E8F0] leading-relaxed">

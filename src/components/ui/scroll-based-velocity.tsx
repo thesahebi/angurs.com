@@ -107,10 +107,21 @@ export function VelocityScroll({
   }
 
   return (
-    <section className="relative w-full bg-gradient-to-r from-[#e95420] to-orange-600 py-4">
-      <ParallaxText baseVelocity={default_velocity} className={className}>
-        {text}
-      </ParallaxText>
+    <section className="relative w-full bg-gradient-to-r from-[#3B82F6] via-[#10B981] to-[#8B5CF6] py-4 md:py-6 overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#3B82F6]/20 via-[#10B981]/20 to-[#8B5CF6]/20"></div>
+        <div className="absolute top-2 left-10 w-4 h-4 bg-white/30 rounded-full animate-pulse"></div>
+        <div className="absolute top-4 right-20 w-2 h-2 bg-white/40 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-3 left-1/3 w-3 h-3 bg-white/25 rounded-full animate-pulse delay-2000"></div>
+        <div className="absolute bottom-2 right-1/4 w-2 h-2 bg-white/35 rounded-full animate-pulse delay-500"></div>
+      </div>
+      
+      <div className="relative z-10">
+        <ParallaxText baseVelocity={default_velocity} className={className}>
+          {text}
+        </ParallaxText>
+      </div>
     </section>
   );
 }

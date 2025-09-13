@@ -18,13 +18,13 @@ const Backup: React.FC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             {/* Badge */}
-            <div className="inline-flex items-center px-6 py-3 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-8 backdrop-blur-sm">
+            <div className="inline-flex items-center px-6 py-3 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-8 md:mb-12 backdrop-blur-sm">
               <span className="w-2 h-2 bg-[#3B82F6] rounded-full mr-3 animate-pulse"></span>
               💾 Enterprise Backup Solutions
             </div>
             
             {/* Main Title */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#F1F5F9] mb-8 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#F1F5F9] mb-8 md:mb-12 leading-tight">
               Protect What{' '}
               <span className="relative">
                 <span className="bg-gradient-to-r from-[#3B82F6] via-[#60A5FA] to-[#2563EB] bg-clip-text text-transparent">
@@ -35,13 +35,13 @@ const Backup: React.FC = () => {
             </h1>
             
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
+            <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
               Your data is the lifeline of your business. Angurs delivers enterprise-grade backup and replication solutions, 
               on-premises and in the cloud, to keep you secure, compliant, and resilient.
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8 md:mb-12 md:mb-20">
               <a
                 href="/contact"
                 className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#2563EB] rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-[#3B82F6]/25 hover:scale-105"
@@ -81,9 +81,9 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Why Backup Matters */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F1F5F9]">
               Why Backup & Replication{' '}
               <span className="text-[#3B82F6]">Matters</span>
@@ -155,9 +155,9 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Solutions Section */}
-      <section id="solutions" className="py-20 relative">
+      <section id="solutions" className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#F1F5F9]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Our Backup & Replication{' '}
             <span className="text-[#3B82F6]">Solutions</span>
           </h2>
@@ -167,7 +167,7 @@ const Backup: React.FC = () => {
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-10 bg-[#1E293B] rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10">
-                <div className="flex items-center mb-8">
+                <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">💽</span>
               </div>
@@ -198,7 +198,7 @@ const Backup: React.FC = () => {
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-10 bg-[#1E293B] rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10">
-                <div className="flex items-center mb-8">
+                <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">☁️</span>
               </div>
@@ -229,9 +229,9 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#F1F5F9]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Benefits of Backup with{' '}
             <span className="text-[#3B82F6]">Angurs</span>
           </h2>
@@ -259,7 +259,7 @@ const Backup: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 relative">
+      <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
           <div className="relative overflow-hidden rounded-3xl">
             <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#1E293B]"></div>

@@ -13,7 +13,7 @@ const AboutPage = () => {
     <>
     <StatusCardV1/>
     <AboutTop />
-    {/* <FeatureV2 isContent={false} isTitle cardClass="border" titleClass="lg:pb-3 md:pb-10 mb-12"/> */}
+    {/* <FeatureV2 isContent={false} isTitle cardClass="border" titleClass="lg:pb-3 md:pb-10 mb-10 md:mb-16"/> */}
       <Teams />
     <FAQ/>
       
