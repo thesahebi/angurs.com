@@ -39,7 +39,12 @@ const ContactUs: React.FC = () => {
     setSubmitStatus('');
 
     try {
-      const response = await fetch('/api/send-email', {
+      // For Azure Static Web Apps, use the Azure Function endpoint
+      const apiUrl = process.env.NODE_ENV === 'production' 
+        ? '/api/send-email'  // Azure Function endpoint
+        : 'http://localhost:3001/api/send-email'; // Local development
+
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

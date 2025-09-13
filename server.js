@@ -21,6 +21,9 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL_USER || 'sahebiramazan@gmail.com',
     pass: process.env.EMAIL_PASS || 'your-app-password-here' // You'll need to set this
+  },
+  tls: {
+    rejectUnauthorized: false
   }
 });
 
@@ -28,9 +31,12 @@ const transporter = nodemailer.createTransport({
 app.post('/api/send-email', async (req, res) => {
   try {
     const { email, subject, message } = req.body;
+    
+    console.log('Received email request:', { email, subject, message: message?.substring(0, 50) + '...' });
 
     // Validate required fields
     if (!email || !subject || !message) {
+      console.log('Validation failed: missing required fields');
       return res.status(400).json({
         success: false,
         message: 'All fields are required'
@@ -63,10 +69,19 @@ app.post('/api/send-email', async (req, res) => {
 
   } catch (error) {
     console.error('Error sending email:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Failed to send message. Please try again.'
-    });
+    
+    // Check if it's an authentication error
+    if (error.code === 'EAUTH') {
+      res.status(500).json({
+        success: false,
+        message: 'Email authentication failed. Please check Gmail App Password configuration.'
+      });
+    } else {
+      res.status(500).json({
+        success: false,
+        message: 'Failed to send message. Please try again.'
+      });
+    }
   }
 });
 

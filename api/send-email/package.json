@@ -1,0 +1,9 @@
+{
+  "name": "send-email",
+  "version": "1.0.0",
+  "description": "Azure Function for sending contact form emails",
+  "main": "index.js",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}
