@@ -28,21 +28,24 @@ const FooterV1 = () => {
     setSubmitStatus('');
 
     try {
-      const response = await fetch('/api/newsletter-subscribe', {
+      // Use Formspree for newsletter subscription
+      const response = await fetch('https://formspree.io/f/xgvlqqdv', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ 
+          email,
+          subject: 'Newsletter Subscription',
+          message: `Newsletter subscription request from: ${email}`
+        }),
       });
-
-      const data = await response.json();
 
       if (response.ok) {
         setSubmitStatus('Successfully subscribed! Thank you.');
         setEmail('');
       } else {
-        setSubmitStatus(data.message || 'Failed to subscribe. Please try again.');
+        setSubmitStatus('Failed to subscribe. Please try again.');
       }
     } catch (error) {
       setSubmitStatus('An error occurred. Please try again later.');

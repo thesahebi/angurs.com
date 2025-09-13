@@ -48,35 +48,60 @@ const JobApplicationForm: React.FC<JobApplicationFormProps> = ({ isOpen, onClose
     setIsSubmitting(true);
     
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      console.log('Application submitted:', {
-        jobTitle,
-        jobId,
-        ...formData
+      // Use Formspree for job application submission
+      const response = await fetch('https://formspree.io/f/xgvlqqdv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          subject: `Job Application: ${jobTitle}`,
+          email: formData.email,
+          message: `
+Job Application Details:
+- Job Title: ${jobTitle}
+- Job ID: ${jobId}
+- Name: ${formData.firstName} ${formData.lastName}
+- Email: ${formData.email}
+- Phone: ${formData.phone}
+- LinkedIn: ${formData.linkedin}
+- Portfolio: ${formData.portfolio}
+- Experience: ${formData.experience}
+- Cover Letter: ${formData.coverLetter}
+- Availability: ${formData.availability}
+- Expected Salary: ${formData.salary}
+- Willing to Relocate: ${formData.relocate}
+- Notice Period: ${formData.noticePeriod}
+- Resume: ${formData.resume ? formData.resume.name : 'No file uploaded'}
+          `
+        }),
       });
-      
-      setSubmitStatus('success');
-      setTimeout(() => {
-        onClose();
-        setSubmitStatus('idle');
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          linkedin: '',
-          portfolio: '',
-          experience: '',
-          coverLetter: '',
-          resume: null,
-          availability: '',
-          salary: '',
-          relocate: '',
-          noticePeriod: ''
-        });
-      }, 2000);
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setTimeout(() => {
+          onClose();
+          setSubmitStatus('idle');
+          setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            linkedin: '',
+            portfolio: '',
+            experience: '',
+            coverLetter: '',
+            resume: null,
+            availability: '',
+            salary: '',
+            relocate: '',
+            noticePeriod: ''
+          });
+        }, 2000);
+      } else {
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus('idle'), 3000);
+      }
     } catch (error) {
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus('idle'), 3000);
