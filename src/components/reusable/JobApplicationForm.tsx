@@ -28,6 +28,7 @@ const JobApplicationForm: React.FC<JobApplicationFormProps> = ({ isOpen, onClose
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [isDragOver, setIsDragOver] = useState(false);
+  const [fileInputKey, setFileInputKey] = useState(0);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -38,7 +39,19 @@ const JobApplicationForm: React.FC<JobApplicationFormProps> = ({ isOpen, onClose
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log('File input changed:', e.target.files);
     const file = e.target.files?.[0] || null;
+    console.log('Selected file:', file);
+    
+    if (file) {
+      console.log('File details:', {
+        name: file.name,
+        size: file.size,
+        type: file.type,
+        lastModified: file.lastModified
+      });
+    }
+    
     processFile(file);
   };
 
@@ -307,43 +320,76 @@ Job Application Details:
               <div className="mb-8">
                 <h3 className="text-lg font-semibold text-[#F1F5F9] mb-4">Resume</h3>
                 <div 
-                  className={`border-2 border-dashed rounded-xl p-6 text-center transition-colors bg-[#121212] cursor-pointer ${
+                  className={`border-2 border-dashed rounded-xl p-6 text-center transition-colors bg-[#121212] ${
                     isDragOver 
                       ? 'border-[#3B82F6] bg-[#3B82F6]/10' 
                       : 'border-white/20 hover:border-[#3B82F6]'
                   }`}
-                  onClick={() => document.getElementById('resume-upload')?.click()}
                   onDragOver={handleDragOver}
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
                 >
                   <input
+                    key={fileInputKey}
                     type="file"
                     name="resume"
                     onChange={handleFileChange}
-                    accept=".pdf,.doc,.docx"
+                    accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                     className="hidden"
                     id="resume-upload"
                   />
-                  <div>
-                    <svg className="w-12 h-12 text-[#94A3B8] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                    </svg>
-                    {formData.resume ? (
-                      <div>
-                        <p className="text-[#10b981] font-medium mb-1">✓ {formData.resume.name}</p>
-                        <p className="text-[#94A3B8] text-sm">Click to change file</p>
-                        <p className="text-[#94A3B8] text-xs mt-1">Size: {(formData.resume.size / 1024 / 1024).toFixed(2)} MB</p>
-                      </div>
-                    ) : (
-                      <div>
-                        <p className="text-[#F1F5F9] font-medium mb-1">
-                          {isDragOver ? 'Drop your resume here' : 'Click to upload or drag & drop your resume'}
-                        </p>
-                        <p className="text-[#94A3B8] text-sm">PDF, DOC, or DOCX (Max 10MB)</p>
-                      </div>
-                    )}
-                  </div>
+                  
+                  <svg className="w-12 h-12 text-[#94A3B8] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                  </svg>
+                  
+                  {formData.resume ? (
+                    <div>
+                      <p className="text-[#10b981] font-medium mb-1">✓ {formData.resume.name}</p>
+                      <p className="text-[#94A3B8] text-xs mt-1">Size: {(formData.resume.size / 1024 / 1024).toFixed(2)} MB</p>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setFileInputKey(prev => prev + 1); // Reset the input
+                          setTimeout(() => {
+                            const input = document.getElementById('resume-upload') as HTMLInputElement;
+                            if (input) {
+                              input.click();
+                            }
+                          }, 100);
+                        }}
+                        className="mt-3 px-4 py-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white text-sm rounded-lg transition-colors"
+                      >
+                        Change File
+                      </button>
+                    </div>
+                  ) : (
+                    <div>
+                      <p className="text-[#F1F5F9] font-medium mb-1">
+                        {isDragOver ? 'Drop your resume here' : 'Upload your resume'}
+                      </p>
+                      <p className="text-[#94A3B8] text-sm mb-3">PDF, DOC, or DOCX (Max 10MB)</p>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setFileInputKey(prev => prev + 1); // Reset the input
+                          setTimeout(() => {
+                            const input = document.getElementById('resume-upload') as HTMLInputElement;
+                            if (input) {
+                              input.click();
+                            }
+                          }, 100);
+                        }}
+                        className="px-6 py-3 bg-[#3B82F6] hover:bg-[#2563EB] text-white font-medium rounded-lg transition-colors"
+                      >
+                        Choose File
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
 
