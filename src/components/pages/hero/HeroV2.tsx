@@ -154,7 +154,8 @@ function HeroV2() {
                 <button
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
-                  className="inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-lg sm:rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
+                  className="inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                  style={{ backgroundColor: '#ff6b35' }}
                 >
                   Solutions
                   <svg className={`w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -296,7 +296,8 @@ const TopHeaderV1 = () => {
           <div className="hidden md:block">
             <a
               href="tel:+16309234653"
-              className="group relative inline-flex items-center justify-center px-4 py-2 text-sm lg:text-base font-semibold text-[#F1F5F9] bg-gradient-to-r from-[#e95420] to-[#ff6b35] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#e95420]/50"
+              className="group relative inline-flex items-center justify-center px-4 py-2 text-sm lg:text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#e95420]/50"
+              style={{ backgroundColor: '#ff6b35' }}
               role="button"
             >
               <span className="relative z-10">Let's Talk</span>
@@ -373,7 +374,8 @@ const TopHeaderV1 = () => {
             <div className="p-4 mt-6">
               <a
                 href="tel:+16309234653"
-                className="group relative block w-full text-center px-6 py-3 text-base font-semibold text-[#F1F5F9] bg-gradient-to-r from-[#e95420] to-[#ff6b35] rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group relative block w-full text-center px-6 py-3 text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300"
+                style={{ backgroundColor: '#ff6b35' }}
                 role="button"
                 onClick={() => setIsMenuOpen(false)}
               >

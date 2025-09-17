@@ -17,18 +17,25 @@ const ResourcesBlog: React.FC = () => {
               Stay ahead with the latest insights, trends, and best practices in technology, 
               infrastructure, and digital transformation from our expert team.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
               <a
                 href="#latest-posts"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[#3B82F6] rounded-full hover:bg-[#2563EB] transition-colors shadow-lg"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                style={{ backgroundColor: '#ff6b35' }}
               >
                 Read Latest Posts
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
               <a
                 href="#categories"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#3B82F6] bg-[#121212] border-2 border-[#3B82F6] rounded-full hover:bg-[#1E293B] transition-colors"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 Browse Categories
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
             </div>
           </div>

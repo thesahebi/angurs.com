@@ -31,7 +31,8 @@ const Cloud: React.FC = () => {
             <div className="flex justify-center">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#F1F5F9] bg-[#3B82F6] hover:bg-[#d1451a] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                style={{ backgroundColor: '#ff6b35' }}
               >
                 Start Your Migration
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +65,7 @@ const Cloud: React.FC = () => {
               { icon: "📊", title: "24/7 Monitoring", items: ["Proactive detection", "Performance analytics", "Automated alerts"] },
               { icon: "👥", title: "Expert Support", items: ["Certified architects", "Account managers", "Training"] }
             ].map((feature, index) => (
-              <div key={index} className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+              <div key={index} className="bg-[#1E293B] rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
                 <div className="text-3xl mb-4">{feature.icon}</div>
                 <h3 className="text-lg font-bold text-[#F1F5F9] mb-3">{feature.title}</h3>
                 <ul className="space-y-1 text-sm text-[#E2E8F0]">
@@ -99,7 +100,7 @@ const Cloud: React.FC = () => {
               { name: "Maria Johnson", role: "IT Director, InnovateLabs", quote: "Zero downtime AWS migration with outstanding expertise and support." },
               { name: "David Rodriguez", role: "CEO, CloudFirst Solutions", quote: "Security-first Azure approach gave us complete confidence." }
             ].map((testimonial, index) => (
-              <div key={index} className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-gray-100">
+              <div key={index} className="bg-[#1E293B] rounded-xl p-4 border border-white/10">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gradient-to-br from-[#3B82F6] to-[#d1451a] rounded-full flex items-center justify-center text-[#F1F5F9] font-bold text-sm">
                     {testimonial.name.split(' ').map(n => n[0]).join('')}
@@ -138,25 +139,35 @@ const Cloud: React.FC = () => {
               Start for free or book a demo with our team.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 md:mb-16">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#F1F5F9] bg-[#3B82F6] hover:bg-[#d1451a] rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                style={{ backgroundColor: '#ff6b35' }}
               >
                 Book a demo
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#3B82F6] border-2 border-[#3B82F6] hover:bg-[#3B82F6] hover:text-[#F1F5F9] rounded-xl transition-all duration-200"
+                className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 Start for Free
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
             </div>
+
+            {/* Spacing between buttons and certificates */}
+            <div className="mb-8"></div>
 
             {/* Certificates */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
               {/* SOC 2 Certificate */}
-              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+              <div className="bg-[#1E293B] border border-white/10 rounded-xl p-3 text-center hover:border-white/20 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#3B82F6] rounded-lg flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -167,7 +178,7 @@ const Cloud: React.FC = () => {
               </div>
 
               {/* High Performer Certificate */}
-              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+              <div className="bg-[#1E293B] border border-white/10 rounded-xl p-3 text-center hover:border-white/20 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#10B981] rounded-lg flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -178,7 +189,7 @@ const Cloud: React.FC = () => {
               </div>
 
               {/* Momentum Leader Certificate */}
-              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+              <div className="bg-[#1E293B] border border-white/10 rounded-xl p-3 text-center hover:border-white/20 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#8B5CF6] rounded-lg flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
@@ -189,7 +200,7 @@ const Cloud: React.FC = () => {
               </div>
 
               {/* Best ROI Certificate */}
-              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+              <div className="bg-[#1E293B] border border-white/10 rounded-xl p-3 text-center hover:border-white/20 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#F59E0B] rounded-lg flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
@@ -200,7 +211,7 @@ const Cloud: React.FC = () => {
               </div>
 
               {/* Easiest To Use Certificate */}
-              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+              <div className="bg-[#1E293B] border border-white/10 rounded-xl p-3 text-center hover:border-white/20 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#EC4899] rounded-lg flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -211,7 +222,7 @@ const Cloud: React.FC = () => {
               </div>
 
               {/* Fastest Implementation Certificate */}
-              <div className="bg-[#1E293B] border border-[#1E293B] rounded-xl p-4 text-center hover:border-[#3B82F6]/30 transition-all duration-300">
+              <div className="bg-[#1E293B] border border-white/10 rounded-xl p-3 text-center hover:border-white/20 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#EF4444] rounded-lg flex items-center justify-center mx-auto mb-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -236,7 +247,7 @@ const Cloud: React.FC = () => {
 
             <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {/* Code Snippet */}
-              <div className="bg-[#0f172a] rounded-xl p-6 shadow-2xl border border-gray-700">
+              <div className="bg-[#0f172a] rounded-xl p-4 border border-white/10">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
@@ -272,7 +283,7 @@ print("API live in 30 seconds!")`}
 
               {/* Setup Steps */}
               <div className="space-y-6">
-                <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                <div className="bg-[#1E293B] rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#3B82F6] to-[#d1451a] rounded-xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -288,7 +299,7 @@ print("API live in 30 seconds!")`}
                   </div>
                 </div>
 
-                <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                <div className="bg-[#1E293B] rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -304,7 +315,7 @@ print("API live in 30 seconds!")`}
                   </div>
                 </div>
 
-                <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                <div className="bg-[#1E293B] rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

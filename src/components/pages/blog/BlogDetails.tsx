@@ -14,7 +14,8 @@ function BlogDetails() {
           <p className="text-[#E2E8F0] mb-8">The article you're looking for doesn't exist.</p>
           <Link
             to="/resources/blog"
-            className="inline-flex items-center px-6 py-3 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors"
+            className="inline-flex items-center px-6 py-3 text-white border border-white/20 rounded-lg transition-colors hover:bg-[#e95420]"
+            style={{ backgroundColor: '#ff6b35' }}
           >
             <FaArrowLeft className="mr-2" />
             Back to Blog
@@ -152,7 +153,8 @@ function BlogDetails() {
                 </div>
                 <Link
                   to="/resources/blog"
-                  className="inline-flex items-center px-6 py-3 bg-[#3B82F6] text-white rounded-lg hover:bg-[#2563EB] transition-colors"
+                  className="inline-flex items-center px-6 py-3 text-white border border-white/20 rounded-lg transition-colors hover:bg-[#e95420]"
+            style={{ backgroundColor: '#ff6b35' }}
                 >
                   <FaArrowLeft className="mr-2" />
                   Back to Blog

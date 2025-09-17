@@ -107,7 +107,7 @@ const ContactUs: React.FC = () => {
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Create Ticket Card */}
-              <div className="group relative bg-[#1E293B] rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#1E293B] hover:border-[#3B82F6]/20">
+              <div className="group relative bg-[#1E293B] rounded-3xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-[#3B82F6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative">
                   <div className="w-16 h-16 bg-[#3B82F6] rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -123,7 +123,8 @@ const ContactUs: React.FC = () => {
                   </p>
                   <button
                     onClick={handleCreateTicket}
-                    className="w-full py-3 px-5 bg-gradient-to-r from-[#3B82F6] to-orange-500 text-[#F1F5F9] rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 font-semibold text-base shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="w-full py-3 px-5 text-white border border-white/20 rounded-xl transition-all duration-300 font-semibold text-base hover:bg-[#e95420]"
+                    style={{ backgroundColor: '#ff6b35' }}
                   >
                     Create Ticket
                   </button>
@@ -131,7 +132,7 @@ const ContactUs: React.FC = () => {
               </div>
 
               {/* Check Ticket Status Card */}
-              <div className="group relative bg-[#1E293B] rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#1E293B] hover:border-[#3B82F6]/20">
+              <div className="group relative bg-[#1E293B] rounded-3xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-[#3B82F6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative">
                   <div className="w-16 h-16 bg-[#3B82F6] rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -218,7 +219,7 @@ const ContactUs: React.FC = () => {
               {/* Right Side - Send us a message */}
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 via-[#3B82F6]/5 to-[#3B82F6]/5 rounded-3xl blur-3xl"></div>
-                <div className="relative bg-[#1E293B]/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-[#1E293B]">
+                <div className="relative bg-[#1E293B]/80 backdrop-blur-sm rounded-3xl p-6 border border-white/10">
                   <div className="mb-8 md:mb-12">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-[#3B82F6] rounded-2xl mb-4">
                       <svg className="w-6 h-6 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -290,7 +291,8 @@ const ContactUs: React.FC = () => {
           </div>
           <button
             type="submit"
-                      className="w-full py-4 px-6 text-lg font-bold text-center text-[#F1F5F9] rounded-2xl bg-gradient-to-r from-[#3B82F6] to-orange-500 hover:from-orange-600 hover:to-orange-700 focus:ring-4 focus:outline-none focus:ring-[#3B82F6]/30 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                      className="w-full py-4 px-6 text-lg font-bold text-center text-white rounded-2xl border border-white/20 focus:ring-4 focus:outline-none focus:ring-[#e95420]/30 transition-all duration-300 hover:bg-[#e95420] disabled:opacity-50 disabled:cursor-not-allowed"
+                      style={{ backgroundColor: '#ff6b35' }}
             disabled={isSubmitting}
           >
                      {isSubmitting ? (

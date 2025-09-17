@@ -274,7 +274,8 @@ const FooterV1 = () => {
                     <button 
                       type="submit"
                       disabled={isSubmitting}
-                      className="px-6 py-3 bg-[#e95420] hover:bg-[#3B82F6] text-[#F1F5F9] font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="px-6 py-3 text-white border border-white/20 font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#e95420]"
+                      style={{ backgroundColor: '#ff6b35' }}
                     >
                       {isSubmitting ? 'Subscribing...' : 'Subscribe'}
                       <FaArrowRight className="ml-2" />

@@ -41,19 +41,25 @@ const Backup: React.FC = () => {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8 md:mb-12 md:mb-20">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 md:mb-12 md:mb-20">
               <a
                 href="/contact"
-                className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#2563EB] rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-[#3B82F6]/25 hover:scale-105"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                style={{ backgroundColor: '#ff6b35' }}
               >
-                <span className="relative z-10">Get Protected Now</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                Get Protected Now
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
               <a
                 href="#solutions"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#3B82F6] border-2 border-[#3B82F6] hover:bg-[#3B82F6] hover:text-white rounded-2xl transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 View Solutions
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
             </div>
 
@@ -139,7 +145,7 @@ const Backup: React.FC = () => {
             ].map((item, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative p-8 bg-[#1E293B] rounded-2xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10">
+                <div className="relative p-4 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300">
                   <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <div className="text-white">
                       {item.icon}
@@ -166,7 +172,7 @@ const Backup: React.FC = () => {
             {/* On-Prem Backup */}
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative p-10 bg-[#1E293B] rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10">
+              <div className="relative p-6 bg-[#1E293B] rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
                 <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">💽</span>
@@ -197,7 +203,7 @@ const Backup: React.FC = () => {
             {/* Cloud Backup */}
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative p-10 bg-[#1E293B] rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10">
+              <div className="relative p-6 bg-[#1E293B] rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
                 <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">☁️</span>
@@ -247,7 +253,7 @@ const Backup: React.FC = () => {
             ].map((benefit, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative p-8 bg-[#1E293B] rounded-2xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-[#3B82F6]/10 text-center">
+                <div className="relative p-4 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 text-center">
                   <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{benefit.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-[#F1F5F9]">{benefit.title}</h3>
                   <p className="text-[#E2E8F0]">{benefit.desc}</p>
@@ -279,7 +285,8 @@ const Backup: React.FC = () => {
         </p>
         <a
           href="/contact"
-                className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#2563EB] rounded-2xl hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 shadow-2xl hover:shadow-[#3B82F6]/25 hover:scale-105"
+                className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white border border-white/20 rounded-2xl transition-all duration-300 hover:scale-105"
+                style={{ backgroundColor: '#ff6b35' }}
               >
                 <span className="mr-3">💬</span>
                 Talk to Our Backup Specialists

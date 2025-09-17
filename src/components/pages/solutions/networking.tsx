@@ -41,21 +41,27 @@ const Networking: React.FC = () => {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8 md:mb-12 md:mb-20">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 md:mb-12 md:mb-20">
               <a
                 href="/contact"
-                className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#10B981] rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-[#3B82F6]/25 hover:scale-105"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                style={{ backgroundColor: '#ff6b35' }}
               >
-                <span className="relative z-10">Get Started</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#10B981] to-[#059669] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                Get Started
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
               <a
                 href="#solutions"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#3B82F6] border-2 border-[#3B82F6] hover:bg-[#3B82F6] hover:text-white rounded-2xl transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 View Solutions
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
-        </div>
+            </div>
         
             {/* Network Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
@@ -94,7 +100,7 @@ const Networking: React.FC = () => {
           </div>
           
           {/* Network Topology Diagram */}
-          <div className="relative bg-[#1E293B] rounded-3xl p-12 border border-[#1E293B] overflow-hidden">
+          <div className="relative bg-[#1E293B] rounded-3xl p-6 border border-white/10 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] opacity-50"></div>
             
             {/* Network Diagram */}
@@ -437,7 +443,8 @@ const Networking: React.FC = () => {
         </p>
         <a
           href="/contact"
-                className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#3B82F6] to-[#10B981] rounded-2xl hover:from-[#10B981] hover:to-[#059669] transition-all duration-300 shadow-2xl hover:shadow-[#3B82F6]/25 hover:scale-105"
+                className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white border border-white/20 rounded-2xl transition-all duration-300 hover:scale-105"
+                style={{ backgroundColor: '#ff6b35' }}
               >
                 <span className="mr-3">🚀</span>
                 Start Your Networking Project Today
