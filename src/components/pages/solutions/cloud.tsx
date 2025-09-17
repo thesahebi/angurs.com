@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Cloud: React.FC = () => {
   return (
@@ -30,8 +29,8 @@ const Cloud: React.FC = () => {
             </p>
             
             <div className="flex justify-center">
-              <Link
-                to="/contact"
+              <a
+                href="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                 style={{ backgroundColor: '#ff6b35' }}
               >
@@ -39,7 +38,7 @@ const Cloud: React.FC = () => {
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -141,8 +140,8 @@ const Cloud: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8">
-              <Link
-                to="/contact"
+              <a
+                href="/contact"
                 className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                 style={{ backgroundColor: '#ff6b35' }}
               >
@@ -150,16 +149,16 @@ const Cloud: React.FC = () => {
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </Link>
-              <Link
-                to="/contact"
+              </a>
+              <a
+                href="/contact"
                 className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 Start for Free
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </Link>
+              </a>
             </div>
 
             {/* Spacing between buttons and certificates */}

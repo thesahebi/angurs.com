@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Networking: React.FC = () => {
   return (
@@ -43,8 +42,8 @@ const Networking: React.FC = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 md:mb-12 md:mb-20">
-              <Link
-                to="/contact"
+              <a
+                href="/contact"
                 className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                 style={{ backgroundColor: '#ff6b35' }}
               >
@@ -52,7 +51,7 @@ const Networking: React.FC = () => {
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </Link>
+              </a>
               <a
                 href="#solutions"
                 className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-white/10 hover:border-white/20 rounded-xl transition-all duration-200 hover:text-white"
@@ -100,109 +99,155 @@ const Networking: React.FC = () => {
             </p>
           </div>
           
-          {/* Network Topology Diagram */}
-          <div className="relative bg-[#344256] rounded-3xl p-6 border border-white/5 overflow-hidden">
+          {/* Modern Network Topology Map */}
+          <div className="relative bg-[#344256] rounded-3xl p-8 border border-white/5 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[#344256] to-[#2A3441] opacity-50"></div>
             
-            {/* Network Diagram */}
+            {/* Network Map Container */}
             <div className="relative z-10">
               {/* Internet/Cloud Layer */}
-              <div className="text-center mb-10 md:mb-16">
-                <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#3B82F6] to-[#2563EB] rounded-2xl text-white font-semibold">
-                  <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center px-8 py-4 bg-[#344256] border border-white/10 rounded-3xl text-white font-bold text-lg shadow-lg">
+                  <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center mr-4">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
                   Internet / Cloud Services
                 </div>
               </div>
 
+              {/* Connection Line */}
+              <div className="flex justify-center mb-8">
+                <div className="w-1 h-12 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
+              </div>
+
               {/* Firewall Layer */}
-              <div className="flex justify-center mb-8 md:mb-12">
-                <div className="bg-gradient-to-r from-[#EF4444] to-[#DC2626] rounded-2xl p-6 text-white">
+              <div className="flex justify-center mb-12">
+                <div className="bg-[#344256] border border-white/10 rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="flex items-center">
-                    <svg className="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+                    <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
                     <div>
-                      <div className="font-bold text-lg">Enterprise Firewall</div>
+                      <div className="font-bold text-xl">Enterprise Firewall</div>
                       <div className="text-sm opacity-90">Next-Gen Security</div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Core Network Layer */}
-              <div className="grid md:grid-cols-3 gap-8 mb-8 md:mb-12">
+              {/* Connection Lines to Core Services */}
+              <div className="flex justify-center mb-8">
+                <div className="flex space-x-8">
+                  <div className="w-1 h-8 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
+                  <div className="w-1 h-8 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
+                  <div className="w-1 h-8 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
+                </div>
+              </div>
+
+              {/* Core Network Services */}
+              <div className="grid md:grid-cols-3 gap-6 mb-12">
                 {/* Domain Controller */}
-                <div className="bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl p-6 text-white">
+                <div className="bg-[#344256] border border-white/10 rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                       </svg>
                     </div>
                     <div className="font-bold text-lg mb-2">Domain Controller</div>
-                    <div className="text-sm opacity-90">Active Directory</div>
-                    <div className="text-xs opacity-75 mt-2">• Authentication<br/>• Authorization<br/>• Group Policy</div>
+                    <div className="text-sm opacity-90 mb-3">Active Directory</div>
+                    <div className="text-xs opacity-75 space-y-1">
+                      <div>• Authentication</div>
+                      <div>• Authorization</div>
+                      <div>• Group Policy</div>
+                    </div>
                   </div>
                 </div>
 
                 {/* DNS Server */}
-                <div className="bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] rounded-2xl p-6 text-white">
+                <div className="bg-[#344256] border border-white/10 rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
                       </svg>
                     </div>
                     <div className="font-bold text-lg mb-2">DNS Server</div>
-                    <div className="text-sm opacity-90">Domain Name System</div>
-                    <div className="text-xs opacity-75 mt-2">• Name Resolution<br/>• Load Balancing<br/>• Caching</div>
+                    <div className="text-sm opacity-90 mb-3">Domain Name System</div>
+                    <div className="text-xs opacity-75 space-y-1">
+                      <div>• Name Resolution</div>
+                      <div>• Load Balancing</div>
+                      <div>• Caching</div>
+                    </div>
                   </div>
                 </div>
 
                 {/* DHCP Server */}
-                <div className="bg-gradient-to-br from-[#F59E0B] to-[#D97706] rounded-2xl p-6 text-white">
+                <div className="bg-[#344256] border border-white/10 rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
                       </svg>
                     </div>
                     <div className="font-bold text-lg mb-2">DHCP Server</div>
-                    <div className="text-sm opacity-90">Dynamic Host Config</div>
-                    <div className="text-xs opacity-75 mt-2">• IP Assignment<br/>• Lease Management<br/>• Reservations</div>
+                    <div className="text-sm opacity-90 mb-3">Dynamic Host Config</div>
+                    <div className="text-xs opacity-75 space-y-1">
+                      <div>• IP Assignment</div>
+                      <div>• Lease Management</div>
+                      <div>• Reservations</div>
+                    </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Connection Lines to Access Layer */}
+              <div className="flex justify-center mb-8">
+                <div className="flex space-x-16">
+                  <div className="w-1 h-8 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
+                  <div className="w-1 h-8 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
                 </div>
               </div>
 
               {/* Access Layer */}
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Core Switch */}
-                <div className="bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl p-6 text-white">
+                <div className="bg-[#344256] border border-white/10 rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
                       </svg>
                     </div>
                     <div className="font-bold text-lg mb-2">Core Switch</div>
-                    <div className="text-sm opacity-90">High-Performance Switching</div>
-                    <div className="text-xs opacity-75 mt-2">• Layer 3 Routing<br/>• VLAN Management<br/>• QoS</div>
-            </div>
-          </div>
-          
-                {/* Access Points */}
-                <div className="bg-gradient-to-br from-[#EC4899] to-[#DB2777] rounded-2xl p-6 text-white">
+                    <div className="text-sm opacity-90 mb-3">High-Performance Switching</div>
+                    <div className="text-xs opacity-75 space-y-1">
+                      <div>• Layer 3 Routing</div>
+                      <div>• VLAN Management</div>
+                      <div>• QoS</div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Wi-Fi Access Points */}
+                <div className="bg-[#344256] border border-white/10 rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
-              </svg>
+                      </svg>
                     </div>
                     <div className="font-bold text-lg mb-2">Wi-Fi Access Points</div>
-                    <div className="text-sm opacity-90">Wireless Connectivity</div>
-                    <div className="text-xs opacity-75 mt-2">• Wi-Fi 6E<br/>• Centralized Management<br/>• Security</div>
+                    <div className="text-sm opacity-90 mb-3">Wireless Connectivity</div>
+                    <div className="text-xs opacity-75 space-y-1">
+                      <div>• Wi-Fi 6E</div>
+                      <div>• Centralized Management</div>
+                      <div>• Security</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -442,8 +487,8 @@ const Networking: React.FC = () => {
               <p className="text-sm md:text-base lg:text-lg text-white mb-8 max-w-2xl mx-auto">
           Start your networking project today and build the foundation for digital transformation.
         </p>
-        <Link
-          to="/contact"
+        <a
+          href="/contact"
                 className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white border border-white/20 rounded-2xl transition-all duration-300 hover:scale-105"
                 style={{ backgroundColor: '#ff6b35' }}
               >
@@ -452,7 +497,7 @@ const Networking: React.FC = () => {
                 <svg className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

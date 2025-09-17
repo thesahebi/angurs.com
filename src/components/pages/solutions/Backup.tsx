@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Backup: React.FC = () => {
   return (
@@ -43,8 +42,8 @@ const Backup: React.FC = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 md:mb-12 md:mb-20">
-              <Link
-                to="/contact"
+              <a
+                href="/contact"
                 className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                 style={{ backgroundColor: '#ff6b35' }}
               >
@@ -52,7 +51,7 @@ const Backup: React.FC = () => {
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </Link>
+              </a>
               <a
                 href="#solutions"
                 className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
@@ -284,8 +283,8 @@ const Backup: React.FC = () => {
               <p className="text-xl text-[#E2E8F0] mb-10 max-w-3xl mx-auto">
           Talk to our backup specialists and get enterprise-grade protection for your critical data.
         </p>
-        <Link
-          to="/contact"
+        <a
+          href="/contact"
                 className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white border border-white/20 rounded-2xl transition-all duration-300 hover:scale-105"
                 style={{ backgroundColor: '#ff6b35' }}
               >
@@ -294,7 +293,7 @@ const Backup: React.FC = () => {
                 <svg className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
