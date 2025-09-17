@@ -21,17 +21,17 @@ const FeatureV1 = () => {
       </div>
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12 md:mb-20">
-          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#1E293B] rounded-full mb-6 border border-[#1E293B]">
+        <div className="text-center mb-8 md:mb-12">
+          <div className="inline-flex px-3 py-1.5 text-xs font-medium text-[#3B82F6] bg-[#1E293B] rounded-full mb-4 border border-[#1E293B]">
             🚀 Our Solutions
           </div>
-          <h2 className="text-4xl font-bold text-[#F1F5F9] sm:text-5xl xl:text-6xl mb-6">
+          <h2 className="text-2xl font-bold text-[#F1F5F9] sm:text-3xl md:text-4xl lg:text-5xl mb-4">
             Empowering Your Business with{' '}
             <span className="text-[#3B82F6]">
               Smart Technology
             </span>
           </h2>
-          <p className="text-xl text-[#F1F5F9] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base lg:text-lg text-[#F1F5F9] max-w-2xl mx-auto leading-relaxed">
             Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
           </p>
         </div>

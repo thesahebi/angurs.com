@@ -24,7 +24,7 @@ const Backup: React.FC = () => {
             </div>
             
             {/* Main Title */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#F1F5F9] mb-8 md:mb-12 leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#F1F5F9] mb-6 md:mb-8 leading-tight">
               Protect What{' '}
               <span className="relative">
                 <span className="bg-gradient-to-r from-[#3B82F6] via-[#60A5FA] to-[#2563EB] bg-clip-text text-transparent">
@@ -35,7 +35,7 @@ const Backup: React.FC = () => {
             </h1>
             
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
+            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10">
               Your data is the lifeline of your business. Zivara delivers enterprise-grade backup and replication solutions, 
               on-premises and in the cloud, to keep you secure, compliant, and resilient.
             </p>

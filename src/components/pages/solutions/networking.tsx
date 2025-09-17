@@ -24,7 +24,7 @@ const Networking: React.FC = () => {
             </div>
             
             {/* Main Title */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#F1F5F9] mb-8 md:mb-12 leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#F1F5F9] mb-6 md:mb-8 leading-tight">
               Smarter Networks,{' '}
               <span className="relative">
                 <span className="bg-gradient-to-r from-[#3B82F6] via-[#10B981] to-[#8B5CF6] bg-clip-text text-transparent">
@@ -35,7 +35,7 @@ const Networking: React.FC = () => {
             </h1>
             
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
+            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10">
               From branch offices to entire campuses, Zivara designs and deploys networks that are fast, secure, 
               and built for growth. Connect your future today.
             </p>
@@ -84,11 +84,11 @@ const Networking: React.FC = () => {
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F1F5F9]">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#F1F5F9]">
               Enterprise Network{' '}
               <span className="text-[#3B82F6]">Architecture</span>
             </h2>
-            <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
+            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto">
               Our comprehensive network solutions include Active Directory, Domain Controllers, DNS, DHCP, and advanced security infrastructure.
             </p>
           </div>
@@ -207,7 +207,7 @@ const Networking: React.FC = () => {
       {/* Network Services */}
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center text-[#F1F5F9]">
             Core Network{' '}
             <span className="text-[#3B82F6]">Services</span>
           </h2>
@@ -267,7 +267,7 @@ const Networking: React.FC = () => {
                       {service.icon}
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#F1F5F9] text-center">{service.title}</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-[#F1F5F9] text-center">{service.title}</h3>
                   <p className="text-[#E2E8F0] text-center mb-4">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
@@ -287,7 +287,7 @@ const Networking: React.FC = () => {
       {/* Solutions Section */}
       <section id="solutions" className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center text-[#F1F5F9]">
             Our Networking{' '}
             <span className="text-[#3B82F6]">Solutions</span>
           </h2>
@@ -301,7 +301,7 @@ const Networking: React.FC = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">🏢</span>
               </div>
-                  <h3 className="text-2xl font-bold text-[#F1F5F9]">Branch Networks</h3>
+                  <h3 className="text-lg font-bold text-[#F1F5F9]">Branch Networks</h3>
             </div>
             
                 <div className="space-y-6">
@@ -332,7 +332,7 @@ const Networking: React.FC = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">🎓</span>
               </div>
-                  <h3 className="text-2xl font-bold text-[#F1F5F9]">Campus Networks</h3>
+                  <h3 className="text-lg font-bold text-[#F1F5F9]">Campus Networks</h3>
             </div>
             
                 <div className="space-y-6">
@@ -361,7 +361,7 @@ const Networking: React.FC = () => {
       {/* Technology Stack */}
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center text-[#F1F5F9]">
             Cutting-Edge{' '}
             <span className="text-[#3B82F6]">Technologies</span>
           </h2>
@@ -377,7 +377,7 @@ const Networking: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative p-8 bg-[#1E293B] rounded-2xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-[#3B82F6]/10 text-center">
                   <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{tech.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#F1F5F9]">{tech.name}</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-[#F1F5F9]">{tech.name}</h3>
                   <p className="text-[#E2E8F0]">{tech.desc}</p>
                 </div>
               </div>
@@ -389,7 +389,7 @@ const Networking: React.FC = () => {
       {/* Benefits Section */}
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center text-[#F1F5F9]">
             Benefits of Networking with{' '}
             <span className="text-[#3B82F6]">Zivara</span>
           </h2>
@@ -407,7 +407,7 @@ const Networking: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative p-8 bg-[#1E293B] rounded-2xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-[#3B82F6]/10 text-center">
                   <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{benefit.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#F1F5F9]">{benefit.title}</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-[#F1F5F9]">{benefit.title}</h3>
                   <p className="text-[#E2E8F0]">{benefit.desc}</p>
           </div>
           </div>
@@ -428,11 +428,11 @@ const Networking: React.FC = () => {
             </div>
             
             <div className="relative z-10 text-center p-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F1F5F9]">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#F1F5F9]">
                 Transform your network into a driver of{' '}
                 <span className="text-[#3B82F6]">business success</span>
         </h2>
-              <p className="text-xl text-[#E2E8F0] mb-10 max-w-3xl mx-auto">
+              <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] mb-8 max-w-2xl mx-auto">
           Start your networking project today and build the foundation for digital transformation.
         </p>
         <a

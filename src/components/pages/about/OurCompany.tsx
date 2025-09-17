@@ -24,13 +24,13 @@ const OurCompany: React.FC = () => {
       <section id="story" className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-8 md:mb-12">Our Story</h2>
-            <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#F1F5F9] mb-6 md:mb-8">Our Story</h2>
+            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] leading-relaxed mb-6 md:mb-8">
               Founded with a vision to bridge the gap between complex technology and business success, 
               Zivara has grown from a small team of engineers to a trusted partner for organizations 
               seeking to modernize their infrastructure and embrace digital transformation.
             </p>
-            <p className="text-lg text-[#E2E8F0] leading-relaxed">
+            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] leading-relaxed">
               Our journey began with a simple belief: technology should empower businesses, not complicate them. 
               Today, we continue to deliver on that promise through innovative solutions, expert guidance, 
               and unwavering commitment to our clients' success.
@@ -43,8 +43,8 @@ const OurCompany: React.FC = () => {
       <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Foundation</h2>
-            <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#F1F5F9] mb-4">Our Foundation</h2>
+            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto">
               The principles that guide everything we do
             </p>
           </div>

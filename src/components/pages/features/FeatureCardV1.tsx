@@ -26,8 +26,8 @@ const FeatureCardV1: React.FC<FeatureModelProps> = ({
           )}
         </div>
       </div>
-      <p className="text-xl font-bold  py-3">{title}</p>
-      <p className="px-5 dark:text-white">{content}</p>
+      <p className="text-lg font-bold py-2">{title}</p>
+      <p className="px-5 dark:text-white text-sm">{content}</p>
     </div>
   );
 };

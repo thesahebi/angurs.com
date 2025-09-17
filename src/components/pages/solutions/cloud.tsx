@@ -17,14 +17,14 @@ const Cloud: React.FC = () => {
               ☁️ Cloud Solutions
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F1F5F9] mb-6 leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#F1F5F9] mb-4 leading-tight">
               Transform Your Business with{' '}
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
                 Cloud Power
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8 md:mb-12">
+            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto leading-relaxed mb-6 md:mb-8">
               Scale infinitely, secure everything, and innovate faster with our comprehensive cloud migration and management services.
             </p>
             

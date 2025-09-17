@@ -23,20 +23,20 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
     <section className="bg-[#121212] py-12" id="solutions">
       {/* bg-blue-100 */}
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="lg:my-12 text-center">
+        <div className="lg:my-8 text-center">
           {isTitle && (
             <div className={`${titleClass}`}>
-              <p className="text-base font-semibold tracking-wider ubun-text uppercase">
+              <p className="text-sm font-semibold tracking-wider ubun-text uppercase">
                 Future-ready solutions
               </p>
-              <h2 className="text-3xl font-bold text-[#F1F5F9] sm:text-4xl xl:text-5xl">
+              <h2 className="text-2xl font-bold text-[#F1F5F9] sm:text-3xl md:text-4xl lg:text-5xl">
                  Built to scale with your business.
               </h2>
             </div>
           )}
 
           {isContent && (
-            <p className="text-xl text-[#F1F5F9] py-3 lg:px-36">
+            <p className="text-sm md:text-base lg:text-lg text-[#F1F5F9] py-3 lg:px-24">
               We deliver seamless digital solutions that connect, protect, and scale with your business. From cloud and development to design and hosting, everything works together to help your brand grow confidently
             </p>
           )}
