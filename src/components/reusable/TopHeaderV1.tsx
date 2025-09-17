@@ -300,7 +300,7 @@ const TopHeaderV1 = () => {
               style={{ backgroundColor: '#ff6b35' }}
               role="button"
             >
-              <span className="relative z-10">Let's Talk</span>
+              <span className="relative z-10">Consult</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b35] to-[#e95420] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <svg className="w-4 h-4 ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -311,7 +311,7 @@ const TopHeaderV1 = () => {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`md:hidden absolute top-12 left-0 right-0 bg-[#121212]/98 backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
+          className={`md:hidden absolute top-12 left-0 right-0 bg-[#0F172A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
               ? "opacity-100 translate-y-0 h-lvh z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
             }`}
@@ -379,7 +379,7 @@ const TopHeaderV1 = () => {
                 role="button"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <span className="relative z-10">Let's Talk</span>
+                <span className="relative z-10">Consult</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b35] to-[#e95420] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <svg className="w-5 h-5 ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

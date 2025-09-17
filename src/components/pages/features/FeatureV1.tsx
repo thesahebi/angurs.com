@@ -108,53 +108,6 @@ const FeatureV1 = () => {
           })}
         </div>
 
-        {/* Enhanced CTA Section */}
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1E293B] to-[#0F172A] rounded-3xl"></div>
-          <div className="relative bg-gradient-to-r from-[#1E293B]/80 to-[#0F172A]/80 backdrop-blur-sm rounded-3xl p-12 md:p-16 border border-white/10">
-            <div className="text-center">
-              <div className="inline-flex items-center px-6 py-3 text-sm font-medium text-[#ff6b35] bg-[#ff6b35]/10 border border-[#ff6b35]/20 rounded-full mb-8">
-                <span className="w-2 h-2 bg-[#ff6b35] rounded-full mr-3 animate-pulse"></span>
-                Ready to Get Started?
-              </div>
-              
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Ready to Transform Your{' '}
-                <span className="bg-gradient-to-r from-[#ff6b35] to-[#3B82F6] bg-clip-text text-transparent">
-                  Business?
-                </span>
-              </h3>
-              
-              <p className="text-lg md:text-xl text-[#E2E8F0] mb-12 max-w-3xl mx-auto leading-relaxed">
-                Let's discuss how our solutions can help you achieve your goals and scale your operations with cutting-edge technology.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-stretch w-full max-w-2xl mx-auto">
-                <a
-                  href="tel:+16309234653"
-                  className="group relative inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#ff6b35]/20"
-                  style={{ backgroundColor: '#ff6b35' }}
-                >
-                  <span className="mr-3">📞</span>
-                  Get a Demo Consultant Call
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a
-                  href="/contact"
-                  className="group relative inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border-2 border-white/20 hover:border-white/30 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/10"
-                >
-                  <span className="mr-3">💬</span>
-                  Learn More
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
