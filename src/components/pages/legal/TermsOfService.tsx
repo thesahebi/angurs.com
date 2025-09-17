@@ -44,7 +44,7 @@ const TermsOfService: React.FC = () => {
               <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Agreement to Terms</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-[#E2E8F0] leading-relaxed mb-4">
-                  These Terms of Service ("Terms") govern your use of the Angurs Solutions LLC website and services. By accessing or using our services, you agree to be bound by these Terms.
+                  These Terms of Service ("Terms") govern your use of the Zivara Solutions LLC website and services. By accessing or using our services, you agree to be bound by these Terms.
                 </p>
                 <p className="text-[#E2E8F0] leading-relaxed">
                   If you do not agree to these Terms, please do not use our website or services.
@@ -156,7 +156,7 @@ const TermsOfService: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-[#F1F5F9] mb-3">Ownership Rights</h3>
                     <p className="text-[#E2E8F0] leading-relaxed mb-4">
-                      All content, trademarks, and intellectual property on our website and in our services are owned by Angurs Solutions LLC or our licensors.
+                      All content, trademarks, and intellectual property on our website and in our services are owned by Zivara Solutions LLC or our licensors.
                     </p>
                     <ul className="space-y-2 text-[#E2E8F0]">
                       <li>• Website content and design</li>
@@ -269,13 +269,13 @@ const TermsOfService: React.FC = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
-                      href="mailto:support@angurs.com"
+                      href="mailto:support@Zivara.com"
                       className="inline-flex items-center justify-center px-6 py-3 bg-[#3B82F6] text-white rounded-xl hover:bg-[#2563EB] transition-colors"
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      support@angurs.com
+                      support@Zivara.com
                     </a>
                     <a
                       href="/contact"

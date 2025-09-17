@@ -36,7 +36,7 @@ const Backup: React.FC = () => {
             
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
-              Your data is the lifeline of your business. Angurs delivers enterprise-grade backup and replication solutions, 
+              Your data is the lifeline of your business. Zivara delivers enterprise-grade backup and replication solutions, 
               on-premises and in the cloud, to keep you secure, compliant, and resilient.
             </p>
             
@@ -233,7 +233,7 @@ const Backup: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Benefits of Backup with{' '}
-            <span className="text-[#3B82F6]">Angurs</span>
+            <span className="text-[#3B82F6]">Zivara</span>
           </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

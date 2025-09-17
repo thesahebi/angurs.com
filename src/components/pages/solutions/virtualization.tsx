@@ -25,7 +25,7 @@ const Virtualization: React.FC = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-8 md:mb-12">
-              Allow your teams to deploy, manage, and scale virtual infrastructure—all in one place. Angurs provides all the tools you need to build a VMware-like virtualization experience.
+              Allow your teams to deploy, manage, and scale virtual infrastructure—all in one place. Zivara provides all the tools you need to build a VMware-like virtualization experience.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -59,7 +59,7 @@ const Virtualization: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-[#F1F5F9] mb-4">Accurate & Reliable</h3>
               <p className="text-lg text-[#E2E8F0] leading-relaxed">
-                Kick outdated infrastructure management to the curb. Angurs is virtualization native, so your config isn't just making promises — it's creating your infrastructure, keeping it forever optimized and current.
+                Kick outdated infrastructure management to the curb. Zivara is virtualization native, so your config isn't just making promises — it's creating your infrastructure, keeping it forever optimized and current.
               </p>
             </div>
 
@@ -72,7 +72,7 @@ const Virtualization: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-[#F1F5F9] mb-4">Optimize Onboarding</h3>
               <p className="text-lg text-[#E2E8F0] leading-relaxed">
-                Angurs integrates with your existing infrastructure to enable teams to instantly deploy, get access, and start managing virtual machines in minutes.
+                Zivara integrates with your existing infrastructure to enable teams to instantly deploy, get access, and start managing virtual machines in minutes.
               </p>
             </div>
 
@@ -102,7 +102,7 @@ const Virtualization: React.FC = () => {
                 Automatic, Beautiful Management
               </h2>
               <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
-                Built directly from infrastructure specifications, Angurs ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
+                Built directly from infrastructure specifications, Zivara ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
               </p>
               <div className="flex items-center text-[#3b82f6] font-semibold">
                 <span>Infrastructure Specifications</span>
@@ -155,7 +155,7 @@ const Virtualization: React.FC = () => {
                 Robust VM Management
               </h2>
               <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
-                Secure your infrastructure with Angurs' VM management. Authorized users can effortlessly view, create, and manage virtual machines right from the portal.
+                Secure your infrastructure with Zivara' VM management. Authorized users can effortlessly view, create, and manage virtual machines right from the portal.
               </p>
               <div className="flex items-center text-[#3b82f6] font-semibold">
                 <span>VM Management</span>
@@ -289,7 +289,7 @@ const Virtualization: React.FC = () => {
                     VM Portal with Self-Serve Management
                   </h3>
                   <p className="text-[#E2E8F0] mb-6">
-                    An example of an Angurs VM Portal with support for self-serve virtual machine creation and management.
+                    An example of an Zivara VM Portal with support for self-serve virtual machine creation and management.
                   </p>
                   <a
                     href="/contact"

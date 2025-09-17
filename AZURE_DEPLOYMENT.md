@@ -15,7 +15,7 @@
    - Go to: https://myaccount.google.com/apppasswords
    - Select "Mail" as the app
    - Select "Other (Custom name)" as the device
-   - Enter "Angurs Website" as the name
+   - Enter "Zivara Website" as the name
    - **Copy the 16-character password** (format: `abcd efgh ijkl mnop`)
 
 ### Step 2: Configure Azure Function App Settings
@@ -45,7 +45,7 @@
 1. **Visit your live website**
 2. **Go to the Contact page**
 3. **Fill out and submit the form**
-4. **Check your email** (support@angurs.com) for the message
+4. **Check your email** (support@Zivara.com) for the message
 
 ### File Structure for Azure Functions
 

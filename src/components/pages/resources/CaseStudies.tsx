@@ -444,7 +444,7 @@ const CaseStudies: React.FC = () => {
           </h2>
           <p className="text-xl text-emerald-100 mb-8 md:mb-12 max-w-3xl mx-auto">
             Join the ranks of successful organizations that have transformed their technology 
-            infrastructure with Angurs. Let's discuss how we can help you achieve similar results.
+            infrastructure with Zivara. Let's discuss how we can help you achieve similar results.
           </p>
           <a
             href="/contact"

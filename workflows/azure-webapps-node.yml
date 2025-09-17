@@ -7,7 +7,7 @@ on:
 
 env:
   NODE_VERSION: '20.x'
-  AZURE_STORAGE_ACCOUNT_NAME: angursweb01   # <-- replace with your storage account name
+  AZURE_STORAGE_ACCOUNT_NAME: Zivaraweb01   # <-- replace with your storage account name
 
 permissions:
   contents: read

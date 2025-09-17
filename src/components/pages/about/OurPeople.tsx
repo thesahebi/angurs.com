@@ -7,7 +7,7 @@ const OurPeople: React.FC = () => {
       <PageHero
         title="Our People"
         subtitle="Meet the passionate experts"
-        description="Meet the passionate experts behind Angurs - a diverse team of engineers, architects, and innovators dedicated to your success."
+        description="Meet the passionate experts behind Zivara - a diverse team of engineers, architects, and innovators dedicated to your success."
         primaryButtonText="Meet Our Team"
         primaryButtonLink="/contact"
         secondaryButtonText="Our Culture"
@@ -173,7 +173,7 @@ const OurPeople: React.FC = () => {
           <div className="text-center mb-8 md:mb-12 md:mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Our Culture</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
-              What makes working at Angurs special and how we foster growth and innovation
+              What makes working at Zivara special and how we foster growth and innovation
             </p>
           </div>
 
@@ -265,7 +265,7 @@ const OurPeople: React.FC = () => {
           </h2>
           <p className="text-xl text-white/90 mb-8 md:mb-12 max-w-3xl mx-auto">
             Ready to work with passionate experts and make a real impact? 
-            Explore career opportunities at Angurs and be part of our innovative team.
+            Explore career opportunities at Zivara and be part of our innovative team.
           </p>
           <a
             href="/about/careers"

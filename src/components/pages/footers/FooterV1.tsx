@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
-import logo1 from "../../../assets/imgs/Angurs1.svg";
+import logo1 from "../../../assets/imgs/Zivara1.svg";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 import { scrollToTheTopOfPage } from "@/lib/utils";
 
@@ -73,7 +73,7 @@ const FooterV1 = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Link to="/" onClick={scrollToTheTopOfPage} className="inline-block">
-                <img className="w-auto h-16 mb-6" src={logo1} alt="Angurs Logo" />
+                <img className="w-auto h-16 mb-6" src={logo1} alt="Zivara Logo" />
               </Link>
               
               <p className="text-[#F1F5F9] text-base leading-relaxed mb-6 max-w-sm">
@@ -83,7 +83,7 @@ const FooterV1 = () => {
               {/* Social Media */}
               <div className="flex items-center space-x-4">
                 <a
-                  href="https://www.instagram.com/angursofficial/"
+                  href="https://www.instagram.com/Zivaraofficial/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
@@ -92,7 +92,7 @@ const FooterV1 = () => {
                   <FaInstagram className="text-lg group-hover:text-[#F1F5F9] transition-colors" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/angurs-web-solutions/about/"
+                  href="https://www.linkedin.com/company/Zivara-web-solutions/about/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
@@ -101,7 +101,7 @@ const FooterV1 = () => {
                   <FaLinkedin className="text-lg group-hover:text-[#F1F5F9] transition-colors" />
                 </a>
                 <a
-                  href="https://twitter.com/angurs"
+                  href="https://twitter.com/Zivara"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
@@ -110,7 +110,7 @@ const FooterV1 = () => {
                   <FaTwitter className="text-lg group-hover:text-[#F1F5F9] transition-colors" />
                 </a>
                 <a
-                  href="https://github.com/angurs"
+                  href="https://github.com/Zivara"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
@@ -223,10 +223,10 @@ const FooterV1 = () => {
                 <li className="flex items-start space-x-3">
                   <FaEnvelope className="w-5 h-5 text-[#e95420] mt-0.5 flex-shrink-0" />
                   <a
-                    href="mailto:Support@angurs.com"
+                    href="mailto:Support@Zivara.com"
                     className="text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
                   >
-                    Support@angurs.com
+                    Support@Zivara.com
                   </a>
                 </li>
                 <li className="flex items-start space-x-3">
@@ -300,7 +300,7 @@ const FooterV1 = () => {
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl py-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-[#F1F5F9] text-sm">
-                © {year} Angurs Solutions LLC. All rights reserved.
+                © {year} Zivara Solutions LLC. All rights reserved.
               </div>
               <div className="flex items-center space-x-6 text-sm">
                 <Link

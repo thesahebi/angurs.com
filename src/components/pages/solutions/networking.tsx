@@ -36,7 +36,7 @@ const Networking: React.FC = () => {
             
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
-              From branch offices to entire campuses, Angurs designs and deploys networks that are fast, secure, 
+              From branch offices to entire campuses, Zivara designs and deploys networks that are fast, secure, 
               and built for growth. Connect your future today.
             </p>
             
@@ -391,7 +391,7 @@ const Networking: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
             Benefits of Networking with{' '}
-            <span className="text-[#3B82F6]">Angurs</span>
+            <span className="text-[#3B82F6]">Zivara</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

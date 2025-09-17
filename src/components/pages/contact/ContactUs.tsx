@@ -63,11 +63,11 @@ const ContactUs: React.FC = () => {
   };
 
   const handleCreateTicket = () => {
-    window.open('https://www.angurs.com/ticketing', '_blank');
+    window.open('https://www.Zivara.com/ticketing', '_blank');
   };
 
   const handleCheckTicketStatus = () => {
-    window.open('https://www.angurs.com/ticketing', '_blank');
+    window.open('https://www.Zivara.com/ticketing', '_blank');
   };
 
   return (
@@ -185,7 +185,7 @@ const ContactUs: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-[#F1F5F9] mb-1">Email Us</h3>
-                      <p className="text-[#F1F5F9] text-base">support@angurs.com</p>
+                      <p className="text-[#F1F5F9] text-base">support@Zivara.com</p>
                     </div>
                   </div>
 

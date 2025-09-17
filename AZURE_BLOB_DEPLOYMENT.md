@@ -12,7 +12,7 @@
 #### **Step 1: Create Azure Function App**
 1. **Go to Azure Portal** → **Create a resource** → **Function App**
 2. **Configure**:
-   - **Name**: `angurs-contact-function` (or your preferred name)
+   - **Name**: `Zivara-contact-function` (or your preferred name)
    - **Runtime**: Node.js
    - **Region**: Same as your blob storage
    - **Plan**: Consumption (serverless)
@@ -29,7 +29,7 @@
 Replace `YOUR_FUNCTION_APP_NAME` in `ContactUs.tsx` with your actual Function App name:
 ```typescript
 const apiUrl = process.env.NODE_ENV === 'production' 
-  ? 'https://angurs-contact-function.azurewebsites.net/api/send-email'
+  ? 'https://Zivara-contact-function.azurewebsites.net/api/send-email'
   : 'http://localhost:3001/api/send-email';
 ```
 

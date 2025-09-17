@@ -47,7 +47,7 @@ const CookiePolicy: React.FC = () => {
                   Cookies are small text files that are stored on your device when you visit our website. They help us provide you with a better browsing experience by remembering your preferences and analyzing how you use our site.
                 </p>
                 <p className="text-[#E2E8F0] leading-relaxed">
-                  This Cookie Policy explains how Angurs Solutions LLC uses cookies and similar technologies on our website.
+                  This Cookie Policy explains how Zivara Solutions LLC uses cookies and similar technologies on our website.
                 </p>
               </div>
             </div>
@@ -280,13 +280,13 @@ const CookiePolicy: React.FC = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
-                      href="mailto:support@angurs.com"
+                      href="mailto:support@Zivara.com"
                       className="inline-flex items-center justify-center px-6 py-3 bg-[#3B82F6] text-white rounded-xl hover:bg-[#2563EB] transition-colors"
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
-                      support@angurs.com
+                      support@Zivara.com
                     </a>
                     <a
                       href="/contact"

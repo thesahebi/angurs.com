@@ -33,7 +33,7 @@ module.exports = async function (context, req) {
         // Email content
         const mailOptions = {
             from: process.env.EMAIL_USER || 'sahebiramazan@gmail.com',
-            to: 'support@angurs.com', // Your business email
+            to: 'support@Zivara.com', // Your business email
             replyTo: email,
             subject: `Contact Form: ${subject}`,
             html: `
@@ -48,7 +48,7 @@ module.exports = async function (context, req) {
                         </div>
                     </div>
                     <p style="color: #666; font-size: 12px;">
-                        This message was sent from the Angurs website contact form.
+                        This message was sent from the Zivara website contact form.
                     </p>
                 </div>
             `

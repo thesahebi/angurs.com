@@ -142,7 +142,7 @@ function HeroV2() {
             <h1 ref={titleRef} className="mt-8 text-4xl font-bold leading-tight text-[#F1F5F9] sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
               Building Smarter AI Solutions with{' '}
               <span className="text-[#3B82F6]">
-                Angurs
+                Zivara
               </span>
             </h1>
             <p ref={subtitleRef} className="mt-6 text-lg text-[#F1F5F9] max-w-2xl mx-auto leading-relaxed">

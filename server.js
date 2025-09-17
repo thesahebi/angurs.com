@@ -55,7 +55,7 @@ app.post('/api/send-email', async (req, res) => {
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, '<br>')}</p>
         <hr>
-        <p><em>This message was sent from the Angurs website contact form.</em></p>
+        <p><em>This message was sent from the Zivara website contact form.</em></p>
       `
     };
 
@@ -108,7 +108,7 @@ app.post('/api/newsletter-subscribe', async (req, res) => {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subscribed at:</strong> ${new Date().toLocaleString()}</p>
         <hr>
-        <p><em>This subscription was made from the Angurs website newsletter signup.</em></p>
+        <p><em>This subscription was made from the Zivara website newsletter signup.</em></p>
       `
     };
 

@@ -167,9 +167,9 @@ const Careers: React.FC = () => {
       <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Angurs?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Zivara?</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
-              Discover what makes Angurs a great place to grow your career and make an impact
+              Discover what makes Zivara a great place to grow your career and make an impact
             </p>
           </div>
 

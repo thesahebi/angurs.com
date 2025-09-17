@@ -5,7 +5,7 @@ const OurCompany: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#121212]">
       <PageHero
-        title="About Angurs"
+        title="About Zivara"
         subtitle="Passionate technology experts"
         description="We are a team of passionate technology experts dedicated to transforming businesses through innovative infrastructure solutions and digital excellence."
         primaryButtonText="Work With Us"
@@ -27,7 +27,7 @@ const OurCompany: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-8 md:mb-12">Our Story</h2>
             <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
               Founded with a vision to bridge the gap between complex technology and business success, 
-              Angurs has grown from a small team of engineers to a trusted partner for organizations 
+              Zivara has grown from a small team of engineers to a trusted partner for organizations 
               seeking to modernize their infrastructure and embrace digital transformation.
             </p>
             <p className="text-lg text-[#E2E8F0] leading-relaxed">
@@ -100,7 +100,7 @@ const OurCompany: React.FC = () => {
       <section className="py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Angurs</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#F1F5F9] mb-4">Why Choose Zivara</h2>
             <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
               What sets us apart in the technology landscape
             </p>

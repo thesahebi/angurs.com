@@ -1,7 +1,7 @@
 {
-  "name": "angurs-contact-form",
+  "name": "Zivara-contact-form",
   "version": "1.0.0",
-  "description": "Azure Function for Angurs contact form",
+  "description": "Azure Function for Zivara contact form",
   "main": "index.js",
   "scripts": {
     "start": "func start",

@@ -1,0 +1,56 @@
+<svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00F5FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Tech circuit background -->
+  <rect x="0" y="0" width="60" height="60" fill="#1F2937" rx="8"/>
+  <rect x="5" y="5" width="50" height="50" fill="none" stroke="url(#techGradient)" stroke-width="2" rx="6"/>
+  
+  <!-- Circuit pattern -->
+  <line x1="15" y1="15" x2="45" y2="15" stroke="url(#neonGradient)" stroke-width="1" opacity="0.6"/>
+  <line x1="15" y1="25" x2="35" y2="25" stroke="url(#neonGradient)" stroke-width="1" opacity="0.4"/>
+  <line x1="15" y1="35" x2="45" y2="35" stroke="url(#neonGradient)" stroke-width="1" opacity="0.6"/>
+  <line x1="15" y1="45" x2="25" y2="45" stroke="url(#neonGradient)" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Connection dots -->
+  <circle cx="30" cy="15" r="2" fill="url(#neonGradient)" opacity="0.8"/>
+  <circle cx="30" cy="35" r="2" fill="url(#neonGradient)" opacity="0.8"/>
+  
+  <!-- Main ZIVARA text with tech styling -->
+  <text x="80" y="25" font-family="'Courier New', monospace" font-size="20" font-weight="900" 
+        fill="url(#techGradient)" text-anchor="start" filter="url(#neonGlow)">
+    ZIVARA
+  </text>
+  
+  <!-- Binary accent -->
+  <text x="80" y="40" font-family="'Courier New', monospace" font-size="8" font-weight="400" 
+        fill="#6B7280" text-anchor="start">
+    01001010 01001001 01010110 01000001 01010010 01000001
+  </text>
+  
+  <!-- Tech tagline -->
+  <text x="80" y="52" font-family="Arial, sans-serif" font-size="10" font-weight="600" 
+        fill="#9CA3AF" text-anchor="start">
+    DIGITAL TRANSFORMATION • CLOUD SOLUTIONS • INNOVATION
+  </text>
+  
+  <!-- Floating tech elements -->
+  <polygon points="180,10 190,20 180,30 170,20" fill="url(#techGradient)" opacity="0.3"/>
+  <polygon points="200,25 210,35 200,45 190,35" fill="url(#neonGradient)" opacity="0.4"/>
+</svg>

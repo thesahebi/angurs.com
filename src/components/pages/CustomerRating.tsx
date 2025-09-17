@@ -90,7 +90,7 @@ export function CustomerRating() {
             Trusted by Fast-Moving Teams Worldwide
           </h2>
           <p className="text-lg text-[#E2E8F0] max-w-3xl mx-auto mb-10 md:mb-16">
-            From startups to enterprises, teams around the world rely on Angurs to simplify IT management and move faster
+            From startups to enterprises, teams around the world rely on Zivara to simplify IT management and move faster
           </p>
           
           {/* Stats Grid */}
@@ -125,7 +125,7 @@ export function CustomerRating() {
             </div>
             
             <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "Angurs gives us the flexibility to scale efficiently, ensures security and compliance, and reduces operational complexity."
+              "Zivara gives us the flexibility to scale efficiently, ensures security and compliance, and reduces operational complexity."
             </blockquote>
             
             <div className="mb-4">
@@ -157,7 +157,7 @@ export function CustomerRating() {
             </div>
             
             <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "The move to Angurs was easy, taking just over 2 months to switch mission critical systems, and we're saving over 70% on costs."
+              "The move to Zivara was easy, taking just over 2 months to switch mission critical systems, and we're saving over 70% on costs."
             </blockquote>
             
             <div className="mb-4">
@@ -189,7 +189,7 @@ export function CustomerRating() {
             </div>
             
             <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "Angurs is the ultimate one-stop shop for all your IT needs. With automation and infrastructure management, it saved us weeks of engineering time."
+              "Zivara is the ultimate one-stop shop for all your IT needs. With automation and infrastructure management, it saved us weeks of engineering time."
             </blockquote>
             
             <div className="mb-4">
@@ -221,7 +221,7 @@ export function CustomerRating() {
             </div>
             
             <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "Angurs' built-in policies, automation tools, and version control all make managing our backend infrastructure a breeze."
+              "Zivara' built-in policies, automation tools, and version control all make managing our backend infrastructure a breeze."
             </blockquote>
             
             <div className="mb-4">

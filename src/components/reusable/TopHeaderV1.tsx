@@ -1,5 +1,5 @@
 import { scrollToTheTopOfPage } from "@/lib/utils";
-import logo1 from "../../assets/imgs/Angurs1.svg";
+import logo1 from "../../assets/imgs/Zivara1.svg";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
