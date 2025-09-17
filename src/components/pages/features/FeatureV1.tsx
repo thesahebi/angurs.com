@@ -30,7 +30,7 @@ const FeatureV1 = () => {
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
         {/* Hero Section */}
-        <div className="text-center mb-16 md:mb-20">
+        <div className="text-center mb-20 md:mb-24 pt-8 md:pt-12">
           <div className="inline-flex items-center px-6 py-3 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 bg-[#3B82F6] rounded-full mr-3 animate-pulse"></span>
             🚀 Our Solutions
