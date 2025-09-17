@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Virtualization: React.FC = () => {
   return (
@@ -29,8 +30,8 @@ const Virtualization: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                 style={{ backgroundColor: '#ff6b35' }}
               >
@@ -38,16 +39,16 @@ const Virtualization: React.FC = () => {
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 Start for Free
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -294,8 +295,8 @@ const Virtualization: React.FC = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-stretch w-full max-w-2xl mx-auto lg:mx-0">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                   style={{ backgroundColor: '#ff6b35' }}
                 >
@@ -303,16 +304,16 @@ const Virtualization: React.FC = () => {
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
-                <a
-                  href="/contact"
+                </Link>
+                <Link
+                  to="/contact"
                   className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
                 >
                   Start for Free
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -325,15 +326,15 @@ const Virtualization: React.FC = () => {
                 <p className="text-[#E2E8F0] mb-6">
                   An example of an Zivara VM Portal with support for self-serve virtual machine creation and management.
                 </p>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center text-[#3b82f6] font-semibold hover:text-[#2563eb] transition-colors mb-6"
                 >
                   Learn More
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </Link>
               </div>
               <div className="rounded-lg p-4">
                 <div className="flex items-center mb-4">
