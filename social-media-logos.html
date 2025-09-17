@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zivara Social Media Logo Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .logo-container {
+            margin: 30px 0;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .logo-preview {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+        }
+        
+        button {
+            background: #e95420;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #ff6b35;
+        }
+        
+        .platform-info {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #e95420;
+            margin-bottom: 40px;
+        }
+        
+        h3 {
+            color: #ff8c42;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Zivara Social Media Logo Generator</h1>
+    
+    <!-- Z Symbol Logos -->
+    <div class="logo-container">
+        <h3>📱 Z Symbol (Profile Pictures & Avatars)</h3>
+        <div class="logo-preview" id="z-symbol-preview">
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="zGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#e95420;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                        <feMerge> 
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <text x="100" y="130" 
+                      font-family="Arial, sans-serif" 
+                      font-size="120" 
+                      font-weight="900" 
+                      fill="url(#zGradient)" 
+                      text-anchor="middle"
+                      filter="url(#glow)">
+                    Z
+                </text>
+            </svg>
+        </div>
+        
+        <div class="platform-info">
+            <strong>Profile Pictures & Avatars:</strong> Perfect for Twitter, Instagram, LinkedIn, Facebook, TikTok, YouTube, Discord, etc.
+        </div>
+        
+        <button onclick="downloadPNG('z-symbol-preview', 'Zivara-Z-Profile-200x200.png', 200, 200)">Download 200x200 PNG</button>
+        <button onclick="downloadPNG('z-symbol-preview', 'Zivara-Z-Profile-400x400.png', 400, 400)">Download 400x400 PNG</button>
+        <button onclick="downloadPNG('z-symbol-preview', 'Zivara-Z-Profile-512x512.png', 512, 512)">Download 512x512 PNG</button>
+        <button onclick="downloadPNG('z-symbol-preview', 'Zivara-Z-Profile-1024x1024.png', 1024, 1024)">Download 1024x1024 PNG</button>
+    </div>
+    
+    <!-- Full Logo for Banners -->
+    <div class="logo-container">
+        <h3>🎨 Full Logo (Banners & Headers)</h3>
+        <div class="logo-preview" id="full-logo-preview">
+            <svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#e95420;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <text x="0" y="60" 
+                      font-family="Montserrat, Arial, sans-serif" 
+                      font-size="56" 
+                      font-weight="900" 
+                      fill="url(#textGradient)" 
+                      text-anchor="start">
+                    Zivara
+                </text>
+                <text x="0" y="90" 
+                      font-family="Montserrat, Arial, sans-serif" 
+                      font-size="24" 
+                      font-weight="400" 
+                      fill="#ff8c42" 
+                      text-anchor="start" 
+                      letter-spacing="3px">
+                    SOLUTIONS
+                </text>
+            </svg>
+        </div>
+        
+        <div class="platform-info">
+            <strong>Banners & Headers:</strong> Perfect for Twitter header, LinkedIn banner, Facebook cover, YouTube banner, etc.
+        </div>
+        
+        <button onclick="downloadPNG('full-logo-preview', 'Zivara-Solutions-Banner-400x120.png', 400, 120)">Download 400x120 PNG</button>
+        <button onclick="downloadPNG('full-logo-preview', 'Zivara-Solutions-Banner-800x240.png', 800, 240)">Download 800x240 PNG</button>
+        <button onclick="downloadPNG('full-logo-preview', 'Zivara-Solutions-Banner-1200x360.png', 1200, 360)">Download 1200x360 PNG</button>
+        <button onclick="downloadPNG('full-logo-preview', 'Zivara-Solutions-Banner-1920x576.png', 1920, 576)">Download 1920x576 PNG</button>
+    </div>
+    
+    <!-- Square Logo for Stories -->
+    <div class="logo-container">
+        <h3>📸 Square Logo (Stories & Posts)</h3>
+        <div class="logo-preview" id="square-logo-preview">
+            <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="textGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#e95420;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <text x="150" y="180" 
+                      font-family="Montserrat, Arial, sans-serif" 
+                      font-size="72" 
+                      font-weight="900" 
+                      fill="url(#textGradient2)" 
+                      text-anchor="middle">
+                    Zivara
+                </text>
+                <text x="150" y="220" 
+                      font-family="Montserrat, Arial, sans-serif" 
+                      font-size="28" 
+                      font-weight="400" 
+                      fill="#ff8c42" 
+                      text-anchor="middle" 
+                      letter-spacing="4px">
+                    SOLUTIONS
+                </text>
+            </svg>
+        </div>
+        
+        <div class="platform-info">
+            <strong>Stories & Posts:</strong> Perfect for Instagram stories, Facebook posts, LinkedIn posts, etc.
+        </div>
+        
+        <button onclick="downloadPNG('square-logo-preview', 'Zivara-Solutions-Square-300x300.png', 300, 300)">Download 300x300 PNG</button>
+        <button onclick="downloadPNG('square-logo-preview', 'Zivara-Solutions-Square-600x600.png', 600, 600)">Download 600x600 PNG</button>
+        <button onclick="downloadPNG('square-logo-preview', 'Zivara-Solutions-Square-1080x1080.png', 1080, 1080)">Download 1080x1080 PNG</button>
+    </div>
+
+    <script>
+        function downloadPNG(elementId, filename, width, height) {
+            const element = document.getElementById(elementId);
+            const svg = element.querySelector('svg');
+            
+            // Create a canvas
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = width;
+            canvas.height = height;
+            
+            // Set white background for better visibility
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, width, height);
+            
+            // Convert SVG to image
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+            const svgUrl = URL.createObjectURL(svgBlob);
+            
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, width, height);
+                
+                // Convert to PNG and download
+                canvas.toBlob(function(blob) {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }, 'image/png', 1.0); // High quality
+                
+                URL.revokeObjectURL(svgUrl);
+            };
+            img.src = svgUrl;
+        }
+    </script>
+</body>
+</html>

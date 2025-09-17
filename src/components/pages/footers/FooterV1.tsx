@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
-import logo1 from "../../../assets/imgs/Zivara1.svg";
+import logo1 from "../../../assets/imgs/ZivaraSolutions.svg";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 import { scrollToTheTopOfPage } from "@/lib/utils";
 

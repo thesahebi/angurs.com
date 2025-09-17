@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create PNG Logos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .logo-container {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        
+        .logo-preview {
+            margin: 10px 0;
+        }
+        
+        button {
+            background: #e95420;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        button:hover {
+            background: #ff6b35;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zivara Logo PNG Generator</h1>
+    
+    <div class="logo-container">
+        <h3>Symbol Only (Header)</h3>
+        <div class="logo-preview" id="symbol-preview">
+            <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="cloudOrbGradient" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:#e95420;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
+                    </radialGradient>
+                    <linearGradient id="jewelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge> 
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <text x="30" y="42" 
+                      font-family="Arial, sans-serif" 
+                      font-size="48" 
+                      font-weight="900" 
+                      fill="url(#jewelGradient)" 
+                      text-anchor="middle"
+                      filter="url(#glow)">
+                    Z
+                </text>
+            </svg>
+        </div>
+        <button onclick="downloadPNG('symbol-preview', 'Zivara-Symbol-60x60.png', 60, 60)">Download 60x60 PNG</button>
+        <button onclick="downloadPNG('symbol-preview', 'Zivara-Symbol-120x120.png', 120, 120)">Download 120x120 PNG</button>
+        <button onclick="downloadPNG('symbol-preview', 'Zivara-Symbol-256x256.png', 256, 256)">Download 256x256 PNG</button>
+    </div>
+    
+    <div class="logo-container">
+        <h3>Full Logo (Footer)</h3>
+        <div class="logo-preview" id="full-logo-preview">
+            <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="cloudOrbGradient2" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:#e95420;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
+                    </radialGradient>
+                    <linearGradient id="jewelGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffed4e;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge> 
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#e95420;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <text x="0" y="25" 
+                      font-family="Montserrat, Arial, sans-serif" 
+                      font-size="28" 
+                      font-weight="900" 
+                      fill="url(#textGradient)" 
+                      text-anchor="start">
+                    Zivara
+                </text>
+                <text x="0" y="42" 
+                      font-family="Montserrat, Arial, sans-serif" 
+                      font-size="12" 
+                      font-weight="400" 
+                      fill="#ff8c42" 
+                      text-anchor="start" 
+                      letter-spacing="1.5px">
+                    SOLUTIONS
+                </text>
+            </svg>
+        </div>
+        <button onclick="downloadPNG('full-logo-preview', 'Zivara-Solutions-220x60.png', 220, 60)">Download 220x60 PNG</button>
+        <button onclick="downloadPNG('full-logo-preview', 'Zivara-Solutions-440x120.png', 440, 120)">Download 440x120 PNG</button>
+        <button onclick="downloadPNG('full-logo-preview', 'Zivara-Solutions-800x218.png', 800, 218)">Download 800x218 PNG</button>
+    </div>
+
+    <script>
+        function downloadPNG(elementId, filename, width, height) {
+            const element = document.getElementById(elementId);
+            const svg = element.querySelector('svg');
+            
+            // Create a canvas
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = width;
+            canvas.height = height;
+            
+            // Set white background
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, width, height);
+            
+            // Convert SVG to image
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+            const svgUrl = URL.createObjectURL(svgBlob);
+            
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, width, height);
+                
+                // Convert to PNG and download
+                canvas.toBlob(function(blob) {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                });
+                
+                URL.revokeObjectURL(svgUrl);
+            };
+            img.src = svgUrl;
+        }
+    </script>
+</body>
+</html>

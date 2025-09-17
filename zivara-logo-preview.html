@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zivara Solutions Logo Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Cloud Orb Symbol */
+        .cloud-orb {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e95420 0%, #ff6b35 50%, #ff8c42 100%);
+            box-shadow: 
+                0 0 20px rgba(233, 84, 32, 0.4),
+                0 0 40px rgba(233, 84, 32, 0.2),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Jewel Shape (5-sided polygon) */
+        .jewel {
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            position: relative;
+            left: 4px;
+            top: -2px;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+        }
+
+        /* Connectivity Arc */
+        .connectivity-arc {
+            position: absolute;
+            width: 60px;
+            height: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-bottom: none;
+            border-radius: 60px 60px 0 0;
+            top: 20px;
+            left: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Microserver Node */
+        .microserver-node {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, #ffd700 0%, #ffed4e 100%);
+            border-radius: 50%;
+            top: 15px;
+            right: 15px;
+            box-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
+        }
+
+        /* Glow Effect */
+        .cloud-orb::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(233, 84, 32, 0.3) 0%, rgba(255, 107, 53, 0.2) 100%);
+            z-index: -1;
+            filter: blur(15px);
+        }
+
+        /* Text Styling */
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .company-name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            color: #e95420;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .company-tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #ff8c42;
+            margin: 0;
+            margin-top: 4px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Sizes */
+        .logo-small {
+            transform: scale(0.5);
+        }
+
+        .logo-medium {
+            transform: scale(0.75);
+        }
+
+        .logo-large {
+            transform: scale(1.25);
+        }
+
+        /* Preview Section */
+        .preview-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .preview-title {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .size-demo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* Dark Background Test */
+        .dark-bg {
+            background: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        /* Light Background Test */
+        .light-bg {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .light-bg .company-name {
+            color: #e95420;
+        }
+
+        .light-bg .company-tagline {
+            color: #ff8c42;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #ffffff; text-align: center; margin-bottom: 40px; font-weight: 300;">
+        Zivara Solutions Logo Preview
+    </h1>
+
+    <!-- Main Logo -->
+    <div class="preview-section">
+        <div class="preview-title">Main Logo Design</div>
+        <div class="logo-container">
+            <!-- Cloud Orb Symbol -->
+            <div class="cloud-orb">
+                <!-- Jewel Shape (represents "Ziv" - jewel) -->
+                <div class="jewel"></div>
+                <!-- Connectivity Arc (web connectivity) -->
+                <div class="connectivity-arc"></div>
+                <!-- Microserver Node (microserver development) -->
+                <div class="microserver-node"></div>
+            </div>
+            
+            <!-- Text -->
+            <div class="logo-text">
+                <h1 class="company-name">Zivara</h1>
+                <p class="company-tagline">Solutions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Size Variations -->
+    <div class="preview-section">
+        <div class="preview-title">Size Variations</div>
+        <div class="size-demo">
+            <div class="logo-container logo-small">
+                <div class="cloud-orb">
+                    <div class="jewel"></div>
+                    <div class="connectivity-arc"></div>
+                    <div class="microserver-node"></div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="company-name">Zivara</h1>
+                    <p class="company-tagline">Solutions</p>
+                </div>
+            </div>
+
+            <div class="logo-container logo-medium">
+                <div class="cloud-orb">
+                    <div class="jewel"></div>
+                    <div class="connectivity-arc"></div>
+                    <div class="microserver-node"></div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="company-name">Zivara</h1>
+                    <p class="company-tagline">Solutions</p>
+                </div>
+            </div>
+
+            <div class="logo-container logo-large">
+                <div class="cloud-orb">
+                    <div class="jewel"></div>
+                    <div class="connectivity-arc"></div>
+                    <div class="microserver-node"></div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="company-name">Zivara</h1>
+                    <p class="company-tagline">Solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Tests -->
+    <div class="preview-section">
+        <div class="preview-title">Background Compatibility</div>
+        
+        <div class="dark-bg">
+            <div class="logo-container">
+                <div class="cloud-orb">
+                    <div class="jewel"></div>
+                    <div class="connectivity-arc"></div>
+                    <div class="microserver-node"></div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="company-name">Zivara</h1>
+                    <p class="company-tagline">Solutions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-bg">
+            <div class="logo-container">
+                <div class="cloud-orb">
+                    <div class="jewel"></div>
+                    <div class="connectivity-arc"></div>
+                    <div class="microserver-node"></div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="company-name">Zivara</h1>
+                    <p class="company-tagline">Solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Elements Explanation -->
+    <div class="preview-section">
+        <div class="preview-title">Design Elements</div>
+        <div style="color: #cccccc; line-height: 1.6;">
+            <p><strong>Cloud Orb:</strong> Circular gradient orb representing cloud technology and digital transformation</p>
+            <p><strong>Jewel Shape:</strong> 5-sided polygon representing "Ziv" (jewel) from Zivara, positioned off-center for visual interest</p>
+            <p><strong>Connectivity Arc:</strong> Curved white arc symbolizing web connectivity and network infrastructure</p>
+            <p><strong>Microserver Node:</strong> Small dotted circle representing microserver development and distributed systems</p>
+            <p><strong>Glow Effect:</strong> Soft gradient aura radiating from the orb for an uplifting, modern feel</p>
+            <p><strong>Typography:</strong> Bold Montserrat font for "Zivara" with smaller uppercase "Solutions" tagline</p>
+            <p><strong>Colors:</strong> Using your website's signature orange (#e95420) with complementary gold accents</p>
+        </div>
+    </div>
+</body>
+</html>

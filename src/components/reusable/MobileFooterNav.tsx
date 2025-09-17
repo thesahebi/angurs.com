@@ -1,5 +1,5 @@
 import React from "react";
-// import logo1 from "../../assets/imgs/Zivara1.svg";
+// import logo1 from "../../assets/imgs/ZivaraSymbol.svg";
 import { IoHomeOutline } from "react-icons/io5";
 import { RiBloggerLine } from "react-icons/ri";
 import { GoProjectRoadmap } from "react-icons/go";
