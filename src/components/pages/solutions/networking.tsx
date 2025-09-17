@@ -100,8 +100,8 @@ const Networking: React.FC = () => {
           </div>
           
           {/* Modern Network Topology Map */}
-          <div className="relative bg-[#344256] rounded-3xl p-8 border border-white/5 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#344256] to-[#2A3441] opacity-50"></div>
+          <div className="relative bg-[#1E293B] rounded-3xl p-8 border border-white/5 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] opacity-50"></div>
             
             {/* Network Map Container */}
             <div className="relative z-10">
