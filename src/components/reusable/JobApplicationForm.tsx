@@ -106,7 +106,7 @@ const JobApplicationForm: React.FC<JobApplicationFormProps> = ({ isOpen, onClose
     
     try {
       // Use Formspree for job application submission
-      const response = await fetch('https://formspree.io/f/xgvlqqdv', {
+      const response = await fetch('https://formspree.io/f/xovnopdr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

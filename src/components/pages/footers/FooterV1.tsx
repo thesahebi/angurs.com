@@ -29,7 +29,7 @@ const FooterV1 = () => {
 
     try {
       // Use Formspree for newsletter subscription
-      const response = await fetch('https://formspree.io/f/xgvlqqdv', {
+      const response = await fetch('https://formspree.io/f/xovnopdr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
