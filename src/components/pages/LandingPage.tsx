@@ -1,5 +1,4 @@
 // import HeroV1 from "./hero/HeroV1";
-import FeatureV2 from "./features/FeatureV2";
 import FeatureV1 from "./features/FeatureV1";
 // import { Testimonial } from "../reusable/Testimonial";
 import { ClientV1 } from "./ClientV1";
@@ -25,7 +24,6 @@ const LandingPage = () => {
       <FeatureV1 />
 
       <WorkTogether />
-      <FeatureV2 isContent isTitle isBoth isLeft />
       {/* <Testimonial /> */}
       <CustomerRating />
       <ClientV1 />

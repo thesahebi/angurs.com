@@ -55,6 +55,7 @@ const TopHeaderV1 = () => {
         { path: "/solutions/virtualization", label: "Virtualization" },
         { path: "/solutions/backup", label: "Backup" },
         { path: "/solutions/networking", label: "Networking" },
+        { path: "/solutions/design-development", label: "Design & Development" },
       ]
     },
     {

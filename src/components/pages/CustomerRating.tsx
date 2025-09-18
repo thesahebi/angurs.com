@@ -110,135 +110,137 @@ export function CustomerRating() {
           </div>
         </div>
 
-        {/* Customer Testimonials - Zuplo Style */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {/* Testimonial 1 */}
-          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
-            <div className="flex items-start space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#e95420] to-[#d1451a] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-xs">SJ</span>
+        {/* Customer Testimonials - Moving to Left */}
+        <div className="relative">
+          <Marquee pauseOnHover className="[--duration:20s] [--direction:reverse]">
+            {/* Testimonial 1 */}
+            <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300 mr-6 w-80 flex-shrink-0">
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-[#e95420] to-[#d1451a] rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xs">SJ</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-semibold text-[#F1F5F9] text-sm">Sarah Johnson</h4>
+                  <p className="text-xs text-[#E2E8F0]">CTO | TechCorp</p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#F1F5F9] text-sm">Sarah Johnson</h4>
-                <p className="text-xs text-[#E2E8F0]">CTO | TechCorp</p>
+              
+              <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
+                "Zivara gives us the flexibility to scale efficiently, ensures security and compliance, and reduces operational complexity."
+              </blockquote>
+              
+              <div className="mb-4">
+                <StarRating rating={5} />
+              </div>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Hardware nodes:</span>
+                  <span className="font-bold text-[#F1F5F9]">90% fewer</span>
+                </div>
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Cost reduction:</span>
+                  <span className="font-bold text-[#F1F5F9]">70%</span>
+                </div>
               </div>
             </div>
-            
-            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "Zivara gives us the flexibility to scale efficiently, ensures security and compliance, and reduces operational complexity."
-            </blockquote>
-            
-            <div className="mb-4">
-              <StarRating rating={5} />
-            </div>
-            
-            <div className="space-y-2">
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Hardware nodes:</span>
-                <span className="font-bold text-[#F1F5F9]">90% fewer</span>
-              </div>
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Cost reduction:</span>
-                <span className="font-bold text-[#F1F5F9]">70%</span>
-              </div>
-            </div>
-          </div>
 
-          {/* Testimonial 2 */}
-          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
-            <div className="flex items-start space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-xs">MC</span>
+            {/* Testimonial 2 */}
+            <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300 mr-6 w-80 flex-shrink-0">
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xs">MC</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-semibold text-[#F1F5F9] text-sm">Michael Chen</h4>
+                  <p className="text-xs text-[#E2E8F0]">IT Director | Global Ent.</p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#F1F5F9] text-sm">Michael Chen</h4>
-                <p className="text-xs text-[#E2E8F0]">IT Director | Global Ent.</p>
+              
+              <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
+                "The move to Zivara was easy, taking just over 2 months to switch mission critical systems, and we're saving over 70% on costs."
+              </blockquote>
+              
+              <div className="mb-4">
+                <StarRating rating={5} />
+              </div>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Time saved:</span>
+                  <span className="font-bold text-[#F1F5F9]">2+ weeks</span>
+                </div>
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Deployments:</span>
+                  <span className="font-bold text-[#F1F5F9]">Instant</span>
+                </div>
               </div>
             </div>
-            
-            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "The move to Zivara was easy, taking just over 2 months to switch mission critical systems, and we're saving over 70% on costs."
-            </blockquote>
-            
-            <div className="mb-4">
-              <StarRating rating={5} />
-            </div>
-            
-            <div className="space-y-2">
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Time saved:</span>
-                <span className="font-bold text-[#F1F5F9]">2+ weeks</span>
-              </div>
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Deployments:</span>
-                <span className="font-bold text-[#F1F5F9]">Instant</span>
-              </div>
-            </div>
-          </div>
 
-          {/* Testimonial 3 */}
-          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
-            <div className="flex items-start space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-xs">ER</span>
+            {/* Testimonial 3 */}
+            <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300 mr-6 w-80 flex-shrink-0">
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xs">ER</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-semibold text-[#F1F5F9] text-sm">Emily Rodriguez</h4>
+                  <p className="text-xs text-[#E2E8F0]">Ops Manager | InnovateTech</p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#F1F5F9] text-sm">Emily Rodriguez</h4>
-                <p className="text-xs text-[#E2E8F0]">Ops Manager | InnovateTech</p>
+              
+              <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
+                "Zivara is the ultimate one-stop shop for all your IT needs. With automation and infrastructure management, it saved us weeks of engineering time."
+              </blockquote>
+              
+              <div className="mb-4">
+                <StarRating rating={5} />
+              </div>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Deployments:</span>
+                  <span className="font-bold text-[#F1F5F9]">20 seconds</span>
+                </div>
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Innovation:</span>
+                  <span className="font-bold text-[#F1F5F9]">Boosted</span>
+                </div>
               </div>
             </div>
-            
-            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "Zivara is the ultimate one-stop shop for all your IT needs. With automation and infrastructure management, it saved us weeks of engineering time."
-            </blockquote>
-            
-            <div className="mb-4">
-              <StarRating rating={5} />
-            </div>
-            
-            <div className="space-y-2">
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Deployments:</span>
-                <span className="font-bold text-[#F1F5F9]">20 seconds</span>
-              </div>
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Innovation:</span>
-                <span className="font-bold text-[#F1F5F9]">Boosted</span>
-              </div>
-            </div>
-          </div>
 
-          {/* Testimonial 4 */}
-          <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300">
-            <div className="flex items-start space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#8b5cf6] to-[#7c3aed] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-xs">DT</span>
+            {/* Testimonial 4 */}
+            <div className="bg-[#1E293B] rounded-xl p-6 shadow-lg border border-[#1E293B] hover:shadow-xl transition-all duration-300 mr-6 w-80 flex-shrink-0">
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-[#8b5cf6] to-[#7c3aed] rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-xs">DT</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-semibold text-[#F1F5F9] text-sm">David Thompson</h4>
+                  <p className="text-xs text-[#E2E8F0]">CEO | StartupHub</p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h4 className="font-semibold text-[#F1F5F9] text-sm">David Thompson</h4>
-                <p className="text-xs text-[#E2E8F0]">CEO | StartupHub</p>
+              
+              <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
+                "Zivara' built-in policies, automation tools, and version control all make managing our backend infrastructure a breeze."
+              </blockquote>
+              
+              <div className="mb-4">
+                <StarRating rating={5} />
+              </div>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Deployment:</span>
+                  <span className="font-bold text-[#F1F5F9]">80% faster</span>
+                </div>
+                <div className="flex justify-between text-xs">
+                  <span className="text-[#E2E8F0]">Downtime:</span>
+                  <span className="font-bold text-[#F1F5F9]">Zero</span>
+                </div>
               </div>
             </div>
-            
-            <blockquote className="text-[#E2E8F0] text-sm leading-relaxed mb-4">
-              "Zivara' built-in policies, automation tools, and version control all make managing our backend infrastructure a breeze."
-            </blockquote>
-            
-            <div className="mb-4">
-              <StarRating rating={5} />
-            </div>
-            
-            <div className="space-y-2">
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Deployment:</span>
-                <span className="font-bold text-[#F1F5F9]">80% faster</span>
-              </div>
-              <div className="flex justify-between text-xs">
-                <span className="text-[#E2E8F0]">Downtime:</span>
-                <span className="font-bold text-[#F1F5F9]">Zero</span>
-              </div>
-            </div>
-          </div>
+          </Marquee>
         </div>
       </div>
     </section>

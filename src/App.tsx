@@ -16,6 +16,7 @@ import Backup from "./components/pages/solutions/Backup";
 import Virtualization from "./components/pages/solutions/virtualization";
 import Networking from "./components/pages/solutions/networking";
 import Cloud from "./components/pages/solutions/cloud";
+import DesignDevelopment from "./components/pages/solutions/DesignDevelopment";
 import OurCompany from "./components/pages/about/OurCompany";
 import OurCapabilities from "./components/pages/about/OurCapabilities";
 import OurPeople from "./components/pages/about/OurPeople";
@@ -55,6 +56,7 @@ function App() {
             <Route path="/solutions/virtualization" element={<Virtualization />} />
             <Route path="/solutions/networking" element={<Networking />} />
             <Route path="/solutions/cloud" element={<Cloud />} />
+            <Route path="/solutions/design-development" element={<DesignDevelopment />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about/our-company" element={<OurCompany />} />
             <Route path="/about/capabilities" element={<OurCapabilities />} />

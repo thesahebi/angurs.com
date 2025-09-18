@@ -1,120 +1,145 @@
-import FeatureCardV1 from "./FeatureCardV1";
+import React, { useState, useEffect } from "react";
 import { featureData } from "./feature-data";
 
-
-
-
-
 const FeatureV1 = () => {
+  const [activeCard, setActiveCard] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+    const interval = setInterval(() => {
+      setActiveCard((prev) => (prev + 1) % featureData.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="py-20 md:py-32 bg-[#121212] relative overflow-hidden" id="features">
+    <section className="relative py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden" id="features">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
-        {/* Floating Orbs */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#3B82F6]/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-500"></div>
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-[0.02]">
-          <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
-            <defs>
-              <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" strokeWidth="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="100" height="100" fill="url(#grid)" />
-          </svg>
-        </div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 bg-[#3B82F6]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-[#10B981]/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
       </div>
 
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
-        {/* Hero Section */}
-        <div className="text-center mb-20 md:mb-24 pt-8 md:pt-12">
-          <div className="inline-flex items-center px-6 py-3 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full mb-8 backdrop-blur-sm">
-            <span className="w-2 h-2 bg-[#3B82F6] rounded-full mr-3 animate-pulse"></span>
-            🚀 Our Solutions
-          </div>
-          
-          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Empowering Your Business with{' '}
-            <span className="bg-gradient-to-r from-[#3B82F6] to-[#ff6b35] bg-clip-text text-transparent">
-              Smart Technology
-            </span>
-          </h2>
-          
-          <p className="text-lg md:text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed mb-12">
-            Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
-          </p>
+      {/* Grid Pattern Overlay */}
+      <div className="absolute inset-0 opacity-30" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+      }}></div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-2">500+</div>
-              <div className="text-sm text-[#94A3B8]">Projects Delivered</div>
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Header Section */}
+        <div className="text-center mb-16 md:mb-20 pt-8 md:pt-12">
+          <div className={`${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
+            <div className="inline-flex items-center px-4 py-2 bg-[#1E293B] border border-[#ff6b35]/20 rounded-full text-[#ff6b35] text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-[#ff6b35] rounded-full mr-2 animate-pulse"></span>
+              🚀 Our Solutions
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[#ff6b35] mb-2">99.9%</div>
-              <div className="text-sm text-[#94A3B8]">Uptime Guarantee</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[#8B5CF6] mb-2">24/7</div>
-              <div className="text-sm text-[#94A3B8]">Support</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[#10B981] mb-2">50+</div>
-              <div className="text-sm text-[#94A3B8]">Expert Team</div>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-white via-[#E2E8F0] to-[#94A3B8] bg-clip-text text-transparent">
+                Empowering Your Business
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-[#ff6b35] to-[#F59E0B] bg-clip-text text-transparent">
+                with Smart Technology
+              </span>
+            </h2>
+            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
+              Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-2">500+</div>
+                <div className="text-sm text-[#94A3B8]">Projects Delivered</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-[#ff6b35] mb-2">99.9%</div>
+                <div className="text-sm text-[#94A3B8]">Uptime Guarantee</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-[#8B5CF6] mb-2">24/7</div>
+                <div className="text-sm text-[#94A3B8]">Support</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-[#10B981] mb-2">50+</div>
+                <div className="text-sm text-[#94A3B8]">Expert Team</div>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-20">
-          {featureData.map((data, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {featureData.map((service, index) => {
+            const IconComponent = service.icon;
             return (
-              <div key={data.id} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative bg-[#1E293B] rounded-3xl p-8 border border-white/5 hover:border-white/10 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/10 group-hover:-translate-y-2">
-                  <div className="flex items-start space-x-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        {typeof data.icon === "function" ? (
-                          <data.icon className="w-8 h-8 text-white" />
-                        ) : (
-                          data.icon
-                        )}
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#3B82F6] transition-colors duration-300">
-                        {data.title}
-                      </h3>
-                      <p className="text-[#E2E8F0] leading-relaxed">
-                        {data.content}
-                      </p>
-                      <div className="mt-4">
-                        <span className="inline-flex items-center text-[#3B82F6] text-sm font-medium group-hover:text-[#ff6b35] transition-colors duration-300">
-                          Learn More
-                          <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                      </div>
+              <div
+                key={service.id}
+                className={`group relative bg-[#1E293B]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#334155]/50 hover:border-[#ff6b35]/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[#ff6b35]/10 ${
+                  isVisible ? 'animate-fade-in-up' : 'opacity-0'
+                }`}
+                style={{ animationDelay: `${index * 200}ms` }}
+                onMouseEnter={() => setActiveCard(index)}
+              >
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Icon */}
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <IconComponent className="w-8 h-8 text-white" />
                     </div>
                   </div>
+
+                  {/* Title */}
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                    {service.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                    {service.content}
+                  </p>
+
+                  {/* Learn More Link */}
+                  <div className="mt-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <a
+                      href="/solutions"
+                      className="inline-flex items-center text-[#ff6b35] font-semibold hover:text-[#F59E0B] transition-colors duration-300"
+                    >
+                      Learn More
+                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
+
+                {/* Decorative Elements */}
+                <div className="absolute top-4 right-4 w-2 h-2 bg-[#ff6b35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-4 left-4 w-1 h-1 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"></div>
               </div>
             );
           })}
         </div>
 
+        {/* Bottom CTA */}
+        <div className="text-center mt-16 md:mt-20">
+          <div className="inline-flex items-center px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+            <span>Explore All Solutions</span>
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default FeatureV1;
-
-
-
-
