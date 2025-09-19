@@ -294,7 +294,7 @@ const ContactUs: React.FC = () => {
           </div>
           <button
             type="submit"
-                      className="w-full py-4 px-6 text-lg font-bold text-center text-white rounded-2xl border border-white/20 focus:ring-4 focus:outline-none focus:ring-[#e95420]/30 transition-all duration-300 hover:bg-[#e95420] disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full py-4 px-6 text-lg font-bold text-center text-white rounded-2xl border border-white/20 focus:ring-4 focus:outline-none focus:ring-white/80 transition-all duration-300 hover:bg-[#e95420] disabled:opacity-50 disabled:cursor-not-allowed"
                       style={{ backgroundColor: '#ff6b35' }}
             disabled={isSubmitting}
             aria-describedby={submitStatus ? "submit-status" : undefined}

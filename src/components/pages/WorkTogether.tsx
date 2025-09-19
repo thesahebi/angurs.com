@@ -85,7 +85,7 @@ function WorkTogether() {
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#1E293B] border border-[#1E293B] rounded-full mb-8 md:mb-12">
+          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#60A5FA] bg-[#1E293B] border border-[#1E293B] rounded-full mb-8 md:mb-12">
             🤝 Partnership
           </div>
           <p 
@@ -104,7 +104,7 @@ function WorkTogether() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
             <a
               href="tel:+16309234653"
-              className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+              className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
               style={{ backgroundColor: '#ff6b35' }}
             >
               Start Your Project

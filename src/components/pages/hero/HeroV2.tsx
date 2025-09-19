@@ -167,7 +167,7 @@ function HeroV2() {
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
                   aria-label="Solutions dropdown menu"
-                  className="inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/50"
+                  className="inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
                   style={{ backgroundColor: '#ff6b35' }}
                 >
                   Solutions

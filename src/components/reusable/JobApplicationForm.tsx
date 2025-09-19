@@ -480,7 +480,7 @@ Job Application Details:
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-8 py-3 text-white font-semibold rounded-xl border border-white/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center hover:bg-[#e95420]"
+                  className="px-8 py-3 text-white font-semibold rounded-xl border border-white/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
                   style={{ backgroundColor: '#ff6b35' }}
                 >
                   {isSubmitting ? (
