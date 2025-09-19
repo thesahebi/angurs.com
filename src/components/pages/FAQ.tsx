@@ -50,9 +50,12 @@ const FAQ: React.FC = () => {
               <button
                 className="w-full flex items-center justify-between p-4 bg-blue-500 text-white font-medium hover:bg-ubun transition"
                 onClick={() => toggleFAQ(index)}
+                aria-expanded={activeIndex === index}
+                aria-controls={`faq-answer-${index}`}
+                aria-label={`Toggle FAQ: ${item.question}`}
               >
                 {/* <FaPlus /> */}
-                <span>{item.question}</span>
+                <span id={`faq-question-${index}`}>{item.question}</span>
                 {activeIndex === index ? (
                   <FaMinus className="text-white w-5 h-5" />
                 ) : (
@@ -60,7 +63,12 @@ const FAQ: React.FC = () => {
                 )}
               </button>
               {activeIndex === index && (
-                <div className="p-4 bg-gray-100 text-gray-700 space-y-3">
+                <div 
+                  id={`faq-answer-${index}`}
+                  className="p-4 bg-gray-100 text-gray-700 space-y-3"
+                  role="region"
+                  aria-labelledby={`faq-question-${index}`}
+                >
                   {item.answer.map((paragraph, idx) => (
                     <p key={idx}>{paragraph}</p>
                   ))}

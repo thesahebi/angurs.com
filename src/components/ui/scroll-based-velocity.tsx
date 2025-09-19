@@ -107,9 +107,14 @@ export function VelocityScroll({
   }
 
   return (
-    <section className="relative w-full bg-gradient-to-r from-[#e95420] via-[#ff6b35] to-[#ff8c42] py-4 md:py-6 overflow-hidden">
+    <section 
+      className="relative w-full bg-gradient-to-r from-[#e95420] via-[#ff6b35] to-[#ff8c42] py-4 md:py-6 overflow-hidden"
+      aria-label="Technology highlights"
+      role="marquee"
+      aria-live="polite"
+    >
       {/* Animated background elements */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0" aria-hidden="true">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#e95420]/20 via-[#ff6b35]/20 to-[#ff8c42]/20"></div>
         <div className="absolute top-2 left-10 w-4 h-4 bg-white/30 rounded-full animate-pulse"></div>
         <div className="absolute top-4 right-20 w-2 h-2 bg-white/40 rounded-full animate-pulse delay-1000"></div>

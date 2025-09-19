@@ -114,6 +114,8 @@ const TopHeaderV1 = () => {
             type="button"
             className="md:hidden p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#e95420]/50 transition-all duration-200"
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMenuOpen ? (
               <svg
@@ -312,10 +314,14 @@ const TopHeaderV1 = () => {
 
         {/* Mobile Navigation Menu */}
         <div
+          id="mobile-menu"
           className={`md:hidden absolute top-12 left-0 right-0 bg-[#0F172A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
               ? "opacity-100 translate-y-0 h-lvh z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
             }`}
+          role="navigation"
+          aria-label="Mobile navigation menu"
+          aria-hidden={!isMenuOpen}
         >
           <nav className="px-4 py-4">
             {navigationItems.map((item) => (
@@ -335,6 +341,8 @@ const TopHeaderV1 = () => {
                   <div>
                     <button
                       onClick={() => toggleMobileMenuItem(item.label)}
+                      aria-expanded={expandedMenuItems.includes(item.label)}
+                      aria-controls={`mobile-submenu-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
                       className="flex items-center justify-between w-full py-3 text-base px-4 rounded-xl transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#e95420]"
                     >
                       <span>{item.label}</span>
@@ -355,11 +363,17 @@ const TopHeaderV1 = () => {
                       </svg>
                     </button>
                     {item.children && expandedMenuItems.includes(item.label) && (
-                      <div className="ml-4 mt-2 space-y-1">
+                      <div 
+                        id={`mobile-submenu-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
+                        className="ml-4 mt-2 space-y-1"
+                        role="menu"
+                        aria-label={`${item.label} submenu`}
+                      >
                         {item.children.map((child) => (
                           <Link
                             key={child.label}
                             to={child.path}
+                            role="menuitem"
                             className="block py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#e95420]"
                             onClick={() => setIsMenuOpen(false)}
                           >

@@ -15,7 +15,7 @@ const TeamCard: React.FC<TeamCardV2Props> = ({
     <>
       <div className={` border   ${className} dark:bg-gray-800`}>
         
-        <ImageFull src={profile} className={imgClass} />
+        <ImageFull src={profile} className={imgClass} alt={`${name}, ${job}`} />
         <div className=" pt-2 pb-3">
           <div className="font-bold  text-xl">{name}</div>
           <div className=" tex-16 text mb-0">{job}</div>

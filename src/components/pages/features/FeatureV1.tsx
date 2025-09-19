@@ -34,8 +34,8 @@ const FeatureV1 = () => {
           <div className={`${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
             <div className="inline-flex items-center px-4 py-2 bg-[#1E293B] border border-[#ff6b35]/20 rounded-full text-[#ff6b35] text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-[#ff6b35] rounded-full mr-2 animate-pulse"></span>
-              🚀 Our Solutions
-            </div>
+            🚀 Our Solutions
+          </div>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white via-[#E2E8F0] to-[#94A3B8] bg-clip-text text-transparent">
                 Empowering Your Business
@@ -43,11 +43,11 @@ const FeatureV1 = () => {
               <br />
               <span className="bg-gradient-to-r from-[#ff6b35] to-[#F59E0B] bg-clip-text text-transparent">
                 with Smart Technology
-              </span>
-            </h2>
+            </span>
+          </h2>
             <p className="text-lg md:text-xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
-              Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
-            </p>
+            Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
+          </p>
 
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
@@ -105,19 +105,6 @@ const FeatureV1 = () => {
                   <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
                     {service.content}
                   </p>
-
-                  {/* Learn More Link */}
-                  <div className="mt-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <a
-                      href="/solutions"
-                      className="inline-flex items-center text-[#ff6b35] font-semibold hover:text-[#F59E0B] transition-colors duration-300"
-                    >
-                      Learn More
-                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                      </svg>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Decorative Elements */}
@@ -128,15 +115,6 @@ const FeatureV1 = () => {
           })}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16 md:mt-20">
-          <div className="inline-flex items-center px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-            <span>Explore All Solutions</span>
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -234,7 +234,7 @@ const ContactUs: React.FC = () => {
                     </p>
                   </div>
                   
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6" role="form" aria-label="Contact form">
                     <div className="group">
             <label
               htmlFor="email"
@@ -251,6 +251,7 @@ const ContactUs: React.FC = () => {
                         className="w-full p-3 text-base bg-[#1E293B] backdrop-blur-sm border-2 border-[#1E293B] rounded-2xl focus:border-[#3B82F6] focus:ring-4 focus:ring-[#3B82F6]/20 transition-all duration-300 placeholder-gray-400"
               placeholder="name@gmail.com"
               required
+              aria-required="true"
             />
           </div>
                     <div className="group">
@@ -269,6 +270,7 @@ const ContactUs: React.FC = () => {
                         className="w-full p-3 text-base bg-[#1E293B] backdrop-blur-sm border-2 border-[#1E293B] rounded-2xl focus:border-[#3B82F6] focus:ring-4 focus:ring-[#3B82F6]/20 transition-all duration-300 placeholder-gray-400"
               placeholder="Let us know how we can help you"
               required
+              aria-required="true"
             />
           </div>
                     <div className="group">
@@ -287,6 +289,7 @@ const ContactUs: React.FC = () => {
               placeholder="Tell us about your project requirements..."
                         rows={6}
               required
+              aria-required="true"
             ></textarea>
           </div>
           <button
@@ -294,6 +297,7 @@ const ContactUs: React.FC = () => {
                       className="w-full py-4 px-6 text-lg font-bold text-center text-white rounded-2xl border border-white/20 focus:ring-4 focus:outline-none focus:ring-[#e95420]/30 transition-all duration-300 hover:bg-[#e95420] disabled:opacity-50 disabled:cursor-not-allowed"
                       style={{ backgroundColor: '#ff6b35' }}
             disabled={isSubmitting}
+            aria-describedby={submitStatus ? "submit-status" : undefined}
           >
                      {isSubmitting ? (
                        <div className="flex items-center justify-center space-x-2">
@@ -306,7 +310,11 @@ const ContactUs: React.FC = () => {
           </button>
           
           {submitStatus && (
-                      <div className={`mt-6 p-6 rounded-2xl border-2 backdrop-blur-sm ${
+                      <div 
+                        id="submit-status"
+                        role="alert"
+                        aria-live="polite"
+                        className={`mt-6 p-6 rounded-2xl border-2 backdrop-blur-sm ${
               submitStatus.includes('successfully') 
                           ? 'bg-green-50/80 text-green-800 border-green-200 shadow-lg' 
                           : 'bg-red-50/80 text-red-800 border-red-200 shadow-lg'

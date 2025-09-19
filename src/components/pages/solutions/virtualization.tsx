@@ -103,36 +103,18 @@ const Virtualization: React.FC = () => {
       <section className="py-16 md:py-16 md:py-24 bg-[#121212]">
         <div className="container mx-auto px-4">
           {/* Automatic, Beautiful Management */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-8 md:mb-12 md:mb-20">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
-                Automatic, Beautiful Management
-              </h2>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
-                Built directly from infrastructure specifications, Zivara ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
-              </p>
-              <div className="flex items-center text-[#3b82f6] font-semibold">
-                <span>Infrastructure Specifications</span>
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-            <div className="bg-[#1E293B] rounded-2xl p-4 border border-white/10">
-              <div className="rounded-lg p-4">
-                <div className="flex items-center mb-4">
-                  <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                  <span className="text-sm text-[#94A3B8] ml-4">vm-dashboard.html</span>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-4 bg-[#3b82f6] rounded w-3/4"></div>
-                  <div className="h-4 bg-[#1E293B] rounded w-1/2"></div>
-                  <div className="h-4 bg-[#1E293B] rounded w-2/3"></div>
-                  <div className="h-4 bg-[#10b981] rounded w-1/3"></div>
-                </div>
-              </div>
+          <div className="text-center mb-8 md:mb-12 md:mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
+              Automatic, Beautiful Management
+            </h2>
+            <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12 max-w-4xl mx-auto">
+              Built directly from infrastructure specifications, Zivara ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
+            </p>
+            <div className="flex items-center justify-center text-[#3b82f6] font-semibold">
+              <span>Infrastructure Specifications</span>
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
 

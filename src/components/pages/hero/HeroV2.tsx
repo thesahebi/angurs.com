@@ -154,6 +154,19 @@ function HeroV2() {
                 <button
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setIsDropdownOpen(!isDropdownOpen);
+                    }
+                    if (e.key === 'Escape') {
+                      setIsDropdownOpen(false);
+                    }
+                  }}
+                  aria-expanded={isDropdownOpen}
+                  aria-haspopup="true"
+                  aria-label="Solutions dropdown menu"
                   className="inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                   style={{ backgroundColor: '#ff6b35' }}
                 >
@@ -170,12 +183,17 @@ function HeroV2() {
                   }`}
                   onMouseEnter={() => setIsDropdownOpen(true)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
+                  role="menu"
+                  aria-label="Solutions menu"
+                  aria-hidden={!isDropdownOpen}
                 >
                   <div className="p-1 sm:p-2">
                     {solutions.map((solution) => (
                       <a
                         key={solution.name}
                         href={solution.href}
+                        role="menuitem"
+                        aria-label={`${solution.name} - ${solution.description}`}
                         className="flex items-center p-2 sm:p-3 rounded-lg sm:rounded-xl hover:bg-gray-700 transition-all duration-200 group/item"
                       >
                         <div className="text-lg sm:text-xl mr-2 sm:mr-3 group-hover/item:scale-110 transition-transform duration-200">
