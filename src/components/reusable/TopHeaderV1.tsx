@@ -112,7 +112,7 @@ const TopHeaderV1 = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="md:hidden p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#e95420]/50 transition-all duration-200"
+            className="md:hidden p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/50 transition-all duration-200"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -299,7 +299,7 @@ const TopHeaderV1 = () => {
           <div className="hidden md:block">
             <a
               href="tel:+16309234653"
-              className="group relative inline-flex items-center justify-center px-4 py-2 text-sm lg:text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#e95420]/50"
+              className="group relative inline-flex items-center justify-center px-4 py-2 text-sm lg:text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/50"
               style={{ backgroundColor: '#ff6b35' }}
               role="button"
             >

@@ -20,6 +20,7 @@ const LayoutPage = () => {
           <button
             onClick={scrollToTop}
             className="fixed bottom-20 right-4 z-50 bg-ubun text-white p-2 rounded-full"
+            aria-label="Scroll to top"
           >
             <IoArrowUpOutline className="text-2xl" />
           </button>

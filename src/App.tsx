@@ -41,13 +41,9 @@ function App() {
   }, []);
   
   return (
-    <>
-    <>
-      {/* Your existing routes/layout */}
+    <div>
       <CookieConsent />
-    </>
       <Router>
-
         <ScrollToTopAl/>
         <Routes>
           <Route path="/" element={<LayoutPage />}>
@@ -78,10 +74,9 @@ function App() {
             <Route path="/cookies" element={<CookiePolicy />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
-          
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

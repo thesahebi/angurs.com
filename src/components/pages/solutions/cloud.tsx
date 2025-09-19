@@ -2,7 +2,7 @@ import React from "react";
 
 const Cloud: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-[#121212]">
       {/* Header */}
       <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-[#121212] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -336,7 +336,7 @@ print("API live in 30 seconds!")`}
         </div>
       </section>
 
-    </div>
+    </main>
   );
 };
 

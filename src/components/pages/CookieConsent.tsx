@@ -69,7 +69,7 @@ const CookieConsent: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={handleAcceptAll}
-            className="px-4 py-2 text-white text-sm font-semibold rounded-lg border border-white/20 transition-all duration-200 hover:scale-105"
+            className="px-4 py-2 text-white text-sm font-semibold rounded-lg border border-white/20 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/50"
             style={{ backgroundColor: '#ff6b35' }}
             aria-label="Accept all cookies and tracking"
           >
@@ -77,7 +77,7 @@ const CookieConsent: React.FC = () => {
           </button>
           <button
             onClick={handleNecessaryOnly}
-            className="px-4 py-2 bg-[#1E293B] hover:bg-[#1E293B]/80 text-[#F1F5F9] text-sm font-semibold rounded-lg border border-[#1E293B] hover:border-[#e95420]/50 transition-all duration-200"
+            className="px-4 py-2 bg-[#1E293B] hover:bg-[#1E293B]/80 text-[#F1F5F9] text-sm font-semibold rounded-lg border border-[#1E293B] hover:border-[#e95420]/50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#1E293B]/50"
             aria-label="Accept only necessary cookies"
           >
             Necessary cookies only

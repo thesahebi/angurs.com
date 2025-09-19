@@ -71,7 +71,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-[#121212]">
       <PageHero
         title="Get In Touch"
         subtitle="Let's start a conversation"
@@ -344,7 +344,7 @@ const ContactUs: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 
 const DesignDevelopment = () => {
   const [activeTab, setActiveTab] = useState("frontend");
 
-  const technologies = {
+  const technologies: Record<string, Array<{ name: string; icon: string; description: string }>> = {
     frontend: [
       { name: "ReactJS", icon: "⚛️", description: "Component-based UI library" },
       { name: "Angular", icon: "🅰️", description: "Full-featured framework" },
@@ -35,7 +35,7 @@ const DesignDevelopment = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0F172A] text-white">
+    <main className="min-h-screen bg-[#0F172A] text-white">
       {/* Technologies Section - Moved to Top */}
       <section id="technologies" className="py-24 md:py-32 bg-[#0F172A]">
         <div className="container mx-auto px-4">
@@ -78,7 +78,7 @@ const DesignDevelopment = () => {
 
             {/* Technology Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" role="tabpanel" id={`${activeTab}-panel`} aria-label={`${activeTab} technologies`}>
-              {technologies[activeTab].map((tech, index) => (
+              {technologies[activeTab].map((tech: { name: string; icon: string; description: string }, index: number) => (
                 <div
                   key={index}
                   className="group bg-[#1E293B] rounded-xl p-6 border border-[#334155] hover:border-[#ff6b35]/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#ff6b35]/10"
@@ -200,7 +200,7 @@ const DesignDevelopment = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

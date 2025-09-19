@@ -2,7 +2,7 @@ import React from "react";
 
 const Networking: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-[#121212]">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         {/* Animated Background */}
@@ -502,7 +502,7 @@ const Networking: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

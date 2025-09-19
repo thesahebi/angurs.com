@@ -10,11 +10,11 @@ import HeroV2 from "./hero/HeroV2";
 
 const LandingPage = () => {
   return (
-    <>
+    <main>
       {/* <HeroV1 /> */}
       <HeroV2 />
   
- 
+
       <VelocityScroll
         default_velocity={2} 
         text="Beautiful Web Design • Smart Software Development • Seamless Server Migration • Scalable Microservices • Cloud Solutions That Grow • "
@@ -27,7 +27,7 @@ const LandingPage = () => {
       {/* <Testimonial /> */}
       <CustomerRating />
       <ClientV1 />
-    </>
+    </main>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Virtualization: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-[#121212]">
       {/* Header */}
       <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-[#121212] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -397,7 +397,7 @@ const Virtualization: React.FC = () => {
         </div>
       </section>
 
-    </div>
+    </main>
   );
 };
 
