@@ -1,143 +1,227 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Virtualization: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <main className="min-h-screen bg-[#121212]">
-      {/* Header */}
-      <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-[#121212] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
+      {/* Hero Section */}
+      <section className="relative py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-[#3B82F6]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-[#10B981]/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
         </div>
+
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 opacity-30" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3b82f6] bg-[#3b82f6]/20 border border-[#3b82f6]/30 rounded-full mb-6 backdrop-blur-sm">
-              🖥️ VIRTUALIZATION
-            </div>
-            
-            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#F1F5F9] mb-4 leading-tight">
-              Self-Serve{' '}
-              <span className="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] bg-clip-text text-transparent">
-                Virtualization
-              </span>
-            </h1>
-            
-            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto leading-relaxed mb-6 md:mb-8">
-              Allow your teams to deploy, manage, and scale virtual infrastructure—all in one place. Zivara provides all the tools you need to build a VMware-like virtualization experience.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
-                style={{ backgroundColor: '#ff6b35' }}
-              >
-                Read the Docs
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
-              >
-                Start for Free
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Features - Zuplo Style */}
-      <section className="py-16 md:py-16 md:py-24 bg-[#1E293B]">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
-            {/* Feature 1 */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-[#F1F5F9] mb-4">Accurate & Reliable</h3>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed">
-                Kick outdated infrastructure management to the curb. Zivara is virtualization native, so your config isn't just making promises — it's creating your infrastructure, keeping it forever optimized and current.
-              </p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-[#F1F5F9] mb-4">Optimize Onboarding</h3>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed">
-                Zivara integrates with your existing infrastructure to enable teams to instantly deploy, get access, and start managing virtual machines in minutes.
-              </p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#8b5cf6] to-[#7c3aed] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-[#F1F5F9] mb-4">Built-In Testing</h3>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed">
-                A full virtualization playground is integrated into your management console. Users can go from signing up, to deploying their first VM without ever leaving their browser tab.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature Sections - Zuplo Style */}
-      <section className="py-16 md:py-16 md:py-24 bg-[#121212]">
-        <div className="container mx-auto px-4">
-          {/* Automatic, Beautiful Management */}
-          <div className="relative mb-8 md:mb-12 md:mb-20">
-            {/* Background Elements */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-10 left-10 w-32 h-32 bg-[#ff6b35]/20 rounded-full blur-3xl animate-pulse"></div>
-              <div className="absolute top-20 right-20 w-24 h-24 bg-[#3B82F6]/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
-              <div className="absolute bottom-10 left-1/4 w-40 h-40 bg-[#10B981]/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
-            </div>
-            
-            <div className="relative z-10 text-center">
+          {/* Header Section */}
+          <div className="text-center mb-16 md:mb-20 pt-8 md:pt-12">
+            <div className={`${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
               <div className="inline-flex items-center px-4 py-2 bg-[#1E293B] border border-[#ff6b35]/20 rounded-full text-[#ff6b35] text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-[#ff6b35] rounded-full mr-2 animate-pulse"></span>
-                🎨 Beautiful Management
+                🖥️ Virtualization Solutions
               </div>
-              
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-white via-[#E2E8F0] to-[#94A3B8] bg-clip-text text-transparent">
-                  Automatic, Beautiful
+                  Self-Serve
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-[#ff6b35] to-[#F59E0B] bg-clip-text text-transparent">
-                  Management
+                  Virtualization
                 </span>
-              </h2>
-              
-              <p className="text-lg md:text-xl text-[#E2E8F0] leading-relaxed mb-8 md:mb-12 max-w-4xl mx-auto">
-                Built directly from infrastructure specifications, Zivara ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
+              </h1>
+              <p className="text-lg md:text-xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
+                Allow your teams to deploy, manage, and scale virtual infrastructure—all in one place. Zivara provides all the tools you need to build a VMware-like virtualization experience.
               </p>
               
-              <div className="flex items-center justify-center text-[#ff6b35] font-semibold group cursor-pointer">
-                <span>Infrastructure Specifications</span>
-                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
+                  style={{ backgroundColor: '#ff6b35' }}
+                >
+                  Read the Docs
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#ff6b35] rounded-xl transition-all duration-200 hover:text-[#ff6b35] focus:outline-none focus:ring-2 focus:ring-white/80"
+                >
+                  Start for Free
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Features */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-[#3B82F6]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-[#10B981]/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
+        </div>
+
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 opacity-30" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Feature 1 */}
+            <div className="group relative bg-[#1E293B]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#334155]/50 hover:border-[#ff6b35]/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[#ff6b35]/10">
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Icon */}
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                  Accurate & Reliable
+                </h3>
+
+                {/* Description */}
+                <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                  Kick outdated infrastructure management to the curb. Zivara is virtualization native, so your config isn't just making promises — it's creating your infrastructure, keeping it forever optimized and current.
+                </p>
+              </div>
+
+              {/* Decorative Elements */}
+              <div className="absolute top-4 right-4 w-2 h-2 bg-[#ff6b35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 w-1 h-1 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"></div>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="group relative bg-[#1E293B]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#334155]/50 hover:border-[#ff6b35]/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[#ff6b35]/10">
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Icon */}
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                  Optimize Onboarding
+                </h3>
+
+                {/* Description */}
+                <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                  Zivara integrates with your existing infrastructure to enable teams to instantly deploy, get access, and start managing virtual machines in minutes.
+                </p>
+              </div>
+
+              {/* Decorative Elements */}
+              <div className="absolute top-4 right-4 w-2 h-2 bg-[#ff6b35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 w-1 h-1 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"></div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="group relative bg-[#1E293B]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#334155]/50 hover:border-[#ff6b35]/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[#ff6b35]/10">
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Icon */}
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                  Built-In Testing
+                </h3>
+
+                {/* Description */}
+                <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                  A full virtualization playground is integrated into your management console. Users can go from signing up, to deploying their first VM without ever leaving their browser tab.
+                </p>
+              </div>
+
+              {/* Decorative Elements */}
+              <div className="absolute top-4 right-4 w-2 h-2 bg-[#ff6b35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 w-1 h-1 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Features Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-[#3B82F6]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-[#10B981]/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
+        </div>
+
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 opacity-30" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Header Section */}
+          <div className="text-center mb-16 md:mb-20">
+            <div className="inline-flex items-center px-4 py-2 bg-[#1E293B] border border-[#ff6b35]/20 rounded-full text-[#ff6b35] text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-[#ff6b35] rounded-full mr-2 animate-pulse"></span>
+              🎨 Advanced Management
+            </div>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-white via-[#E2E8F0] to-[#94A3B8] bg-clip-text text-transparent">
+                Automatic, Beautiful
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-[#ff6b35] to-[#F59E0B] bg-clip-text text-transparent">
+                Management
+              </span>
+            </h2>
+            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
+              Built directly from infrastructure specifications, Zivara ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
+            </p>
           </div>
 
           {/* Robust VM Management */}
