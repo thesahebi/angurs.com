@@ -13,6 +13,7 @@ const Backup: React.FC = () => {
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#2563EB]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#3B82F6]/15 rounded-full blur-2xl animate-pulse delay-500"></div>
           </div>
+          
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -157,18 +158,9 @@ const Backup: React.FC = () => {
             </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Solutions Section */}
-      <section id="solutions" className="py-16 md:py-24 relative">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
-            Our Backup & Replication{' '}
-            <span className="text-[#3B82F6]">Solutions</span>
-          </h2>
-        
-        <div className="grid lg:grid-cols-2 gap-12">
+          
+          {/* Enterprise Solutions Cards */}
+          <div className="grid lg:grid-cols-2 gap-12 mt-16">
             {/* On-Prem Backup */}
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -176,10 +168,10 @@ const Backup: React.FC = () => {
                 <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">💽</span>
-              </div>
+                  </div>
                   <h3 className="text-2xl font-bold text-[#F1F5F9]">On-Prem Backup & Replication</h3>
-            </div>
-            
+                </div>
+                
                 <div className="space-y-6">
                   {[
                     "High-performance local backups with zero downtime",
@@ -194,11 +186,11 @@ const Backup: React.FC = () => {
                         </svg>
                       </div>
                       <p className="text-[#E2E8F0] text-lg">{feature}</p>
-              </div>
+                    </div>
                   ))}
+                </div>
               </div>
             </div>
-          </div>
 
             {/* Cloud Backup */}
             <div className="group relative">
@@ -207,10 +199,10 @@ const Backup: React.FC = () => {
                 <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">☁️</span>
-              </div>
+                  </div>
                   <h3 className="text-2xl font-bold text-[#F1F5F9]">Cloud Backup & Replication</h3>
-            </div>
-            
+                </div>
+                
                 <div className="space-y-6">
                   {[
                     "Secure, scalable storage in the cloud",
@@ -225,9 +217,9 @@ const Backup: React.FC = () => {
                         </svg>
                       </div>
                       <p className="text-[#E2E8F0] text-lg">{feature}</p>
-              </div>
+                    </div>
                   ))}
-              </div>
+                </div>
               </div>
             </div>
           </div>
@@ -264,40 +256,6 @@ const Backup: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 relative">
-        <div className="container mx-auto px-4">
-          <div className="relative overflow-hidden rounded-3xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#1E293B]"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#3B82F6]/10 to-[#2563EB]/10"></div>
-            <div className="absolute top-0 left-0 w-full h-full">
-              <div className="absolute top-10 left-10 w-32 h-32 bg-[#3B82F6]/20 rounded-full blur-2xl animate-pulse"></div>
-              <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#2563EB]/15 rounded-full blur-2xl animate-pulse delay-1000"></div>
-            </div>
-            
-            <div className="relative z-10 text-center p-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F1F5F9]">
-                Keep your business running —{' '}
-                <span className="text-[#3B82F6]">no matter what happens</span>
-        </h2>
-              <p className="text-xl text-[#E2E8F0] mb-10 max-w-3xl mx-auto">
-          Talk to our backup specialists and get enterprise-grade protection for your critical data.
-        </p>
-        <a
-          href="/contact"
-                className="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-semibold text-white border border-white/20 rounded-2xl transition-all duration-300 hover:scale-105"
-                style={{ backgroundColor: '#ff6b35' }}
-              >
-                <span className="mr-3">💬</span>
-                Talk to Our Backup Specialists
-                <svg className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 };

@@ -35,9 +35,8 @@ const Networking: React.FC = () => {
             </h1>
             
             {/* Subtitle */}
-            <p className="text-sm md:text-base lg:text-lg text-white max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10">
-              From branch offices to entire campuses, Zivara designs and deploys networks that are fast, secure, 
-              and built for growth. Connect your future today.
+            <p className="text-sm md:text-base lg:text-lg text-white max-w-xl mx-auto leading-relaxed mb-8 md:mb-10">
+              Fast, secure networks built for growth. From branch offices to entire campuses.
             </p>
             
             {/* CTA Buttons */}
@@ -94,8 +93,8 @@ const Networking: React.FC = () => {
               Enterprise Network{' '}
               <span className="text-[#3B82F6]">Architecture</span>
             </h2>
-            <p className="text-sm md:text-base lg:text-lg text-white max-w-2xl mx-auto">
-              Our comprehensive network solutions include Active Directory, Domain Controllers, DNS, DHCP, and advanced security infrastructure.
+            <p className="text-sm md:text-base lg:text-lg text-white max-w-xl mx-auto">
+              Complete network solutions with Active Directory, DNS, DHCP, and advanced security.
             </p>
           </div>
           
@@ -274,7 +273,7 @@ const Networking: React.FC = () => {
                 ),
                 title: "Active Directory",
                 description: "Centralized user management and authentication",
-                features: ["User Authentication", "Group Policy", "Single Sign-On", "Security Policies"],
+                features: ["User Authentication", "Group Policy", "Single Sign-On"],
                 color: "from-[#10B981] to-[#059669]"
               },
               {
@@ -285,7 +284,7 @@ const Networking: React.FC = () => {
                 ),
                 title: "DNS Services",
                 description: "Domain name resolution and management",
-                features: ["Name Resolution", "Load Balancing", "Caching", "Security"],
+                features: ["Name Resolution", "Load Balancing", "Caching"],
                 color: "from-[#8B5CF6] to-[#7C3AED]"
               },
               {
@@ -296,7 +295,7 @@ const Networking: React.FC = () => {
                 ),
                 title: "DHCP Services",
                 description: "Automatic IP address management",
-                features: ["IP Assignment", "Lease Management", "Reservations", "Options"],
+                features: ["IP Assignment", "Lease Management", "Reservations"],
                 color: "from-[#F59E0B] to-[#D97706]"
               },
               {
@@ -307,7 +306,7 @@ const Networking: React.FC = () => {
                 ),
                 title: "Network Security",
                 description: "Advanced threat protection and monitoring",
-                features: ["Firewall Rules", "Intrusion Detection", "VPN Access", "Monitoring"],
+                features: ["Firewall Rules", "Intrusion Detection", "VPN Access"],
                 color: "from-[#EF4444] to-[#DC2626]"
               }
             ].map((service, index) => (

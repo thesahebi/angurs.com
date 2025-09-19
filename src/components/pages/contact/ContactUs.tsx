@@ -73,14 +73,14 @@ const ContactUs: React.FC = () => {
   return (
     <main className="min-h-screen bg-[#121212]">
       <PageHero
-        title="Get In Touch"
-        subtitle="Let's start a conversation"
-        description="Ready to transform your technology infrastructure? Our expert team is here to help you achieve your digital transformation goals. Reach out to us today."
+        title="Let's Connect"
+        subtitle="Ready to build something amazing?"
+        description="Transform your ideas into reality with our expert team. We're here to help you succeed."
         primaryButtonText="Start Your Project"
         primaryButtonLink="#contact-form"
         secondaryButtonText="View Our Services"
-        secondaryButtonLink="/solutions/cloud"
-        accentColor="#3B82F6"
+        secondaryButtonLink="/solutions/design-development"
+        accentColor="#ff6b35"
         backgroundPattern="circuits"
         showGraph={true}
         graphType="network"
@@ -88,42 +88,45 @@ const ContactUs: React.FC = () => {
       />
 
       {/* Modern Support Section */}
-      <section className="py-16 bg-[#121212]">
+      <section className="py-12 md:py-16 bg-[#121212]">
         <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-10 md:mb-16">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-[#3B82F6] to-orange-500 rounded-2xl mb-4">
-                <svg className="w-8 h-8 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8 md:mb-12">
+              <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-r from-[#ff6b35] to-[#e95420] rounded-xl mb-3">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z" />
                 </svg>
               </div>
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-[#1f2937] to-gray-600 bg-clip-text text-transparent mb-3">
-                Support & Ticketing
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F1F5F9] mb-3">
+                Support &{' '}
+                <span className="bg-gradient-to-r from-[#ff6b35] to-[#e95420] bg-clip-text text-transparent">
+                  Ticketing
+                </span>
               </h2>
-              <p className="text-lg text-[#F1F5F9] max-w-2xl mx-auto">
+              <p className="text-base text-[#E2E8F0] max-w-xl mx-auto">
                 Get instant help with our advanced support system. Track, manage, and resolve issues efficiently.
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Create Ticket Card */}
-              <div className="group relative bg-[#1E293B] rounded-3xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-[#3B82F6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="group relative bg-[#1E293B] rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35]/5 to-[#ff6b35]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative">
-                  <div className="w-16 h-16 bg-[#3B82F6] rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-10 h-10 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 bg-[#ff6b35] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-[#F1F5F9] mb-3">
+                  <h3 className="text-lg font-bold text-[#F1F5F9] mb-3">
                     Create New Ticket
                   </h3>
-                  <p className="text-[#F1F5F9] mb-6 text-base leading-relaxed">
+                  <p className="text-sm text-[#E2E8F0] mb-4 leading-relaxed">
                     Submit detailed support requests with priority levels. Our expert team responds within 24 hours.
                   </p>
                   <button
                     onClick={handleCreateTicket}
-                    className="w-full py-3 px-5 text-white border border-white/20 rounded-xl transition-all duration-300 font-semibold text-base hover:bg-[#e95420]"
+                    className="w-full py-2 px-4 text-white text-sm font-semibold rounded-lg border border-white/20 transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
                     style={{ backgroundColor: '#ff6b35' }}
                   >
                     Create Ticket
@@ -132,23 +135,24 @@ const ContactUs: React.FC = () => {
               </div>
 
               {/* Check Ticket Status Card */}
-              <div className="group relative bg-[#1E293B] rounded-3xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-[#3B82F6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="group relative bg-[#1E293B] rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35]/5 to-[#ff6b35]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative">
-                  <div className="w-16 h-16 bg-[#3B82F6] rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-10 h-10 text-[#F1F5F9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 bg-[#ff6b35] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-[#F1F5F9] mb-3">
+                  <h3 className="text-lg font-bold text-[#F1F5F9] mb-3">
                     Track Progress
                   </h3>
-                  <p className="text-[#F1F5F9] mb-6 text-base leading-relaxed">
+                  <p className="text-sm text-[#E2E8F0] mb-4 leading-relaxed">
                     Monitor your ticket status in real-time. Get updates and communicate with our support team.
                   </p>
                   <button
                     onClick={handleCheckTicketStatus}
-                    className="w-full py-3 px-5 bg-gradient-to-r from-blue-500 to-indigo-600 text-[#F1F5F9] rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 font-semibold text-base shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="w-full py-2 px-4 text-white text-sm font-semibold rounded-lg border border-white/20 transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
+                    style={{ backgroundColor: '#ff6b35' }}
                   >
                     Check Status
                   </button>

@@ -51,11 +51,11 @@ const TopHeaderV1 = () => {
     {
       label: "Solutions",
       children: [
+        { path: "/solutions/design-development", label: "Design & Development" },
         { path: "/solutions/cloud", label: "Cloud" },
         { path: "/solutions/virtualization", label: "Virtualization" },
         { path: "/solutions/backup", label: "Backup" },
         { path: "/solutions/networking", label: "Networking" },
-        { path: "/solutions/design-development", label: "Design & Development" },
       ]
     },
     {
