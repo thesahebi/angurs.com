@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { featureData } from "./feature-data";
 
 const FeatureV1 = () => {
-  const [activeCard, setActiveCard] = useState(0);
+  const [, setActiveCard] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -92,7 +92,7 @@ const FeatureV1 = () => {
                   {/* Icon */}
                   <div className="mb-8">
                     <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <IconComponent className="w-10 h-10 text-white" />
+                      {typeof IconComponent === 'function' ? <IconComponent className="w-10 h-10 text-white" /> : IconComponent}
                     </div>
                   </div>
 
