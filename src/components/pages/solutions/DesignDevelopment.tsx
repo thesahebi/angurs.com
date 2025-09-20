@@ -27,8 +27,8 @@ const DesignDevelopment = () => {
         </div>
       </section>
 
-      {/* Our Services Section */}
-      <section className="py-16 md:py-24 bg-[#1A1A1A]">
+            {/* Our Services Section */}
+            <section className="py-16 md:py-24 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -116,8 +116,8 @@ const DesignDevelopment = () => {
       </section>
 
 
-      {/* Process Section */}
-      <section className="py-16 md:py-24 bg-[#1A1A1A]">
+            {/* Process Section */}
+            <section className="py-16 md:py-24 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">

@@ -28,8 +28,8 @@ const Cloud: React.FC = () => {
         </div>
       </section>
 
-      {/* Key Features */}
-      <section className="py-12 md:py-16 bg-[#1A1A1A]">
+            {/* Key Features */}
+            <section className="py-12 md:py-16 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#e7e7e7] mb-4">
@@ -66,8 +66,8 @@ const Cloud: React.FC = () => {
         </div>
       </section>
 
-      {/* Code & Setup Section */}
-      <section className="py-16 md:py-16 md:py-24 bg-[#1A1A1A]">
+            {/* Code & Setup Section */}
+            <section className="py-16 md:py-16 md:py-24 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           {/* Code & Setup Section */}
           <div>

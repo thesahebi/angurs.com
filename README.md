@@ -28,7 +28,12 @@ Button hover: #2563EB
 social-media-logos.html
 
 
+Visual Identity
 
+Color Scheme: Black (#0A0A0A) / Deep Gray (#1A1A1A) / Gold (#D4AF37) accents
+Typography: Modern sans-serif (likely Inter or SF Pro) with strong hierarchy
+Layout: Full-width sections with subtle gradients and glassmorphism
+Graphics: High-fidelity dashboard mockups with gold highlights
 
 
 
