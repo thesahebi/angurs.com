@@ -86,7 +86,7 @@ const FooterV1 = () => {
                   href="https://www.instagram.com/Zivaraofficial/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
+                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Follow us on Instagram"
                 >
                   <FaInstagram className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
@@ -95,7 +95,7 @@ const FooterV1 = () => {
                   href="https://www.linkedin.com/company/Zivara-web-solutions/about/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
+                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Connect on LinkedIn"
                 >
                   <FaLinkedin className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
@@ -104,7 +104,7 @@ const FooterV1 = () => {
                   href="https://twitter.com/Zivara"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
+                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Follow us on Twitter"
                 >
                   <FaTwitter className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
@@ -113,7 +113,7 @@ const FooterV1 = () => {
                   href="https://github.com/Zivara"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
+                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Check our GitHub"
                 >
                   <FaGithub className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
@@ -125,7 +125,7 @@ const FooterV1 = () => {
             <div>
               <h3 className="text-lg font-bold text-[#e7e7e7] mb-6 relative">
                 Solutions
-                <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#e95420]"></div>
+                <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#3b82f6]"></div>
               </h3>
               <ul className="space-y-4">
                 <li>
@@ -171,7 +171,7 @@ const FooterV1 = () => {
             <div>
               <h3 className="text-lg font-bold text-[#e7e7e7] mb-6 relative">
                 Services
-                <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#e95420]"></div>
+                <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#3b82f6]"></div>
               </h3>
               <ul className="space-y-4">
                 <li>
@@ -217,11 +217,11 @@ const FooterV1 = () => {
             <div>
               <h3 className="text-lg font-bold text-[#e7e7e7] mb-6 relative">
                 Get In Touch
-                <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#e95420]"></div>
+                <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#3b82f6]"></div>
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
-                  <FaEnvelope className="w-5 h-5 text-[#e95420] mt-0.5 flex-shrink-0" />
+                  <FaEnvelope className="w-5 h-5 text-[#3b82f6] mt-0.5 flex-shrink-0" />
                   <a
                     href="mailto:Support@Zivara.com"
                     className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
@@ -230,7 +230,7 @@ const FooterV1 = () => {
                   </a>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <FaPhone className="w-5 h-5 text-[#e95420] mt-0.5 flex-shrink-0" />
+                  <FaPhone className="w-5 h-5 text-[#3b82f6] mt-0.5 flex-shrink-0" />
                   <a
                     href="tel:+16309234653"
                     className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
@@ -239,7 +239,7 @@ const FooterV1 = () => {
                   </a>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <FaMapMarkerAlt className="w-5 h-5 text-[#e95420] mt-0.5 flex-shrink-0" />
+                  <FaMapMarkerAlt className="w-5 h-5 text-[#3b82f6] mt-0.5 flex-shrink-0" />
                   <span className="text-[#e7e7e7]">
                     1355 N Sandburg Ter 2307<br />
                     Chicago, IL 60610
@@ -253,7 +253,7 @@ const FooterV1 = () => {
         {/* Newsletter Section */}
         <div>
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl py-12">
-            <div className="bg-gradient-to-r from-[#e95420]/10 to-[#3b82f6]/10 rounded-2xl p-8 border border-white/10">
+            <div className="bg-gradient-to-r from-[#3b82f6]/10 to-[#3b82f6]/10 rounded-2xl p-8 border border-white/10">
               <div className="text-center max-w-2xl mx-auto">
                 <h3 className="text-2xl font-bold text-[#e7e7e7] mb-4">
                   Stay Updated with Our Latest Insights
@@ -268,14 +268,14 @@ const FooterV1 = () => {
                       value={email}
                       onChange={handleEmailChange}
                       placeholder="Enter your email address"
-                      className="flex-1 px-4 py-3 bg-[#1E293B]/50 border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#e95420] focus:border-transparent"
+                      className="flex-1 px-4 py-3 bg-[#1E293B]/50 border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#3b82f6] focus:border-transparent"
                       required
                     />
                     <button 
                       type="submit"
                       disabled={isSubmitting}
-                      className="px-6 py-3 text-[#e7e7e7] border border-white/20 font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
-                      style={{ backgroundColor: '#ff6b35' }}
+                      className="px-6 py-3 text-[#e7e7e7] border border-white/20 font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#3b82f6] focus:outline-none focus:ring-2 focus:ring-white/80"
+                      style={{ backgroundColor: '#3b82f6' }}
                     >
                       {isSubmitting ? 'Subscribing...' : 'Subscribe'}
                       <FaArrowRight className="ml-2" />

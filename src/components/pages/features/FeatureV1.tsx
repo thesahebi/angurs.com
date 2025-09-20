@@ -37,7 +37,7 @@ const FeatureV1 = () => {
               🚀 Our Solutions
             </div>
             <h2 className="lg:text-6xl md:text-5xl text-4xl font-bold text-primary leading-tight mb-8 md:mb-12">
-              <span className="bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] bg-clip-text text-transparent">
                 Empowering Your Business
               </span>
               <br />

@@ -140,8 +140,10 @@ function HeroV2() {
               ✨ Trusted source of integration
             </p>
             <h1 ref={titleRef} className="hero-title text-primary">
-              Building Smarter AI Solutions with{' '}
-              <span className="text-primary">
+              <span className="bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] bg-clip-text text-transparent">
+                Building Smarter AI Solutions with
+              </span>{' '}
+              <span className="text-gray-200">
                 Zivara
               </span>
             </h1>
