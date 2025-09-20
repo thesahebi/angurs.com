@@ -73,17 +73,17 @@ const FeatureV1 = () => {
                   {/* Icon */}
                   <div className="mb-8">
                     <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      {typeof IconComponent === 'function' ? <IconComponent className="w-6 h-6 text-[#e7e7e7]" /> : IconComponent}
+                      {typeof IconComponent === 'function' ? <IconComponent className="w-[30px] h-[30px] text-[#e7e7e7]" /> : IconComponent}
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-2xl font-bold mb-6 text-primary group-hover:text-primary transition-colors duration-300">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-lg text-secondary leading-relaxed group-hover:text-primary transition-colors duration-300">
+                  <p className="text-xl text-secondary leading-relaxed group-hover:text-primary transition-colors duration-300">
                     {service.content}
                   </p>
                 </div>

@@ -67,7 +67,7 @@ const FrontendShowcase: React.FC<FrontendShowcaseProps> = ({
 
       {/* Right Side Preview */}
       <div
-        className={`relative rounded-[2rem] shadow-xl transform hover:scale-[1.02] transition-transform order-${orderImg}`}
+        className={`relative rounded-[32px] shadow-xl transform hover:scale-[1.02] transition-transform order-${orderImg}`}
       >
         <img src={imgUrl} className="rounded-xl " />
       </div>

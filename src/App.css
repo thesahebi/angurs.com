@@ -79,69 +79,69 @@ p {
 
 /* Standardized Hero Section Styles */
 .hero-title {
-  font-size: 3rem !important; /* 48px */
+  font-size: 72px !important; /* 72px */
   font-weight: 700 !important;
   line-height: 1.1 !important;
   letter-spacing: -0.025em !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 16px !important;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem !important; /* 20px */
+  font-size: 20px !important; /* 20px */
   font-weight: 500 !important;
   line-height: 1.5 !important;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 24px !important;
   opacity: 0.9 !important;
 }
 
 .hero-description {
-  font-size: 1.125rem !important; /* 18px */
+  font-size: 18px !important; /* 18px */
   font-weight: 400 !important;
   line-height: 1.6 !important;
-  margin-bottom: 2rem !important;
+  margin-bottom: 32px !important;
   opacity: 0.8 !important;
 }
 
 /* Responsive Hero Styles */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2.5rem !important; /* 40px for very small screens */
+    font-size: 40px !important; /* 40px for very small screens */
   }
   
   .hero-subtitle {
-    font-size: 1.125rem !important; /* 18px */
+    font-size: 18px !important; /* 18px */
   }
   
   .hero-description {
-    font-size: 1rem !important; /* 16px */
+    font-size: 16px !important; /* 16px */
   }
 }
 
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 4rem !important; /* 64px */
+    font-size: 72px !important; /* 72px */
   }
   
   .hero-subtitle {
-    font-size: 1.5rem !important; /* 24px */
+    font-size: 20px !important; /* 20px */
   }
   
   .hero-description {
-    font-size: 1.25rem !important; /* 20px */
+    font-size: 18px !important; /* 18px */
   }
 }
 
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 5rem !important; /* 80px */
+    font-size: 72px !important; /* 72px */
   }
   
   .hero-subtitle {
-    font-size: 1.75rem !important; /* 28px */
+    font-size: 20px !important; /* 20px */
   }
   
   .hero-description {
-    font-size: 1.375rem !important; /* 22px */
+    font-size: 18px !important; /* 18px */
   }
 }
 
