@@ -136,7 +136,7 @@ function HeroV2() {
 
         <div className="relative px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 mx-auto max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl z-10">
           <div className="max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto text-center">
-            <p ref={taglineRef} className="inline-flex px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-[#e7e7e7] bg-[#1E293B] border border-[#1E293B] rounded-full shadow-sm backdrop-blur-sm">
+            <p ref={taglineRef} className="inline-flex px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-[#e7e7e7] bg-[#1E293B] border border-[#1E293B] rounded-full shadow-sm backdrop-blur-sm mb-6 sm:mb-4">
               ✨ Trusted source of integration
             </p>
             <h1 ref={titleRef} className="hero-title text-primary">
