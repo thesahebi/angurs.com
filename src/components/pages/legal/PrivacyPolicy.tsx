@@ -3,7 +3,7 @@ import PageHero from '../../reusable/PageHero';
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <div className="min-h-screen bg-[#0A0A0A]">
       <PageHero
         title="Privacy Policy"
         subtitle="Your privacy matters to us"
@@ -20,7 +20,7 @@ const PrivacyPolicy: React.FC = () => {
       />
 
       {/* Main Content */}
-      <section className="py-16 md:py-24 bg-[#121212]">
+      <section className="py-16 md:py-24 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             
@@ -28,25 +28,25 @@ const PrivacyPolicy: React.FC = () => {
             <div className="bg-[#1E293B] rounded-2xl p-6 mb-10 md:mb-16 border border-[#1E293B]">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-[#3B82F6] rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#F1F5F9]">Last Updated</h3>
-                  <p className="text-[#E2E8F0]">December 2024</p>
+                  <h3 className="text-lg font-semibold text-[#e7e7e7]">Last Updated</h3>
+                  <p className="text-[#e7e7e7]">December 2024</p>
                 </div>
               </div>
             </div>
 
             {/* Introduction */}
             <div className="mb-10 md:mb-16">
-              <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Introduction</h2>
+              <h2 className="text-3xl font-bold text-[#e7e7e7] mb-6">Introduction</h2>
               <div className="prose prose-lg max-w-none">
-                <p className="text-[#E2E8F0] leading-relaxed mb-4">
+                <p className="text-[#e7e7e7] leading-relaxed mb-4">
                   Zivara Solutions LLC ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
                 </p>
-                <p className="text-[#E2E8F0] leading-relaxed">
+                <p className="text-[#e7e7e7] leading-relaxed">
                   By using our website or services, you agree to the collection and use of information in accordance with this policy.
                 </p>
               </div>
@@ -54,19 +54,19 @@ const PrivacyPolicy: React.FC = () => {
 
             {/* Information We Collect */}
             <div className="mb-10 md:mb-16">
-              <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Information We Collect</h2>
+              <h2 className="text-3xl font-bold text-[#e7e7e7] mb-6">Information We Collect</h2>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8 md:mb-12">
                 <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B]">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-semibold text-[#F1F5F9]">Personal Information</h3>
+                    <h3 className="text-xl font-semibold text-[#e7e7e7]">Personal Information</h3>
                   </div>
-                  <ul className="space-y-2 text-[#E2E8F0]">
+                  <ul className="space-y-2 text-[#e7e7e7]">
                     <li>• Name and contact information</li>
                     <li>• Email address</li>
                     <li>• Phone number</li>
@@ -78,13 +78,13 @@ const PrivacyPolicy: React.FC = () => {
                 <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B]">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-10 h-10 bg-[#3B82F6] rounded-xl flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-semibold text-[#F1F5F9]">Technical Information</h3>
+                    <h3 className="text-xl font-semibold text-[#e7e7e7]">Technical Information</h3>
                   </div>
-                  <ul className="space-y-2 text-[#E2E8F0]">
+                  <ul className="space-y-2 text-[#e7e7e7]">
                     <li>• IP address and location</li>
                     <li>• Browser type and version</li>
                     <li>• Device information</li>
@@ -97,12 +97,12 @@ const PrivacyPolicy: React.FC = () => {
 
             {/* How We Use Information */}
             <div className="mb-10 md:mb-16">
-              <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">How We Use Your Information</h2>
+              <h2 className="text-3xl font-bold text-[#e7e7e7] mb-6">How We Use Your Information</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h3 className="text-xl font-semibold text-[#F1F5F9] mb-4">Service Delivery</h3>
-                    <ul className="space-y-2 text-[#E2E8F0]">
+                    <h3 className="text-xl font-semibold text-[#e7e7e7] mb-4">Service Delivery</h3>
+                    <ul className="space-y-2 text-[#e7e7e7]">
                       <li>• Provide and maintain our services</li>
                       <li>• Process your requests and inquiries</li>
                       <li>• Deliver project solutions</li>
@@ -110,8 +110,8 @@ const PrivacyPolicy: React.FC = () => {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-[#F1F5F9] mb-4">Communication</h3>
-                    <ul className="space-y-2 text-[#E2E8F0]">
+                    <h3 className="text-xl font-semibold text-[#e7e7e7] mb-4">Communication</h3>
+                    <ul className="space-y-2 text-[#e7e7e7]">
                       <li>• Send important updates</li>
                       <li>• Respond to your inquiries</li>
                       <li>• Share relevant content</li>
@@ -124,20 +124,20 @@ const PrivacyPolicy: React.FC = () => {
 
             {/* Data Protection */}
             <div className="mb-10 md:mb-16">
-              <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Data Protection & Security</h2>
+              <h2 className="text-3xl font-bold text-[#e7e7e7] mb-6">Data Protection & Security</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-[#F1F5F9] mb-3">Security Measures</h3>
-                    <p className="text-[#E2E8F0] leading-relaxed mb-4">
+                    <h3 className="text-xl font-semibold text-[#e7e7e7] mb-3">Security Measures</h3>
+                    <p className="text-[#e7e7e7] leading-relaxed mb-4">
                       We implement industry-standard security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
                     </p>
-                    <ul className="space-y-2 text-[#E2E8F0]">
+                    <ul className="space-y-2 text-[#e7e7e7]">
                       <li>• SSL encryption for data transmission</li>
                       <li>• Secure data storage and processing</li>
                       <li>• Regular security audits and updates</li>
@@ -150,54 +150,54 @@ const PrivacyPolicy: React.FC = () => {
 
             {/* Your Rights */}
             <div className="mb-10 md:mb-16">
-              <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Your Rights</h2>
+              <h2 className="text-3xl font-bold text-[#e7e7e7] mb-6">Your Rights</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B] shadow-sm hover:shadow-md transition-shadow">
                   <div className="w-12 h-12 bg-[#3B82F6] rounded-xl flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-[#F1F5F9] mb-2">Access</h3>
-                  <p className="text-[#E2E8F0] text-sm">Request access to your personal data</p>
+                  <h3 className="text-lg font-semibold text-[#e7e7e7] mb-2">Access</h3>
+                  <p className="text-[#e7e7e7] text-sm">Request access to your personal data</p>
                 </div>
 
                 <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B] shadow-sm hover:shadow-md transition-shadow">
                   <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-[#F1F5F9] mb-2">Correction</h3>
-                  <p className="text-[#E2E8F0] text-sm">Request correction of inaccurate data</p>
+                  <h3 className="text-lg font-semibold text-[#e7e7e7] mb-2">Correction</h3>
+                  <p className="text-[#e7e7e7] text-sm">Request correction of inaccurate data</p>
                 </div>
 
                 <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B] shadow-sm hover:shadow-md transition-shadow">
                   <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-[#F1F5F9] mb-2">Deletion</h3>
-                  <p className="text-[#E2E8F0] text-sm">Request deletion of your data</p>
+                  <h3 className="text-lg font-semibold text-[#e7e7e7] mb-2">Deletion</h3>
+                  <p className="text-[#e7e7e7] text-sm">Request deletion of your data</p>
                 </div>
               </div>
             </div>
 
             {/* Contact Information */}
             <div className="mb-10 md:mb-16">
-              <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Contact Us</h2>
+              <h2 className="text-3xl font-bold text-[#e7e7e7] mb-6">Contact Us</h2>
               <div className="bg-[#1E293B] rounded-2xl p-8 border border-[#1E293B]">
                 <div className="text-center">
-                  <h3 className="text-xl font-semibold text-[#F1F5F9] mb-4">Questions About This Privacy Policy?</h3>
-                  <p className="text-[#E2E8F0] mb-6">
+                  <h3 className="text-xl font-semibold text-[#e7e7e7] mb-4">Questions About This Privacy Policy?</h3>
+                  <p className="text-[#e7e7e7] mb-6">
                     If you have any questions about this Privacy Policy or our data practices, please contact us:
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                       href="mailto:support@Zivara.com"
-                      className="inline-flex items-center justify-center px-6 py-3 text-white border border-white/20 rounded-xl transition-colors hover:bg-[#e95420]"
+                      className="inline-flex items-center justify-center px-6 py-3 text-[#e7e7e7] border border-white/20 rounded-xl transition-colors hover:bg-[#e95420]"
                       style={{ backgroundColor: '#ff6b35' }}
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -207,7 +207,7 @@ const PrivacyPolicy: React.FC = () => {
                     </a>
                     <a
                       href="/contact"
-                      className="inline-flex items-center justify-center px-6 py-3 bg-[#1E293B] text-[#F1F5F9] border-2 border-[#3B82F6] rounded-xl hover:bg-[#2563EB] transition-colors"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-[#1E293B] text-[#e7e7e7] border-2 border-[#3B82F6] rounded-xl hover:bg-[#2563EB] transition-colors"
                     >
                       Contact Form
                     </a>
@@ -218,9 +218,9 @@ const PrivacyPolicy: React.FC = () => {
 
             {/* Changes to Policy */}
             <div className="mb-10 md:mb-16">
-              <h2 className="text-3xl font-bold text-[#F1F5F9] mb-6">Changes to This Privacy Policy</h2>
+              <h2 className="text-3xl font-bold text-[#e7e7e7] mb-6">Changes to This Privacy Policy</h2>
               <div className="bg-[#1E293B] rounded-2xl p-6 border border-[#1E293B]">
-                <p className="text-[#E2E8F0] leading-relaxed">
+                <p className="text-[#e7e7e7] leading-relaxed">
                   We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
                 </p>
               </div>

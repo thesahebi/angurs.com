@@ -155,13 +155,13 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <section className={`relative bg-[#121212] ${isHomepage ? 'pt-20 md:pt-24' : isAboutUs ? 'pt-32 md:pt-44' : 'pt-24 md:pt-28'} pb-12 md:pb-16 overflow-hidden`} id="hero-section">
+    <section className={`relative bg-[#0A0A0A] ${isHomepage ? 'pt-20 md:pt-24' : isAboutUs ? 'pt-32 md:pt-44' : 'pt-24 md:pt-28'} pb-12 md:pb-16 overflow-hidden`} id="hero-section">
       {renderBackgroundPattern()}
       {renderGraph()}
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <p className="inline-flex px-3 py-1.5 text-sm text-[#F1F5F9] border border-[#1E293B] rounded-full font-pj mb-4 bg-[#1E293B]">
+          <p className="inline-flex px-3 py-1.5 text-sm text-[#e7e7e7] border border-[#1E293B] rounded-full font-pj mb-4 bg-[#1E293B]">
             {subtitle}
           </p>
           
@@ -176,7 +176,7 @@ const PageHero: React.FC<PageHeroProps> = ({
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
             <a
               href={primaryButtonLink}
-              className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+              className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
               style={{ backgroundColor: '#ff6b35' }}
             >
               {primaryButtonText}
@@ -188,7 +188,7 @@ const PageHero: React.FC<PageHeroProps> = ({
             {secondaryButtonText && secondaryButtonLink && (
               <a
                 href={secondaryButtonLink}
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 {secondaryButtonText}
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

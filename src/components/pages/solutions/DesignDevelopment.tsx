@@ -35,9 +35,9 @@ const DesignDevelopment = () => {
   };
 
   return (
-    <main className="min-h-screen bg-surface-dark text-white">
+    <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
       {/* Technologies Section - Moved to Top */}
-      <section id="technologies" className="py-24 md:py-32 bg-surface-dark">
+      <section id="technologies" className="py-24 md:py-32 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -67,7 +67,7 @@ const DesignDevelopment = () => {
                   aria-label={`View ${category} technologies`}
                   className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 capitalize ${
                     activeTab === category
-                      ? "bg-primary text-white shadow-lg"
+                      ? "bg-primary text-[#e7e7e7] shadow-lg"
                       : "bg-surface text-secondary hover:bg-surface-light"
                   }`}
                 >
@@ -102,7 +102,7 @@ const DesignDevelopment = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 md:py-24 bg-surface">
+      <section className="py-16 md:py-24 bg-[#1A1A1A]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -169,7 +169,7 @@ const DesignDevelopment = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-surface-dark">
+      <section className="py-16 md:py-24 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="hero-title">
@@ -183,7 +183,7 @@ const DesignDevelopment = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
-                className="btn-primary inline-flex items-center px-8 py-4 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                className="btn-primary inline-flex items-center px-8 py-4 text-[#e7e7e7] font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Start Your Project
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -192,7 +192,7 @@ const DesignDevelopment = () => {
               </a>
               <a
                 href="/solutions"
-                className="btn-secondary inline-flex items-center px-8 py-4 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+                className="btn-secondary inline-flex items-center px-8 py-4 text-[#e7e7e7] font-semibold rounded-xl transition-all duration-300 hover:scale-105"
               >
                 View All Solutions
               </a>

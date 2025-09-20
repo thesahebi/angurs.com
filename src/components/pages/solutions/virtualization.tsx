@@ -8,9 +8,9 @@ const Virtualization: React.FC = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-surface-dark">
+    <main className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-surface-dark overflow-hidden">
+      <section className="relative py-20 md:py-32 bg-[#0A0A0A] overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -48,7 +48,7 @@ const Virtualization: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
                 <a
                   href="/contact"
-                  className="btn-primary inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
+                  className="btn-primary inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
                 >
                   Read the Docs
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ const Virtualization: React.FC = () => {
                 </a>
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#ff6b35] rounded-xl transition-all duration-200 hover:text-[#ff6b35] focus:outline-none focus:ring-2 focus:ring-white/80"
+                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#ff6b35] rounded-xl transition-all duration-200 hover:text-[#ff6b35] focus:outline-none focus:ring-2 focus:ring-white/80"
                 >
                   Start for Free
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-[#0A0A0A] via-[#1A1A1A] to-[#0A0A0A] overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -98,19 +98,19 @@ const Virtualization: React.FC = () => {
                 {/* Icon */}
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#e7e7e7] group-hover:text-[#ff6b35] transition-colors duration-300">
                   Accurate & Reliable
                 </h3>
 
                 {/* Description */}
-                <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-[#e7e7e7] leading-relaxed group-hover:text-[#e7e7e7] transition-colors duration-300">
                   Kick outdated infrastructure management to the curb. Zivara is virtualization native, so your config isn't just making promises — it's creating your infrastructure, keeping it forever optimized and current.
                 </p>
               </div>
@@ -130,19 +130,19 @@ const Virtualization: React.FC = () => {
                 {/* Icon */}
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#e7e7e7] group-hover:text-[#ff6b35] transition-colors duration-300">
                   Optimize Onboarding
                 </h3>
 
                 {/* Description */}
-                <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-[#e7e7e7] leading-relaxed group-hover:text-[#e7e7e7] transition-colors duration-300">
                   Zivara integrates with your existing infrastructure to enable teams to instantly deploy, get access, and start managing virtual machines in minutes.
                 </p>
               </div>
@@ -162,19 +162,19 @@ const Virtualization: React.FC = () => {
                 {/* Icon */}
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#e7e7e7] group-hover:text-[#ff6b35] transition-colors duration-300">
                   Built-In Testing
                 </h3>
 
                 {/* Description */}
-                <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-[#e7e7e7] leading-relaxed group-hover:text-[#e7e7e7] transition-colors duration-300">
                   A full virtualization playground is integrated into your management console. Users can go from signing up, to deploying their first VM without ever leaving their browser tab.
                 </p>
               </div>
@@ -188,7 +188,7 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Advanced Features Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-[#0A0A0A] via-[#1A1A1A] to-[#0A0A0A] overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -218,17 +218,17 @@ const Virtualization: React.FC = () => {
                 Management
               </span>
             </h2>
-            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
+            <p className="text-lg md:text-xl text-[#e7e7e7] max-w-4xl mx-auto leading-relaxed mb-12">
               Built directly from infrastructure specifications, Zivara ensures your virtualization management is not only automatic but aesthetically pleasing, catering to developers, IT teams, and partners alike.
             </p>
           </div>
 
           {/* Robust VM Management */}
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#e7e7e7] mb-6">
               Robust VM Management
             </h2>
-            <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12 max-w-4xl mx-auto">
+            <p className="text-lg text-[#e7e7e7] leading-relaxed mb-8 md:mb-12 max-w-4xl mx-auto">
               Secure your infrastructure with Zivara's VM management. Authorized users can effortlessly view, create, and manage virtual machines right from the portal with enterprise-grade security and intuitive controls.
             </p>
             <div className="flex items-center justify-center text-[#ff6b35] font-semibold">
@@ -242,10 +242,10 @@ const Virtualization: React.FC = () => {
           {/* Provide Usage Analytics */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-8 md:mb-12 md:mb-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#e7e7e7] mb-6">
                 Provide Usage Analytics
               </h2>
-              <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12">
+              <p className="text-lg text-[#e7e7e7] leading-relaxed mb-8 md:mb-12">
                 Allow teams to monitor their infrastructure usage in real-time, and debug any performance issues they encounter. Avoid support tickets about resource allocation errors.
               </p>
               <div className="flex items-center text-[#3b82f6] font-semibold">
@@ -258,14 +258,14 @@ const Virtualization: React.FC = () => {
             <div className="bg-[#1E293B] rounded-2xl p-4 border border-white/10">
               <div className="rounded-lg p-4">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-semibold text-[#F1F5F9]">Resource Usage</h3>
+                  <h3 className="font-semibold text-[#e7e7e7]">Resource Usage</h3>
                   <span className="text-sm text-[#10b981]">Live</span>
                 </div>
                 <div className="space-y-4">
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#E2E8F0]">CPU Usage</span>
-                      <span className="text-[#E2E8F0]">65%</span>
+                      <span className="text-[#e7e7e7]">CPU Usage</span>
+                      <span className="text-[#e7e7e7]">65%</span>
                     </div>
                     <div className="w-full bg-[#1E293B] rounded-full h-2">
                       <div className="bg-[#3b82f6] h-2 rounded-full" style={{width: '65%'}}></div>
@@ -273,8 +273,8 @@ const Virtualization: React.FC = () => {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#E2E8F0]">Memory</span>
-                      <span className="text-[#E2E8F0]">42%</span>
+                      <span className="text-[#e7e7e7]">Memory</span>
+                      <span className="text-[#e7e7e7]">42%</span>
                     </div>
                     <div className="w-full bg-[#1E293B] rounded-full h-2">
                       <div className="bg-[#10b981] h-2 rounded-full" style={{width: '42%'}}></div>
@@ -282,8 +282,8 @@ const Virtualization: React.FC = () => {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="text-[#E2E8F0]">Storage</span>
-                      <span className="text-[#E2E8F0]">78%</span>
+                      <span className="text-[#e7e7e7]">Storage</span>
+                      <span className="text-[#e7e7e7]">78%</span>
                     </div>
                     <div className="w-full bg-[#1E293B] rounded-full h-2">
                       <div className="bg-[#f59e0b] h-2 rounded-full" style={{width: '78%'}}></div>
@@ -296,10 +296,10 @@ const Virtualization: React.FC = () => {
 
           {/* Maximize Your Infrastructure's Efficiency */}
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#e7e7e7] mb-6">
               Maximize Your Infrastructure's Efficiency
             </h2>
-            <p className="text-lg text-[#E2E8F0] leading-relaxed mb-8 md:mb-12 max-w-4xl mx-auto">
+            <p className="text-lg text-[#e7e7e7] leading-relaxed mb-8 md:mb-12 max-w-4xl mx-auto">
               Ready to turn your infrastructure into a cost-effective powerhouse? Effortlessly create and manage diverse resource plans and limits, all while monitoring performance with comprehensive usage analytics.
             </p>
             <div className="flex items-center justify-center text-[#ff6b35] font-semibold">
@@ -313,16 +313,16 @@ const Virtualization: React.FC = () => {
       </section>
 
       {/* Let's Get Started - Zuplo Style */}
-      <section className="py-16 md:py-16 md:py-24 bg-[#1E293B]">
+      <section className="py-16 md:py-16 md:py-24 bg-[#1A1A1A]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#e7e7e7] mb-6">
               Let's Get Started
             </h2>
-            <p className="text-lg text-[#E2E8F0] mb-8 md:mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-[#e7e7e7] mb-8 md:mb-12 max-w-3xl mx-auto">
               Start quickly with templates built for the most essential use cases. They're ready to go and help you get set up fast—no extra configuration needed.
             </p>
-            <p className="text-base text-[#E2E8F0] mb-10 md:mb-16 max-w-4xl mx-auto">
+            <p className="text-base text-[#e7e7e7] mb-10 md:mb-16 max-w-4xl mx-auto">
               You can deploy directly in the browser or run everything locally. Check out the code in our GitHub repository to explore, customize, and build on top of it.
             </p>
             
@@ -332,20 +332,20 @@ const Virtualization: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-8 md:mb-12 md:mb-20">
             {/* Left Side - CTA */}
             <div className="text-center lg:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#e7e7e7] mb-6">
                 Scale your infrastructure with{' '}
                 <span className="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] bg-clip-text text-transparent">
                   confidence.
                 </span>
               </h2>
-              <p className="text-lg text-[#E2E8F0] mb-8 md:mb-12">
+              <p className="text-lg text-[#e7e7e7] mb-8 md:mb-12">
                 Start for free or book a demo with our team.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-stretch w-full max-w-2xl mx-auto lg:mx-0">
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                   style={{ backgroundColor: '#ff6b35' }}
                 >
                   Book a demo
@@ -355,7 +355,7 @@ const Virtualization: React.FC = () => {
                 </a>
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
+                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
                 >
                   Start for Free
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -368,10 +368,10 @@ const Virtualization: React.FC = () => {
             {/* Right Side - Template Card */}
             <div className="bg-[#1E293B] rounded-2xl p-4 border border-white/10">
               <div>
-                <h3 className="text-2xl font-bold text-[#F1F5F9] mb-4">
+                <h3 className="text-2xl font-bold text-[#e7e7e7] mb-4">
                   VM Portal with Self-Serve Management
                 </h3>
-                <p className="text-[#E2E8F0] mb-6">
+                <p className="text-[#e7e7e7] mb-6">
                   An example of an Zivara VM Portal with support for self-serve virtual machine creation and management.
                 </p>
                 <a

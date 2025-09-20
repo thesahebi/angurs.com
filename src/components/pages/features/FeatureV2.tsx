@@ -58,7 +58,7 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
           )}
 
           {isContent && (
-            <p className="text-lg md:text-xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-[#e7e7e7] max-w-4xl mx-auto leading-relaxed">
               We deliver comprehensive technology services that connect, protect, and scale with your business. From cloud infrastructure to expert staffing, everything works together to help your brand grow confidently.
             </p>
           )}
@@ -84,7 +84,7 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
                   <div className="mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-[#ff6b35] to-[#F59E0B] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                       {typeof service.icon === "function" ? (
-                        <service.icon className="w-8 h-8 text-white" />
+                        <service.icon className="w-8 h-8 text-[#e7e7e7]" />
                       ) : (
                         service.icon
                       )}
@@ -92,12 +92,12 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-[#ff6b35] transition-colors duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#e7e7e7] group-hover:text-[#ff6b35] transition-colors duration-300">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-[#E2E8F0] leading-relaxed group-hover:text-white transition-colors duration-300">
+                  <p className="text-[#e7e7e7] leading-relaxed group-hover:text-[#e7e7e7] transition-colors duration-300">
                     {service.content}
                   </p>
 
@@ -125,7 +125,7 @@ const FeatureV2: React.FC<FeatureV2Mode> = ({
 
         {/* Bottom CTA */}
         <div className="text-center mt-16 md:mt-20">
-          <div className="inline-flex items-center px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+          <div className="inline-flex items-center px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-[#e7e7e7] font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
             <span>Explore All Solutions</span>
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />

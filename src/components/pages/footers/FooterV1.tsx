@@ -56,7 +56,7 @@ const FooterV1 = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-br from-[#1f2937] via-gray-900 to-[#111827] text-[#F1F5F9] overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-[#1f2937] via-gray-900 to-[#111827] text-[#e7e7e7] overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -76,7 +76,7 @@ const FooterV1 = () => {
                 <img className="w-auto h-16 mb-6" src={logo1} alt="Zivara Logo" />
               </Link>
               
-              <p className="text-[#F1F5F9] text-base leading-relaxed mb-6 max-w-sm">
+              <p className="text-[#e7e7e7] text-base leading-relaxed mb-6 max-w-sm">
                 Transforming businesses through innovative cloud solutions, automation, and cutting-edge technology infrastructure.
               </p>
               
@@ -89,7 +89,7 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
                   title="Follow us on Instagram"
                 >
-                  <FaInstagram className="text-lg group-hover:text-[#F1F5F9] transition-colors" />
+                  <FaInstagram className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/Zivara-web-solutions/about/"
@@ -98,7 +98,7 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
                   title="Connect on LinkedIn"
                 >
-                  <FaLinkedin className="text-lg group-hover:text-[#F1F5F9] transition-colors" />
+                  <FaLinkedin className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
                 </a>
                 <a
                   href="https://twitter.com/Zivara"
@@ -107,7 +107,7 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
                   title="Follow us on Twitter"
                 >
-                  <FaTwitter className="text-lg group-hover:text-[#F1F5F9] transition-colors" />
+                  <FaTwitter className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
                 </a>
                 <a
                   href="https://github.com/Zivara"
@@ -116,14 +116,14 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3B82F6] transition-all duration-300 hover:scale-110"
                   title="Check our GitHub"
                 >
-                  <FaGithub className="text-lg group-hover:text-[#F1F5F9] transition-colors" />
+                  <FaGithub className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
                 </a>
               </div>
             </div>
 
             {/* Solutions */}
             <div>
-              <h3 className="text-lg font-bold text-[#F1F5F9] mb-6 relative">
+              <h3 className="text-lg font-bold text-[#e7e7e7] mb-6 relative">
                 Solutions
                 <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#e95420]"></div>
               </h3>
@@ -131,7 +131,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/Solutions/Cloud"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     Cloud Migration
@@ -140,7 +140,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/Solutions/Virtualization"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     Virtualization
@@ -149,7 +149,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/Solutions/Backup"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     Backup & Recovery
@@ -158,7 +158,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/Solutions/Networking"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     Networking
@@ -169,7 +169,7 @@ const FooterV1 = () => {
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-bold text-[#F1F5F9] mb-6 relative">
+              <h3 className="text-lg font-bold text-[#e7e7e7] mb-6 relative">
                 Services
                 <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#e95420]"></div>
               </h3>
@@ -177,7 +177,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/Automation"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     Automation
@@ -186,7 +186,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/Automation/DevOps"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     DevOps
@@ -195,7 +195,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/Automation/IT"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     IT Automation
@@ -204,7 +204,7 @@ const FooterV1 = () => {
                 <li>
                   <Link
                     to="/contact"
-                    className="group flex items-center text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     Consulting
@@ -215,7 +215,7 @@ const FooterV1 = () => {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-lg font-bold text-[#F1F5F9] mb-6 relative">
+              <h3 className="text-lg font-bold text-[#e7e7e7] mb-6 relative">
                 Get In Touch
                 <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#e95420]"></div>
               </h3>
@@ -224,7 +224,7 @@ const FooterV1 = () => {
                   <FaEnvelope className="w-5 h-5 text-[#e95420] mt-0.5 flex-shrink-0" />
                   <a
                     href="mailto:Support@Zivara.com"
-                    className="text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     Support@Zivara.com
                   </a>
@@ -233,14 +233,14 @@ const FooterV1 = () => {
                   <FaPhone className="w-5 h-5 text-[#e95420] mt-0.5 flex-shrink-0" />
                   <a
                     href="tel:+16309234653"
-                    className="text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                    className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     +1 (630) 923-4653
                   </a>
                 </li>
                 <li className="flex items-start space-x-3">
                   <FaMapMarkerAlt className="w-5 h-5 text-[#e95420] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#F1F5F9]">
+                  <span className="text-[#e7e7e7]">
                     1355 N Sandburg Ter 2307<br />
                     Chicago, IL 60610
                   </span>
@@ -251,14 +251,14 @@ const FooterV1 = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div className="border-t border-white/10">
+        <div>
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl py-12">
             <div className="bg-gradient-to-r from-[#e95420]/10 to-[#3b82f6]/10 rounded-2xl p-8 border border-white/10">
               <div className="text-center max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold text-[#F1F5F9] mb-4">
+                <h3 className="text-2xl font-bold text-[#e7e7e7] mb-4">
                   Stay Updated with Our Latest Insights
                 </h3>
-                <p className="text-[#F1F5F9] mb-6">
+                <p className="text-[#e7e7e7] mb-6">
                   Get the latest technology trends, case studies, and industry insights delivered to your inbox.
                 </p>
                 <form onSubmit={handleSubscribe} className="max-w-md mx-auto">
@@ -268,13 +268,13 @@ const FooterV1 = () => {
                       value={email}
                       onChange={handleEmailChange}
                       placeholder="Enter your email address"
-                      className="flex-1 px-4 py-3 bg-[#1E293B]/50 border border-white/20 rounded-xl text-[#F1F5F9] placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#e95420] focus:border-transparent"
+                      className="flex-1 px-4 py-3 bg-[#1E293B]/50 border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#e95420] focus:border-transparent"
                       required
                     />
                     <button 
                       type="submit"
                       disabled={isSubmitting}
-                      className="px-6 py-3 text-white border border-white/20 font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
+                      className="px-6 py-3 text-[#e7e7e7] border border-white/20 font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
                       style={{ backgroundColor: '#ff6b35' }}
                     >
                       {isSubmitting ? 'Subscribing...' : 'Subscribe'}
@@ -297,28 +297,28 @@ const FooterV1 = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-white/10">
+        <div>
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl py-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="text-[#F1F5F9] text-sm">
+              <div className="text-[#e7e7e7] text-sm">
                 © {year} Zivara Solutions LLC. All rights reserved.
               </div>
               <div className="flex items-center space-x-6 text-sm">
                 <Link
                   to="/privacy"
-                  className="text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                  className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   to="/terms"
-                  className="text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                  className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                 >
                   Terms of Service
                 </Link>
                 <Link
                   to="/cookies"
-                  className="text-[#F1F5F9] hover:text-[#F1F5F9] transition-colors duration-200"
+                  className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                 >
                   Cookie Policy
                 </Link>

@@ -116,7 +116,7 @@ function HeroV2() {
 
   return (
     <div className="overflow-x-hidden">
-      <section className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] xl:min-h-[90vh] flex items-center justify-center bg-[#121212]">
+      <section className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] xl:min-h-[90vh] flex items-center justify-center bg-[#0A0A0A]">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
@@ -136,7 +136,7 @@ function HeroV2() {
 
         <div className="relative px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 mx-auto max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl z-10">
           <div className="max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto text-center">
-            <p ref={taglineRef} className="inline-flex px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-[#F1F5F9] bg-[#1E293B] border border-[#1E293B] rounded-full shadow-sm backdrop-blur-sm">
+            <p ref={taglineRef} className="inline-flex px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-[#e7e7e7] bg-[#1E293B] border border-[#1E293B] rounded-full shadow-sm backdrop-blur-sm">
               ✨ Trusted source of integration
             </p>
             <h1 ref={titleRef} className="hero-title text-primary">
@@ -167,7 +167,7 @@ function HeroV2() {
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
                   aria-label="Solutions dropdown menu"
-                  className="btn-primary inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
+                  className="btn-primary inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-[#e7e7e7] border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
                 >
                   Solutions
                   <svg className={`w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -199,14 +199,14 @@ function HeroV2() {
                           {solution.icon}
                         </div>
                         <div className="flex-1">
-                          <div className="font-semibold text-xs sm:text-sm text-[#F1F5F9] group-hover/item:text-[#3B82F6] transition-colors duration-200">
+                          <div className="font-semibold text-xs sm:text-sm text-[#e7e7e7] group-hover/item:text-[#3B82F6] transition-colors duration-200">
                             {solution.name}
                           </div>
-                          <div className="text-xs text-[#F1F5F9]">
+                          <div className="text-xs text-[#e7e7e7]">
                             {solution.description}
                           </div>
                         </div>
-                        <svg className="w-3 h-3 sm:w-4 sm:h-4 text-[#F1F5F9] group-hover/item:text-[#3B82F6] group-hover/item:translate-x-1 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3 h-3 sm:w-4 sm:h-4 text-[#e7e7e7] group-hover/item:text-[#3B82F6] group-hover/item:translate-x-1 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </a>
@@ -217,7 +217,7 @@ function HeroV2() {
                   <div className="px-2 sm:px-3 py-1.5 sm:py-2 bg-[#1E293B] border-t border-[#1E293B]">
                     <a
                       href="#features"
-                      className="text-xs font-medium text-[#3B82F6] hover:text-[#F1F5F9] transition-colors duration-200"
+                      className="text-xs font-medium text-[#3B82F6] hover:text-[#e7e7e7] transition-colors duration-200"
                     >
                       View All Solutions →
                     </a>
@@ -226,25 +226,6 @@ function HeroV2() {
               </div>
             </div>
 
-            {/* Stats - Responsive */}
-            <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto">
-              <div className="text-center">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#F1F5F9]">500+</div>
-                <div className="text-xs sm:text-sm text-[#F1F5F9] mt-1">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#F1F5F9]">99.9%</div>
-                <div className="text-xs sm:text-sm text-[#F1F5F9] mt-1">Uptime Guarantee</div>
-              </div>
-              <div className="text-center">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#F1F5F9]">24/7</div>
-                <div className="text-xs sm:text-sm text-[#F1F5F9] mt-1">Support Available</div>
-              </div>
-              <div className="text-center">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#F1F5F9]">5+</div>
-                <div className="text-xs sm:text-sm text-[#F1F5F9] mt-1">Years Experience</div>
-              </div>
-            </div>
           </div>
         </div>
 

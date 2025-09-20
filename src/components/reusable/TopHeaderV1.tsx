@@ -91,7 +91,7 @@ const TopHeaderV1 = () => {
   };
 
   return (
-    <header className="fixed mx-auto w-[100%] bg-[#121212]/95 backdrop-blur-md z-20 border-b border-[#1E293B]/50 shadow-lg">
+    <header className="fixed mx-auto w-[100%] bg-[#0A0A0A]/95 backdrop-blur-md z-20 border-b border-[#1E293B]/50 shadow-lg">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-12 md:h-14">
           {/* Logo */}
@@ -102,8 +102,8 @@ const TopHeaderV1 = () => {
               className="flex items-center group transition-all duration-300 hover:scale-105"
             >
               <div className="relative">
-                <img className="w-auto h-7 md:h-9 transition-all duration-300 group-hover:drop-shadow-lg" src={logo1} alt="Logo" />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#e95420] to-[#ff6b35] opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity duration-300"></div>
+                <img className="w-auto h-7 md:h-9 transition-all duration-300 " src={logo1} alt="Logo" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity duration-300"></div>
               </div>
             </Link>
           </div>
@@ -112,7 +112,7 @@ const TopHeaderV1 = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="md:hidden p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#ff6b35]/50 transition-all duration-200"
+            className="md:hidden p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/50 transition-all duration-200"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -156,18 +156,18 @@ const TopHeaderV1 = () => {
                   <Link
                     to={item.path}
                     className={`text-sm lg:text-base transition-all duration-300 relative px-3 py-2 rounded-lg ${isActivePath(item.path)
-                        ? 'text-[#e95420] font-semibold bg-[#1E293B]/30 shadow-lg'
-                        : "text-[#F1F5F9] hover:text-[#e95420] hover:bg-[#1E293B]/20"
+                        ? 'text-[#3b82f6] font-semibold bg-[#1E293B]/30 shadow-lg'
+                        : "text-[#F1F5F9] hover:text-[#3b82f6] hover:bg-[#1E293B]/20"
                       }`}
                   >
                     {item.label}
                     {isActivePath(item.path) && (
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-[#e95420] rounded-full"></div>
+                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-[#3b82f6] rounded-full"></div>
                     )}
                   </Link>
                 ) : (
                   <div
-                    className="text-sm lg:text-base transition-all duration-300 relative cursor-pointer text-[#F1F5F9] hover:text-[#e95420] hover:bg-[#1E293B]/20 px-3 py-2 rounded-lg"
+                    className="text-sm lg:text-base transition-all duration-300 relative cursor-pointer text-[#F1F5F9] hover:text-[#3b82f6] hover:bg-[#1E293B]/20 px-3 py-2 rounded-lg"
                     onMouseEnter={() => handleMouseEnter(item.label)}
                     onMouseLeave={handleMouseLeave}
                   >
@@ -192,7 +192,7 @@ const TopHeaderV1 = () => {
                         <li key={child.label}>
                           <Link
                             to={child.path}
-                            className="block px-4 py-2.5 text-sm text-[#F1F5F9] hover:bg-[#e95420]/10 hover:text-[#e95420] transition-all duration-200 rounded-lg mx-2"
+                            className="block px-4 py-2.5 text-sm text-[#F1F5F9] hover:bg-[#3b82f6]/10 hover:text-[#3b82f6] transition-all duration-200 rounded-lg mx-2"
                           >
                             {child.label}
                           </Link>
@@ -212,8 +212,8 @@ const TopHeaderV1 = () => {
         to={item.path}
         className={`text-base transition-all duration-200 relative ${
           isActivePath(item.path)
-            ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-            : "text-[#F1F5F9] hover:text-[#e95420]"
+            ? 'text-[#3b82f6] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#3b82f6]'
+            : "text-[#F1F5F9] hover:text-[#3b82f6]"
         }`}
       >
         {item.label}
@@ -251,8 +251,8 @@ const TopHeaderV1 = () => {
         to={item.path}
         className={`text-base transition-all duration-200 relative ${
           isActivePath(item.path)
-            ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-            : "text-[#F1F5F9] hover:text-[#e95420]"
+            ? 'text-[#3b82f6] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#3b82f6]'
+            : "text-[#F1F5F9] hover:text-[#3b82f6]"
         }`}
       >
         {item.label}
@@ -286,8 +286,8 @@ const TopHeaderV1 = () => {
                 to={item.path}
                 className={`text-base transition-all duration-200 relative ${
                   isActivePath(item.path)
-                    ? 'text-[#e95420] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#e95420]'
-                    : "text-[#F1F5F9] hover:text-[#e95420]"
+                    ? 'text-[#3b82f6] font-semibold after:content-[""] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-[#3b82f6]'
+                    : "text-[#F1F5F9] hover:text-[#3b82f6]"
                 }`}
               >
                 {item.label}
@@ -299,13 +299,13 @@ const TopHeaderV1 = () => {
           <div className="hidden md:block">
             <a
               href="tel:+16309234653"
-              className="group relative inline-flex items-center justify-center px-4 py-2 text-sm lg:text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
-              style={{ backgroundColor: '#ff6b35' }}
+              className="group relative inline-flex items-center justify-center px-3 py-2 text-sm font-semibold text-white border border-white/20 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
+              style={{ backgroundColor: '#3b82f6' }}
               role="button"
             >
-              <span className="relative z-10">Consult</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b35] to-[#e95420] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg className="w-4 h-4 ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span className="relative z-10">Call</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
@@ -315,7 +315,7 @@ const TopHeaderV1 = () => {
         {/* Mobile Navigation Menu */}
         <div
           id="mobile-menu"
-          className={`md:hidden absolute top-12 left-0 right-0 bg-[#0F172A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
+          className={`md:hidden absolute top-12 left-0 right-0 bg-[#0A0A0A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
               ? "opacity-100 translate-y-0 h-lvh z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
             }`}
@@ -330,8 +330,8 @@ const TopHeaderV1 = () => {
                   <Link
                     to={item.path}
                     className={`block py-3 text-base px-4 rounded-xl transition-all duration-300 ${isActivePath(item.path)
-                        ? "text-[#e95420] bg-[#1E293B]/30 font-semibold shadow-lg"
-                        : "text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#e95420]"
+                        ? "text-[#3b82f6] bg-[#1E293B]/30 font-semibold shadow-lg"
+                        : "text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
                       }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -343,7 +343,7 @@ const TopHeaderV1 = () => {
                       onClick={() => toggleMobileMenuItem(item.label)}
                       aria-expanded={expandedMenuItems.includes(item.label)}
                       aria-controls={`mobile-submenu-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="flex items-center justify-between w-full py-3 text-base px-4 rounded-xl transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#e95420]"
+                      className="flex items-center justify-between w-full py-3 text-base px-4 rounded-xl transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
                     >
                       <span>{item.label}</span>
                       <svg
@@ -374,7 +374,7 @@ const TopHeaderV1 = () => {
                             key={child.label}
                             to={child.path}
                             role="menuitem"
-                            className="block py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#e95420]"
+                            className="block py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {child.label}
@@ -389,14 +389,14 @@ const TopHeaderV1 = () => {
             <div className="p-4 mt-6">
               <a
                 href="tel:+16309234653"
-                className="group relative block w-full text-center px-6 py-3 text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300"
-                style={{ backgroundColor: '#ff6b35' }}
+                className="group relative block w-full text-center px-4 py-2 text-sm font-semibold text-white border border-white/20 rounded-full transition-all duration-300"
+                style={{ backgroundColor: '#3b82f6' }}
                 role="button"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <span className="relative z-10">Consult</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b35] to-[#e95420] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <svg className="w-5 h-5 ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <span className="relative z-10">Call</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>

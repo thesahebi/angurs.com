@@ -14,7 +14,7 @@ const FeatureV1 = () => {
   }, []);
 
   return (
-    <section className="relative py-20 md:py-32 bg-surface-dark overflow-hidden" id="features">
+    <section className="relative py-20 md:py-32 bg-[#0A0A0A] overflow-hidden" id="features">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -49,30 +49,11 @@ const FeatureV1 = () => {
               Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-5xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-3">500+</div>
-                <div className="text-base text-tertiary font-medium">Projects Delivered</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-secondary mb-3">99.9%</div>
-                <div className="text-base text-tertiary font-medium">Uptime Guarantee</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-warning mb-3">24/7</div>
-                <div className="text-base text-tertiary font-medium">Support</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-accent mb-3">50+</div>
-                <div className="text-base text-tertiary font-medium">Expert Team</div>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {featureData.map((service, index) => {
             const IconComponent = service.icon;
             return (
@@ -91,8 +72,8 @@ const FeatureV1 = () => {
                 <div className="relative z-10">
                   {/* Icon */}
                   <div className="mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      {typeof IconComponent === 'function' ? <IconComponent className="w-10 h-10 text-white" /> : IconComponent}
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      {typeof IconComponent === 'function' ? <IconComponent className="w-6 h-6 text-[#e7e7e7]" /> : IconComponent}
                     </div>
                   </div>
 

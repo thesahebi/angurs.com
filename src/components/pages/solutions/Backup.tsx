@@ -2,12 +2,12 @@ import React from "react";
 
 const Backup: React.FC = () => {
   return (
-    <main className="min-h-screen bg-surface-dark">
+    <main className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-surface to-surface-dark"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A]"></div>
           <div className="absolute top-0 left-0 w-full h-full opacity-20">
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-hover/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -45,7 +45,7 @@ const Backup: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 md:mb-12 md:mb-20">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
                 style={{ backgroundColor: '#ff6b35' }}
               >
                 Get Protected Now
@@ -55,7 +55,7 @@ const Backup: React.FC = () => {
               </a>
               <a
                 href="#solutions"
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#F1F5F9] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 View Solutions
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,11 +91,11 @@ const Backup: React.FC = () => {
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F1F5F9]">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#e7e7e7]">
               Why Backup & Replication{' '}
               <span className="text-[#3B82F6]">Matters</span>
             </h2>
-            <p className="text-xl text-[#E2E8F0] max-w-3xl mx-auto">
+            <p className="text-xl text-[#e7e7e7] max-w-3xl mx-auto">
             Disruptions happen. Without reliable backup and recovery, businesses face data loss, 
             downtime, and compliance risks. Our solutions ensure you:
           </p>
@@ -145,15 +145,15 @@ const Backup: React.FC = () => {
               }
             ].map((item, index) => (
               <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative p-4 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300">
                   <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <div className="text-white">
+                    <div className="text-[#e7e7e7]">
                       {item.icon}
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#F1F5F9] text-center">{item.title}</h3>
-                  <p className="text-[#E2E8F0] text-center">{item.description}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-[#e7e7e7] text-center">{item.title}</h3>
+                  <p className="text-[#e7e7e7] text-center">{item.description}</p>
                 </div>
             </div>
             ))}
@@ -163,13 +163,13 @@ const Backup: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 mt-16">
             {/* On-Prem Backup */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-6 bg-[#1E293B] rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
                 <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">💽</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#F1F5F9]">On-Prem Backup & Replication</h3>
+                  <h3 className="text-2xl font-bold text-[#e7e7e7]">On-Prem Backup & Replication</h3>
                 </div>
                 
                 <div className="space-y-6">
@@ -181,11 +181,11 @@ const Backup: React.FC = () => {
                   ].map((feature, index) => (
                     <div key={index} className="flex items-start group/item">
                       <div className="w-6 h-6 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mr-4 mt-0.5 group-hover/item:scale-110 transition-transform duration-200">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-3 h-3 text-[#e7e7e7]" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <p className="text-[#E2E8F0] text-lg">{feature}</p>
+                      <p className="text-[#e7e7e7] text-lg">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -194,13 +194,13 @@ const Backup: React.FC = () => {
 
             {/* Cloud Backup */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-6 bg-[#1E293B] rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
                 <div className="flex items-center mb-8 md:mb-12">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">☁️</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#F1F5F9]">Cloud Backup & Replication</h3>
+                  <h3 className="text-2xl font-bold text-[#e7e7e7]">Cloud Backup & Replication</h3>
                 </div>
                 
                 <div className="space-y-6">
@@ -212,11 +212,11 @@ const Backup: React.FC = () => {
                   ].map((feature, index) => (
                     <div key={index} className="flex items-start group/item">
                       <div className="w-6 h-6 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mr-4 mt-0.5 group-hover/item:scale-110 transition-transform duration-200">
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-3 h-3 text-[#e7e7e7]" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <p className="text-[#E2E8F0] text-lg">{feature}</p>
+                      <p className="text-[#e7e7e7] text-lg">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -229,7 +229,7 @@ const Backup: React.FC = () => {
       {/* Benefits Section */}
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#F1F5F9]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#e7e7e7]">
             Benefits of Backup with{' '}
             <span className="text-[#3B82F6]">Zivara</span>
           </h2>
@@ -244,11 +244,11 @@ const Backup: React.FC = () => {
               { title: "24/7 Support", desc: "Always here when you need us", icon: "🔄" }
             ].map((benefit, index) => (
               <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] to-[#0F172A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative p-4 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 text-center">
                   <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{benefit.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#F1F5F9]">{benefit.title}</h3>
-                  <p className="text-[#E2E8F0]">{benefit.desc}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-[#e7e7e7]">{benefit.title}</h3>
+                  <p className="text-[#e7e7e7]">{benefit.desc}</p>
           </div>
           </div>
             ))}

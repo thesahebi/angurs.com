@@ -8,13 +8,13 @@ function BlogDetails() {
 
   if (!article) {
     return (
-      <div className="min-h-screen bg-[#121212] flex items-center justify-center">
+      <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#F1F5F9] mb-4">Article Not Found</h1>
-          <p className="text-[#E2E8F0] mb-8">The article you're looking for doesn't exist.</p>
+          <h1 className="text-4xl font-bold text-[#e7e7e7] mb-4">Article Not Found</h1>
+          <p className="text-[#e7e7e7] mb-8">The article you're looking for doesn't exist.</p>
           <Link
             to="/resources/blog"
-            className="inline-flex items-center px-6 py-3 text-white border border-white/20 rounded-lg transition-colors hover:bg-[#e95420]"
+            className="inline-flex items-center px-6 py-3 text-[#e7e7e7] border border-white/20 rounded-lg transition-colors hover:bg-[#e95420]"
             style={{ backgroundColor: '#ff6b35' }}
           >
             <FaArrowLeft className="mr-2" />
@@ -26,7 +26,7 @@ function BlogDetails() {
   }
 
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <div className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#1E293B] to-[#121212] pt-24 pb-16">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.02%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
@@ -55,17 +55,17 @@ function BlogDetails() {
             </div>
 
             {/* Article Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F1F5F9] mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#e7e7e7] mb-8 leading-tight">
               {article.title}
             </h1>
 
             {/* Article Actions */}
             <div className="flex flex-wrap items-center gap-4">
-              <button className="inline-flex items-center px-4 py-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-white transition-colors border border-[#1E293B]">
+              <button className="inline-flex items-center px-4 py-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-[#e7e7e7] transition-colors border border-[#1E293B]">
                 <FaShareAlt className="mr-2" />
                 Share
               </button>
-              <button className="inline-flex items-center px-4 py-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-white transition-colors border border-[#1E293B]">
+              <button className="inline-flex items-center px-4 py-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-[#e7e7e7] transition-colors border border-[#1E293B]">
                 <FaBookmark className="mr-2" />
                 Save
               </button>
@@ -95,7 +95,7 @@ function BlogDetails() {
                     switch (block.type) {
                       case "paragraph":
                         return (
-                          <p key={index} className="text-[#E2E8F0] text-lg leading-relaxed mb-6">
+                          <p key={index} className="text-[#e7e7e7] text-lg leading-relaxed mb-6">
                             {block.text}
                           </p>
                         );
@@ -106,7 +106,7 @@ function BlogDetails() {
                               {block.items?.map((item, idx) => (
                                 <li key={idx} className="flex items-start">
                                   <span className="flex-shrink-0 w-2 h-2 bg-[#3B82F6] rounded-full mt-3 mr-4"></span>
-                                  <span className="text-[#E2E8F0] text-lg leading-relaxed">{item}</span>
+                                  <span className="text-[#e7e7e7] text-lg leading-relaxed">{item}</span>
                                 </li>
                               ))}
                             </ul>
@@ -123,7 +123,7 @@ function BlogDetails() {
                               />
                               {block.caption && (
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-2xl">
-                                  <p className="text-white text-sm font-medium">{block.caption}</p>
+                                  <p className="text-[#e7e7e7] text-sm font-medium">{block.caption}</p>
                                 </div>
                               )}
                             </div>
@@ -143,17 +143,17 @@ function BlogDetails() {
                 <div className="flex items-center gap-4">
                   <span className="text-[#94A3B8] text-sm">Share this article:</span>
                   <div className="flex gap-2">
-                    <button className="p-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-white transition-colors">
+                    <button className="p-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-[#e7e7e7] transition-colors">
                       <FaShareAlt />
                     </button>
-                    <button className="p-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-white transition-colors">
+                    <button className="p-2 text-[#3B82F6] bg-[#1E293B] rounded-lg hover:bg-[#3B82F6] hover:text-[#e7e7e7] transition-colors">
                       <FaBookmark />
                     </button>
                   </div>
                 </div>
                 <Link
                   to="/resources/blog"
-                  className="inline-flex items-center px-6 py-3 text-white border border-white/20 rounded-lg transition-colors hover:bg-[#e95420]"
+                  className="inline-flex items-center px-6 py-3 text-[#e7e7e7] border border-white/20 rounded-lg transition-colors hover:bg-[#e95420]"
             style={{ backgroundColor: '#ff6b35' }}
                 >
                   <FaArrowLeft className="mr-2" />

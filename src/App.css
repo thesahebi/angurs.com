@@ -21,8 +21,8 @@
   --color-danger-hover: #DC2626;      /* Darker red for hover */
   
   /* Dark Background System */
-  --color-background: #0F172A;        /* Dark blue-gray background */
-  --color-background-alt: #111827;    /* Alternative dark background */
+  --color-background: #0A0A0A;        /* Black background */
+  --color-background-alt: #1A1A1A;    /* Deep gray alternative background */
   --color-surface: #1E293B;           /* Card/surface background */
   --color-surface-light: #334155;     /* Lighter surface */
   --color-surface-dark: #0F172A;      /* Darker surface */
@@ -30,9 +30,9 @@
   --color-border-light: #4B5563;      /* Lighter border */
   
   /* Text Colors - Consistent Hierarchy */
-  --color-text-primary: #F9FAFB;      /* Headings - Light gray/white */
-  --color-text-secondary: #D1D5DB;    /* Normal text - Softer gray */
-  --color-text-tertiary: #9CA3AF;     /* Muted text/captions - Even softer gray */
+  --color-text-primary: #e7e7e7;      /* Headings - Light gray */
+  --color-text-secondary: #e7e7e7;    /* Normal text - Light gray */
+  --color-text-tertiary: #e7e7e7;     /* Muted text/captions - Light gray */
   --color-text-disabled: #6B7280;     /* Disabled text */
 }
 

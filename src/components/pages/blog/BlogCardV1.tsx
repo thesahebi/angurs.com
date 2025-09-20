@@ -18,14 +18,14 @@ const BlogCardV1: React.FC<Article> = ({
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 left-4">
-          <span className="inline-block px-3 py-1 text-sm font-medium text-white bg-[#3B82F6] rounded-full">
+          <span className="inline-block px-3 py-1 text-sm font-medium text-[#e7e7e7] bg-[#3B82F6] rounded-full">
             {category}
           </span>
         </div>
       </div>
 
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-[#F1F5F9] mb-4 line-clamp-2 group-hover:text-[#3B82F6] transition-colors">
+        <h3 className="text-xl font-semibold text-[#e7e7e7] mb-4 line-clamp-2 group-hover:text-[#3B82F6] transition-colors">
           {title}
         </h3>
         

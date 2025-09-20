@@ -51,10 +51,10 @@ const ClientV1Card = ({ imgUrl, name }: any) => {
 
 export function ClientV1() {
   return (
-    <section className="py-16 bg-[#121212]" aria-label="Client logos">
+    <section className="py-16 bg-[#0A0A0A]" aria-label="Client logos">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 md:mb-16">
-          <h3 className="text-lg font-medium text-[#E2E8F0] mb-8 md:mb-12">Trusted by leading companies</h3>
+          <h3 className="text-lg font-medium text-[#e7e7e7] mb-8 md:mb-12">Trusted by leading companies</h3>
         </div>
         <div className="relative" role="img" aria-label="Client company logos">
           <Marquee pauseOnHover className="[--duration:15s]">
