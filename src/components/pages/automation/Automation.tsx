@@ -3,7 +3,7 @@ import PageHero from "../../reusable/PageHero";
 
 const Automation: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#1E293B]">
+    <div className="min-h-screen bg-surface-dark">
       <PageHero
         title="Intelligent Automation"
         subtitle="Transform your operations"
@@ -12,7 +12,7 @@ const Automation: React.FC = () => {
         primaryButtonLink="/contact"
         secondaryButtonText="View Solutions"
         secondaryButtonLink="#solutions"
-        accentColor="#10b981"
+        accentColor="var(--color-accent)"
         backgroundPattern="circuits"
         showGraph={true}
         graphType="network"

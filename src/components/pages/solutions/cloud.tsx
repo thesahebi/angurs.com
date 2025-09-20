@@ -2,9 +2,9 @@ import React from "react";
 
 const Cloud: React.FC = () => {
   return (
-    <main className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-surface-dark">
       {/* Header */}
-      <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-[#121212] relative overflow-hidden">
+      <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-surface-dark relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -13,26 +13,25 @@ const Cloud: React.FC = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex px-4 py-2 text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/20 border border-[#3B82F6]/30 rounded-full mb-6 backdrop-blur-sm">
+            <div className="inline-flex px-4 py-2 text-sm font-medium text-primary bg-primary/20 border border-primary/30 rounded-full mb-6 backdrop-blur-sm">
               ☁️ Cloud Solutions
             </div>
             
-            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#F1F5F9] mb-4 leading-tight">
+            <h1 className="hero-title text-primary">
               Transform Your Business with{' '}
-              <span className="bg-gradient-to-r from-[#3B82F6] to-[#d1451a] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Cloud Power
               </span>
             </h1>
             
-            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto leading-relaxed mb-6 md:mb-8">
+            <p className="hero-description text-secondary max-w-2xl mx-auto">
               Scale infinitely, secure everything, and innovate faster with our comprehensive cloud migration and management services.
             </p>
             
             <div className="flex justify-center">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
-                style={{ backgroundColor: '#ff6b35' }}
+                className="btn-primary inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border border-white/20 rounded-xl transition-all duration-200"
               >
                 Start Your Migration
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,7 +44,7 @@ const Cloud: React.FC = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-12 md:py-16 bg-[#1E293B]">
+      <section className="py-12 md:py-16 bg-surface">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#F1F5F9] mb-4">

@@ -85,18 +85,18 @@ function WorkTogether() {
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <div className="inline-flex px-4 py-2 text-sm font-medium text-[#60A5FA] bg-[#1E293B] border border-[#1E293B] rounded-full mb-8 md:mb-12">
+          <div className="inline-flex px-4 py-2 text-sm font-medium text-primary bg-surface border border-surface rounded-full mb-8 md:mb-12">
             🤝 Partnership
           </div>
           <p 
             ref={textRef}
-            className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#F1F5F9] leading-tight overflow-hidden"
+            className="lg:text-6xl md:text-5xl text-4xl font-bold text-primary leading-tight overflow-hidden"
           >
-            Let's <span className="ubun-text inline-block bg-gradient-to-r from-[#3B82F6] to-[#2563EB] bg-clip-text text-transparent">Team Up</span>{" "}
+            Let's <span className="ubun-text inline-block bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">Team Up</span>{" "}
             <br />
             <span className="ubun-text inline-block">Together, We'll Build Something Amazing</span>
           </p>
-          <p className="mt-8 text-xl text-[#E2E8F0] max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-8 text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
             Ready to transform your business? Let's collaborate and create solutions that drive real results and sustainable growth.
           </p>
           
@@ -104,8 +104,7 @@ function WorkTogether() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
             <a
               href="tel:+16309234653"
-              className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
-              style={{ backgroundColor: '#ff6b35' }}
+              className="btn-primary inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
             >
               Start Your Project
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -139,13 +139,13 @@ function HeroV2() {
             <p ref={taglineRef} className="inline-flex px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-[#F1F5F9] bg-[#1E293B] border border-[#1E293B] rounded-full shadow-sm backdrop-blur-sm">
               ✨ Trusted source of integration
             </p>
-            <h1 ref={titleRef} className="mt-3 sm:mt-4 md:mt-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-[#F1F5F9]">
+            <h1 ref={titleRef} className="hero-title text-primary">
               Building Smarter AI Solutions with{' '}
-              <span className="text-[#3B82F6]">
+              <span className="text-primary">
                 Zivara
               </span>
             </h1>
-            <p ref={subtitleRef} className="mt-3 sm:mt-4 md:mt-6 text-xs sm:text-sm md:text-base lg:text-lg text-[#F1F5F9] max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed">
+            <p ref={subtitleRef} className="hero-description text-secondary max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto">
               Transform your business with cutting-edge cloud infrastructure, automation solutions, and scalable technology that grows with you.
             </p>
 
@@ -167,8 +167,7 @@ function HeroV2() {
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
                   aria-label="Solutions dropdown menu"
-                  className="inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
-                  style={{ backgroundColor: '#ff6b35' }}
+                  className="btn-primary inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-xs sm:text-sm md:text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
                 >
                   Solutions
                   <svg className={`w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -2,16 +2,16 @@ import React from "react";
 
 const Backup: React.FC = () => {
   return (
-    <main className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-surface-dark">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1E293B] via-[#121212] to-[#0F172A]"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-surface to-surface-dark"></div>
           <div className="absolute top-0 left-0 w-full h-full opacity-20">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-[#3B82F6]/20 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#2563EB]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#3B82F6]/15 rounded-full blur-2xl animate-pulse delay-500"></div>
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-hover/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/15 rounded-full blur-2xl animate-pulse delay-500"></div>
           </div>
           
         </div>
@@ -25,18 +25,18 @@ const Backup: React.FC = () => {
             </div>
             
             {/* Main Title */}
-            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#F1F5F9] mb-6 md:mb-8 leading-tight">
+            <h1 className="hero-title text-primary">
               Protect What{' '}
               <span className="relative">
-                <span className="bg-gradient-to-r from-[#3B82F6] via-[#60A5FA] to-[#2563EB] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-primary-light to-primary-hover bg-clip-text text-transparent">
                   Matters Most
                 </span>
-                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#3B82F6] to-[#2563EB] rounded-full opacity-60"></div>
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary-hover rounded-full opacity-60"></div>
               </span>
             </h1>
             
             {/* Subtitle */}
-            <p className="text-sm md:text-base lg:text-lg text-[#E2E8F0] max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10">
+            <p className="hero-description text-secondary max-w-2xl mx-auto">
               Your data is the lifeline of your business. Zivara delivers enterprise-grade backup and replication solutions, 
               on-premises and in the cloud, to keep you secure, compliant, and resilient.
             </p>

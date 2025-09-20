@@ -35,22 +35,22 @@ const DesignDevelopment = () => {
   };
 
   return (
-    <main className="min-h-screen bg-[#0F172A] text-white">
+    <main className="min-h-screen bg-surface-dark text-white">
       {/* Technologies Section - Moved to Top */}
-      <section id="technologies" className="py-24 md:py-32 bg-[#0F172A]">
+      <section id="technologies" className="py-24 md:py-32 bg-surface-dark">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center px-4 py-2 bg-[#1E293B] border border-[#ff6b35]/20 rounded-full text-[#ff6b35] text-sm font-medium mb-6">
-                <span className="w-2 h-2 bg-[#ff6b35] rounded-full mr-2 animate-pulse"></span>
+              <div className="inline-flex items-center px-4 py-2 bg-surface border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
                 Design & Development
               </div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-white to-[#E2E8F0] bg-clip-text text-transparent">
+              <h1 className="hero-title">
+                <span className="bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">
                   Our Technology Stack
                 </span>
               </h1>
-              <p className="text-[#E2E8F0] text-lg max-w-3xl mx-auto">
+              <p className="hero-description text-secondary max-w-3xl mx-auto">
                 We use the latest tools and frameworks to build scalable, maintainable, and beautiful applications.
               </p>
             </div>

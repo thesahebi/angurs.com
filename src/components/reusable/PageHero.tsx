@@ -165,11 +165,11 @@ const PageHero: React.FC<PageHeroProps> = ({
             {subtitle}
           </p>
           
-          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-6 text-[#F1F5F9] font-pj">
+          <h1 className="hero-title text-primary">
             {title}
           </h1>
           
-          <p className="text-sm md:text-base lg:text-lg text-[#F1F5F9] mb-4 md:mb-6 leading-relaxed max-w-2xl mx-auto">
+          <p className="hero-description text-secondary max-w-2xl mx-auto">
             {description}
           </p>
           

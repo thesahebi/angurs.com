@@ -2,20 +2,142 @@
 .wrapper {
   width: 100%;
 }
+/* ========================================
+   CONSISTENT COLOR SYSTEM
+   ======================================== */
+
+:root {
+  /* Consistent Color Palette */
+  --color-primary: #3B82F6;           /* Blue - Primary accent */
+  --color-primary-hover: #2563EB;     /* Darker blue for hover */
+  --color-primary-light: #60A5FA;     /* Lighter blue for subtle accents */
+  --color-secondary: #9333EA;         /* Purple - Secondary accent */
+  --color-secondary-hover: #7C3AED;   /* Darker purple for hover */
+  --color-accent: #10B981;            /* Green - Success/positive actions */
+  --color-accent-hover: #059669;      /* Darker green for hover */
+  --color-warning: #F59E0B;           /* Orange - Warning/attention */
+  --color-warning-hover: #D97706;     /* Darker orange for hover */
+  --color-danger: #EF4444;            /* Red - Error/danger */
+  --color-danger-hover: #DC2626;      /* Darker red for hover */
+  
+  /* Dark Background System */
+  --color-background: #0F172A;        /* Dark blue-gray background */
+  --color-background-alt: #111827;    /* Alternative dark background */
+  --color-surface: #1E293B;           /* Card/surface background */
+  --color-surface-light: #334155;     /* Lighter surface */
+  --color-surface-dark: #0F172A;      /* Darker surface */
+  --color-border: #374151;            /* Border color */
+  --color-border-light: #4B5563;      /* Lighter border */
+  
+  /* Text Colors - Consistent Hierarchy */
+  --color-text-primary: #F9FAFB;      /* Headings - Light gray/white */
+  --color-text-secondary: #D1D5DB;    /* Normal text - Softer gray */
+  --color-text-tertiary: #9CA3AF;     /* Muted text/captions - Even softer gray */
+  --color-text-disabled: #6B7280;     /* Disabled text */
+}
+
 body {
   /* background-color: red; */
   /* font-family: "Noto Sans TC", sans-serif !important; */
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  background-color: var(--color-background);
+  color: var(--color-text-secondary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apple Font Styles for Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.025em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apple Font Styles for Paragraphs */
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override Tailwind font classes with Apple fonts */
+.font-sans, .font-serif, .font-mono {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure all text elements use Apple fonts */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Standardized Hero Section Styles */
+.hero-title {
+  font-size: 3rem !important; /* 48px */
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.025em !important;
+  margin-bottom: 1rem !important;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem !important; /* 20px */
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  margin-bottom: 1.5rem !important;
+  opacity: 0.9 !important;
+}
+
+.hero-description {
+  font-size: 1.125rem !important; /* 18px */
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 2rem !important;
+  opacity: 0.8 !important;
+}
+
+/* Responsive Hero Styles */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 4rem !important; /* 64px */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem !important; /* 24px */
+  }
+  
+  .hero-description {
+    font-size: 1.25rem !important; /* 20px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 5rem !important; /* 80px */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.75rem !important; /* 28px */
+  }
+  
+  .hero-description {
+    font-size: 1.375rem !important; /* 22px */
+  }
 }
 
 /* CSS */
 
 .bg-ubun {
-  background: #e95420;
+  background: var(--color-primary);
 }
 .ubun-text {
-  color: #e95420;
+  color: var(--color-primary);
 }
 
 .container {
@@ -512,3 +634,65 @@ body {
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
 }
+
+/* ========================================
+   CONSISTENT STYLING UTILITIES
+   ======================================== */
+
+/* Background Colors */
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
+.bg-surface { background-color: var(--color-surface) !important; }
+.bg-surface-light { background-color: var(--color-surface-light) !important; }
+.bg-surface-dark { background-color: var(--color-surface-dark) !important; }
+
+/* Text Colors */
+.text-primary { color: var(--color-text-primary) !important; }
+.text-secondary { color: var(--color-text-secondary) !important; }
+.text-tertiary { color: var(--color-text-tertiary) !important; }
+.text-muted { color: var(--color-text-tertiary) !important; }
+
+/* Border Colors */
+.border-primary { border-color: var(--color-primary) !important; }
+.border-secondary { border-color: var(--color-secondary) !important; }
+.border-surface { border-color: var(--color-border) !important; }
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+  border-color: var(--color-primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover) !important;
+  border-color: var(--color-primary-hover) !important;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  color: var(--color-text-secondary) !important;
+  border-color: var(--color-border) !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-surface) !important;
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+/* Card Styles */
+.card-surface {
+  background-color: var(--color-surface) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+/* Override common Tailwind classes */
+.bg-gray-900 { background-color: var(--color-background) !important; }
+.bg-gray-800 { background-color: var(--color-surface) !important; }
+.bg-gray-700 { background-color: var(--color-surface-light) !important; }
+.text-white { color: var(--color-text-primary) !important; }
+.text-gray-300 { color: var(--color-text-secondary) !important; }
+.text-gray-400 { color: var(--color-text-tertiary) !important; }
+.text-gray-500 { color: var(--color-text-tertiary) !important; }

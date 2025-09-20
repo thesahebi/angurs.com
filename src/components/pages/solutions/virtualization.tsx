@@ -8,15 +8,15 @@ const Virtualization: React.FC = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-surface-dark">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
+      <section className="relative py-20 md:py-32 bg-surface-dark overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-24 h-24 bg-[#3B82F6]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
-          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-[#10B981]/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
-          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-secondary/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-warning/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
         </div>
 
         {/* Grid Pattern Overlay */}
@@ -28,28 +28,27 @@ const Virtualization: React.FC = () => {
           {/* Header Section */}
           <div className="text-center mb-16 md:mb-20 pt-8 md:pt-12">
             <div className={`${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-              <div className="inline-flex items-center px-4 py-2 bg-[#1E293B] border border-[#ff6b35]/20 rounded-full text-[#ff6b35] text-sm font-medium mb-6">
-                <span className="w-2 h-2 bg-[#ff6b35] rounded-full mr-2 animate-pulse"></span>
+              <div className="inline-flex items-center px-4 py-2 bg-surface border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
                 🖥️ Virtualization Solutions
               </div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-white via-[#E2E8F0] to-[#94A3B8] bg-clip-text text-transparent">
+              <h1 className="hero-title">
+                <span className="bg-gradient-to-r from-white via-secondary to-tertiary bg-clip-text text-transparent">
                   Self-Serve
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-[#ff6b35] to-[#F59E0B] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   Virtualization
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-[#E2E8F0] max-w-4xl mx-auto leading-relaxed mb-12">
+              <p className="hero-description text-secondary max-w-4xl mx-auto">
                 Allow your teams to deploy, manage, and scale virtual infrastructure—all in one place. Zivara provides all the tools you need to build a VMware-like virtualization experience.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
-                  style={{ backgroundColor: '#ff6b35' }}
+                  className="btn-primary inline-flex items-center justify-center w-full sm:w-2/5 px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
                 >
                   Read the Docs
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,10 +74,10 @@ const Virtualization: React.FC = () => {
       <section className="py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-24 h-24 bg-[#3B82F6]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
-          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-[#10B981]/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
-          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-secondary/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-warning/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
         </div>
 
         {/* Grid Pattern Overlay */}
@@ -192,10 +191,10 @@ const Virtualization: React.FC = () => {
       <section className="py-20 md:py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-[#ff6b35]/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-24 h-24 bg-[#3B82F6]/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
-          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-[#10B981]/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
-          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-[#8B5CF6]/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-24 h-24 bg-secondary/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+          <div className="absolute bottom-40 right-1/3 w-28 h-28 bg-warning/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
         </div>
 
         {/* Grid Pattern Overlay */}

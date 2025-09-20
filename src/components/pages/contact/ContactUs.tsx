@@ -71,7 +71,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen bg-surface-dark">
       <PageHero
         title="Let's Connect"
         subtitle="Ready to build something amazing?"

@@ -3,7 +3,7 @@ import PageHero from "../../reusable/PageHero";
 
 const OurCapabilities: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <div className="min-h-screen bg-surface-dark">
       <PageHero
         title="Our Capabilities"
         subtitle="Comprehensive technology expertise"
@@ -12,7 +12,7 @@ const OurCapabilities: React.FC = () => {
         primaryButtonLink="/contact"
         secondaryButtonText="View Services"
         secondaryButtonLink="#services"
-        accentColor="#3b82f6"
+        accentColor="var(--color-primary)"
         backgroundPattern="grid"
         showGraph={true}
         graphType="bar"

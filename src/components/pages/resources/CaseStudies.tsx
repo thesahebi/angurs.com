@@ -3,7 +3,7 @@ import PageHero from "../../reusable/PageHero";
 
 const CaseStudies: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#121212]">
+    <div className="min-h-screen bg-surface-dark">
       <PageHero
         title="Success Stories"
         subtitle="Discover our proven results"
@@ -12,7 +12,7 @@ const CaseStudies: React.FC = () => {
         primaryButtonLink="#case-studies"
         secondaryButtonText="Start Your Project"
         secondaryButtonLink="/contact"
-        accentColor="#10b981"
+        accentColor="var(--color-accent)"
         backgroundPattern="dots"
         showGraph={true}
         graphType="pie"
