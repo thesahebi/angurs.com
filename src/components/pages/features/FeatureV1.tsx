@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { featureData } from "./feature-data";
 
 const FeatureV1 = () => {
@@ -30,14 +30,14 @@ const FeatureV1 = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-16 md:mb-20 pt-8 md:pt-12">
+        <div className="text-center mb-20 md:mb-24 pt-12 md:pt-16">
           <div className={`${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-            <div className="inline-flex items-center px-4 py-2 bg-surface border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-surface border border-primary/20 rounded-full text-primary text-sm font-medium mb-8 md:mb-12">
               <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
               🚀 Our Solutions
             </div>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-primary">
-              <span className="bg-gradient-to-r from-white via-secondary to-tertiary bg-clip-text text-transparent">
+            <h2 className="lg:text-6xl md:text-5xl text-4xl font-bold text-primary leading-tight mb-8 md:mb-12">
+              <span className="bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">
                 Empowering Your Business
               </span>
               <br />
@@ -45,40 +45,40 @@ const FeatureV1 = () => {
                 with Smart Technology
               </span>
             </h2>
-            <p className="text-lg md:text-xl text-secondary max-w-4xl mx-auto leading-relaxed mb-12">
+            <p className="text-xl text-secondary max-w-4xl mx-auto leading-relaxed mb-16 md:mb-20">
               Fueling growth for businesses with intelligent, scalable technology solutions that adapt to your needs and drive success.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-5xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">500+</div>
-                <div className="text-sm text-tertiary">Projects Delivered</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-3">500+</div>
+                <div className="text-base text-tertiary font-medium">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">99.9%</div>
-                <div className="text-sm text-tertiary">Uptime Guarantee</div>
+                <div className="text-4xl md:text-5xl font-bold text-secondary mb-3">99.9%</div>
+                <div className="text-base text-tertiary font-medium">Uptime Guarantee</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-warning mb-2">24/7</div>
-                <div className="text-sm text-tertiary">Support</div>
+                <div className="text-4xl md:text-5xl font-bold text-warning mb-3">24/7</div>
+                <div className="text-base text-tertiary font-medium">Support</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-2">50+</div>
-                <div className="text-sm text-tertiary">Expert Team</div>
+                <div className="text-4xl md:text-5xl font-bold text-accent mb-3">50+</div>
+                <div className="text-base text-tertiary font-medium">Expert Team</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {featureData.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <div
                 key={service.id}
-                className={`group relative bg-surface/50 backdrop-blur-sm rounded-2xl p-8 border border-surface hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10 ${
+                className={`group relative bg-surface/50 backdrop-blur-sm rounded-2xl p-10 border border-surface hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 200}ms` }}
@@ -90,19 +90,19 @@ const FeatureV1 = () => {
                 {/* Content */}
                 <div className="relative z-10">
                   {/* Icon */}
-                  <div className="mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <IconComponent className="w-8 h-8 text-white" />
+                  <div className="mb-8">
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <IconComponent className="w-10 h-10 text-white" />
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-primary group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary group-hover:text-primary transition-colors duration-300">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-secondary leading-relaxed group-hover:text-primary transition-colors duration-300">
+                  <p className="text-lg text-secondary leading-relaxed group-hover:text-primary transition-colors duration-300">
                     {service.content}
                   </p>
                 </div>
