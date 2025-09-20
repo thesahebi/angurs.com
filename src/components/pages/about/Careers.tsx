@@ -31,7 +31,7 @@ const Careers: React.FC = () => {
       <section id="open-positions" className="py-16 md:py-24 bg-[#1A1A1A]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#e7e7e7] mb-4">Open Positions</h2>
+            <h2 className="text-2xl font-bold text-[#e7e7e7] mb-4">Open Positions</h2>
             <p className="text-xl text-[#e7e7e7] max-w-3xl mx-auto">
               Join our team and help shape the future of technology infrastructure
             </p>

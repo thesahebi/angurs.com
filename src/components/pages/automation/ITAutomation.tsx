@@ -23,7 +23,7 @@ const ITAutomation: React.FC = () => {
       <section className="py-16 md:py-24 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#e7e7e7] mb-4">Why IT Automation?</h2>
+            <h2 className="text-2xl font-bold text-[#e7e7e7] mb-4">Why IT Automation?</h2>
             <p className="text-xl text-[#e7e7e7] max-w-3xl mx-auto">
               IT automation transforms how organizations manage infrastructure, reducing costs and improving service delivery
             </p>

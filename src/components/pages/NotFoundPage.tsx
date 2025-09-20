@@ -9,7 +9,7 @@ const NotFoundPage: React.FC = () => {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 h-lvh">
           <div className="text-center py-36 ">
 
-            <p className="text-3xl">Page Not Found 404</p>
+            <p className="hero-title text-[#e7e7e7]">Page Not Found 404</p>
  
           <Link to="/" className="text-blue-500 py-12">Back to Home page</Link>
       

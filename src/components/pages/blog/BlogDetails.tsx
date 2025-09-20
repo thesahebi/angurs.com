@@ -10,7 +10,7 @@ function BlogDetails() {
     return (
       <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#e7e7e7] mb-4">Article Not Found</h1>
+          <h1 className="hero-title text-[#e7e7e7] mb-4">Article Not Found</h1>
           <p className="text-[#e7e7e7] mb-8">The article you're looking for doesn't exist.</p>
           <Link
             to="/resources/blog"
@@ -55,7 +55,7 @@ function BlogDetails() {
             </div>
 
             {/* Article Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#e7e7e7] mb-8 leading-tight">
+            <h1 className="hero-title text-[#e7e7e7] mb-8 leading-tight">
               {article.title}
             </h1>
 

@@ -11,12 +11,12 @@ const TeamsV2 = () => {
      
       <div className="lg:py-12 md:py-8 text-center">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl  dark:text-white">
+          <h2 className="hero-title text-[#e7e7e7]">
             Meet the brain
           </h2>
         </div>
 
-        <p className="text-xl py-3">
+        <p className="text-xl text-[#e7e7e7] py-3">
           Clarity gives you the blocks & components you need to create a truly
           professional website,
           <br /> landing page or admin panel for your SaaS.

@@ -12,8 +12,8 @@ const Teams = ({ teamClass }: any) => {
       {/* <div className="container"> */}
 
       <div className="text-center my-6">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl xl:text-5xl">Our  members</h1>
-        <p className="text-2xl">
+        <h1 className="hero-title text-[#e7e7e7]">Our  members</h1>
+        <p className="text-xl text-[#e7e7e7]">
           Clarity gives you the blocks & components you need to create a truly
           professional website,
           <br /> landing page or admin panel for your SaaS.

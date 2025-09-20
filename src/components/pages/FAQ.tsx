@@ -41,7 +41,7 @@ const FAQ: React.FC = () => {
   return (
     <section className="dark:bg-black pb-12">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl xl:text-5xl py-12 text-center">
+        <h1 className="hero-title text-[#e7e7e7] py-12 text-center">
           Frequently Asked Questions
         </h1>
         <div className="space-y-4">

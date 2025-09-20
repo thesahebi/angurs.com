@@ -24,13 +24,13 @@ const OurCompany: React.FC = () => {
       <section id="story" className="py-16 md:py-24 bg-[#0A0A0A]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-6 md:mb-8">Our Story</h2>
-            <p className="text-sm md:text-base lg:text-lg text-secondary leading-relaxed mb-6 md:mb-8">
+            <h2 className="text-2xl font-bold text-primary mb-6 md:mb-8">Our Story</h2>
+            <p className="text-xl text-secondary leading-relaxed mb-6 md:mb-8">
               Founded with a vision to bridge the gap between complex technology and business success, 
               Zivara has grown from a small team of engineers to a trusted partner for organizations 
               seeking to modernize their infrastructure and embrace digital transformation.
             </p>
-            <p className="text-sm md:text-base lg:text-lg text-secondary leading-relaxed">
+            <p className="text-xl text-secondary leading-relaxed">
               Our journey began with a simple belief: technology should empower businesses, not complicate them. 
               Today, we continue to deliver on that promise through innovative solutions, expert guidance, 
               and unwavering commitment to our clients' success.

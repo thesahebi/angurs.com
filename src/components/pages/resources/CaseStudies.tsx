@@ -23,8 +23,8 @@ const CaseStudies: React.FC = () => {
       <section id="case-studies" className="py-16 md:py-24 bg-[#1A1A1A]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1f2937] mb-4">Featured Case Studies</h2>
-            <p className="text-xl text-[#6b7280] max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-[#e7e7e7] mb-4">Featured Case Studies</h2>
+            <p className="text-xl text-[#e7e7e7] max-w-3xl mx-auto">
               Real-world examples of how we've delivered exceptional results for our clients
             </p>
           </div>
