@@ -53,13 +53,13 @@ const FeatureV1 = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {featureData.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <div
                 key={service.id}
-                className={`group relative bg-surface/50 backdrop-blur-sm rounded-2xl p-10 border border-surface hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10 ${
+                className={`group relative bg-surface/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 lg:p-10 border border-surface hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 200}ms` }}

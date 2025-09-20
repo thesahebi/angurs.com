@@ -93,7 +93,7 @@ const TopHeaderV1 = () => {
   return (
     <header className="fixed mx-auto w-[100%] bg-[#0A0A0A]/95 backdrop-blur-md z-20 border-b border-[#1E293B]/50 shadow-lg">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-12 md:h-14">
+        <div className="flex items-center justify-between h-10 sm:h-12 md:h-14">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
@@ -102,7 +102,7 @@ const TopHeaderV1 = () => {
               className="flex items-center group transition-all duration-300 hover:scale-105"
             >
               <div className="relative">
-                <img className="w-auto h-7 md:h-9 transition-all duration-300 " src={logo1} alt="Logo" />
+                <img className="w-auto h-6 sm:h-7 md:h-9 transition-all duration-300 " src={logo1} alt="Logo" />
                 <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity duration-300"></div>
               </div>
             </Link>
@@ -112,14 +112,14 @@ const TopHeaderV1 = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="md:hidden p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/50 transition-all duration-200"
+            className="md:hidden p-1.5 sm:p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/50 transition-all duration-200"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
           >
             {isMenuOpen ? (
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5 sm:w-6 sm:h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -133,7 +133,7 @@ const TopHeaderV1 = () => {
               </svg>
             ) : (
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5 sm:w-6 sm:h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -315,7 +315,7 @@ const TopHeaderV1 = () => {
         {/* Mobile Navigation Menu */}
         <div
           id="mobile-menu"
-          className={`md:hidden absolute top-12 left-0 right-0 bg-[#0A0A0A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
+          className={`md:hidden absolute top-10 sm:top-12 left-0 right-0 bg-[#0A0A0A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
               ? "opacity-100 translate-y-0 h-lvh z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
             }`}

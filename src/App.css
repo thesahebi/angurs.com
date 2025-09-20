@@ -103,6 +103,20 @@ p {
 }
 
 /* Responsive Hero Styles */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem !important; /* 40px for very small screens */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem !important; /* 18px */
+  }
+  
+  .hero-description {
+    font-size: 1rem !important; /* 16px */
+  }
+}
+
 @media (min-width: 768px) {
   .hero-title {
     font-size: 4rem !important; /* 64px */
@@ -144,9 +158,7 @@ p {
   /* max-width: 1400px; */
 }
 
-.hero-title {
-  font-size: 50px;
-}
+/* Removed conflicting hero-title style - using responsive styles above */
 
 .hero-img {
   height: 500px;

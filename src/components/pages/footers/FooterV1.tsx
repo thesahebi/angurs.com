@@ -68,7 +68,7 @@ const FooterV1 = () => {
       <div className="relative z-10">
         {/* Top Section */}
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
             
             {/* Company Info */}
             <div className="lg:col-span-1">

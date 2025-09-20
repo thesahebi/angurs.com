@@ -53,7 +53,7 @@ const MobileFooterNav = () => {
   
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 lg:hidden md:block ">
+    <div className="fixed bottom-0 left-0 right-0 lg:hidden md:hidden sm:block">
       {/* Main Container */}
       <div className="bg-gray-900/95 backdrop-blur-md border-t border-gray-800">
         {/* Center Logo */}
