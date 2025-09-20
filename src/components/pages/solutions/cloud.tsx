@@ -2,40 +2,25 @@ import React from "react";
 
 const Cloud: React.FC = () => {
   return (
-    <main className="min-h-screen bg-[#0A0A0A]">
-      {/* Header */}
-      <section className="pt-32 md:pt-40 pb-20 md:pb-24 bg-[#0A0A0A] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex px-4 py-2 text-sm font-medium text-primary bg-primary/20 border border-primary/30 rounded-full mb-6 backdrop-blur-sm">
-              ☁️ Cloud Solutions
-            </div>
-            
-            <h1 className="hero-title text-primary">
-              Transform Your Business with{' '}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Cloud Power
-              </span>
+    <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
+      {/* Hero Section */}
+      <section className="pt-[210px] pb-24 md:pb-32 bg-[#0A0A0A]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[70px] font-bold mb-6 lg:leading-[90px]" style={{ color: '#3b82f6' }}>
+              Trust our expert team to bring comfort, guidance, and confidence to your cloud transformation
             </h1>
-            
-            <p className="hero-description text-secondary max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-secondary max-w-2xl mx-auto">
               Scale infinitely, secure everything, and innovate faster with our comprehensive cloud migration and management services.
             </p>
-            
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-8">
               <a
                 href="/contact"
-                className="btn-primary inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200"
+                className="btn-primary inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base text-[#e7e7e7] font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                Start Your Migration
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                Book an Appointment
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </a>
             </div>
@@ -95,91 +80,42 @@ const Cloud: React.FC = () => {
               </h2>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* Code Snippet */}
-              <div className="bg-[#0f172a] rounded-xl p-4 border border-white/10">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[
+                  {
+                    title: "Discovery & Assessment",
+                    description: "Understanding your current infrastructure and cloud requirements",
+                    icon: "🔍"
+                  },
+                  {
+                    title: "Migration & Modernization",
+                    description: "Seamlessly moving your applications to the cloud",
+                    icon: "🎨"
+                  },
+                  {
+                    title: "Operational Optimization",
+                    description: "Maximizing performance and minimizing costs",
+                    icon: "⚡"
+                  }
+                ].map((process, index) => (
+                  <div
+                    key={index}
+                    className="text-center group"
+                  >
+                    <div className="relative mb-6">
+                      <div className="w-10 h-10 mx-auto bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300">
+                        {process.icon}
+                      </div>
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold mb-3 text-primary">
+                      {process.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-tertiary">
+                      {process.description}
+                    </p>
                   </div>
-                  <span className="text-xs text-[#94A3B8]">api_setup.py</span>
-                </div>
-                
-                <div className="bg-[#0a0e1a] rounded-lg p-4 overflow-x-auto">
-                  <pre className="text-xs text-[#e7e7e7] leading-relaxed">
-                    <code>
-{`from cloud_gateway import Gateway
-
-# Initialize gateway
-gateway = Gateway()
-
-# Import API spec
-gateway.import_spec("api.yaml")
-
-# Add security rules
-gateway.add_auth("jwt")
-gateway.add_rate_limit("1000/hour")
-
-# Deploy to edge
-gateway.deploy()
-
-print("API live in 30 seconds!")`}
-                    </code>
-                  </pre>
-                </div>
-              </div>
-
-              {/* Setup Steps */}
-              <div className="space-y-6">
-                <div className="bg-[#1E293B] rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#3B82F6] to-[#d1451a] rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-[#e7e7e7] mb-2">Set up In Minutes</h3>
-                      <p className="text-[#e7e7e7] leading-relaxed">
-                        Import your API spec—or start from scratch in minutes.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-[#1E293B] rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#3b82f6] to-[#2563eb] rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-[#e7e7e7] mb-2">Define your rules</h3>
-                      <p className="text-[#e7e7e7] leading-relaxed">
-                        Add auth, rate limiting, logging, and more—code or no-code.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-[#1E293B] rounded-xl p-4 border border-white/10 hover:border-white/20 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#10b981] to-[#059669] rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-[#e7e7e7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-[#e7e7e7] mb-2">Deploy to the Edge</h3>
-                      <p className="text-[#e7e7e7] leading-relaxed">
-                        Go live instantly, with global scale by default.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

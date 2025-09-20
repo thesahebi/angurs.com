@@ -130,52 +130,45 @@ const DesignDevelopment = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Discovery",
-                  description: "Understanding your vision and requirements",
-                  icon: "🔍"
-                },
-                {
-                  step: "02",
-                  title: "Design",
-                  description: "Creating beautiful, user-centered interfaces",
-                  icon: "🎨"
-                },
-                {
-                  step: "03",
-                  title: "Development",
-                  description: "Building robust, scalable applications",
-                  icon: "⚡"
-                },
-                {
-                  step: "04",
-                  title: "Deployment",
-                  description: "Launching and maintaining your solution",
-                  icon: "🚀"
-                }
-              ].map((process, index) => (
-                <div
-                  key={index}
-                  className="text-center group"
-                >
-                  <div className="relative mb-6">
-                    <div className="w-10 h-10 mx-auto bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300">
-                      {process.icon}
+                {[
+                  {
+                    title: "Discovery",
+                    description: "Understanding your vision and requirements",
+                    icon: "🔍"
+                  },
+                  {
+                    title: "Design",
+                    description: "Creating beautiful, user-centered interfaces",
+                    icon: "🎨"
+                  },
+                  {
+                    title: "Development",
+                    description: "Building robust, scalable applications",
+                    icon: "⚡"
+                  },
+                  {
+                    title: "Deployment",
+                    description: "Launching and maintaining your solution",
+                    icon: "🚀"
+                  }
+                ].map((process, index) => (
+                  <div
+                    key={index}
+                    className="text-center group"
+                  >
+                    <div className="relative mb-6">
+                      <div className="w-10 h-10 mx-auto bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300">
+                        {process.icon}
+                      </div>
                     </div>
-                    <div className="absolute -top-2 -right-2 w-6 h-6 sm:w-8 sm:h-8 bg-surface border-2 border-primary rounded-full flex items-center justify-center text-xs sm:text-sm font-bold text-primary">
-                      {process.step}
-                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold mb-3 text-primary">
+                      {process.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-tertiary">
+                      {process.description}
+                    </p>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 text-primary">
-                    {process.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-tertiary">
-                    {process.description}
-                  </p>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>
