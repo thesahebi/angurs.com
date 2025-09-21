@@ -45,7 +45,7 @@
 1. **Visit your live website**
 2. **Go to the Contact page**
 3. **Fill out and submit the form**
-4. **Check your email** (support@Zivara.com) for the message
+4. **Check your email** (support@Zivara.io) for the message
 
 ### File Structure for Azure Functions
 

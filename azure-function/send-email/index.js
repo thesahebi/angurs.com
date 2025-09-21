@@ -47,7 +47,7 @@ module.exports = async function (context, req) {
         // Email content
         const mailOptions = {
             from: process.env.EMAIL_USER || 'sahebiramazan@gmail.com',
-            to: 'support@Zivara.com',
+            to: 'support@Zivara.io',
             replyTo: email,
             subject: `Contact Form: ${subject}`,
             html: `
