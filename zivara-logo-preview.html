@@ -107,7 +107,7 @@
             line-height: 1.5;
         }
 
-        /* LOGO DESIGN 1: INTERLOCKED CUBES */
+        /* LOGO DESIGN 1: CIRCUIT Z */
         .logo-cubes {
             position: relative;
             width: 80px;
@@ -116,38 +116,46 @@
 
         .cube {
             position: absolute;
-            background: linear-gradient(135deg, #0F766E 0%, #3B82F6 100%);
-            border-radius: 4px;
-            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
+            background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
+            border-radius: 2px;
         }
 
         .cube-1 {
-            width: 30px;
-            height: 30px;
             top: 0;
             left: 0;
-            transform: rotate(45deg);
+            width: 50px;
+            height: 4px;
         }
 
         .cube-2 {
-            width: 25px;
-            height: 25px;
-            top: 20px;
-            left: 25px;
-            background: linear-gradient(135deg, #3B82F6 0%, #F59E0B 100%);
-            transform: rotate(-30deg);
+            top: 38px;
+            left: 30px;
+            width: 30px;
+            height: 4px;
+            transform: rotate(45deg);
         }
 
         .cube-3 {
-            width: 28px;
-            height: 28px;
             bottom: 0;
             right: 0;
-            background: linear-gradient(135deg, #F59E0B 0%, #0F766E 100%);
-            transform: rotate(60deg);
+            width: 50px;
+            height: 4px;
         }
 
-        /* LOGO DESIGN 2: NODE NETWORK */
+        .cube-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #8B5CF6;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+        }
+
+        .dot-1 { top: -2px; left: 25px; }
+        .dot-2 { top: 35px; left: 45px; }
+        .dot-3 { bottom: -2px; right: 25px; }
+
+        /* LOGO DESIGN 2: CIRCUIT Z */
         .logo-nodes {
             position: relative;
             width: 80px;
@@ -156,31 +164,46 @@
 
         .node {
             position: absolute;
-            width: 12px;
-            height: 12px;
-            background: radial-gradient(circle, #0F766E 0%, #3B82F6 100%);
-            border-radius: 50%;
-            box-shadow: 0 0 20px rgba(15, 118, 110, 0.5);
+            background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
+            border-radius: 2px;
         }
 
-        .node-1 { top: 0; left: 0; }
-        .node-2 { top: 0; right: 0; }
-        .node-3 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
-        .node-4 { bottom: 0; left: 0; }
-        .node-5 { bottom: 0; right: 0; }
+        .node-1 {
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 4px;
+        }
+
+        .node-2 {
+            top: 38px;
+            left: 30px;
+            width: 30px;
+            height: 4px;
+            transform: rotate(45deg);
+        }
+
+        .node-3 {
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 4px;
+        }
 
         .connection {
             position: absolute;
-            height: 2px;
-            background: linear-gradient(90deg, #0F766E 0%, #3B82F6 100%);
-            transform-origin: left center;
+            width: 8px;
+            height: 8px;
+            background: #8B5CF6;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
         }
 
-        .conn-1 { top: 6px; left: 12px; width: 56px; transform: rotate(0deg); }
-        .conn-2 { top: 40px; left: 6px; width: 40px; transform: rotate(45deg); }
-        .conn-3 { bottom: 6px; left: 12px; width: 56px; transform: rotate(0deg); }
+        .conn-1 { top: -2px; left: 25px; }
+        .conn-2 { top: 35px; left: 45px; }
+        .conn-3 { bottom: -2px; right: 25px; }
 
-        /* LOGO DESIGN 3: LAYERED GEOMETRY */
+        /* LOGO DESIGN 3: CIRCUIT Z */
         .logo-layered {
             position: relative;
             width: 80px;
@@ -189,37 +212,44 @@
 
         .layer {
             position: absolute;
-            border: 3px solid;
-            border-radius: 8px;
+            background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
+            border-radius: 2px;
         }
 
         .layer-1 {
-            width: 60px;
-            height: 20px;
             top: 0;
             left: 0;
-            border-color: #0F766E;
-            background: rgba(15, 118, 110, 0.1);
+            width: 50px;
+            height: 4px;
         }
 
         .layer-2 {
-            width: 50px;
-            height: 20px;
-            top: 30px;
-            left: 15px;
-            border-color: #3B82F6;
-            background: rgba(59, 130, 246, 0.1);
-            transform: rotate(15deg);
+            top: 38px;
+            left: 30px;
+            width: 30px;
+            height: 4px;
+            transform: rotate(45deg);
         }
 
         .layer-3 {
-            width: 60px;
-            height: 20px;
             bottom: 0;
             right: 0;
-            border-color: #F59E0B;
-            background: rgba(245, 158, 11, 0.1);
+            width: 50px;
+            height: 4px;
         }
+
+        .layer-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #8B5CF6;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+        }
+
+        .dot-1 { top: -2px; left: 25px; }
+        .dot-2 { top: 35px; left: 45px; }
+        .dot-3 { bottom: -2px; right: 25px; }
 
         /* LOGO DESIGN 4: CIRCUIT Z */
         .logo-circuit {
@@ -230,7 +260,7 @@
 
         .circuit-line {
             position: absolute;
-            background: linear-gradient(90deg, #0F766E 0%, #3B82F6 100%);
+            background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
             border-radius: 2px;
         }
 
@@ -242,9 +272,9 @@
             position: absolute;
             width: 8px;
             height: 8px;
-            background: #F59E0B;
+            background: #8B5CF6;
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
         }
 
         .dot-1 { top: -2px; left: 25px; }
@@ -336,7 +366,7 @@
             }
             
             .section {
-                padding: 20px;
+            padding: 20px;
             }
             
             .logo-grid {
@@ -351,10 +381,8 @@
             50% { transform: translateY(-10px); }
         }
 
-        .logo-item:hover .cube,
         .logo-item:hover .node,
-        .logo-item:hover .layer,
-        .logo-item:hover .circuit-line {
+        .logo-item:hover .layer {
             animation: float 2s ease-in-out infinite;
         }
 
@@ -426,7 +454,7 @@
             width: 32px;
             height: 32px;
             margin: 0 auto 10px;
-            background: linear-gradient(135deg, #0F766E 0%, #3B82F6 100%);
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
             border-radius: 6px;
             display: flex;
             align-items: center;
@@ -449,16 +477,19 @@
             <h2 class="section-title">Primary Logo Concepts</h2>
             <div class="logo-grid">
                 <div class="logo-item">
-                    <h3>Interlocked Cubes</h3>
+                    <h3>Circuit Z</h3>
                     <div class="logo-preview">
                         <div class="logo-cubes">
                             <div class="cube cube-1"></div>
                             <div class="cube cube-2"></div>
                             <div class="cube cube-3"></div>
+                            <div class="cube-dot dot-1"></div>
+                            <div class="cube-dot dot-2"></div>
+                            <div class="cube-dot dot-3"></div>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Three interlocking cubes forming "Z" - represents VM containers and virtualization layers
+                        Circuit board pattern forming "Z" - represents server infrastructure and technology
                     </div>
                     <div class="download-buttons">
                         <button class="download-btn" onclick="downloadLogo('cubes', 'svg')">
@@ -474,24 +505,22 @@
                             PNG
                         </button>
                     </div>
-                </div>
-
+            </div>
+            
                 <div class="logo-item">
-                    <h3>Node Network</h3>
+                    <h3>Circuit Z</h3>
                     <div class="logo-preview">
                         <div class="logo-nodes">
                             <div class="node node-1"></div>
                             <div class="node node-2"></div>
                             <div class="node node-3"></div>
-                            <div class="node node-4"></div>
-                            <div class="node node-5"></div>
                             <div class="connection conn-1"></div>
                             <div class="connection conn-2"></div>
                             <div class="connection conn-3"></div>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Connected nodes forming "Z" - represents vSphere clustering and network infrastructure
+                        Circuit board pattern forming "Z" - represents server infrastructure and technology
                     </div>
                     <div class="download-buttons">
                         <button class="download-btn" onclick="downloadLogo('nodes', 'svg')">
@@ -506,20 +535,23 @@
                             </svg>
                             PNG
                         </button>
-                    </div>
-                </div>
+        </div>
+    </div>
 
                 <div class="logo-item">
-                    <h3>Layered Geometry</h3>
+                    <h3>Circuit Z</h3>
                     <div class="logo-preview">
                         <div class="logo-layered">
                             <div class="layer layer-1"></div>
                             <div class="layer layer-2"></div>
                             <div class="layer layer-3"></div>
+                            <div class="layer-dot dot-1"></div>
+                            <div class="layer-dot dot-2"></div>
+                            <div class="layer-dot dot-3"></div>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Overlapping angular shapes creating "Z" - represents virtualization layers and abstraction
+                        Circuit board pattern forming "Z" - represents server infrastructure and technology
                     </div>
                     <div class="download-buttons">
                         <button class="download-btn" onclick="downloadLogo('layered', 'svg')">
@@ -534,8 +566,8 @@
                             </svg>
                             PNG
                         </button>
-                    </div>
                 </div>
+            </div>
 
                 <div class="logo-item">
                     <h3>Circuit Z</h3>
@@ -547,7 +579,7 @@
                             <div class="circuit-dot dot-1"></div>
                             <div class="circuit-dot dot-2"></div>
                             <div class="circuit-dot dot-3"></div>
-                        </div>
+                </div>
                     </div>
                     <div class="logo-description">
                         Abstract circuit board pattern forming "Z" - represents server infrastructure and connectivity
@@ -567,47 +599,41 @@
                         </button>
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
 
         <!-- FULL LOGO WITH TYPOGRAPHY -->
         <div class="section">
             <h2 class="section-title">Complete Logo with Typography</h2>
             <div class="logo-grid">
                 <div class="logo-item">
-                    <h3>Horizontal Layout</h3>
+                    <h3>Icon Only (High Resolution)</h3>
                     <div class="logo-preview">
-                        <div style="display: flex; align-items: center; gap: 20px;">
-                            <div class="logo-cubes">
-                                <div class="cube cube-1"></div>
-                                <div class="cube cube-2"></div>
-                                <div class="cube cube-3"></div>
-                            </div>
-                            <div>
-                                <span class="logo-text logo-text-main">Zivara</span>
-                                <span class="logo-text-io">.io</span>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="logo-cubes-high-res">
+                            <div class="cube-high cube-high-1"></div>
+                            <div class="cube-high cube-high-2"></div>
+                            <div class="cube-high cube-high-3"></div>
+                </div>
+                </div>
                     <div class="logo-description">
-                        Perfect for headers, business cards, and horizontal applications
-                    </div>
+                        High-resolution icon perfect for favicons, app icons, and standalone branding
+            </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('horizontal', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('icon-only', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('horizontal', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('icon-only', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             PNG
                         </button>
-                    </div>
-            </div>
-            
+        </div>
+    </div>
+
                 <div class="logo-item">
                     <h3>Stacked Layout</h3>
                     <div class="logo-preview">
@@ -655,12 +681,26 @@
                             <div class="cube cube-1"></div>
                             <div class="cube cube-2"></div>
                             <div class="cube cube-3"></div>
-                        </div>
-                    </div>
+                </div>
+                </div>
                     <div class="logo-description">
                         Favicon and small icon applications
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('favicon-16', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('favicon-16', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+            </div>
         </div>
-    </div>
 
                 <div class="logo-item">
                     <h3>Medium (32px)</h3>
@@ -669,12 +709,26 @@
                             <div class="cube cube-1"></div>
                             <div class="cube cube-2"></div>
                             <div class="cube cube-3"></div>
-                        </div>
-                    </div>
+                </div>
+                </div>
                     <div class="logo-description">
                         Navigation bars and medium-sized applications
-                    </div>
-                </div>
+            </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('favicon-32', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('favicon-32', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+        </div>
+    </div>
 
                 <div class="logo-item">
                     <h3>Large (64px+)</h3>
@@ -683,10 +737,24 @@
                             <div class="cube cube-1"></div>
                             <div class="cube cube-2"></div>
                             <div class="cube cube-3"></div>
-                        </div>
-                    </div>
+        </div>
+    </div>
                     <div class="logo-description">
                         Marketing materials and large displays
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('favicon-64', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('favicon-64', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
                     </div>
                 </div>
             </div>
@@ -713,7 +781,21 @@
                     </div>
                     <div class="logo-description">
                         For light backgrounds and print materials
-                </div>
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('white-bg', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('white-bg', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
             </div>
 
                 <div class="logo-item bg-teal">
@@ -733,6 +815,20 @@
                     </div>
                     <div class="logo-description">
                         For brand-colored backgrounds
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('teal-bg', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('teal-bg', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
                     </div>
                 </div>
 
@@ -754,6 +850,20 @@
                     <div class="logo-description">
                         For secondary brand applications
                     </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('blue-bg', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('blue-bg', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -773,7 +883,21 @@
                     </div>
                     <div class="logo-description">
                         For invoices and technical documentation
-                </div>
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('monochrome-black', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('monochrome-black', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
             </div>
 
                 <div class="logo-item bg-white">
@@ -788,19 +912,165 @@
                     <div class="logo-description">
                         For dark backgrounds and reverse applications
                     </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('monochrome-white', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('monochrome-white', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
                 </div>
 
                 <div class="logo-item">
-                    <h3>All Teal</h3>
+                    <h3>All Blue</h3>
                     <div class="logo-preview">
                         <div class="logo-cubes">
-                            <div class="cube cube-1" style="background: #0F766E;"></div>
-                            <div class="cube cube-2" style="background: #0F766E;"></div>
-                            <div class="cube cube-3" style="background: #0F766E;"></div>
+                            <div class="cube cube-1" style="background: #3B82F6;"></div>
+                            <div class="cube cube-2" style="background: #3B82F6;"></div>
+                            <div class="cube cube-3" style="background: #3B82F6;"></div>
                         </div>
                     </div>
                     <div class="logo-description">
                         Single-color brand applications
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('monochrome-teal', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('monochrome-teal', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL MEDIA SIZES -->
+        <div class="section">
+            <h2 class="section-title">Social Media Sizes</h2>
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <h3>Instagram (1080x1080px)</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes" style="width: 200px; height: 200px;">
+                            <div class="cube cube-1" style="width: 75px; height: 75px;"></div>
+                            <div class="cube cube-2" style="width: 63px; height: 63px; top: 50px; left: 63px;"></div>
+                            <div class="cube cube-3" style="width: 70px; height: 70px;"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Perfect for Instagram profile pictures and posts
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('social-instagram', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('social-instagram', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>LinkedIn (400x400px)</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes" style="width: 150px; height: 150px;">
+                            <div class="cube cube-1" style="width: 56px; height: 56px;"></div>
+                            <div class="cube cube-2" style="width: 47px; height: 47px; top: 38px; left: 47px;"></div>
+                            <div class="cube cube-3" style="width: 53px; height: 53px;"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Ideal for LinkedIn company pages and profiles
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('social-linkedin', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('social-linkedin', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>Twitter (400x400px)</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes" style="width: 150px; height: 150px;">
+                            <div class="cube cube-1" style="width: 56px; height: 56px;"></div>
+                            <div class="cube cube-2" style="width: 47px; height: 47px; top: 38px; left: 47px;"></div>
+                            <div class="cube cube-3" style="width: 53px; height: 53px;"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Perfect for Twitter profile pictures
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('social-twitter', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('social-twitter', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>Facebook (170x170px)</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes" style="width: 120px; height: 120px;">
+                            <div class="cube cube-1" style="width: 45px; height: 45px;"></div>
+                            <div class="cube cube-2" style="width: 38px; height: 38px; top: 30px; left: 38px;"></div>
+                            <div class="cube cube-3" style="width: 42px; height: 42px;"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Optimized for Facebook business pages
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('social-facebook', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('social-facebook', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
                     </div>
                 </div>
             </div>
@@ -814,21 +1084,77 @@
                     <div class="favicon-size">16x16px</div>
                     <div class="favicon-icon" style="width: 16px; height: 16px; font-size: 10px;">Z</div>
                     <div class="logo-description">Browser favicon</div>
+                    <div class="download-buttons" style="margin-top: 10px;">
+                        <button class="download-btn" onclick="downloadLogo('favicon-16px', 'svg')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('favicon-16px', 'png')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
                 </div>
                 <div class="favicon-item">
                     <div class="favicon-size">32x32px</div>
                     <div class="favicon-icon">Z</div>
                     <div class="logo-description">High-res favicon</div>
-    </div>
+                    <div class="download-buttons" style="margin-top: 10px;">
+                        <button class="download-btn" onclick="downloadLogo('favicon-32px', 'svg')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('favicon-32px', 'png')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
                 <div class="favicon-item">
                     <div class="favicon-size">48x48px</div>
                     <div class="favicon-icon" style="width: 48px; height: 48px; font-size: 24px;">Z</div>
                     <div class="logo-description">Windows icon</div>
+                    <div class="download-buttons" style="margin-top: 10px;">
+                        <button class="download-btn" onclick="downloadLogo('favicon-48px', 'svg')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('favicon-48px', 'png')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
                 </div>
                 <div class="favicon-item">
                     <div class="favicon-size">64x64px</div>
                     <div class="favicon-icon" style="width: 64px; height: 64px; font-size: 32px;">Z</div>
                     <div class="logo-description">App icon</div>
+                    <div class="download-buttons" style="margin-top: 10px;">
+                        <button class="download-btn" onclick="downloadLogo('favicon-64px', 'svg')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('favicon-64px', 'png')" style="font-size: 0.7rem; padding: 4px 8px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -841,16 +1167,16 @@
                     <h3 style="color: #F59E0B; margin-bottom: 15px;">Color Palette</h3>
                     <div style="display: flex; flex-direction: column; gap: 10px;">
                         <div style="display: flex; align-items: center; gap: 10px;">
-                            <div style="width: 30px; height: 30px; background: #0F766E; border-radius: 6px;"></div>
-                            <span>Deep Teal #0F766E</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 10px;">
                             <div style="width: 30px; height: 30px; background: #3B82F6; border-radius: 6px;"></div>
-                            <span>Electric Blue #3B82F6</span>
+                            <span>Primary Blue #3B82F6</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px;">
-                            <div style="width: 30px; height: 30px; background: #F59E0B; border-radius: 6px;"></div>
-                            <span>Gold #F59E0B</span>
+                            <div style="width: 30px; height: 30px; background: #8B5CF6; border-radius: 6px;"></div>
+                            <span>Purple #8B5CF6</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 30px; height: 30px; background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%); border-radius: 6px;"></div>
+                            <span>Creative Partner Gradient</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <div style="width: 30px; height: 30px; background: #1F2937; border-radius: 6px;"></div>
@@ -898,29 +1224,57 @@
         }
 
         function generateSVG(type) {
-            const size = 200;
-            let svgContent = `<svg width="${size}" height="${size}" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">`;
+            const size = 400; // High resolution SVG
+            let svgContent = `<svg width="${size}" height="${size}" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">`;
             
-            switch(type) {
-                case 'cubes':
+            // All logo types now use Circuit Z design
+            svgContent += `
+                <defs>
+                    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="circuitShadow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#3B82F6" flood-opacity="0.4"/>
+                    </filter>
+                </defs>
+                <!-- Circuit lines forming Z shape -->
+                <rect x="50" y="50" width="250" height="20" fill="url(#circuitGrad)" rx="10" filter="url(#circuitShadow)"/>
+                <rect x="150" y="190" width="150" height="20" fill="url(#circuitGrad)" rx="10" transform="rotate(45 225 200)" filter="url(#circuitShadow)"/>
+                <rect x="100" y="330" width="250" height="20" fill="url(#circuitGrad)" rx="10" filter="url(#circuitShadow)"/>
+                
+                <!-- Circuit connection dots -->
+                <circle cx="125" cy="60" r="20" fill="#8B5CF6" filter="url(#circuitShadow)"/>
+                <circle cx="225" cy="200" r="20" fill="#8B5CF6" filter="url(#circuitShadow)"/>
+                <circle cx="325" cy="340" r="20" fill="#8B5CF6" filter="url(#circuitShadow)"/>
+            `;
+            
+            // All logo types use the same Circuit Z design (already added above)
+            // No additional content needed
                     svgContent += `
                         <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
                                 <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
                             </linearGradient>
                             <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
                             </linearGradient>
                             <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
                             </linearGradient>
+                            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#3B82F6" flood-opacity="0.4"/>
+                            </filter>
                         </defs>
-                        <rect x="20" y="20" width="75" height="75" fill="url(#grad1)" transform="rotate(45 57.5 57.5)" rx="10"/>
-                        <rect x="62.5" y="62.5" width="62.5" height="62.5" fill="url(#grad2)" transform="rotate(-30 93.75 93.75)" rx="8"/>
-                        <rect x="105" y="105" width="70" height="70" fill="url(#grad3)" transform="rotate(60 140 140)" rx="10"/>
+                        <rect x="60" y="60" width="225" height="225" fill="url(#grad1)" transform="rotate(45 172.5 172.5)" rx="30" filter="url(#shadow)"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="url(#grad2)" transform="rotate(-30 281.25 281.25)" rx="24" filter="url(#shadow)"/>
+                        <rect x="315" y="315" width="210" height="210" fill="url(#grad3)" transform="rotate(60 420 420)" rx="30" filter="url(#shadow)"/>
                     `;
                     break;
                     
@@ -1033,6 +1387,208 @@
                         <text x="100" y="140" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="middle">.io</text>
                     `;
                     break;
+                    
+                // Favicon sizes
+                case 'favicon-16':
+                case 'favicon-32':
+                case 'favicon-64':
+                case 'favicon-16px':
+                case 'favicon-32px':
+                case 'favicon-48px':
+                case 'favicon-64px':
+                    const size = type.includes('16') ? 16 : type.includes('32') ? 32 : type.includes('48') ? 48 : 64;
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="${size * 0.15}" y="${size * 0.15}" width="${size * 0.3}" height="${size * 0.3}" fill="url(#grad1)" transform="rotate(45 ${size * 0.3} ${size * 0.3})" rx="${size * 0.05}"/>
+                        <rect x="${size * 0.25}" y="${size * 0.25}" width="${size * 0.25}" height="${size * 0.25}" fill="url(#grad2)" transform="rotate(-30 ${size * 0.375} ${size * 0.375})" rx="${size * 0.04}"/>
+                        <rect x="${size * 0.35}" y="${size * 0.35}" width="${size * 0.3}" height="${size * 0.3}" fill="url(#grad3)" transform="rotate(60 ${size * 0.5} ${size * 0.5})" rx="${size * 0.05}"/>
+                    `;
+                    break;
+                    
+                // Background variations
+                case 'white-bg':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="60" y="60" width="225" height="225" fill="url(#grad1)" transform="rotate(45 172.5 172.5)" rx="30"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="url(#grad2)" transform="rotate(-30 281.25 281.25)" rx="24"/>
+                        <rect x="315" y="315" width="210" height="210" fill="url(#grad3)" transform="rotate(60 420 420)" rx="30"/>
+                        <text x="240" y="120" font-family="Inter, sans-serif" font-size="64" font-weight="700" fill="#1F2937">Zivara</text>
+                        <text x="240" y="170" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#6B7280">.io</text>
+                    `;
+                    break;
+                    
+                case 'teal-bg':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="60" y="60" width="225" height="225" fill="url(#grad1)" transform="rotate(45 172.5 172.5)" rx="30"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="url(#grad2)" transform="rotate(-30 281.25 281.25)" rx="24"/>
+                        <rect x="315" y="315" width="210" height="210" fill="url(#grad3)" transform="rotate(60 420 420)" rx="30"/>
+                        <text x="240" y="120" font-family="Inter, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">Zivara</text>
+                        <text x="240" y="170" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#A7F3D0">.io</text>
+                    `;
+                    break;
+                    
+                case 'blue-bg':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="60" y="60" width="225" height="225" fill="url(#grad1)" transform="rotate(45 172.5 172.5)" rx="30"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="url(#grad2)" transform="rotate(-30 281.25 281.25)" rx="24"/>
+                        <rect x="315" y="315" width="210" height="210" fill="url(#grad3)" transform="rotate(60 420 420)" rx="30"/>
+                        <text x="240" y="120" font-family="Inter, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">Zivara</text>
+                        <text x="240" y="170" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#BFDBFE">.io</text>
+                    `;
+                    break;
+                    
+                // Monochrome versions
+                case 'monochrome-black':
+                    svgContent += `
+                        <rect x="60" y="60" width="225" height="225" fill="#000000" transform="rotate(45 172.5 172.5)" rx="30"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="#000000" transform="rotate(-30 281.25 281.25)" rx="24"/>
+                        <rect x="315" y="315" width="210" height="210" fill="#000000" transform="rotate(60 420 420)" rx="30"/>
+                    `;
+                    break;
+                    
+                case 'monochrome-white':
+                    svgContent += `
+                        <rect x="60" y="60" width="225" height="225" fill="#FFFFFF" transform="rotate(45 172.5 172.5)" rx="30"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="#FFFFFF" transform="rotate(-30 281.25 281.25)" rx="24"/>
+                        <rect x="315" y="315" width="210" height="210" fill="#FFFFFF" transform="rotate(60 420 420)" rx="30"/>
+                    `;
+                    break;
+                    
+                case 'monochrome-teal':
+                    svgContent += `
+                        <rect x="60" y="60" width="225" height="225" fill="#3B82F6" transform="rotate(45 172.5 172.5)" rx="30"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="#3B82F6" transform="rotate(-30 281.25 281.25)" rx="24"/>
+                        <rect x="315" y="315" width="210" height="210" fill="#3B82F6" transform="rotate(60 420 420)" rx="30"/>
+                    `;
+                    break;
+                    
+                // Social media sizes
+                case 'social-instagram':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="120" y="120" width="450" height="450" fill="url(#grad1)" transform="rotate(45 345 345)" rx="60"/>
+                        <rect x="375" y="375" width="375" height="375" fill="url(#grad2)" transform="rotate(-30 562.5 562.5)" rx="48"/>
+                        <rect x="630" y="630" width="420" height="420" fill="url(#grad3)" transform="rotate(60 840 840)" rx="60"/>
+                    `;
+                    break;
+                    
+                case 'social-linkedin':
+                case 'social-twitter':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="80" y="80" width="300" height="300" fill="url(#grad1)" transform="rotate(45 230 230)" rx="40"/>
+                        <rect x="250" y="250" width="250" height="250" fill="url(#grad2)" transform="rotate(-30 375 375)" rx="32"/>
+                        <rect x="420" y="420" width="280" height="280" fill="url(#grad3)" transform="rotate(60 560 560)" rx="40"/>
+                    `;
+                    break;
+                    
+                case 'social-facebook':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="60" y="60" width="225" height="225" fill="url(#grad1)" transform="rotate(45 172.5 172.5)" rx="30"/>
+                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="url(#grad2)" transform="rotate(-30 281.25 281.25)" rx="24"/>
+                        <rect x="315" y="315" width="210" height="210" fill="url(#grad3)" transform="rotate(60 420 420)" rx="30"/>
+                    `;
+                    break;
             }
             
             svgContent += '</svg>';
@@ -1056,12 +1612,19 @@
             const ctx = canvas.getContext('2d');
             const img = new Image();
             
-            canvas.width = 400;
-            canvas.height = 400;
+            // High resolution: 800x800 for crisp output
+            canvas.width = 800;
+            canvas.height = 800;
             
             img.onload = function() {
-                ctx.fillStyle = 'transparent';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                // Set high quality rendering
+                ctx.imageSmoothingEnabled = true;
+                ctx.imageSmoothingQuality = 'high';
+                
+                // Clear canvas with transparent background
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Draw the image at high resolution
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
                 
                 canvas.toBlob(function(blob) {
@@ -1073,7 +1636,7 @@
                     link.click();
                     document.body.removeChild(link);
                     URL.revokeObjectURL(url);
-                });
+                }, 'image/png', 1.0); // Maximum quality
             };
             
             const svgBlob = new Blob([svgContent], { type: 'image/svg+xml' });

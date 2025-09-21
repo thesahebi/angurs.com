@@ -1,7 +1,39 @@
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
-import logo1 from "../../../assets/imgs/ZivaraSolutions.svg";
+// Interlocked Cubes Logo Component
+const InterlockedCubesLogo = ({ className = "" }: { className?: string }) => (
+  <svg 
+    className={className}
+    viewBox="0 0 120 120" 
+    xmlns="http://www.w3.org/2000/svg"
+    key="footer-logo"
+  >
+    <defs>
+      <linearGradient id="footerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style={{ stopColor: "#3B82F6", stopOpacity: 1 }} />
+        <stop offset="50%" style={{ stopColor: "#8B5CF6", stopOpacity: 1 }} />
+        <stop offset="100%" style={{ stopColor: "#3B82F6", stopOpacity: 1 }} />
+      </linearGradient>
+      <linearGradient id="footerGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style={{ stopColor: "#8B5CF6", stopOpacity: 1 }} />
+        <stop offset="50%" style={{ stopColor: "#3B82F6", stopOpacity: 1 }} />
+        <stop offset="100%" style={{ stopColor: "#8B5CF6", stopOpacity: 1 }} />
+      </linearGradient>
+      <linearGradient id="footerGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style={{ stopColor: "#3B82F6", stopOpacity: 1 }} />
+        <stop offset="50%" style={{ stopColor: "#8B5CF6", stopOpacity: 1 }} />
+        <stop offset="100%" style={{ stopColor: "#3B82F6", stopOpacity: 1 }} />
+      </linearGradient>
+      <filter id="footerShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="3" stdDeviation="4" floodColor="#3B82F6" floodOpacity="0.3"/>
+      </filter>
+    </defs>
+    <rect x="15" y="15" width="45" height="45" fill="url(#footerGrad1)" transform="rotate(45 37.5 37.5)" rx="6" filter="url(#footerShadow)"/>
+    <rect x="37.5" y="37.5" width="37.5" height="37.5" fill="url(#footerGrad2)" transform="rotate(-30 56.25 56.25)" rx="5" filter="url(#footerShadow)"/>
+    <rect x="60" y="60" width="42" height="42" fill="url(#footerGrad3)" transform="rotate(60 81 81)" rx="6" filter="url(#footerShadow)"/>
+  </svg>
+);
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 import { scrollToTheTopOfPage } from "@/lib/utils";
 
@@ -73,7 +105,15 @@ const FooterV1 = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Link to="/" onClick={scrollToTheTopOfPage} className="inline-block">
-                <img className="w-auto h-16 mb-6" src={logo1} alt="Zivara Logo" />
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 mr-4">
+                    <InterlockedCubesLogo className="w-full h-full" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-2xl font-bold text-[#e7e7e7]">Zivara</span>
+                    <span className="text-sm text-[#3b82f6] font-medium">.io</span>
+                  </div>
+                </div>
               </Link>
               
               <p className="text-[#e7e7e7] text-base leading-relaxed mb-6 max-w-sm">
@@ -89,7 +129,7 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Follow us on Instagram"
                 >
-                  <FaInstagram className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
+                  <FaInstagram className="text-lg group-hover:text-white transition-colors" />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/Zivara-web-solutions/about/"
@@ -98,7 +138,7 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Connect on LinkedIn"
                 >
-                  <FaLinkedin className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
+                  <FaLinkedin className="text-lg group-hover:text-white transition-colors" />
                 </a>
                 <a
                   href="https://twitter.com/Zivara"
@@ -107,7 +147,7 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Follow us on Twitter"
                 >
-                  <FaTwitter className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
+                  <FaTwitter className="text-lg group-hover:text-white transition-colors" />
                 </a>
                 <a
                   href="https://github.com/Zivara"
@@ -116,7 +156,7 @@ const FooterV1 = () => {
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Check our GitHub"
                 >
-                  <FaGithub className="text-lg group-hover:text-[#e7e7e7] transition-colors" />
+                  <FaGithub className="text-lg group-hover:text-white transition-colors" />
                 </a>
               </div>
             </div>
