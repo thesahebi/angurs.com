@@ -140,11 +140,12 @@ function HeroV2() {
               ✨ Trusted source of integration
             </p>
             <h1 ref={titleRef} className="hero-title text-primary">
-              <span className="bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] bg-clip-text text-transparent">
-                Building Smarter AI Solutions with
-              </span>{' '}
-              <span className="text-gray-200">
-                Zivara
+              <span className="text-[#2563EB]">Building Smarter AI Solutions with</span>
+              <span className="relative block mt-1 sm:mt-2">
+                <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
+                  Zivara
+                </span>
+                <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] rounded-full opacity-60"></div>
               </span>
             </h1>
             <p ref={subtitleRef} className="hero-description text-secondary max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto">
