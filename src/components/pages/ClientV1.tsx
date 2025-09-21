@@ -54,7 +54,7 @@ export function ClientV1() {
     <section className="py-16 bg-[#0A0A0A]" aria-label="Client logos">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 md:mb-16">
-          <h3 className="text-lg font-medium text-[#e7e7e7] mb-8 md:mb-12">Trusted by leading companies</h3>
+          <h3 className="text-lg font-medium text-[#3B82F6] mb-8 md:mb-12">Trusted by leading companies</h3>
         </div>
         <div className="relative" role="img" aria-label="Client company logos">
           <Marquee pauseOnHover className="[--duration:15s]">

@@ -223,10 +223,10 @@ const FooterV1 = () => {
                 <li className="flex items-start space-x-3">
                   <FaEnvelope className="w-5 h-5 text-[#3b82f6] mt-0.5 flex-shrink-0" />
                   <a
-                    href="mailto:Support@Zivara.com"
+                    href="mailto:Support@Zivara.io"
                     className="text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
-                    Support@Zivara.com
+                    Support@Zivara.io
                   </a>
                 </li>
                 <li className="flex items-start space-x-3">
