@@ -3,301 +3,1083 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zivara Solutions Logo Preview</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Zivara.io Logo Design Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        body {
+        * {
             margin: 0;
-            padding: 40px;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            font-family: 'Montserrat', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1F2937 0%, #0F172A 100%);
+            color: #FFFFFF;
+            line-height: 1.6;
             min-height: 100vh;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0F766E 0%, #3B82F6 50%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #94A3B8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: rgba(31, 41, 55, 0.5);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0F766E;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
             margin-bottom: 40px;
         }
 
-        /* Cloud Orb Symbol */
-        .cloud-orb {
-            position: relative;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #e95420 0%, #ff6b35 50%, #ff8c42 100%);
-            box-shadow: 
-                0 0 20px rgba(233, 84, 32, 0.4),
-                0 0 40px rgba(233, 84, 32, 0.2),
-                inset 0 0 20px rgba(255, 255, 255, 0.1);
+        .logo-item {
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.1);
+        }
+
+        .logo-item h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #F59E0B;
+            margin-bottom: 20px;
+        }
+
+        .logo-preview {
+            margin-bottom: 20px;
+            min-height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        /* Jewel Shape (5-sided polygon) */
-        .jewel {
-            width: 16px;
-            height: 16px;
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        .logo-description {
+            font-size: 0.9rem;
+            color: #94A3B8;
+            line-height: 1.5;
+        }
+
+        /* LOGO DESIGN 1: INTERLOCKED CUBES */
+        .logo-cubes {
             position: relative;
-            left: 4px;
-            top: -2px;
-            box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+            width: 80px;
+            height: 80px;
         }
 
-        /* Connectivity Arc */
-        .connectivity-arc {
+        .cube {
             position: absolute;
-            width: 60px;
-            height: 30px;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            border-bottom: none;
-            border-radius: 60px 60px 0 0;
-            top: 20px;
-            left: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            background: linear-gradient(135deg, #0F766E 0%, #3B82F6 100%);
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
         }
 
-        /* Microserver Node */
-        .microserver-node {
+        .cube-1 {
+            width: 30px;
+            height: 30px;
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+        }
+
+        .cube-2 {
+            width: 25px;
+            height: 25px;
+            top: 20px;
+            left: 25px;
+            background: linear-gradient(135deg, #3B82F6 0%, #F59E0B 100%);
+            transform: rotate(-30deg);
+        }
+
+        .cube-3 {
+            width: 28px;
+            height: 28px;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(135deg, #F59E0B 0%, #0F766E 100%);
+            transform: rotate(60deg);
+        }
+
+        /* LOGO DESIGN 2: NODE NETWORK */
+        .logo-nodes {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .node {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: radial-gradient(circle, #0F766E 0%, #3B82F6 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(15, 118, 110, 0.5);
+        }
+
+        .node-1 { top: 0; left: 0; }
+        .node-2 { top: 0; right: 0; }
+        .node-3 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .node-4 { bottom: 0; left: 0; }
+        .node-5 { bottom: 0; right: 0; }
+
+        .connection {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, #0F766E 0%, #3B82F6 100%);
+            transform-origin: left center;
+        }
+
+        .conn-1 { top: 6px; left: 12px; width: 56px; transform: rotate(0deg); }
+        .conn-2 { top: 40px; left: 6px; width: 40px; transform: rotate(45deg); }
+        .conn-3 { bottom: 6px; left: 12px; width: 56px; transform: rotate(0deg); }
+
+        /* LOGO DESIGN 3: LAYERED GEOMETRY */
+        .logo-layered {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .layer {
+            position: absolute;
+            border: 3px solid;
+            border-radius: 8px;
+        }
+
+        .layer-1 {
+            width: 60px;
+            height: 20px;
+            top: 0;
+            left: 0;
+            border-color: #0F766E;
+            background: rgba(15, 118, 110, 0.1);
+        }
+
+        .layer-2 {
+            width: 50px;
+            height: 20px;
+            top: 30px;
+            left: 15px;
+            border-color: #3B82F6;
+            background: rgba(59, 130, 246, 0.1);
+            transform: rotate(15deg);
+        }
+
+        .layer-3 {
+            width: 60px;
+            height: 20px;
+            bottom: 0;
+            right: 0;
+            border-color: #F59E0B;
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        /* LOGO DESIGN 4: CIRCUIT Z */
+        .logo-circuit {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .circuit-line {
+            position: absolute;
+            background: linear-gradient(90deg, #0F766E 0%, #3B82F6 100%);
+            border-radius: 2px;
+        }
+
+        .circuit-1 { top: 0; left: 0; width: 50px; height: 4px; }
+        .circuit-2 { top: 38px; left: 30px; width: 30px; height: 4px; transform: rotate(45deg); }
+        .circuit-3 { bottom: 0; right: 0; width: 50px; height: 4px; }
+
+        .circuit-dot {
             position: absolute;
             width: 8px;
             height: 8px;
-            background: radial-gradient(circle, #ffd700 0%, #ffed4e 100%);
+            background: #F59E0B;
             border-radius: 50%;
-            top: 15px;
-            right: 15px;
-            box-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
+            box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
         }
 
-        /* Glow Effect */
-        .cloud-orb::before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, rgba(233, 84, 32, 0.3) 0%, rgba(255, 107, 53, 0.2) 100%);
-            z-index: -1;
-            filter: blur(15px);
-        }
+        .dot-1 { top: -2px; left: 25px; }
+        .dot-2 { top: 35px; left: 45px; }
+        .dot-3 { bottom: -2px; right: 25px; }
 
-        /* Text Styling */
+        /* TYPOGRAPHY STYLES */
         .logo-text {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #FFFFFF;
         }
 
-        .company-name {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 900;
-            font-size: 40px;
-            color: #e95420;
-            margin: 0;
-            line-height: 1;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        .logo-text-main {
+            font-size: 2rem;
+            letter-spacing: -0.02em;
         }
 
-        .company-tagline {
-            font-family: 'Montserrat', sans-serif;
+        .logo-text-io {
+            font-size: 1rem;
             font-weight: 400;
-            font-size: 16px;
-            color: #ff8c42;
-            margin: 0;
-            margin-top: 4px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            color: #94A3B8;
+            margin-left: 4px;
         }
 
-        /* Responsive Sizes */
-        .logo-small {
+        .logo-text-small {
+            font-size: 1.5rem;
+        }
+
+        .logo-text-large {
+            font-size: 3rem;
+        }
+
+        /* BACKGROUND VARIATIONS */
+        .bg-white {
+            background: #FFFFFF;
+        }
+
+        .bg-white .logo-text {
+            color: #1F2937;
+        }
+
+        .bg-white .logo-text-io {
+            color: #6B7280;
+        }
+
+        .bg-teal {
+            background: #0F766E;
+        }
+
+        .bg-blue {
+            background: #3B82F6;
+        }
+
+        .bg-gold {
+            background: #F59E0B;
+        }
+
+        /* SIZE VARIATIONS */
+        .size-small {
             transform: scale(0.5);
         }
 
-        .logo-medium {
+        .size-medium {
             transform: scale(0.75);
         }
 
-        .logo-large {
+        .size-large {
             transform: scale(1.25);
         }
 
-        /* Preview Section */
-        .preview-section {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            padding: 30px;
-            margin: 20px 0;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        /* MONOCHROME VERSIONS */
+        .monochrome {
+            filter: grayscale(100%);
         }
 
-        .preview-title {
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
+        .monochrome-white {
+            filter: brightness(0) invert(1);
         }
 
-        .size-demo {
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .logo-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        /* ANIMATIONS */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .logo-item:hover .cube,
+        .logo-item:hover .node,
+        .logo-item:hover .layer,
+        .logo-item:hover .circuit-line {
+            animation: float 2s ease-in-out infinite;
+        }
+
+        /* DOWNLOAD BUTTONS */
+        .download-buttons {
             display: flex;
-            justify-content: space-around;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #0F766E 0%, #3B82F6 100%);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
+            gap: 5px;
         }
 
-        /* Dark Background Test */
-        .dark-bg {
-            background: #000000;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 10px 0;
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(15, 118, 110, 0.3);
         }
 
-        /* Light Background Test */
-        .light-bg {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 10px 0;
+        .download-btn svg {
+            width: 14px;
+            height: 14px;
         }
 
-        .light-bg .company-name {
-            color: #e95420;
+        .download-btn.png {
+            background: linear-gradient(135deg, #3B82F6 0%, #F59E0B 100%);
         }
 
-        .light-bg .company-tagline {
-            color: #ff8c42;
+        .download-btn.png:hover {
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        /* FAVICON PREVIEW */
+        .favicon-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .favicon-item {
+            text-align: center;
+            padding: 15px;
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 12px;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .favicon-size {
+            font-size: 0.8rem;
+            color: #94A3B8;
+            margin-bottom: 10px;
+        }
+
+        .favicon-icon {
+            width: 32px;
+            height: 32px;
+            margin: 0 auto 10px;
+            background: linear-gradient(135deg, #0F766E 0%, #3B82F6 100%);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <h1 style="color: #ffffff; text-align: center; margin-bottom: 40px; font-weight: 300;">
-        Zivara Solutions Logo Preview
-    </h1>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Zivara.io Logo Design</h1>
+            <p>Premium virtualization services company specializing in VM building, vSphere, and vCenter solutions</p>
+        </div>
 
-    <!-- Main Logo -->
-    <div class="preview-section">
-        <div class="preview-title">Main Logo Design</div>
-        <div class="logo-container">
-            <!-- Cloud Orb Symbol -->
-            <div class="cloud-orb">
-                <!-- Jewel Shape (represents "Ziv" - jewel) -->
-                <div class="jewel"></div>
-                <!-- Connectivity Arc (web connectivity) -->
-                <div class="connectivity-arc"></div>
-                <!-- Microserver Node (microserver development) -->
-                <div class="microserver-node"></div>
+        <!-- PRIMARY LOGO DESIGNS -->
+        <div class="section">
+            <h2 class="section-title">Primary Logo Concepts</h2>
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <h3>Interlocked Cubes</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes">
+                            <div class="cube cube-1"></div>
+                            <div class="cube cube-2"></div>
+                            <div class="cube cube-3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Three interlocking cubes forming "Z" - represents VM containers and virtualization layers
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('cubes', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('cubes', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>Node Network</h3>
+                    <div class="logo-preview">
+                        <div class="logo-nodes">
+                            <div class="node node-1"></div>
+                            <div class="node node-2"></div>
+                            <div class="node node-3"></div>
+                            <div class="node node-4"></div>
+                            <div class="node node-5"></div>
+                            <div class="connection conn-1"></div>
+                            <div class="connection conn-2"></div>
+                            <div class="connection conn-3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Connected nodes forming "Z" - represents vSphere clustering and network infrastructure
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('nodes', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('nodes', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>Layered Geometry</h3>
+                    <div class="logo-preview">
+                        <div class="logo-layered">
+                            <div class="layer layer-1"></div>
+                            <div class="layer layer-2"></div>
+                            <div class="layer layer-3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Overlapping angular shapes creating "Z" - represents virtualization layers and abstraction
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('layered', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('layered', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>Circuit Z</h3>
+                    <div class="logo-preview">
+                        <div class="logo-circuit">
+                            <div class="circuit-line circuit-1"></div>
+                            <div class="circuit-line circuit-2"></div>
+                            <div class="circuit-line circuit-3"></div>
+                            <div class="circuit-dot dot-1"></div>
+                            <div class="circuit-dot dot-2"></div>
+                            <div class="circuit-dot dot-3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Abstract circuit board pattern forming "Z" - represents server infrastructure and connectivity
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('circuit', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('circuit', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FULL LOGO WITH TYPOGRAPHY -->
+        <div class="section">
+            <h2 class="section-title">Complete Logo with Typography</h2>
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <h3>Horizontal Layout</h3>
+                    <div class="logo-preview">
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div class="logo-cubes">
+                                <div class="cube cube-1"></div>
+                                <div class="cube cube-2"></div>
+                                <div class="cube cube-3"></div>
+                            </div>
+                            <div>
+                                <span class="logo-text logo-text-main">Zivara</span>
+                                <span class="logo-text-io">.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Perfect for headers, business cards, and horizontal applications
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('horizontal', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('horizontal', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
             </div>
             
-            <!-- Text -->
-            <div class="logo-text">
-                <h1 class="company-name">Zivara</h1>
-                <p class="company-tagline">Solutions</p>
+                <div class="logo-item">
+                    <h3>Stacked Layout</h3>
+                    <div class="logo-preview">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                            <div class="logo-cubes">
+                                <div class="cube cube-1"></div>
+                                <div class="cube cube-2"></div>
+                                <div class="cube cube-3"></div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div class="logo-text logo-text-main">Zivara</div>
+                                <div class="logo-text-io">.io</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Ideal for square formats, social media, and vertical applications
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('stacked', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('stacked', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIZE VARIATIONS -->
+        <div class="section">
+            <h2 class="section-title">Size Variations</h2>
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <h3>Small (16px)</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes size-small">
+                            <div class="cube cube-1"></div>
+                            <div class="cube cube-2"></div>
+                            <div class="cube cube-3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Favicon and small icon applications
+        </div>
+    </div>
+
+                <div class="logo-item">
+                    <h3>Medium (32px)</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes size-medium">
+                            <div class="cube cube-1"></div>
+                            <div class="cube cube-2"></div>
+                            <div class="cube cube-3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Navigation bars and medium-sized applications
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>Large (64px+)</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes size-large">
+                            <div class="cube cube-1"></div>
+                            <div class="cube cube-2"></div>
+                            <div class="cube cube-3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Marketing materials and large displays
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BACKGROUND VARIATIONS -->
+        <div class="section">
+            <h2 class="section-title">Background Compatibility</h2>
+            <div class="logo-grid">
+                <div class="logo-item bg-white">
+                    <h3>White Background</h3>
+                    <div class="logo-preview">
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div class="logo-cubes">
+                                <div class="cube cube-1"></div>
+                                <div class="cube cube-2"></div>
+                                <div class="cube cube-3"></div>
+                            </div>
+                            <div>
+                                <span class="logo-text logo-text-main">Zivara</span>
+                                <span class="logo-text-io">.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        For light backgrounds and print materials
+                </div>
+            </div>
+
+                <div class="logo-item bg-teal">
+                    <h3>Teal Background</h3>
+                    <div class="logo-preview">
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div class="logo-cubes">
+                                <div class="cube cube-1" style="background: linear-gradient(135deg, #FFFFFF 0%, #F59E0B 100%);"></div>
+                                <div class="cube cube-2" style="background: linear-gradient(135deg, #F59E0B 0%, #FFFFFF 100%);"></div>
+                                <div class="cube cube-3" style="background: linear-gradient(135deg, #FFFFFF 0%, #3B82F6 100%);"></div>
+                            </div>
+                            <div>
+                                <span class="logo-text logo-text-main" style="color: #FFFFFF;">Zivara</span>
+                                <span class="logo-text-io" style="color: #A7F3D0;">.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        For brand-colored backgrounds
+                    </div>
+                </div>
+
+                <div class="logo-item bg-blue">
+                    <h3>Blue Background</h3>
+                    <div class="logo-preview">
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div class="logo-cubes">
+                                <div class="cube cube-1" style="background: linear-gradient(135deg, #FFFFFF 0%, #F59E0B 100%);"></div>
+                                <div class="cube cube-2" style="background: linear-gradient(135deg, #F59E0B 0%, #0F766E 100%);"></div>
+                                <div class="cube cube-3" style="background: linear-gradient(135deg, #FFFFFF 0%, #0F766E 100%);"></div>
+                            </div>
+                            <div>
+                                <span class="logo-text logo-text-main" style="color: #FFFFFF;">Zivara</span>
+                                <span class="logo-text-io" style="color: #BFDBFE;">.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        For secondary brand applications
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MONOCHROME VERSIONS -->
+        <div class="section">
+            <h2 class="section-title">Monochrome Versions</h2>
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <h3>All Black</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes monochrome">
+                            <div class="cube cube-1" style="background: #000000;"></div>
+                            <div class="cube cube-2" style="background: #000000;"></div>
+                            <div class="cube cube-3" style="background: #000000;"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        For invoices and technical documentation
+                </div>
+            </div>
+
+                <div class="logo-item bg-white">
+                    <h3>All White</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes monochrome-white">
+                            <div class="cube cube-1" style="background: #FFFFFF;"></div>
+                            <div class="cube cube-2" style="background: #FFFFFF;"></div>
+                            <div class="cube cube-3" style="background: #FFFFFF;"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        For dark backgrounds and reverse applications
+                    </div>
+                </div>
+
+                <div class="logo-item">
+                    <h3>All Teal</h3>
+                    <div class="logo-preview">
+                        <div class="logo-cubes">
+                            <div class="cube cube-1" style="background: #0F766E;"></div>
+                            <div class="cube cube-2" style="background: #0F766E;"></div>
+                            <div class="cube cube-3" style="background: #0F766E;"></div>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Single-color brand applications
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAVICON PREVIEW -->
+        <div class="section">
+            <h2 class="section-title">Favicon & Icon Sizes</h2>
+            <div class="favicon-preview">
+                <div class="favicon-item">
+                    <div class="favicon-size">16x16px</div>
+                    <div class="favicon-icon" style="width: 16px; height: 16px; font-size: 10px;">Z</div>
+                    <div class="logo-description">Browser favicon</div>
+                </div>
+                <div class="favicon-item">
+                    <div class="favicon-size">32x32px</div>
+                    <div class="favicon-icon">Z</div>
+                    <div class="logo-description">High-res favicon</div>
+    </div>
+                <div class="favicon-item">
+                    <div class="favicon-size">48x48px</div>
+                    <div class="favicon-icon" style="width: 48px; height: 48px; font-size: 24px;">Z</div>
+                    <div class="logo-description">Windows icon</div>
+                </div>
+                <div class="favicon-item">
+                    <div class="favicon-size">64x64px</div>
+                    <div class="favicon-icon" style="width: 64px; height: 64px; font-size: 32px;">Z</div>
+                    <div class="logo-description">App icon</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BRAND GUIDELINES -->
+        <div class="section">
+            <h2 class="section-title">Brand Guidelines</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div>
+                    <h3 style="color: #F59E0B; margin-bottom: 15px;">Color Palette</h3>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 30px; height: 30px; background: #0F766E; border-radius: 6px;"></div>
+                            <span>Deep Teal #0F766E</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 30px; height: 30px; background: #3B82F6; border-radius: 6px;"></div>
+                            <span>Electric Blue #3B82F6</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 30px; height: 30px; background: #F59E0B; border-radius: 6px;"></div>
+                            <span>Gold #F59E0B</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 30px; height: 30px; background: #1F2937; border-radius: 6px;"></div>
+                            <span>Charcoal #1F2937</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #F59E0B; margin-bottom: 15px;">Typography</h3>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div>
+                            <div style="font-weight: 700; font-size: 1.2rem;">Zivara</div>
+                            <div style="font-size: 0.8rem; color: #94A3B8;">Inter Bold, Title Case</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 400; font-size: 1rem; color: #94A3B8;">.io</div>
+                            <div style="font-size: 0.8rem; color: #94A3B8;">Inter Regular, Smaller</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #F59E0B; margin-bottom: 15px;">Usage Rules</h3>
+                    <ul style="color: #94A3B8; font-size: 0.9rem; line-height: 1.6;">
+                        <li>Minimum size: 16x16px</li>
+                        <li>Clear space: 1x logo height</li>
+                        <li>Never distort or rotate</li>
+                        <li>Use approved color combinations</li>
+                        <li>Maintain aspect ratio</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Size Variations -->
-    <div class="preview-section">
-        <div class="preview-title">Size Variations</div>
-        <div class="size-demo">
-            <div class="logo-container logo-small">
-                <div class="cloud-orb">
-                    <div class="jewel"></div>
-                    <div class="connectivity-arc"></div>
-                    <div class="microserver-node"></div>
-                </div>
-                <div class="logo-text">
-                    <h1 class="company-name">Zivara</h1>
-                    <p class="company-tagline">Solutions</p>
-                </div>
-            </div>
+    <script>
+        // Download functionality for logos
+        function downloadLogo(type, format) {
+            const svgContent = generateSVG(type);
+            
+            if (format === 'svg') {
+                downloadSVG(svgContent, `zivara-${type}-logo.svg`);
+            } else if (format === 'png') {
+                downloadPNG(svgContent, `zivara-${type}-logo.png`);
+            }
+        }
 
-            <div class="logo-container logo-medium">
-                <div class="cloud-orb">
-                    <div class="jewel"></div>
-                    <div class="connectivity-arc"></div>
-                    <div class="microserver-node"></div>
-                </div>
-                <div class="logo-text">
-                    <h1 class="company-name">Zivara</h1>
-                    <p class="company-tagline">Solutions</p>
-                </div>
-            </div>
+        function generateSVG(type) {
+            const size = 200;
+            let svgContent = `<svg width="${size}" height="${size}" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">`;
+            
+            switch(type) {
+                case 'cubes':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="20" y="20" width="75" height="75" fill="url(#grad1)" transform="rotate(45 57.5 57.5)" rx="10"/>
+                        <rect x="62.5" y="62.5" width="62.5" height="62.5" fill="url(#grad2)" transform="rotate(-30 93.75 93.75)" rx="8"/>
+                        <rect x="105" y="105" width="70" height="70" fill="url(#grad3)" transform="rotate(60 140 140)" rx="10"/>
+                    `;
+                    break;
+                    
+                case 'nodes':
+                    svgContent += `
+                        <defs>
+                            <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </radialGradient>
+                            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="30" cy="30" r="15" fill="url(#nodeGrad)"/>
+                        <circle cx="170" cy="30" r="15" fill="url(#nodeGrad)"/>
+                        <circle cx="100" cy="100" r="15" fill="url(#nodeGrad)"/>
+                        <circle cx="30" cy="170" r="15" fill="url(#nodeGrad)"/>
+                        <circle cx="170" cy="170" r="15" fill="url(#nodeGrad)"/>
+                        <line x1="45" y1="30" x2="155" y2="30" stroke="url(#lineGrad)" stroke-width="5"/>
+                        <line x1="45" y1="100" x2="85" y2="100" stroke="url(#lineGrad)" stroke-width="5" transform="rotate(45 65 100)"/>
+                        <line x1="45" y1="170" x2="155" y2="170" stroke="url(#lineGrad)" stroke-width="5"/>
+                    `;
+                    break;
+                    
+                case 'layered':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="layer1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:0.1" />
+                            </linearGradient>
+                            <linearGradient id="layer2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0.1" />
+                            </linearGradient>
+                            <linearGradient id="layer3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:0.1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="20" y="20" width="150" height="50" fill="url(#layer1)" stroke="#0F766E" stroke-width="8" rx="20"/>
+                        <rect x="37.5" y="75" width="125" height="50" fill="url(#layer2)" stroke="#3B82F6" stroke-width="8" rx="20" transform="rotate(15 100 100)"/>
+                        <rect x="30" y="130" width="150" height="50" fill="url(#layer3)" stroke="#F59E0B" stroke-width="8" rx="20"/>
+                    `;
+                    break;
+                    
+                case 'circuit':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="20" y="20" width="125" height="10" fill="url(#circuitGrad)" rx="5"/>
+                        <rect x="75" y="95" width="75" height="10" fill="url(#circuitGrad)" rx="5" transform="rotate(45 112.5 100)"/>
+                        <rect x="55" y="170" width="125" height="10" fill="url(#circuitGrad)" rx="5"/>
+                        <circle cx="82.5" cy="25" r="10" fill="#F59E0B"/>
+                        <circle cx="112.5" cy="100" r="10" fill="#F59E0B"/>
+                        <circle cx="117.5" cy="175" r="10" fill="#F59E0B"/>
+                    `;
+                    break;
+                    
+                case 'horizontal':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="20" y="20" width="75" height="75" fill="url(#grad1)" transform="rotate(45 57.5 57.5)" rx="10"/>
+                        <rect x="62.5" y="62.5" width="62.5" height="62.5" fill="url(#grad2)" transform="rotate(-30 93.75 93.75)" rx="8"/>
+                        <rect x="105" y="105" width="70" height="70" fill="url(#grad3)" transform="rotate(60 140 140)" rx="10"/>
+                        <text x="120" y="60" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Zivara</text>
+                        <text x="120" y="85" font-family="Inter, sans-serif" font-size="16" font-weight="400" fill="#94A3B8">.io</text>
+                    `;
+                    break;
+                    
+                case 'stacked':
+                    svgContent += `
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="50" y="20" width="75" height="75" fill="url(#grad1)" transform="rotate(45 87.5 57.5)" rx="10"/>
+                        <rect x="92.5" y="62.5" width="62.5" height="62.5" fill="url(#grad2)" transform="rotate(-30 123.75 93.75)" rx="8"/>
+                        <rect x="135" y="105" width="70" height="70" fill="url(#grad3)" transform="rotate(60 170 140)" rx="10"/>
+                        <text x="100" y="120" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">Zivara</text>
+                        <text x="100" y="140" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="middle">.io</text>
+                    `;
+                    break;
+            }
+            
+            svgContent += '</svg>';
+            return svgContent;
+        }
 
-            <div class="logo-container logo-large">
-                <div class="cloud-orb">
-                    <div class="jewel"></div>
-                    <div class="connectivity-arc"></div>
-                    <div class="microserver-node"></div>
-                </div>
-                <div class="logo-text">
-                    <h1 class="company-name">Zivara</h1>
-                    <p class="company-tagline">Solutions</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        function downloadSVG(svgContent, filename) {
+            const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
 
-    <!-- Background Tests -->
-    <div class="preview-section">
-        <div class="preview-title">Background Compatibility</div>
-        
-        <div class="dark-bg">
-            <div class="logo-container">
-                <div class="cloud-orb">
-                    <div class="jewel"></div>
-                    <div class="connectivity-arc"></div>
-                    <div class="microserver-node"></div>
-                </div>
-                <div class="logo-text">
-                    <h1 class="company-name">Zivara</h1>
-                    <p class="company-tagline">Solutions</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="light-bg">
-            <div class="logo-container">
-                <div class="cloud-orb">
-                    <div class="jewel"></div>
-                    <div class="connectivity-arc"></div>
-                    <div class="microserver-node"></div>
-                </div>
-                <div class="logo-text">
-                    <h1 class="company-name">Zivara</h1>
-                    <p class="company-tagline">Solutions</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Design Elements Explanation -->
-    <div class="preview-section">
-        <div class="preview-title">Design Elements</div>
-        <div style="color: #cccccc; line-height: 1.6;">
-            <p><strong>Cloud Orb:</strong> Circular gradient orb representing cloud technology and digital transformation</p>
-            <p><strong>Jewel Shape:</strong> 5-sided polygon representing "Ziv" (jewel) from Zivara, positioned off-center for visual interest</p>
-            <p><strong>Connectivity Arc:</strong> Curved white arc symbolizing web connectivity and network infrastructure</p>
-            <p><strong>Microserver Node:</strong> Small dotted circle representing microserver development and distributed systems</p>
-            <p><strong>Glow Effect:</strong> Soft gradient aura radiating from the orb for an uplifting, modern feel</p>
-            <p><strong>Typography:</strong> Bold Montserrat font for "Zivara" with smaller uppercase "Solutions" tagline</p>
-            <p><strong>Colors:</strong> Using your website's signature orange (#e95420) with complementary gold accents</p>
-        </div>
-    </div>
+        function downloadPNG(svgContent, filename) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            
+            canvas.width = 400;
+            canvas.height = 400;
+            
+            img.onload = function() {
+                ctx.fillStyle = 'transparent';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                
+                canvas.toBlob(function(blob) {
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = filename;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                });
+            };
+            
+            const svgBlob = new Blob([svgContent], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(svgBlob);
+            img.src = url;
+        }
+    </script>
 </body>
 </html>
