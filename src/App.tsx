@@ -17,9 +17,7 @@ import Virtualization from "./components/pages/solutions/virtualization";
 import Networking from "./components/pages/solutions/networking";
 import Cloud from "./components/pages/solutions/cloud";
 import DesignDevelopment from "./components/pages/solutions/DesignDevelopment";
-import OurCompany from "./components/pages/about/OurCompany";
-import OurCapabilities from "./components/pages/about/OurCapabilities";
-import OurPeople from "./components/pages/about/OurPeople";
+import AboutUs from "./components/pages/about/AboutUs";
 import Careers from "./components/pages/about/Careers";
 import UIUXDesigner from "./components/pages/about/jobs/UIUXDesigner";
 import AIAgentDeveloper from "./components/pages/about/jobs/AIAgentDeveloper";
@@ -54,9 +52,7 @@ function App() {
             <Route path="/solutions/cloud" element={<Cloud />} />
             <Route path="/solutions/design-development" element={<DesignDevelopment />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/about/our-company" element={<OurCompany />} />
-            <Route path="/about/capabilities" element={<OurCapabilities />} />
-            <Route path="/about/people" element={<OurPeople />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="/about/careers" element={<Careers />} />
             <Route path="/about/careers/ui-ux-designer" element={<UIUXDesigner />} />
             <Route path="/about/careers/ai-agent-developer" element={<AIAgentDeveloper />} />

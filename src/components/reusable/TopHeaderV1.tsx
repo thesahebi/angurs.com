@@ -61,9 +61,7 @@ const TopHeaderV1 = () => {
     {
       label: "About Us",
       children: [
-        { path: "/about/our-company", label: "Our Company" },
-        { path: "/about/capabilities", label: "Our Capabilities" },
-        { path: "/about/people", label: "Our People" },
+        { path: "/about", label: "About Us" },
         { path: "/about/careers", label: "Careers" },
       ]
     },
