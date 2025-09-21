@@ -33,8 +33,16 @@ const TopHeaderV1 = () => {
   const handleMouseLeave = () => {
     const timeout = setTimeout(() => {
       setHoveredDropdown(null);
-    }, 150); // Small delay to prevent flickering
+    }, 200); // Increased delay to prevent flickering
     setHoverTimeout(timeout);
+  };
+
+  const handleNestedMouseEnter = (parentLabel: string, childLabel: string) => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+    setHoveredDropdown(`${parentLabel}-${childLabel}`);
   };
 
   // Cleanup timeout on unmount
@@ -56,20 +64,13 @@ const TopHeaderV1 = () => {
         { path: "/solutions/virtualization", label: "Virtualization" },
         { path: "/solutions/backup", label: "Backup" },
         { path: "/solutions/networking", label: "Networking" },
-      ]
-    },
-    {
-      label: "About Us",
-      children: [
-        { path: "/about", label: "About Us" },
-        { path: "/about/careers", label: "Careers" },
-      ]
-    },
-    {
-      label: "Automation",
-      children: [
-        { path: "/automation/devops", label: "DevOps" },
-        { path: "/automation/it", label: "IT" },
+        {
+          label: "Automation",
+          children: [
+            { path: "/automation/devops", label: "DevOps" },
+            { path: "/automation/it", label: "IT" },
+          ]
+        },
       ]
     },
     {
@@ -79,7 +80,13 @@ const TopHeaderV1 = () => {
         { path: "/resources/case-studies", label: "Case Studies" },
       ]
     },
-
+    {
+      label: "About Us",
+      children: [
+        { path: "/about", label: "About" },
+        { path: "/about/careers", label: "Careers" },
+      ]
+    },
     { path: "/contact", label: "Contact Us" }
   ];
 
@@ -179,21 +186,59 @@ const TopHeaderV1 = () => {
                 {/* Submenu */}
                 {item.children && (
                   <div
-                    className={`absolute left-0 top-full mt-2 bg-[#1E293B]/95 backdrop-blur-md rounded-xl shadow-2xl border border-[#1E293B]/50 pt-2 transition-all duration-200 z-50 ${
-                      hoveredDropdown === item.label ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2 pointer-events-none'
+                    className={`absolute left-0 top-full mt-1 bg-[#1E293B]/95 backdrop-blur-md rounded-xl shadow-2xl border border-[#1E293B]/50 pt-2 transition-all duration-200 z-50 ${
+                      hoveredDropdown === item.label || hoveredDropdown?.startsWith(`${item.label}-`) ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2 pointer-events-none'
                     }`}
                     onMouseEnter={() => handleMouseEnter(item.label)}
                     onMouseLeave={handleMouseLeave}
                   >
                     <ul className="py-2 w-48">
                       {item.children.map((child) => (
-                        <li key={child.label}>
-                          <Link
-                            to={child.path}
-                            className="block px-4 py-2.5 text-sm text-[#F1F5F9] hover:bg-[#3b82f6]/10 hover:text-[#3b82f6] transition-all duration-200 rounded-lg mx-2"
-                          >
-                            {child.label}
-                          </Link>
+                        <li key={child.label} className="relative group">
+                          {child.path ? (
+                            <Link
+                              to={child.path}
+                              className="block px-4 py-2.5 text-sm text-[#F1F5F9] hover:bg-[#3b82f6]/10 hover:text-[#3b82f6] transition-all duration-200 rounded-lg mx-2"
+                            >
+                              {child.label}
+                            </Link>
+                          ) : (
+                            <>
+                              <div
+                                className="block px-4 py-2.5 text-sm text-[#F1F5F9] hover:bg-[#3b82f6]/10 hover:text-[#3b82f6] transition-all duration-200 rounded-lg mx-2 cursor-pointer flex items-center justify-between"
+                                onMouseEnter={() => handleNestedMouseEnter(item.label, child.label)}
+                                onMouseLeave={handleMouseLeave}
+                              >
+                                <span>{child.label}</span>
+                                <svg className="w-3 h-3 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                              </div>
+                              {/* Nested Submenu */}
+                              {child.children && (
+                                <div
+                                  className={`absolute left-full top-0 ml-1 bg-[#1E293B]/95 backdrop-blur-md rounded-xl shadow-2xl border border-[#1E293B]/50 pt-2 transition-all duration-200 z-50 ${
+                                    hoveredDropdown === `${item.label}-${child.label}` ? 'opacity-100 visible translate-x-0' : 'opacity-0 invisible -translate-x-2 pointer-events-none'
+                                  }`}
+                                  onMouseEnter={() => handleNestedMouseEnter(item.label, child.label)}
+                                  onMouseLeave={handleMouseLeave}
+                                >
+                                  <ul className="py-2 w-48">
+                                    {child.children.map((nestedChild) => (
+                                      <li key={nestedChild.label}>
+                                        <Link
+                                          to={nestedChild.path}
+                                          className="block px-4 py-2.5 text-sm text-[#F1F5F9] hover:bg-[#3b82f6]/10 hover:text-[#3b82f6] transition-all duration-200 rounded-lg mx-2"
+                                        >
+                                          {nestedChild.label}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+                            </>
+                          )}
                         </li>
                       ))}
                     </ul>
@@ -368,15 +413,64 @@ const TopHeaderV1 = () => {
                         aria-label={`${item.label} submenu`}
                       >
                         {item.children.map((child) => (
-                          <Link
-                            key={child.label}
-                            to={child.path}
-                            role="menuitem"
-                            className="block py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
-                            onClick={() => setIsMenuOpen(false)}
-                          >
-                            {child.label}
-                          </Link>
+                          <div key={child.label}>
+                            {child.path ? (
+                              <Link
+                                to={child.path}
+                                role="menuitem"
+                                className="block py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
+                                onClick={() => setIsMenuOpen(false)}
+                              >
+                                {child.label}
+                              </Link>
+                            ) : (
+                              <div>
+                                <button
+                                  onClick={() => toggleMobileMenuItem(`${item.label}-${child.label}`)}
+                                  aria-expanded={expandedMenuItems.includes(`${item.label}-${child.label}`)}
+                                  aria-controls={`mobile-submenu-${item.label.toLowerCase().replace(/\s+/g, '-')}-${child.label.toLowerCase().replace(/\s+/g, '-')}`}
+                                  className="flex items-center justify-between w-full py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
+                                >
+                                  <span>{child.label}</span>
+                                  <svg
+                                    className={`w-4 h-4 transition-transform duration-300 ${
+                                      expandedMenuItems.includes(`${item.label}-${child.label}`) ? 'rotate-180' : ''
+                                    }`}
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                  >
+                                    <path
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth="2"
+                                      d="M19 9l-7 7-7-7"
+                                    />
+                                  </svg>
+                                </button>
+                                {child.children && expandedMenuItems.includes(`${item.label}-${child.label}`) && (
+                                  <div 
+                                    id={`mobile-submenu-${item.label.toLowerCase().replace(/\s+/g, '-')}-${child.label.toLowerCase().replace(/\s+/g, '-')}`}
+                                    className="ml-4 mt-2 space-y-1"
+                                    role="menu"
+                                    aria-label={`${child.label} submenu`}
+                                  >
+                                    {child.children.map((nestedChild) => (
+                                      <Link
+                                        key={nestedChild.label}
+                                        to={nestedChild.path}
+                                        role="menuitem"
+                                        className="block py-2 text-xs px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
+                                        onClick={() => setIsMenuOpen(false)}
+                                      >
+                                        {nestedChild.label}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            )}
+                          </div>
                         ))}
                       </div>
                     )}

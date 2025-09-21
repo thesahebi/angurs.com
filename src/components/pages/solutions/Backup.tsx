@@ -25,62 +25,61 @@ const Backup: React.FC = () => {
             </div>
             
             {/* Main Title */}
-            <h1 className="hero-title text-primary">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#e7e7e7] mb-4 sm:mb-6">
               Protect What{' '}
               <span className="relative">
-                <span className="bg-gradient-to-r from-primary via-primary-light to-primary-hover bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] bg-clip-text text-transparent">
                   Matters Most
                 </span>
-                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary-hover rounded-full opacity-60"></div>
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] rounded-full opacity-60"></div>
               </span>
             </h1>
             
             {/* Subtitle */}
-            <p className="hero-description text-secondary max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#e7e7e7] max-w-2xl mx-auto mb-6 sm:mb-8">
               Your data is the lifeline of your business. Zivara delivers enterprise-grade backup and replication solutions, 
               on-premises and in the cloud, to keep you secure, compliant, and resilient.
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 md:mb-12 md:mb-20">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-16">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
-                style={{ backgroundColor: '#ff6b35' }}
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-6 sm:px-8 py-3 sm:py-4 text-base font-semibold text-[#e7e7e7] bg-[#3b82f6] border border-[#3b82f6] rounded-xl transition-all duration-200 hover:bg-[#2563eb] hover:border-[#2563eb]"
               >
                 Get Protected Now
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
               <a
                 href="#solutions"
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-6 sm:px-8 py-3 sm:py-4 text-base font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 View Solutions
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-2">99.9%</div>
-                <div className="text-sm text-[#94A3B8]">Uptime Guarantee</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3B82F6] mb-1 sm:mb-2">99.9%</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Uptime Guarantee</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-2">&lt;1min</div>
-                <div className="text-sm text-[#94A3B8]">Recovery Time</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3B82F6] mb-1 sm:mb-2">&lt;1min</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Recovery Time</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-2">24/7</div>
-                <div className="text-sm text-[#94A3B8]">Monitoring</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3B82F6] mb-1 sm:mb-2">24/7</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Monitoring</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-2">100%</div>
-                <div className="text-sm text-[#94A3B8]">Secure</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3B82F6] mb-1 sm:mb-2">100%</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Secure</div>
               </div>
             </div>
           </div>
@@ -88,20 +87,20 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Why Backup Matters */}
-      <section className="py-16 md:py-24 relative">
-        <div className="container mx-auto px-4">
-        <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#e7e7e7]">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 relative bg-[#0A0A0A]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#e7e7e7]">
               Why Backup & Replication{' '}
               <span className="text-[#3B82F6]">Matters</span>
             </h2>
-            <p className="text-xl text-[#e7e7e7] max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#e7e7e7] max-w-3xl mx-auto">
             Disruptions happen. Without reliable backup and recovery, businesses face data loss, 
             downtime, and compliance risks. Our solutions ensure you:
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {[
               {
                 icon: (
@@ -146,33 +145,33 @@ const Backup: React.FC = () => {
             ].map((item, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative p-4 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <div className="text-[#e7e7e7]">
+                <div className="relative p-4 sm:p-6 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300">
+                  <div className={`w-[40px] h-[40px] bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className="text-[#e7e7e7] w-[40px] h-[40px]">
                       {item.icon}
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#e7e7e7] text-center">{item.title}</h3>
-                  <p className="text-[#e7e7e7] text-center">{item.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-[#e7e7e7] text-center">{item.title}</h3>
+                  <p className="text-sm sm:text-base text-[#e7e7e7] text-center">{item.description}</p>
                 </div>
             </div>
             ))}
           </div>
           
           {/* Enterprise Solutions Cards */}
-          <div className="grid lg:grid-cols-2 gap-12 mt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mt-12 sm:mt-16">
             {/* On-Prem Backup */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative p-6 bg-[#1E293B] rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
-                <div className="flex items-center mb-8 md:mb-12">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-3xl">💽</span>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative p-4 sm:p-6 bg-[#1E293B] rounded-2xl sm:rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
+                <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8 md:mb-12">
+                  <div className="w-[40px] h-[40px] bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-0 sm:mr-6 mb-4 sm:mb-0 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl sm:text-3xl">💽</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#e7e7e7]">On-Prem Backup & Replication</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#e7e7e7] text-center sm:text-left">On-Prem Backup & Replication</h3>
                 </div>
                 
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {[
                     "High-performance local backups with zero downtime",
                     "Disaster recovery for critical workloads",
@@ -180,12 +179,12 @@ const Backup: React.FC = () => {
                     "Advanced encryption and security protocols"
                   ].map((feature, index) => (
                     <div key={index} className="flex items-start group/item">
-                      <div className="w-6 h-6 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mr-4 mt-0.5 group-hover/item:scale-110 transition-transform duration-200">
+                      <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mr-3 sm:mr-4 mt-0.5 group-hover/item:scale-110 transition-transform duration-200">
                         <svg className="w-3 h-3 text-[#e7e7e7]" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <p className="text-[#e7e7e7] text-lg">{feature}</p>
+                      <p className="text-sm sm:text-base lg:text-lg text-[#e7e7e7]">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -194,16 +193,16 @@ const Backup: React.FC = () => {
 
             {/* Cloud Backup */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative p-6 bg-[#1E293B] rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
-                <div className="flex items-center mb-8 md:mb-12">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-3xl">☁️</span>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative p-4 sm:p-6 bg-[#1E293B] rounded-2xl sm:rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500">
+                <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8 md:mb-12">
+                  <div className="w-[40px] h-[40px] bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-0 sm:mr-6 mb-4 sm:mb-0 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl sm:text-3xl">☁️</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#e7e7e7]">Cloud Backup & Replication</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#e7e7e7] text-center sm:text-left">Cloud Backup & Replication</h3>
                 </div>
                 
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {[
                     "Secure, scalable storage in the cloud",
                     "Instant failover in case of outages",
@@ -211,12 +210,12 @@ const Backup: React.FC = () => {
                     "Automated backup scheduling and management"
                   ].map((feature, index) => (
                     <div key={index} className="flex items-start group/item">
-                      <div className="w-6 h-6 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mr-4 mt-0.5 group-hover/item:scale-110 transition-transform duration-200">
+                      <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mr-3 sm:mr-4 mt-0.5 group-hover/item:scale-110 transition-transform duration-200">
                         <svg className="w-3 h-3 text-[#e7e7e7]" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <p className="text-[#e7e7e7] text-lg">{feature}</p>
+                      <p className="text-sm sm:text-base lg:text-lg text-[#e7e7e7]">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -227,14 +226,14 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24 relative">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 md:mb-20 text-center text-[#e7e7e7]">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 relative bg-[#0A0A0A]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-center text-[#e7e7e7]">
             Benefits of Backup with{' '}
             <span className="text-[#3B82F6]">Zivara</span>
           </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               { title: "Business Continuity", desc: "During disasters and disruptions", icon: "🛡️" },
               { title: "Faster Recovery", desc: "And minimal downtime", icon: "⚡" },
@@ -245,10 +244,10 @@ const Backup: React.FC = () => {
             ].map((benefit, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative p-4 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 text-center">
-                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{benefit.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#e7e7e7]">{benefit.title}</h3>
-                  <p className="text-[#e7e7e7]">{benefit.desc}</p>
+                <div className="relative p-4 sm:p-6 bg-[#1E293B] rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 text-center">
+                  <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">{benefit.icon}</div>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-[#e7e7e7]">{benefit.title}</h3>
+                  <p className="text-sm sm:text-base text-[#e7e7e7]">{benefit.desc}</p>
           </div>
           </div>
             ))}

@@ -41,7 +41,7 @@ function BlogList({ slice, isSeeMore, path = "", displayClass = "", showCategori
         />
       )}
 
-      <div className={`grid ${displayClass || 'lg:grid-cols-3 md:grid-cols-2 gap-8'}`}>
+      <div className={`grid ${displayClass || 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8'}`}>
         {displayArticles?.map((data, index) => (
           <BlogCardV1 key={index} {...data} blogLink={`${path}/${data.id}`} />
         ))}

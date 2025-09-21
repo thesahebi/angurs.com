@@ -24,61 +24,60 @@ const Networking: React.FC = () => {
             </div>
             
             {/* Main Title */}
-            <h1 className="hero-title text-primary">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#e7e7e7] mb-4 sm:mb-6">
               Smarter Networks,{' '}
               <span className="relative">
-                <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] bg-clip-text text-transparent">
                   Stronger Connections
                 </span>
-                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent rounded-full opacity-60"></div>
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#3b82f6] to-[#3b82f6] rounded-full opacity-60"></div>
               </span>
             </h1>
             
             {/* Subtitle */}
-            <p className="hero-description text-secondary max-w-xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#e7e7e7] max-w-xl mx-auto mb-6 sm:mb-8">
               Fast, secure networks built for growth. From branch offices to entire campuses.
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 md:mb-12 md:mb-20">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-16">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#e95420]"
-                style={{ backgroundColor: '#ff6b35' }}
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-6 sm:px-8 py-3 sm:py-4 text-base font-semibold text-[#e7e7e7] bg-[#3b82f6] border border-[#3b82f6] rounded-xl transition-all duration-200 hover:bg-[#2563eb] hover:border-[#2563eb]"
               >
                 Get Started
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
               <a
                 href="#solutions"
-                className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-lg font-semibold text-[#e7e7e7] border-2 border-white/10 hover:border-white/20 rounded-xl transition-all duration-200 hover:text-[#e7e7e7]"
+                className="inline-flex items-center justify-center w-full sm:w-1/2 px-6 sm:px-8 py-3 sm:py-4 text-base font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
               >
                 View Solutions
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
         
             {/* Network Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#3B82F6] mb-2">99.9%</div>
-                <div className="text-sm text-[#e7e7e7]">Network Uptime</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3B82F6] mb-1 sm:mb-2">99.9%</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Network Uptime</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#10B981] mb-2">10Gbps</div>
-                <div className="text-sm text-[#e7e7e7]">Max Speed</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#10B981] mb-1 sm:mb-2">10Gbps</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Max Speed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#8B5CF6] mb-2">24/7</div>
-                <div className="text-sm text-[#e7e7e7]">Monitoring</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#8B5CF6] mb-1 sm:mb-2">24/7</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Monitoring</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#F59E0B] mb-2">1000+</div>
-                <div className="text-sm text-[#e7e7e7]">Devices Supported</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#F59E0B] mb-1 sm:mb-2">1000+</div>
+                <div className="text-xs sm:text-sm text-[#e7e7e7]">Devices Supported</div>
               </div>
             </div>
           </div>
@@ -86,29 +85,29 @@ const Networking: React.FC = () => {
       </section>
 
       {/* Network Architecture Diagram */}
-      <section className="py-16 md:py-24 relative">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-12 md:mb-20">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#e7e7e7]">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 relative bg-[#0A0A0A]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-[#e7e7e7]">
               Enterprise Network{' '}
               <span className="text-[#3B82F6]">Architecture</span>
             </h2>
-            <p className="text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#e7e7e7] max-w-xl mx-auto">
               Complete network solutions with Active Directory, DNS, DHCP, and advanced security.
             </p>
           </div>
           
           {/* Modern Network Topology Map */}
-          <div className="relative bg-[#0A0A0A] rounded-3xl p-8 border border-white/5 overflow-hidden">
+          <div className="relative bg-[#0A0A0A] rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border border-white/5 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] opacity-50"></div>
             
             {/* Network Map Container */}
             <div className="relative z-10">
               {/* Internet/Cloud Layer */}
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center px-8 py-4 bg-[#0A0A0A] border border-white/10 rounded-3xl text-[#e7e7e7] font-bold text-lg shadow-lg">
-                  <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center mr-4">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="text-center mb-8 sm:mb-10 md:mb-12">
+                <div className="inline-flex items-center px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-[#0A0A0A] border border-white/10 rounded-2xl sm:rounded-3xl text-[#e7e7e7] font-bold text-sm sm:text-base md:text-lg shadow-lg">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/10 rounded-full flex items-center justify-center mr-3 sm:mr-4">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
@@ -117,22 +116,22 @@ const Networking: React.FC = () => {
               </div>
 
               {/* Connection Line */}
-              <div className="flex justify-center mb-8">
-                <div className="w-1 h-12 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
+              <div className="flex justify-center mb-6 sm:mb-8">
+                <div className="w-1 h-8 sm:h-10 md:h-12 bg-gradient-to-b from-white/20 to-white/5 rounded-full"></div>
               </div>
 
               {/* Firewall Layer */}
-              <div className="flex justify-center mb-12">
-                <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mr-4">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex justify-center mb-8 sm:mb-10 md:mb-12">
+                <div className="bg-[#0A0A0A] border border-white/10 rounded-2xl sm:rounded-3xl p-4 sm:p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="flex flex-col sm:flex-row items-center">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-2xl flex items-center justify-center mr-0 sm:mr-4 mb-3 sm:mb-0">
+                      <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                       </svg>
                     </div>
-                    <div>
-                      <div className="font-bold text-xl">Enterprise Firewall</div>
-                      <div className="text-sm opacity-90">Next-Gen Security</div>
+                    <div className="text-center sm:text-left">
+                      <div className="font-bold text-lg sm:text-xl">Enterprise Firewall</div>
+                      <div className="text-xs sm:text-sm opacity-90">Next-Gen Security</div>
                     </div>
                   </div>
                 </div>
@@ -148,17 +147,17 @@ const Networking: React.FC = () => {
               </div>
 
               {/* Core Network Services */}
-              <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-10 md:mb-12">
                 {/* Domain Controller */}
-                <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="bg-[#0A0A0A] border border-white/10 rounded-2xl sm:rounded-3xl p-4 sm:p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-[40px] h-[40px] bg-white/10 rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                       </svg>
                     </div>
-                    <div className="font-bold text-lg mb-2">Domain Controller</div>
-                    <div className="text-sm opacity-90 mb-3">Active Directory</div>
+                    <div className="font-bold text-base sm:text-lg mb-1 sm:mb-2">Domain Controller</div>
+                    <div className="text-xs sm:text-sm opacity-90 mb-2 sm:mb-3">Active Directory</div>
                     <div className="text-xs opacity-75 space-y-1">
                       <div>• Authentication</div>
                       <div>• Authorization</div>
@@ -170,7 +169,7 @@ const Networking: React.FC = () => {
                 {/* DNS Server */}
                 <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-[40px] h-[40px] bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
                       </svg>
@@ -188,7 +187,7 @@ const Networking: React.FC = () => {
                 {/* DHCP Server */}
                 <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-[40px] h-[40px] bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
                       </svg>
@@ -217,7 +216,7 @@ const Networking: React.FC = () => {
                 {/* Core Switch */}
                 <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-[40px] h-[40px] bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
                       </svg>
@@ -235,7 +234,7 @@ const Networking: React.FC = () => {
                 {/* Wi-Fi Access Points */}
                 <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-6 text-[#e7e7e7] shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-[40px] h-[40px] bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
                       </svg>
@@ -256,18 +255,18 @@ const Networking: React.FC = () => {
       </section>
 
       {/* Network Services */}
-      <section className="py-16 md:py-24 relative">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center text-[#e7e7e7]">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 relative bg-[#0A0A0A]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#e7e7e7]">
             Core Network{' '}
             <span className="text-[#3B82F6]">Services</span>
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {[
               {
                 icon: (
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 ),
@@ -313,7 +312,7 @@ const Networking: React.FC = () => {
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative p-8 bg-[#0A0A0A] rounded-2xl border border-[#1E293B] hover:border-white/10 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/5">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-[40px] h-[40px] bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <div className="text-[#e7e7e7]">
                       {service.icon}
                     </div>
@@ -349,7 +348,7 @@ const Networking: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-10 bg-[#0A0A0A] rounded-3xl border border-[#1E293B] hover:border-white/10 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-white/5">
                 <div className="flex items-center mb-8 md:mb-12">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-[40px] h-[40px] bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">🏢</span>
               </div>
                   <h3 className="text-lg font-bold text-[#e7e7e7]">Branch Networks</h3>
@@ -380,7 +379,7 @@ const Networking: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative p-10 bg-[#0A0A0A] rounded-3xl border border-[#1E293B] hover:border-white/10 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-white/5">
                 <div className="flex items-center mb-8 md:mb-12">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-[40px] h-[40px] bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-3xl">🎓</span>
               </div>
                   <h3 className="text-lg font-bold text-[#e7e7e7]">Campus Networks</h3>
