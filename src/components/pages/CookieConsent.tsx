@@ -69,7 +69,7 @@ const CookieConsent: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={handleAcceptAll}
-            className="px-4 py-2 text-[#e7e7e7] text-sm font-semibold rounded-lg border border-white/20 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
+            className="px-4 py-2 text-white text-sm font-semibold rounded-lg border border-white/20 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
             style={{ backgroundColor: '#ff6b35' }}
             aria-label="Accept all cookies and tracking"
           >

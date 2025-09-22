@@ -671,14 +671,14 @@ p {
 
 /* Button Styles */
 .btn-primary {
-  background-color: var(--color-primary) !important;
+  background-color: #1e40af !important;
   color: white !important;
-  border-color: var(--color-primary) !important;
+  border-color: #1e40af !important;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-hover) !important;
-  border-color: var(--color-primary-hover) !important;
+  background-color: #1d4ed8 !important;
+  border-color: #1d4ed8 !important;
 }
 
 .btn-secondary {

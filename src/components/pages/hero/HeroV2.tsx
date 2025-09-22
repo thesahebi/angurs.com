@@ -115,8 +115,7 @@ function HeroV2() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
-      <section className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] xl:min-h-[90vh] flex items-center justify-center bg-[#0A0A0A] pt-20 sm:pt-24 md:pt-28 lg:pt-32">
+    <section className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-[85vh] xl:min-h-[90vh] flex items-center justify-center bg-[#0A0A0A] pt-20 sm:pt-24 md:pt-28 lg:pt-32">
         {/* Therapeutic Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] via-[#0A0A0A] to-[#1A1A1A]"></div>
@@ -169,7 +168,7 @@ function HeroV2() {
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
                   aria-label="Solutions dropdown menu"
-                  className="btn-primary inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-base font-semibold text-[#e7e7e7] bg-[#3B82F6] border border-[#3B82F6] rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#2563eb] hover:border-[#2563eb] focus:outline-none focus:ring-2 focus:ring-[#3B82F6]/50"
+                  className="btn-primary inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-base font-semibold text-white bg-[#1e40af] border border-[#1e40af] rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#1d4ed8] hover:border-[#1d4ed8] focus:outline-none focus:ring-2 focus:ring-[#1e40af]/50"
                 >
                   Our Solution
                   <svg className={`w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -232,7 +231,6 @@ function HeroV2() {
         </div>
 
       </section>
-    </div>
   );
 }
 

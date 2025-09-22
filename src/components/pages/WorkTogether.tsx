@@ -104,7 +104,8 @@ function WorkTogether() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-stretch w-full max-w-2xl mx-auto">
             <a
               href="tel:+16309234653"
-              className="btn-primary inline-flex items-center justify-center w-full sm:w-1/2 px-6 py-3 text-base font-semibold text-[#e7e7e7] border border-white/20 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
+              className="btn-primary inline-flex items-center justify-center w-full sm:w-1/2 px-6 py-3 text-base font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/80"
+              style={{ backgroundColor: '#1e40af' }}
             >
               Get Started
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
