@@ -11,7 +11,7 @@ const BackendDeveloper: React.FC = () => {
         title="Backend Developer"
         subtitle="Build Scalable Infrastructure"
         description="Build robust, scalable backend systems that power our cloud infrastructure solutions with high-performance APIs and microservices."
-        accentColor="#10b981"
+        accentColor="#3B82F6"
         backgroundPattern="grid"
         showGraph={true}
         graphType="bar"
@@ -57,7 +57,7 @@ const BackendDeveloper: React.FC = () => {
                   <div className="lg:ml-8 lg:flex-shrink-0">
                     <button 
                       onClick={() => setIsApplicationFormOpen(true)}
-                      className="w-full lg:w-auto px-8 py-3 bg-[#10b981] hover:bg-[#059669] text-[#e7e7e7] font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center"
+                      className="w-full lg:w-auto px-8 py-3 bg-[#3B82F6] hover:bg-[#2563eb] text-white font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center"
                     >
                       Apply Now
                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

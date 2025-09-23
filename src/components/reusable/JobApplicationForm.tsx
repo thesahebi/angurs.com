@@ -360,8 +360,8 @@ Job Application Details:
                             }
                           }, 100);
                         }}
-                        className="mt-3 px-4 py-2 text-[#e7e7e7] text-sm rounded-lg border border-white/20 transition-colors hover:bg-[#e95420]"
-                        style={{ backgroundColor: '#ff6b35' }}
+                        className="mt-3 px-4 py-2 text-white text-sm rounded-lg border border-white/20 transition-colors hover:bg-[#2563eb]"
+                        style={{ backgroundColor: '#3B82F6' }}
                       >
                         Change File
                       </button>
@@ -385,8 +385,8 @@ Job Application Details:
                             }
                           }, 100);
                         }}
-                        className="px-6 py-3 text-[#e7e7e7] font-medium rounded-lg border border-white/20 transition-colors hover:bg-[#e95420]"
-                        style={{ backgroundColor: '#ff6b35' }}
+                        className="px-6 py-3 text-white font-medium rounded-lg border border-white/20 transition-colors hover:bg-[#2563eb]"
+                        style={{ backgroundColor: '#3B82F6' }}
                       >
                         Choose File
                       </button>
@@ -480,8 +480,8 @@ Job Application Details:
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-8 py-3 text-white font-semibold rounded-xl border border-white/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center hover:bg-[#e95420] focus:outline-none focus:ring-2 focus:ring-white/80"
-                  style={{ backgroundColor: '#ff6b35' }}
+                  className="px-8 py-3 text-white font-semibold rounded-xl border border-white/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center hover:bg-[#2563eb] focus:outline-none focus:ring-2 focus:ring-white/80"
+                  style={{ backgroundColor: '#3B82F6' }}
                 >
                   {isSubmitting ? (
                     <>
