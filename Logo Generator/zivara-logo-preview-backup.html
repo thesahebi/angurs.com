@@ -463,42 +463,510 @@
             font-weight: 700;
             font-size: 18px;
         }
+
+        /* MODERN LOGO DESIGNS */
+        .modern-z-logo {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .z-shape {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .z-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 12px;
+            background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .z-middle {
+            position: absolute;
+            top: 34px;
+            left: 20px;
+            width: 40px;
+            height: 12px;
+            background: linear-gradient(45deg, #8B5CF6 0%, #3B82F6 100%);
+            border-radius: 6px;
+            transform: rotate(45deg);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+        }
+
+        .z-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60px;
+            height: 12px;
+            background: linear-gradient(90deg, #8B5CF6 0%, #3B82F6 100%);
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .hexagon-z-logo {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hexagon-container {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .hexagon-shape {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #3B82F6 100%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .z-letter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .circle-z-logo {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle-container {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #3B82F6 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .z-in-circle {
+            font-size: 36px;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .layered-z-logo {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .layer-1 {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            border-radius: 12px;
+            transform: rotate(15deg);
+            box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+        }
+
+        .layer-2 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+            border-radius: 10px;
+            transform: rotate(-15deg);
+            box-shadow: 0 6px 16px rgba(139, 92, 246, 0.3);
+        }
+
+        .layer-3 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            border-radius: 8px;
+            transform: rotate(30deg);
+            box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+        }
+
+        /* MINIMALIST LOGO DESIGNS */
+        .minimalist-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .logo-text-minimalist {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #3B82F6;
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+
+        .logo-text-io {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #6B7280;
+            letter-spacing: 0.05em;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎨 Zivara.io Logo Design</h1>
-            <p>Premium virtualization services company specializing in VM building, vSphere, and vCenter solutions</p>
+            <h1>🎨 Zivara Solutions Logo Design</h1>
+            <p>Beautiful, modern logo designs for your tech solutions company</p>
         </div>
 
-        <!-- PRIMARY LOGO DESIGNS -->
+        <!-- MINIMALIST VECTOR LOGO -->
         <div class="section">
-            <h2 class="section-title">Primary Logo Concepts</h2>
+            <h2 class="section-title">Minimalist Vector Logo</h2>
             <div class="logo-grid">
                 <div class="logo-item">
-                    <h3>Circuit Z</h3>
+                    <h3>Zivara.io Minimalist</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes">
-                            <div class="cube cube-1"></div>
-                            <div class="cube cube-2"></div>
-                            <div class="cube cube-3"></div>
-                            <div class="cube-dot dot-1"></div>
-                            <div class="cube-dot dot-2"></div>
-                            <div class="cube-dot dot-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Circuit board pattern forming "Z" - represents server infrastructure and technology
+                        Minimalist vector logo with bold geometric "Z" and flowing connection lines - perfect for tech companies
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('cubes', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-main', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('cubes', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-main', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="logo-item">
+                    <h3>Zivara.io Minimalist Variant 1</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist vector logo with bold geometric "Z" and flowing connection lines - perfect for tech companies
+                    </div>
+                </div>
+                
+                <div class="logo-item">
+                    <h3>Zivara.io Minimalist Variant 2</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist vector logo with bold geometric "Z" and flowing connection lines - perfect for tech companies
+                    </div>
+                </div>
+                
+                <div class="logo-item">
+                    <h3>Zivara.io Minimalist Variant 3</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist vector logo with bold geometric "Z" and flowing connection lines - perfect for tech companies
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODERN LOGO DESIGNS -->
+        <div class="section">
+            <h2 class="section-title">Modern Logo Concepts</h2>
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <h3>Minimalist Z - Size Small</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist "Z" in smaller size - perfect for compact applications
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-small', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-small', 'png')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            PNG
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="logo-item">
+                    <h3>Minimalist Z - Size Medium</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="100" height="100" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist "Z" in medium size - ideal for standard applications
+                    </div>
+                </div>
+                
+                <div class="logo-item">
+                    <h3>Minimalist Z - Size Large</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist "Z" in large size - perfect for headers and prominent displays
+                    </div>
+                </div>
+                
+                <div class="logo-item">
+                    <h3>Minimalist Z - Size Extra Large</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="140" height="140" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist "Z" in extra large size - ideal for hero sections and banners
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRIMARY LOGO DESIGNS -->
+        <div class="section">
+            <h2 class="section-title">Classic Logo Concepts</h2>
+            <div class="logo-grid">
+                <div class="logo-item">
+                    <h3>Minimalist Z - Favicon Size</h3>
+                    <div class="logo-preview">
+                        <div class="minimalist-logo">
+                            <svg width="60" height="60" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="logo-description">
+                        Minimalist "Z" in favicon size - perfect for browser tabs and small icons
+                    </div>
+                    <div class="download-buttons">
+                        <button class="download-btn" onclick="downloadLogo('minimalist', 'svg')">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                            </svg>
+                            SVG
+                        </button>
+                        <button class="download-btn png" onclick="downloadLogo('minimalist', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -508,28 +976,40 @@
             </div>
             
                 <div class="logo-item">
-                    <h3>Circuit Z</h3>
+                    <h3>Minimalist Z - App Icon Size</h3>
                     <div class="logo-preview">
-                        <div class="logo-nodes">
-                            <div class="node node-1"></div>
-                            <div class="node node-2"></div>
-                            <div class="node node-3"></div>
-                            <div class="connection conn-1"></div>
-                            <div class="connection conn-2"></div>
-                            <div class="connection conn-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Circuit board pattern forming "Z" - represents server infrastructure and technology
+                        Minimalist "Z" in app icon size - perfect for mobile applications and app stores
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('nodes', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-app', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('nodes', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-app', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -539,28 +1019,40 @@
     </div>
 
                 <div class="logo-item">
-                    <h3>Circuit Z</h3>
+                    <h3>Minimalist Z - Social Media Size</h3>
                     <div class="logo-preview">
-                        <div class="logo-layered">
-                            <div class="layer layer-1"></div>
-                            <div class="layer layer-2"></div>
-                            <div class="layer layer-3"></div>
-                            <div class="layer-dot dot-1"></div>
-                            <div class="layer-dot dot-2"></div>
-                            <div class="layer-dot dot-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="100" height="100" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Circuit board pattern forming "Z" - represents server infrastructure and technology
+                        Minimalist "Z" in social media size - perfect for profile pictures and social platforms
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('layered', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-social', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('layered', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-social', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -570,28 +1062,40 @@
             </div>
 
                 <div class="logo-item">
-                    <h3>Circuit Z</h3>
+                    <h3>Minimalist Z - Print Size</h3>
                     <div class="logo-preview">
-                        <div class="logo-circuit">
-                            <div class="circuit-line circuit-1"></div>
-                            <div class="circuit-line circuit-2"></div>
-                            <div class="circuit-line circuit-3"></div>
-                            <div class="circuit-dot dot-1"></div>
-                            <div class="circuit-dot dot-2"></div>
-                            <div class="circuit-dot dot-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                 </div>
                     </div>
                     <div class="logo-description">
-                        Abstract circuit board pattern forming "Z" - represents server infrastructure and connectivity
+                        Minimalist "Z" in print size - perfect for business cards, letterheads, and printed materials
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('circuit', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-print', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('circuit', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-print', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -607,25 +1111,40 @@
             <h2 class="section-title">Complete Logo with Typography</h2>
             <div class="logo-grid">
                 <div class="logo-item">
-                    <h3>Icon Only (High Resolution)</h3>
+                    <h3>Minimalist Z - High Resolution</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes-high-res">
-                            <div class="cube-high cube-high-1"></div>
-                            <div class="cube-high cube-high-2"></div>
-                            <div class="cube-high cube-high-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="160" height="160" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                 </div>
                 </div>
                     <div class="logo-description">
-                        High-resolution icon perfect for favicons, app icons, and standalone branding
+                        High-resolution minimalist "Z" perfect for favicons, app icons, and standalone branding
             </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('icon-only', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-hires', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('icon-only', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-hires', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -635,22 +1154,36 @@
     </div>
 
                 <div class="logo-item">
-                    <h3>Stacked Layout</h3>
+                    <h3>Minimalist Z with Text</h3>
                     <div class="logo-preview">
                         <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-                            <div class="logo-cubes">
-                                <div class="cube cube-1"></div>
-                                <div class="cube cube-2"></div>
-                                <div class="cube cube-3"></div>
+                            <div class="minimalist-logo">
+                                <svg width="100" height="100" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Flowing connection lines -->
+                                    <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    
+                                    <!-- Main Z shape - bold and geometric -->
+                                    <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <!-- Subtle flowing accent lines -->
+                                    <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    
+                                    <!-- Connection dots -->
+                                    <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                    <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                    <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                    <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                                </svg>
                             </div>
                             <div style="text-align: center;">
                                 <div class="logo-text logo-text-main">Zivara</div>
-                                <div class="logo-text-io">.io</div>
                             </div>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Ideal for square formats, social media, and vertical applications
+                        Minimalist "Z" with company name - ideal for square formats, social media, and vertical applications
                     </div>
                     <div class="download-buttons">
                         <button class="download-btn" onclick="downloadLogo('stacked', 'svg')">
@@ -675,25 +1208,40 @@
             <h2 class="section-title">Size Variations</h2>
             <div class="logo-grid">
                 <div class="logo-item">
-                    <h3>Small (16px)</h3>
+                    <h3>Minimalist Z - Tiny (16px)</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes size-small">
-                            <div class="cube cube-1"></div>
-                            <div class="cube cube-2"></div>
-                            <div class="cube cube-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="32" height="32" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                 </div>
                 </div>
                     <div class="logo-description">
-                        Favicon and small icon applications
+                        Minimalist "Z" in tiny size - perfect for favicons and small icon applications
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('favicon-16', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-tiny', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('favicon-16', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-tiny', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -703,25 +1251,40 @@
         </div>
 
                 <div class="logo-item">
-                    <h3>Medium (32px)</h3>
+                    <h3>Minimalist Z - Medium (32px)</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes size-medium">
-                            <div class="cube cube-1"></div>
-                            <div class="cube cube-2"></div>
-                            <div class="cube cube-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="48" height="48" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                 </div>
                 </div>
                     <div class="logo-description">
-                        Navigation bars and medium-sized applications
+                        Minimalist "Z" in medium size - perfect for navigation bars and medium-sized applications
             </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('favicon-32', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-medium', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('favicon-32', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-medium', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -731,25 +1294,40 @@
     </div>
 
                 <div class="logo-item">
-                    <h3>Large (64px+)</h3>
+                    <h3>Minimalist Z - Large (64px+)</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes size-large">
-                            <div class="cube cube-1"></div>
-                            <div class="cube cube-2"></div>
-                            <div class="cube cube-3"></div>
+                        <div class="minimalist-logo">
+                            <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
         </div>
     </div>
                     <div class="logo-description">
-                        Marketing materials and large displays
+                        Minimalist "Z" in large size - perfect for marketing materials and large displays
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('favicon-64', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-large', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('favicon-64', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-large', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -765,31 +1343,45 @@
             <h2 class="section-title">Background Compatibility</h2>
             <div class="logo-grid">
                 <div class="logo-item bg-white">
-                    <h3>White Background</h3>
+                    <h3>Minimalist Z - White Background</h3>
                     <div class="logo-preview">
                         <div style="display: flex; align-items: center; gap: 20px;">
-                            <div class="logo-cubes">
-                                <div class="cube cube-1"></div>
-                                <div class="cube cube-2"></div>
-                                <div class="cube cube-3"></div>
+                            <div class="minimalist-logo">
+                                <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Flowing connection lines -->
+                                    <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    
+                                    <!-- Main Z shape - bold and geometric -->
+                                    <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <!-- Subtle flowing accent lines -->
+                                    <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    
+                                    <!-- Connection dots -->
+                                    <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                    <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                    <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                    <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                                </svg>
                             </div>
                             <div>
                                 <span class="logo-text logo-text-main">Zivara</span>
-                                <span class="logo-text-io">.io</span>
                             </div>
                         </div>
                     </div>
                     <div class="logo-description">
-                        For light backgrounds and print materials
+                        Minimalist "Z" on white background - perfect for light backgrounds and print materials
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('white-bg', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-white-bg', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('white-bg', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-white-bg', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -799,31 +1391,45 @@
             </div>
 
                 <div class="logo-item bg-teal">
-                    <h3>Teal Background</h3>
+                    <h3>Minimalist Z - Teal Background</h3>
                     <div class="logo-preview">
                         <div style="display: flex; align-items: center; gap: 20px;">
-                            <div class="logo-cubes">
-                                <div class="cube cube-1" style="background: linear-gradient(135deg, #FFFFFF 0%, #F59E0B 100%);"></div>
-                                <div class="cube cube-2" style="background: linear-gradient(135deg, #F59E0B 0%, #FFFFFF 100%);"></div>
-                                <div class="cube cube-3" style="background: linear-gradient(135deg, #FFFFFF 0%, #3B82F6 100%);"></div>
+                            <div class="minimalist-logo">
+                                <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Flowing connection lines -->
+                                    <path d="M20 20 Q60 40 100 20" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    <path d="M20 100 Q60 80 100 100" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    
+                                    <!-- Main Z shape - bold and geometric -->
+                                    <path d="M25 25 L95 25 L25 95 L95 95" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <!-- Subtle flowing accent lines -->
+                                    <path d="M30 30 Q60 50 90 30" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    <path d="M30 90 Q60 70 90 90" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    
+                                    <!-- Connection dots -->
+                                    <circle cx="25" cy="25" r="3" fill="#FFFFFF"/>
+                                    <circle cx="95" cy="25" r="3" fill="#FFFFFF"/>
+                                    <circle cx="25" cy="95" r="3" fill="#FFFFFF"/>
+                                    <circle cx="95" cy="95" r="3" fill="#FFFFFF"/>
+                                </svg>
                             </div>
                             <div>
                                 <span class="logo-text logo-text-main" style="color: #FFFFFF;">Zivara</span>
-                                <span class="logo-text-io" style="color: #A7F3D0;">.io</span>
                             </div>
                         </div>
                     </div>
                     <div class="logo-description">
-                        For brand-colored backgrounds
+                        Minimalist "Z" on teal background - perfect for brand-colored backgrounds
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('teal-bg', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-teal-bg', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('teal-bg', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-teal-bg', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -833,17 +1439,31 @@
                 </div>
 
                 <div class="logo-item bg-blue">
-                    <h3>Blue Background</h3>
+                    <h3>Minimalist Z - Blue Background</h3>
                     <div class="logo-preview">
                         <div style="display: flex; align-items: center; gap: 20px;">
-                            <div class="logo-cubes">
-                                <div class="cube cube-1" style="background: linear-gradient(135deg, #FFFFFF 0%, #F59E0B 100%);"></div>
-                                <div class="cube cube-2" style="background: linear-gradient(135deg, #F59E0B 0%, #0F766E 100%);"></div>
-                                <div class="cube cube-3" style="background: linear-gradient(135deg, #FFFFFF 0%, #0F766E 100%);"></div>
+                            <div class="minimalist-logo">
+                                <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Flowing connection lines -->
+                                    <path d="M20 20 Q60 40 100 20" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    <path d="M20 100 Q60 80 100 100" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    
+                                    <!-- Main Z shape - bold and geometric -->
+                                    <path d="M25 25 L95 25 L25 95 L95 95" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    
+                                    <!-- Subtle flowing accent lines -->
+                                    <path d="M30 30 Q60 50 90 30" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    <path d="M30 90 Q60 70 90 90" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                    
+                                    <!-- Connection dots -->
+                                    <circle cx="25" cy="25" r="3" fill="#FFFFFF"/>
+                                    <circle cx="95" cy="25" r="3" fill="#FFFFFF"/>
+                                    <circle cx="25" cy="95" r="3" fill="#FFFFFF"/>
+                                    <circle cx="95" cy="95" r="3" fill="#FFFFFF"/>
+                                </svg>
                             </div>
                             <div>
                                 <span class="logo-text logo-text-main" style="color: #FFFFFF;">Zivara</span>
-                                <span class="logo-text-io" style="color: #BFDBFE;">.io</span>
                             </div>
                         </div>
                     </div>
@@ -873,25 +1493,40 @@
             <h2 class="section-title">Monochrome Versions</h2>
             <div class="logo-grid">
                 <div class="logo-item">
-                    <h3>All Black</h3>
+                    <h3>Minimalist Z - Black</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes monochrome">
-                            <div class="cube cube-1" style="background: #000000;"></div>
-                            <div class="cube cube-2" style="background: #000000;"></div>
-                            <div class="cube cube-3" style="background: #000000;"></div>
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#000000" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#000000" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#000000" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#000000" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#000000" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#000000"/>
+                                <circle cx="95" cy="25" r="3" fill="#000000"/>
+                                <circle cx="25" cy="95" r="3" fill="#000000"/>
+                                <circle cx="95" cy="95" r="3" fill="#000000"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        For invoices and technical documentation
+                        Minimalist "Z" in black - perfect for invoices and technical documentation
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('monochrome-black', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-black', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('monochrome-black', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-black', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -901,25 +1536,40 @@
             </div>
 
                 <div class="logo-item bg-white">
-                    <h3>All White</h3>
+                    <h3>Minimalist Z - White</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes monochrome-white">
-                            <div class="cube cube-1" style="background: #FFFFFF;"></div>
-                            <div class="cube cube-2" style="background: #FFFFFF;"></div>
-                            <div class="cube cube-3" style="background: #FFFFFF;"></div>
+                        <div class="minimalist-logo">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#FFFFFF"/>
+                                <circle cx="95" cy="25" r="3" fill="#FFFFFF"/>
+                                <circle cx="25" cy="95" r="3" fill="#FFFFFF"/>
+                                <circle cx="95" cy="95" r="3" fill="#FFFFFF"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        For dark backgrounds and reverse applications
+                        Minimalist "Z" in white - perfect for dark backgrounds and reverse applications
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('monochrome-white', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-white', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('monochrome-white', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-white', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -963,25 +1613,40 @@
             <h2 class="section-title">Social Media Sizes</h2>
             <div class="logo-grid">
                 <div class="logo-item">
-                    <h3>Instagram (1080x1080px)</h3>
+                    <h3>Minimalist Z - Instagram (1080x1080px)</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes" style="width: 200px; height: 200px;">
-                            <div class="cube cube-1" style="width: 75px; height: 75px;"></div>
-                            <div class="cube cube-2" style="width: 63px; height: 63px; top: 50px; left: 63px;"></div>
-                            <div class="cube cube-3" style="width: 70px; height: 70px;"></div>
+                        <div class="minimalist-logo">
+                            <svg width="200" height="200" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Perfect for Instagram profile pictures and posts
+                        Minimalist "Z" perfect for Instagram profile pictures and posts
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('social-instagram', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-instagram', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('social-instagram', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-instagram', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -991,25 +1656,40 @@
                 </div>
 
                 <div class="logo-item">
-                    <h3>LinkedIn (400x400px)</h3>
+                    <h3>Minimalist Z - LinkedIn (400x400px)</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes" style="width: 150px; height: 150px;">
-                            <div class="cube cube-1" style="width: 56px; height: 56px;"></div>
-                            <div class="cube cube-2" style="width: 47px; height: 47px; top: 38px; left: 47px;"></div>
-                            <div class="cube cube-3" style="width: 53px; height: 53px;"></div>
+                        <div class="minimalist-logo">
+                            <svg width="150" height="150" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Ideal for LinkedIn company pages and profiles
+                        Minimalist "Z" ideal for LinkedIn company pages and profiles
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('social-linkedin', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-linkedin', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('social-linkedin', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-linkedin', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -1019,25 +1699,40 @@
                 </div>
 
                 <div class="logo-item">
-                    <h3>Twitter (400x400px)</h3>
+                    <h3>Minimalist Z - Twitter (400x400px)</h3>
                     <div class="logo-preview">
-                        <div class="logo-cubes" style="width: 150px; height: 150px;">
-                            <div class="cube cube-1" style="width: 56px; height: 56px;"></div>
-                            <div class="cube cube-2" style="width: 47px; height: 47px; top: 38px; left: 47px;"></div>
-                            <div class="cube cube-3" style="width: 53px; height: 53px;"></div>
+                        <div class="minimalist-logo">
+                            <svg width="150" height="150" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Flowing connection lines -->
+                                <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Main Z shape - bold and geometric -->
+                                <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                
+                                <!-- Subtle flowing accent lines -->
+                                <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                
+                                <!-- Connection dots -->
+                                <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                                <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                                <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="logo-description">
-                        Perfect for Twitter profile pictures
+                        Minimalist "Z" perfect for Twitter profile pictures
                     </div>
                     <div class="download-buttons">
-                        <button class="download-btn" onclick="downloadLogo('social-twitter', 'svg')">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-twitter', 'svg')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('social-twitter', 'png')">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-twitter', 'png')">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -1082,16 +1777,28 @@
             <div class="favicon-preview">
                 <div class="favicon-item">
                     <div class="favicon-size">16x16px</div>
-                    <div class="favicon-icon" style="width: 16px; height: 16px; font-size: 10px;">Z</div>
-                    <div class="logo-description">Browser favicon</div>
+                    <div class="favicon-icon" style="width: 16px; height: 16px;">
+                        <svg width="16" height="16" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                            <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                            <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                            <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                            <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                            <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                        </svg>
+                    </div>
+                    <div class="logo-description">Minimalist Z - Browser favicon</div>
                     <div class="download-buttons" style="margin-top: 10px;">
-                        <button class="download-btn" onclick="downloadLogo('favicon-16px', 'svg')" style="font-size: 0.7rem; padding: 4px 8px;">
+                        <button class="download-btn" onclick="downloadLogo('minimalist-favicon-16', 'svg')" style="font-size: 0.7rem; padding: 4px 8px;">
                             <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
                             SVG
                         </button>
-                        <button class="download-btn png" onclick="downloadLogo('favicon-16px', 'png')" style="font-size: 0.7rem; padding: 4px 8px;">
+                        <button class="download-btn png" onclick="downloadLogo('minimalist-favicon-16', 'png')" style="font-size: 0.7rem; padding: 4px 8px;">
                             <svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px;">
                                 <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                             </svg>
@@ -1224,71 +1931,52 @@
         }
 
         function generateSVG(type) {
-            const size = 400; // High resolution SVG
-            let svgContent = `<svg width="${size}" height="${size}" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">`;
+            const size = 800; // High resolution SVG
+            let svgContent = `<svg width="${size}" height="${size}" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">`;
             
-            // All logo types now use Circuit Z design
+            // Determine color based on logo type
+            let color = "#3B82F6"; // Default blue
+            if (type.includes('black') || type.includes('monochrome-black')) {
+                color = "#000000";
+            } else if (type.includes('white') || type.includes('monochrome-white')) {
+                color = "#FFFFFF";
+            }
+            
+            // All logo types now use the minimalist Z design with transparent background
             svgContent += `
-                <defs>
-                    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                    </linearGradient>
-                    <filter id="circuitShadow" x="-50%" y="-50%" width="200%" height="200%">
-                        <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#3B82F6" flood-opacity="0.4"/>
-                    </filter>
-                </defs>
-                <!-- Circuit lines forming Z shape -->
-                <rect x="50" y="50" width="250" height="20" fill="url(#circuitGrad)" rx="10" filter="url(#circuitShadow)"/>
-                <rect x="150" y="190" width="150" height="20" fill="url(#circuitGrad)" rx="10" transform="rotate(45 225 200)" filter="url(#circuitShadow)"/>
-                <rect x="100" y="330" width="250" height="20" fill="url(#circuitGrad)" rx="10" filter="url(#circuitShadow)"/>
+                <!-- Flowing connection lines -->
+                <path d="M20 20 Q60 40 100 20" stroke="${color}" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <path d="M20 100 Q60 80 100 100" stroke="${color}" stroke-width="6" fill="none" stroke-linecap="round"/>
                 
-                <!-- Circuit connection dots -->
-                <circle cx="125" cy="60" r="20" fill="#8B5CF6" filter="url(#circuitShadow)"/>
-                <circle cx="225" cy="200" r="20" fill="#8B5CF6" filter="url(#circuitShadow)"/>
-                <circle cx="325" cy="340" r="20" fill="#8B5CF6" filter="url(#circuitShadow)"/>
+                <!-- Main Z shape - bold and geometric -->
+                <path d="M25 25 L95 25 L25 95 L95 95" stroke="${color}" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <!-- Subtle flowing accent lines -->
+                <path d="M30 30 Q60 50 90 30" stroke="${color}" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+                <path d="M30 90 Q60 70 90 90" stroke="${color}" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+                
+                <!-- Connection dots -->
+                <circle cx="25" cy="25" r="6" fill="${color}"/>
+                <circle cx="95" cy="25" r="6" fill="${color}"/>
+                <circle cx="25" cy="95" r="6" fill="${color}"/>
+                <circle cx="95" cy="95" r="6" fill="${color}"/>
             `;
             
-            // All logo types use the same Circuit Z design (already added above)
-            // No additional content needed
-                    svgContent += `
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
-                            </linearGradient>
-                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                                <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                            </linearGradient>
-                            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
-                            </linearGradient>
-                            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-                                <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#3B82F6" flood-opacity="0.4"/>
-                            </filter>
-                        </defs>
-                        <rect x="60" y="60" width="225" height="225" fill="url(#grad1)" transform="rotate(45 172.5 172.5)" rx="30" filter="url(#shadow)"/>
-                        <rect x="187.5" y="187.5" width="187.5" height="187.5" fill="url(#grad2)" transform="rotate(-30 281.25 281.25)" rx="24" filter="url(#shadow)"/>
-                        <rect x="315" y="315" width="210" height="210" fill="url(#grad3)" transform="rotate(60 420 420)" rx="30" filter="url(#shadow)"/>
-                    `;
-                    break;
-                    
-                case 'nodes':
-                    svgContent += `
-                        <defs>
-                            <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
-                            </radialGradient>
-                            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#0F766E;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
-                            </linearGradient>
+            svgContent += '</svg>';
+            return svgContent;
+        }
+
+        function downloadSVG(svgContent, filename) {
+            const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
                         </defs>
                         <circle cx="30" cy="30" r="15" fill="url(#nodeGrad)"/>
                         <circle cx="170" cy="30" r="15" fill="url(#nodeGrad)"/>
@@ -1608,40 +2296,39 @@
         }
 
         function downloadPNG(svgContent, filename) {
+            // Create a canvas
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
-            const img = new Image();
-            
-            // High resolution: 800x800 for crisp output
             canvas.width = 800;
             canvas.height = 800;
             
+            // Convert SVG to image
+            const svgBlob = new Blob([svgContent], {type: 'image/svg+xml;charset=utf-8'});
+            const svgUrl = URL.createObjectURL(svgBlob);
+            
+            const img = new Image();
             img.onload = function() {
-                // Set high quality rendering
-                ctx.imageSmoothingEnabled = true;
-                ctx.imageSmoothingQuality = 'high';
-                
                 // Clear canvas with transparent background
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 
                 // Draw the image at high resolution
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
                 
+                // Convert to PNG and download
                 canvas.toBlob(function(blob) {
                     const url = URL.createObjectURL(blob);
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.download = filename;
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
                     URL.revokeObjectURL(url);
-                }, 'image/png', 1.0); // Maximum quality
+                }, 'image/png', 1.0); // High quality
+                
+                URL.revokeObjectURL(svgUrl);
             };
-            
-            const svgBlob = new Blob([svgContent], { type: 'image/svg+xml' });
-            const url = URL.createObjectURL(svgBlob);
-            img.src = url;
+            img.src = svgUrl;
         }
     </script>
 </body>

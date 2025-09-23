@@ -2,35 +2,6 @@ import { scrollToTheTopOfPage } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-// Circuit Z Logo Component
-const CircuitZLogo = ({ className = "" }: { className?: string }) => (
-  <svg 
-    className={className}
-    viewBox="0 0 80 80" 
-    xmlns="http://www.w3.org/2000/svg"
-    key="circuit-z-logo"
-  >
-    <defs>
-      <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style={{ stopColor: "#3B82F6", stopOpacity: 1 }} />
-        <stop offset="100%" style={{ stopColor: "#8B5CF6", stopOpacity: 1 }} />
-      </linearGradient>
-      <filter id="circuitShadow" x="-50%" y="-50%" width="200%" height="200%">
-        <feDropShadow dx="0" dy="3" stdDeviation="4" floodColor="#3B82F6" floodOpacity="0.3"/>
-      </filter>
-    </defs>
-    {/* Circuit lines forming Z shape */}
-    <rect x="0" y="0" width="50" height="4" fill="url(#circuitGrad)" rx="2" filter="url(#circuitShadow)"/>
-    <rect x="30" y="38" width="30" height="4" fill="url(#circuitGrad)" rx="2" transform="rotate(45 45 40)" filter="url(#circuitShadow)"/>
-    <rect x="30" y="76" width="50" height="4" fill="url(#circuitGrad)" rx="2" filter="url(#circuitShadow)"/>
-    
-    {/* Circuit connection dots */}
-    <circle cx="8" cy="2" r="4" fill="#8B5CF6" filter="url(#circuitShadow)"/>
-    <circle cx="45" cy="40" r="4" fill="#8B5CF6" filter="url(#circuitShadow)"/>
-    <circle cx="72" cy="78" r="4" fill="#8B5CF6" filter="url(#circuitShadow)"/>
-  </svg>
-);
-
 const TopHeaderV1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [expandedMenuItems, setExpandedMenuItems] = useState<string[]>([]);
@@ -136,7 +107,9 @@ const TopHeaderV1 = () => {
               aria-label="Zivara - Go to homepage"
             >
               <div className="relative">
-                <CircuitZLogo className="w-auto h-6 sm:h-7 md:h-9 transition-all duration-300" />
+                <span className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent transition-all duration-300 group-hover:from-[#60a5fa] group-hover:via-[#a78bfa] group-hover:to-[#60a5fa]">
+                  Z
+                </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity duration-300"></div>
               </div>
             </Link>
