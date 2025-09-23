@@ -140,14 +140,14 @@ const TopHeaderV1 = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="md:hidden p-1.5 sm:p-2 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/50 transition-all duration-200"
+            className="md:hidden p-3 text-[#F1F5F9] rounded-lg hover:bg-[#1E293B]/50 focus:outline-none focus:ring-2 focus:ring-[#3b82f6]/50 transition-all duration-200 min-h-[44px] min-w-[44px]"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
           >
             {isMenuOpen ? (
               <svg
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                className="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -161,7 +161,7 @@ const TopHeaderV1 = () => {
               </svg>
             ) : (
               <svg
-                className="w-5 h-5 sm:w-6 sm:h-6"
+                className="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -378,18 +378,26 @@ const TopHeaderV1 = () => {
           </div>
         </div>
 
+        {/* Mobile Menu Overlay */}
+        {isMenuOpen && (
+          <div 
+            className="fixed inset-0 bg-black/50 z-10 md:hidden"
+            onClick={() => setIsMenuOpen(false)}
+          />
+        )}
+        
         {/* Mobile Navigation Menu */}
         <div
           id="mobile-menu"
-          className={`md:hidden absolute top-10 sm:top-12 left-0 right-0 bg-[#0A0A0A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
-              ? "opacity-100 translate-y-0 h-lvh z-20"
+          className={`md:hidden fixed top-14 left-0 right-0 bg-[#0A0A0A] backdrop-blur-md text-[#F1F5F9] shadow-2xl border-b border-[#1E293B]/50 transition-all duration-300 ease-in-out transform ${isMenuOpen
+              ? "opacity-100 translate-y-0 h-[calc(100vh-56px)] z-20"
               : "opacity-0 -translate-y-2 pointer-events-none"
             }`}
           role="navigation"
           aria-label="Mobile navigation menu"
           aria-hidden={!isMenuOpen}
         >
-          <nav className="px-4 py-4">
+          <nav className="px-4 py-4 overflow-y-auto h-full relative z-20">
             {navigationItems.map((item) => (
               <div key={item.label} className="mb-2">
                 {item.path ? (
@@ -409,7 +417,7 @@ const TopHeaderV1 = () => {
                       onClick={() => toggleMobileMenuItem(item.label)}
                       aria-expanded={expandedMenuItems.includes(item.label)}
                       aria-controls={`mobile-submenu-${item.label.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="flex items-center justify-between w-full py-3 text-base px-4 rounded-xl transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
+                      className="flex items-center justify-between w-full py-4 text-base px-4 rounded-xl transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6] min-h-[48px]"
                     >
                       <span>{item.label}</span>
                       <svg
@@ -441,7 +449,7 @@ const TopHeaderV1 = () => {
                               <Link
                                 to={child.path}
                                 role="menuitem"
-                                className="block py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
+                                className="block py-3 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6] min-h-[44px]"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 {child.label}
@@ -452,7 +460,7 @@ const TopHeaderV1 = () => {
                                   onClick={() => toggleMobileMenuItem(`${item.label}-${child.label}`)}
                                   aria-expanded={expandedMenuItems.includes(`${item.label}-${child.label}`)}
                                   aria-controls={`mobile-submenu-${item.label.toLowerCase().replace(/\s+/g, '-')}-${child.label.toLowerCase().replace(/\s+/g, '-')}`}
-                                  className="flex items-center justify-between w-full py-2 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
+                                  className="flex items-center justify-between w-full py-3 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6] min-h-[44px]"
                                 >
                                   <span>{child.label}</span>
                                   <svg
@@ -483,7 +491,7 @@ const TopHeaderV1 = () => {
                                         key={nestedChild.label}
                                         to={nestedChild.path}
                                         role="menuitem"
-                                        className="block py-2 text-xs px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6]"
+                                        className="block py-3 text-sm px-4 rounded-lg transition-all duration-300 text-[#F1F5F9] hover:bg-[#1E293B]/20 hover:text-[#3b82f6] min-h-[44px]"
                                         onClick={() => setIsMenuOpen(false)}
                                       >
                                         {nestedChild.label}

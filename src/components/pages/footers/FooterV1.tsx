@@ -298,7 +298,7 @@ const FooterV1 = () => {
                       value={email}
                       onChange={handleEmailChange}
                       placeholder="Enter your email address"
-                      className="flex-1 px-4 py-3 bg-[#1E293B]/50 border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#3b82f6] focus:border-transparent"
+                      className="flex-1 px-4 py-3 sm:py-4 bg-[#1E293B]/50 border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#3b82f6] focus:border-transparent text-base min-h-[48px]"
                       required
                     />
                     <button 

@@ -91,7 +91,7 @@ const ContactUs: React.FC = () => {
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleChange}
-                      className="w-full p-3 sm:p-4 text-sm sm:text-base bg-[#0A0A0A] border-2 border-gray-600 rounded-xl sm:rounded-2xl focus:border-[#3b82f6] focus:ring-4 focus:ring-[#3b82f6]/20 transition-all duration-300 placeholder-gray-400 text-[#e7e7e7]"
+                      className="w-full p-4 sm:p-5 text-base bg-[#0A0A0A] border-2 border-gray-600 rounded-xl sm:rounded-2xl focus:border-[#3b82f6] focus:ring-4 focus:ring-[#3b82f6]/20 transition-all duration-300 placeholder-gray-400 text-[#e7e7e7] min-h-[48px]"
                       placeholder="John Doe"
                       required
                       aria-required="true"
@@ -108,7 +108,7 @@ const ContactUs: React.FC = () => {
                       name="businessEmail"
                       value={formData.businessEmail}
                       onChange={handleChange}
-                      className="w-full p-3 sm:p-4 text-sm sm:text-base bg-[#0A0A0A] border-2 border-gray-600 rounded-xl sm:rounded-2xl focus:border-[#3b82f6] focus:ring-4 focus:ring-[#3b82f6]/20 transition-all duration-300 placeholder-gray-400 text-[#e7e7e7]"
+                      className="w-full p-4 sm:p-5 text-base bg-[#0A0A0A] border-2 border-gray-600 rounded-xl sm:rounded-2xl focus:border-[#3b82f6] focus:ring-4 focus:ring-[#3b82f6]/20 transition-all duration-300 placeholder-gray-400 text-[#e7e7e7] min-h-[48px]"
                       placeholder="john@company.com"
                       required
                       aria-required="true"
@@ -142,7 +142,7 @@ const ContactUs: React.FC = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full p-3 sm:p-4 text-sm sm:text-base bg-[#0A0A0A] border-2 border-gray-600 rounded-xl sm:rounded-2xl focus:border-[#3b82f6] focus:ring-4 focus:ring-[#3b82f6]/20 transition-all duration-300 placeholder-gray-400 resize-none text-[#e7e7e7]"
+                    className="w-full p-4 sm:p-5 text-base bg-[#0A0A0A] border-2 border-gray-600 rounded-xl sm:rounded-2xl focus:border-[#3b82f6] focus:ring-4 focus:ring-[#3b82f6]/20 transition-all duration-300 placeholder-gray-400 resize-none text-[#e7e7e7] min-h-[120px]"
                     placeholder="Tell us about your virtualization needs..."
                     rows={4}
                   ></textarea>

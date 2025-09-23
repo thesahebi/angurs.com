@@ -226,7 +226,7 @@ Job Application Details:
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="Enter your first name"
                     />
                   </div>
@@ -238,7 +238,7 @@ Job Application Details:
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="Enter your last name"
                     />
                   </div>
@@ -252,7 +252,7 @@ Job Application Details:
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -263,7 +263,7 @@ Job Application Details:
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
@@ -281,7 +281,7 @@ Job Application Details:
                       name="linkedin"
                       value={formData.linkedin}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="https://linkedin.com/in/yourprofile"
                     />
                   </div>
@@ -292,7 +292,7 @@ Job Application Details:
                       name="portfolio"
                       value={formData.portfolio}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="https://yourportfolio.com"
                     />
                   </div>
@@ -403,7 +403,7 @@ Job Application Details:
                   value={formData.coverLetter}
                   onChange={handleInputChange}
                   rows={6}
-                  className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors resize-none"
+                  className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors resize-none text-base"
                   placeholder="Tell us why you're interested in this position and what makes you a great fit..."
                 />
               </div>
@@ -434,7 +434,7 @@ Job Application Details:
                       name="salary"
                       value={formData.salary}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="e.g., $80,000 - $100,000"
                     />
                   </div>
@@ -461,7 +461,7 @@ Job Application Details:
                       name="noticePeriod"
                       value={formData.noticePeriod}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors"
+                      className="w-full px-4 py-3 sm:py-4 bg-[#0A0A0A] border border-white/20 rounded-xl text-[#e7e7e7] placeholder-[#94A3B8] focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] transition-colors text-base"
                       placeholder="e.g., 2 weeks, 1 month"
                     />
                   </div>
