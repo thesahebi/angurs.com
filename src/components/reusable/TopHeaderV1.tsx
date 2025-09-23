@@ -364,12 +364,12 @@ const TopHeaderV1 = () => {
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <a
-              href="tel:+16309234653"
+              href="/contact"
               className="group relative inline-flex items-center justify-center px-3 py-2 text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
               style={{ backgroundColor: '#1e40af' }}
               role="button"
             >
-              <span className="relative z-10">Call</span>
+              <span className="relative z-10">Free Consulting</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -511,13 +511,13 @@ const TopHeaderV1 = () => {
             ))}
             <div className="p-4 mt-6">
               <a
-                href="tel:+16309234653"
+                href="/contact"
                 className="group relative block w-full text-center px-4 py-2 text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300"
                 style={{ backgroundColor: '#1e40af' }}
                 role="button"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <span className="relative z-10">Call</span>
+                <span className="relative z-10">Free Consulting</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
