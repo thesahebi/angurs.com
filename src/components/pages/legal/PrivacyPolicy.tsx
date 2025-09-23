@@ -237,8 +237,8 @@ const PrivacyPolicy: React.FC = () => {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                       href="mailto:support@Zivara.io"
-                      className="inline-flex items-center justify-center px-6 py-3 text-[#e7e7e7] border border-white/20 rounded-xl transition-colors hover:bg-[#e95420]"
-                      style={{ backgroundColor: '#ff6b35' }}
+                      className="inline-flex items-center justify-center px-6 py-3 text-white border border-white/20 rounded-xl transition-colors hover:bg-[#2563eb]"
+                      style={{ backgroundColor: '#3B82F6' }}
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
