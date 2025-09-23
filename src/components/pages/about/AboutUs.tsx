@@ -17,7 +17,7 @@ const AboutUs: React.FC = () => {
               <a
                 href="/contact"
                 className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 text-sm sm:text-base md:text-lg text-[#e7e7e7] font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl min-h-[48px]"
-                style={{ backgroundColor: '#3b82f6' }}
+                style={{ backgroundColor: '#1e40af' }}
               >
                 Work With Us
                 <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

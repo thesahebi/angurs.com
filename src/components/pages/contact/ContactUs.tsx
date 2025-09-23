@@ -151,7 +151,7 @@ const ContactUs: React.FC = () => {
                 <button
                   type="submit"
                   className="w-full py-3 sm:py-4 px-6 sm:px-8 text-sm sm:text-base font-semibold text-white rounded-xl sm:rounded-2xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-                  style={{ backgroundColor: '#3b82f6' }}
+                  style={{ backgroundColor: '#1e40af' }}
                   disabled={isSubmitting}
                   aria-describedby={submitStatus ? "submit-status" : undefined}
                 >

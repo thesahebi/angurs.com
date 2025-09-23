@@ -180,7 +180,7 @@ const PageHero: React.FC<PageHeroProps> = ({
               <a
                 href={primaryButtonLink}
                 className="inline-flex items-center justify-center w-full sm:w-1/2 px-8 py-4 text-base font-semibold text-white border border-white/20 rounded-xl transition-all duration-200 hover:bg-[#2563eb]"
-                style={{ backgroundColor: '#3B82F6' }}
+                style={{ backgroundColor: '#1e40af' }}
               >
                 {primaryButtonText}
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

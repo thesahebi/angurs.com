@@ -361,7 +361,7 @@ Job Application Details:
                           }, 100);
                         }}
                         className="mt-3 px-4 py-2 text-white text-sm rounded-lg border border-white/20 transition-colors hover:bg-[#2563eb]"
-                        style={{ backgroundColor: '#3B82F6' }}
+                        style={{ backgroundColor: '#1e40af' }}
                       >
                         Change File
                       </button>
@@ -386,7 +386,7 @@ Job Application Details:
                           }, 100);
                         }}
                         className="px-6 py-3 text-white font-medium rounded-lg border border-white/20 transition-colors hover:bg-[#2563eb]"
-                        style={{ backgroundColor: '#3B82F6' }}
+                        style={{ backgroundColor: '#1e40af' }}
                       >
                         Choose File
                       </button>
@@ -481,7 +481,7 @@ Job Application Details:
                   type="submit"
                   disabled={isSubmitting}
                   className="px-8 py-3 text-white font-semibold rounded-xl border border-white/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center hover:bg-[#2563eb] focus:outline-none focus:ring-2 focus:ring-white/80"
-                  style={{ backgroundColor: '#3B82F6' }}
+                  style={{ backgroundColor: '#1e40af' }}
                 >
                   {isSubmitting ? (
                     <>

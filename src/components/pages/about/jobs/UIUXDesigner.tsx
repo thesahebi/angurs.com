@@ -58,7 +58,7 @@ const UIUXDesigner: React.FC = () => {
                     <button 
                       onClick={() => setIsApplicationFormOpen(true)}
                       className="w-full lg:w-auto px-8 py-3 text-white font-semibold rounded-xl transition-colors duration-200 flex items-center justify-center hover:bg-[#2563eb]"
-                      style={{ backgroundColor: '#3B82F6' }}
+                      style={{ backgroundColor: '#1e40af' }}
                     >
                       Apply Now
                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
