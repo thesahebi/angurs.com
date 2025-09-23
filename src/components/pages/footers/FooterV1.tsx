@@ -112,42 +112,38 @@ const FooterV1 = () => {
               
               {/* Social Media */}
               <div className="flex items-center space-x-4">
-                <a
-                  href="https://www.instagram.com/Zivaraofficial/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/"
+                  onClick={scrollToTheTopOfPage}
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
-                  title="Follow us on Instagram"
+                  title="Visit our homepage"
                 >
                   <FaInstagram className="text-lg group-hover:text-white transition-colors" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/Zivara-web-solutions/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                </Link>
+                <Link
+                  to="/"
+                  onClick={scrollToTheTopOfPage}
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
-                  title="Connect on LinkedIn"
+                  title="Visit our homepage"
                 >
                   <FaLinkedin className="text-lg group-hover:text-white transition-colors" />
-                </a>
-                <a
-                  href="https://twitter.com/Zivara"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                </Link>
+                <Link
+                  to="/"
+                  onClick={scrollToTheTopOfPage}
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
-                  title="Follow us on Twitter"
+                  title="Visit our homepage"
                 >
                   <FaTwitter className="text-lg group-hover:text-white transition-colors" />
-                </a>
-                <a
-                  href="https://github.com/Zivara"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                </Link>
+                <Link
+                  to="/"
+                  onClick={scrollToTheTopOfPage}
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
-                  title="Check our GitHub"
+                  title="Visit our homepage"
                 >
                   <FaGithub className="text-lg group-hover:text-white transition-colors" />
-                </a>
+                </Link>
               </div>
             </div>
 
