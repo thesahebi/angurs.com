@@ -59,38 +59,30 @@ const FeatureV1 = () => {
             return (
               <div
                 key={service.id}
-                className={`group relative bg-surface/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 lg:p-10 border border-surface hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10 ${
+                className={`group relative bg-[#1A1A1A] rounded-3xl p-6 sm:p-8 border border-[#1A1A1A] hover:border-[#3b82f6]/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#3b82f6]/10 ${
                   isVisible ? 'animate-fade-in-up' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 200}ms` }}
                 onMouseEnter={() => setActiveCard(index)}
               >
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Icon */}
+                <div className="w-10 h-10 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-[#3b82f6] to-[#8B5CF6] rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                  {typeof IconComponent === 'function' ? <IconComponent className="w-10 h-10 text-[#e7e7e7]" /> : IconComponent}
+                </div>
                 
-                {/* Content */}
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="mb-8">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      {typeof IconComponent === 'function' ? <IconComponent className="w-10 h-10 text-[#e7e7e7]" /> : IconComponent}
-                    </div>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-2xl font-bold mb-6 text-primary group-hover:text-primary transition-colors duration-300" style={{ fontSize: '24px' }}>
+                {/* Header */}
+                <div className="text-center mb-4 sm:mb-6">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7] mb-2 group-hover:text-[#3b82f6] transition-colors duration-300" style={{ fontSize: '24px' }}>
                     {service.title}
                   </h3>
-
-                  {/* Description */}
-                  <p className="text-xl text-secondary leading-relaxed group-hover:text-primary transition-colors duration-300" style={{ fontSize: '20px' }}>
+                  <p className="text-xs sm:text-sm text-[#e7e7e7]/70 mb-3 sm:mb-4" style={{ fontSize: '20px' }}>
                     {service.content}
                   </p>
+                  <div className="w-12 h-1 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full"></div>
                 </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute top-4 right-4 w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-4 left-4 w-1 h-1 bg-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"></div>
+                
+                {/* Hover Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3b82f6]/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             );
           })}
