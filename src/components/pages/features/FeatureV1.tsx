@@ -66,8 +66,8 @@ const FeatureV1 = () => {
                 onMouseEnter={() => setActiveCard(index)}
               >
                 {/* Icon */}
-                <div className="w-10 h-10 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-[#3b82f6] to-[#8B5CF6] rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
-                  {typeof IconComponent === 'function' ? <IconComponent className="w-10 h-10 text-[#e7e7e7]" /> : IconComponent}
+                <div className="w-12 h-12 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-[#3b82f6] to-[#8B5CF6] rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                  {typeof IconComponent === 'function' ? <IconComponent className="w-8 h-8 text-[#e7e7e7]" /> : IconComponent}
                 </div>
                 
                 {/* Header */}
