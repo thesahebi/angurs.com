@@ -107,9 +107,30 @@ const TopHeaderV1 = () => {
               aria-label="Zivara - Go to homepage"
             >
               <div className="relative">
-                <span className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent transition-all duration-300 group-hover:from-[#60a5fa] group-hover:via-[#a78bfa] group-hover:to-[#60a5fa]">
-                  Z
-                </span>
+                <svg 
+                  width="40" 
+                  height="40" 
+                  viewBox="0 0 120 120" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="transition-all duration-300 group-hover:scale-110"
+                >
+                  {/* Flowing connection lines */}
+                  <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                  <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                  
+                  {/* Main Z shape - bold and geometric */}
+                  <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                  
+                  {/* Subtle flowing accent lines */}
+                  <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6"/>
+                  <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6"/>
+                  
+                  {/* Connection dots */}
+                  <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                  <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                  <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                  <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                </svg>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity duration-300"></div>
               </div>
             </Link>

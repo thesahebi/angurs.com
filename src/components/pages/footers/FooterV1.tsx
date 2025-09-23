@@ -74,9 +74,30 @@ const FooterV1 = () => {
               <Link to="/" onClick={scrollToTheTopOfPage} className="inline-block group">
                 <div className="flex items-center mb-6">
                   <div className="flex items-center">
-                    <span className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent transition-all duration-300 group-hover:from-[#60a5fa] group-hover:via-[#a78bfa] group-hover:to-[#60a5fa]">
-                      Z
-                    </span>
+                    <svg 
+                      width="60" 
+                      height="60" 
+                      viewBox="0 0 120 120" 
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="transition-all duration-300 group-hover:scale-110"
+                    >
+                      {/* Flowing connection lines */}
+                      <path d="M20 20 Q60 40 100 20" stroke="#3B82F6" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                      <path d="M20 100 Q60 80 100 100" stroke="#3B82F6" strokeWidth="3" fill="none" strokeLinecap="round"/>
+                      
+                      {/* Main Z shape - bold and geometric */}
+                      <path d="M25 25 L95 25 L25 95 L95 95" stroke="#3B82F6" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                      
+                      {/* Subtle flowing accent lines */}
+                      <path d="M30 30 Q60 50 90 30" stroke="#3B82F6" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6"/>
+                      <path d="M30 90 Q60 70 90 90" stroke="#3B82F6" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6"/>
+                      
+                      {/* Connection dots */}
+                      <circle cx="25" cy="25" r="3" fill="#3B82F6"/>
+                      <circle cx="95" cy="25" r="3" fill="#3B82F6"/>
+                      <circle cx="25" cy="95" r="3" fill="#3B82F6"/>
+                      <circle cx="95" cy="95" r="3" fill="#3B82F6"/>
+                    </svg>
                     <div className="ml-4 flex flex-col">
                       <span className="text-xl sm:text-2xl font-bold text-[#e7e7e7] group-hover:text-white transition-colors duration-300 leading-tight">Zivara</span>
                       <span className="text-lg sm:text-xl font-semibold text-[#e7e7e7] group-hover:text-white transition-colors duration-300 leading-tight">Solutions</span>
