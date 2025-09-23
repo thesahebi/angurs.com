@@ -290,36 +290,64 @@ const AboutUs: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
-            <div className="text-center">
-              <div className="w-[40px] h-[40px] bg-[#3B82F6] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7]">10+</span>
+            {/* Years Experience */}
+            <div className="group relative">
+              <div className="relative bg-[#1A1A1A] rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#3B82F6]/10 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10 text-center">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">10+</span>
+                  </div>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7] mb-2 sm:mb-3 group-hover:text-[#3B82F6] transition-colors duration-300">Years Experience</h3>
+                  <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">Proven track record in enterprise infrastructure</p>
+                </div>
+                <div className="absolute top-4 right-4 w-2 h-2 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#e7e7e7] mb-2">Years Experience</h3>
-              <p className="text-xs sm:text-sm md:text-base text-[#e7e7e7]">Proven track record in enterprise infrastructure</p>
             </div>
 
-            <div className="text-center">
-              <div className="w-[40px] h-[40px] bg-[#3B82F6] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7]">500+</span>
+            {/* Projects Delivered */}
+            <div className="group relative">
+              <div className="relative bg-[#1A1A1A] rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#3B82F6]/10 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10 text-center">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">500+</span>
+                  </div>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7] mb-2 sm:mb-3 group-hover:text-[#3B82F6] transition-colors duration-300">Projects Delivered</h3>
+                  <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">Successful implementations across industries</p>
+                </div>
+                <div className="absolute top-4 right-4 w-2 h-2 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#e7e7e7] mb-2">Projects Delivered</h3>
-              <p className="text-xs sm:text-sm md:text-base text-[#e7e7e7]">Successful implementations across industries</p>
             </div>
 
-            <div className="text-center">
-              <div className="w-[40px] h-[40px] bg-[#3B82F6] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7]">24/7</span>
+            {/* 24/7 Support */}
+            <div className="group relative">
+              <div className="relative bg-[#1A1A1A] rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#3B82F6]/10 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10 text-center">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">24/7</span>
+                  </div>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7] mb-2 sm:mb-3 group-hover:text-[#3B82F6] transition-colors duration-300">Support</h3>
+                  <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">Round-the-clock assistance and monitoring</p>
+                </div>
+                <div className="absolute top-4 right-4 w-2 h-2 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#e7e7e7] mb-2">Support</h3>
-              <p className="text-xs sm:text-sm md:text-base text-[#e7e7e7]">Round-the-clock assistance and monitoring</p>
             </div>
 
-            <div className="text-center">
-              <div className="w-[40px] h-[40px] bg-[#3B82F6] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7]">100%</span>
+            {/* Client Satisfaction */}
+            <div className="group relative">
+              <div className="relative bg-[#1A1A1A] rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#3B82F6]/10 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10 text-center">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">100%</span>
+                  </div>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7] mb-2 sm:mb-3 group-hover:text-[#3B82F6] transition-colors duration-300">Client Satisfaction</h3>
+                  <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed">Dedicated to exceeding expectations</p>
+                </div>
+                <div className="absolute top-4 right-4 w-2 h-2 bg-[#3B82F6] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#e7e7e7] mb-2">Client Satisfaction</h3>
-              <p className="text-xs sm:text-sm md:text-base text-[#e7e7e7]">Dedicated to exceeding expectations</p>
             </div>
           </div>
         </div>
