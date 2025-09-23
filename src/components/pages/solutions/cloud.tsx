@@ -27,17 +27,17 @@ const Cloud: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#e7e7e7] mb-3 sm:mb-4 leading-tight">
-              Trust our expert team to bring comfort, guidance, and confidence to your
+              Trust Our Experts for Comfortable
               <span className="relative block mt-1 sm:mt-2">
                 <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                  cloud transformation
+                  Cloud Transformation
                 </span>
                 <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] rounded-full opacity-60"></div>
               </span>
             </h1>
             
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-              Scale infinitely, secure everything, and innovate faster with our comprehensive cloud migration and management services.
+              Our team delivers guidance and confidence for seamless cloud shifts. Scale infinitely, secure all, and innovate faster with expert migration and management.
             </p>
             
             {/* Trust Indicators */}

@@ -40,21 +40,6 @@ const DesignDevelopment = () => {
               Rest easy knowing your vision is in the hands of passionate creators who care about every detail.
             </p>
             
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse"></div>
-                <span>Always Creative</span>
-              </div>
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#8B5CF6] rounded-full animate-pulse delay-300"></div>
-                <span>Loving Design</span>
-              </div>
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse delay-700"></div>
-                <span>Gentle Innovation</span>
-              </div>
-            </div>
             
             <div className="flex justify-center mt-8 sm:mt-10">
               <a
