@@ -364,7 +364,7 @@ const TopHeaderV1 = () => {
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <a
-              href="/contact"
+              href="#/contact"
               className="group relative inline-flex items-center justify-center px-3 py-2 text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
               style={{ backgroundColor: '#1e40af' }}
               role="button"
@@ -511,7 +511,7 @@ const TopHeaderV1 = () => {
             ))}
             <div className="p-4 mt-6">
               <a
-                href="/contact"
+                href="#/contact"
                 className="group relative block w-full text-center px-4 py-2 text-base font-semibold text-white border border-white/20 rounded-full transition-all duration-300"
                 style={{ backgroundColor: '#1e40af' }}
                 role="button"

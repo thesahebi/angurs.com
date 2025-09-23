@@ -1,5 +1,5 @@
 // feature-data.ts
-import { FaUser, FaCode, FaCloud, FaChartLine, FaReact, FaNodeJs, FaAngular, FaVuejs, FaPython, FaPhp, FaCss3, FaHtml5, FaSwift, FaJava, FaFigma } from "react-icons/fa6";
+import { FaUser, FaCode, FaCloud, FaChartLine, FaReact, FaNodeJs, FaAngular, FaVuejs, FaPython, FaPhp, FaCss3, FaHtml5, FaSwift, FaJava, FaFigma, FaServer, FaUsers, FaLaptopCode, FaDatabase } from "react-icons/fa6";
 import { FeatureModelProps, ProgramModelProps } from "./feature-model";
 import { FaJsSquare, FaPencilRuler } from "react-icons/fa";
 import { SiTypescript, SiCsharp, SiGo, SiRuby } from "react-icons/si";
@@ -7,7 +7,7 @@ import { SiTypescript, SiCsharp, SiGo, SiRuby } from "react-icons/si";
 export const featureData: FeatureModelProps[] = [
     {
         id: 1,
-        icon: FaCloud,
+        icon: FaServer,
         title: "Cloud as a Service (CSP)",
         content: "Scale smarter with secure, reliable, and cost-efficient cloud solutions",
         iconColor: "#ea580c",
@@ -15,7 +15,7 @@ export const featureData: FeatureModelProps[] = [
     },
     {
         id: 2,
-        icon: FaUser,
+        icon: FaUsers,
         title: "Staff as a Service (StaaS)",
         content: "Extend your team with our experts, from strategy to delivery",
         iconColor: "#2563eb",
@@ -23,7 +23,7 @@ export const featureData: FeatureModelProps[] = [
     },
     {
         id: 3,
-        icon: FaCode,
+        icon: FaLaptopCode,
         title: "Code as a Service (CaaS)",
         content: "Transform your ideas into powerful apps and websites, built to scale",
         iconColor: "#ea580c",
@@ -31,7 +31,7 @@ export const featureData: FeatureModelProps[] = [
     },
     {
         id: 4,
-        icon: FaCode,
+        icon: FaDatabase,
         title: "Software as a Service (SaaS)",
         content: "Seamless hosting and storage with secure, reliable cloud infrastructure",
         iconColor: "#2563eb",
