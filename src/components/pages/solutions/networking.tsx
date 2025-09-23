@@ -113,12 +113,19 @@ const Networking: React.FC = () => {
             ].map((service, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative p-4 sm:p-6 md:p-8 bg-[#1A1A1A] rounded-2xl sm:rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#3B82F6]/5">
-                  <div className={`w-[40px] h-[40px] bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <span className="text-xl sm:text-2xl">{service.emoji}</span>
+                <div className="relative p-6 sm:p-8 bg-[#1A1A1A] rounded-3xl border border-[#1A1A1A] hover:border-[#3b82f6]/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#3b82f6]/10">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#3b82f6] to-[#8B5CF6] rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">{service.emoji}</span>
                   </div>
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 text-[#e7e7e7] text-center">{service.title}</h3>
-                  <p className="text-xs sm:text-sm md:text-base text-[#e7e7e7]/80 text-center mb-3 sm:mb-4 leading-relaxed">{service.description}</p>
+                  <div className="text-center mb-4 sm:mb-6">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7] mb-2 group-hover:text-[#3b82f6] transition-colors duration-300" style={{ fontSize: '24px' }}>
+                      {service.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#e7e7e7]/70 mb-3 sm:mb-4" style={{ fontSize: '20px' }}>
+                      {service.description}
+                    </p>
+                    <div className="w-12 h-1 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full"></div>
+                  </div>
                   <ul className="space-y-1 sm:space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-xs sm:text-sm text-[#e7e7e7]/90">
@@ -127,6 +134,8 @@ const Networking: React.FC = () => {
                       </li>
                     ))}
                   </ul>
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#3b82f6]/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
             </div>
             ))}
@@ -251,10 +260,21 @@ const Networking: React.FC = () => {
             ].map((tech, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative p-4 sm:p-6 md:p-8 bg-[#1A1A1A] rounded-2xl sm:rounded-3xl border border-[#1E293B] hover:border-[#3B82F6]/30 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-[#3B82F6]/5 text-center">
-                  <div className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">{tech.icon}</div>
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 text-[#e7e7e7]">{tech.name}</h3>
-                  <p className="text-[#e7e7e7]">{tech.desc}</p>
+                <div className="relative p-6 sm:p-8 bg-[#1A1A1A] rounded-3xl border border-[#1A1A1A] hover:border-[#3b82f6]/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#3b82f6]/10 text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#3b82f6] to-[#8B5CF6] rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl">{tech.icon}</span>
+                  </div>
+                  <div className="text-center mb-4 sm:mb-6">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#e7e7e7] mb-2 group-hover:text-[#3b82f6] transition-colors duration-300" style={{ fontSize: '24px' }}>
+                      {tech.name}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#e7e7e7]/70 mb-3 sm:mb-4" style={{ fontSize: '20px' }}>
+                      {tech.desc}
+                    </p>
+                    <div className="w-12 h-1 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full"></div>
+                  </div>
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#3b82f6]/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
             ))}
