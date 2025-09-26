@@ -27,22 +27,22 @@ const Backup: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#e7e7e7] mb-3 sm:mb-4 leading-tight">
-              Your Data's Gentle
+               Why Backup 
               <span className="relative block mt-1 sm:mt-2">
                 <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                  Guardian Angel
+                  & Recovery Matters
+
                 </span>
                 <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] rounded-full opacity-60"></div>
               </span>
             </h1>
             
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-              Like a caring friend who never forgets, we watch over your precious data with gentle vigilance. 
-              Rest easy knowing your digital memories and business treasures are always safe and sound.
+              Data loss can happen anytime, hardware failure, accidental deletion, ransomware, or natural disasters. With a reliable backup and recovery plan, you ensure business continuity and protect what matters most.
             </p>
             
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
+            {/* <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse"></div>
                 <span>Always Protected</span>
@@ -55,7 +55,7 @@ const Backup: React.FC = () => {
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse delay-700"></div>
                 <span>Peaceful Sleep</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -67,18 +67,17 @@ const Backup: React.FC = () => {
           <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
             <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-4 sm:mb-6 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3B82F6] rounded-full mr-2 animate-pulse"></span>
-              ✨ Gentle Care & Protection
+              ✨ Service
             </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#e7e7e7] mb-3 sm:mb-4">
-              Why Your Data Deserves
+              Our Backup 
               <span className="block bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                Loving Protection
+                Solutions
               </span>
             </h2>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-2xl mx-auto leading-relaxed px-2 sm:px-0">
-              Like a warm embrace for your digital world, our backup solutions provide the comfort and security your precious data deserves. 
-              Sleep peacefully knowing we're watching over everything that matters to you.
-            </p>
+              We provide flexible solutions tailored to your needs            </p>
+            
           </div>
         
           {/* Benefits Grid */}
@@ -86,26 +85,26 @@ const Backup: React.FC = () => {
             {[
               {
                 emoji: "🛡️",
-                title: "Gentle Protection",
-                description: "Like a warm blanket for your data",
+                title: "Cloud Backups",
+                description: "Keep your data safe offsite with secure cloud storage",
                 color: "from-[#3B82F6] to-[#2563EB]"
               },
               {
                 emoji: "⚡",
-                title: "Soft Recovery",
-                description: "Gentle restoration when you need it",
+                title: "On-Premises Backups",
+                description: "Protect your critical systems locally with fast recovery options",
                 color: "from-[#10B981] to-[#059669]"
               },
               {
                 emoji: "🔒",
-                title: "Peaceful Compliance",
-                description: "Rest easy with gentle security",
+                title: "Hybrid Backups",
+                description: "Combine the best of cloud and on-premises solutions for flexibility",
                 color: "from-[#F59E0B] to-[#D97706]"
               },
               {
                 emoji: "💙",
-                title: "Loving Care",
-                description: "Your data feels safe and cherished",
+                title: "24/7 Support",
+                description: "Our expert team is here to help you anytime you need",
                 color: "from-[#8B5CF6] to-[#7C3AED]"
               }
             ].map((item, index) => (
@@ -131,14 +130,15 @@ const Backup: React.FC = () => {
           <div className="mt-8 sm:mt-12 md:mt-16">
             <div className="text-center mb-8 sm:mb-12">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#e7e7e7] mb-3 sm:mb-4">
-                Our Gentle
+                Fast, Reliable 
+
                 <span className="block bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                  Care Solutions
+                  Recovery
                 </span>
               </h3>
               <p className="text-xs sm:text-sm md:text-base text-[#e7e7e7]/80 max-w-xl mx-auto leading-relaxed">
-                Choose the perfect embrace for your data - whether it prefers the comfort of home or the freedom of the cloud.
-              </p>
+              When disaster strikes, downtime is costly. Our recovery services get your systems back online quickly, minimizing disruption and keeping your business running smoothly.
+                </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
@@ -209,10 +209,10 @@ const Backup: React.FC = () => {
       </section>
 
       {/* Final Peace Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-24 relative bg-[#0A0A0A]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-12 sm:py-16 md:py-20 lg:py-24 relative bg-[#0A0A0A]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8"> */}
           {/* Section Header */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          {/* <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-4 sm:mb-6 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3B82F6] rounded-full mr-2 animate-pulse"></span>
               💙 Your Peaceful Journey
@@ -226,9 +226,9 @@ const Backup: React.FC = () => {
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-2xl mx-auto leading-relaxed px-2 sm:px-0">
               Like a gentle lullaby for your digital world, our backup solutions sing you to sleep with the sweet melody of security and peace.
             </p>
-          </div>
+          </div> */}
         
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {[
               { title: "Peaceful Continuity", desc: "Gentle protection through life's storms", icon: "🕊️" },
               { title: "Soft Recovery", desc: "Like a warm hug when you need it most", icon: "🤗" },
@@ -246,14 +246,14 @@ const Backup: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Gentle Divider */}
-          <div className="flex justify-center mt-8 sm:mt-12 md:mt-16">
+          {/* <div className="flex justify-center mt-8 sm:mt-12 md:mt-16">
             <div className="w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-[#3B82F6] to-transparent rounded-full opacity-60"></div>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div>
+      </section> */}
 
     </main>
   );
