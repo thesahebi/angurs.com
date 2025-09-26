@@ -26,27 +26,26 @@ const DesignDevelopment = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#e7e7e7] mb-3 sm:mb-4 leading-tight">
-              Your Vision's Gentle
+              We Design & Build 
               <span className="relative block mt-1 sm:mt-2">
                 <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                  Creative Partner
+                  Websites and Web Apps
                 </span>
                 <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] rounded-full opacity-60"></div>
               </span>
             </h1>
             
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-              Like a caring friend who brings your dreams to life, we craft beautiful digital experiences with gentle precision. 
-              Rest easy knowing your vision is in the hands of passionate creators who care about every detail.
+              From simple websites to powerful web applications, we turn your ideas into digital solutions that work. Whatever you need online, we’re here to create it for you.
             </p>
             
             
             <div className="flex justify-center mt-8 sm:mt-10">
               <a
-                href="/contact"
+                href="/#/contact"
                 className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-[#e7e7e7] bg-[#3B82F6] border border-[#3B82F6] rounded-xl transition-all duration-300 hover:bg-[#2563eb] hover:border-[#2563eb] hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                Book an Appointment
+                Free Demo and Consultation
                 <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -63,16 +62,17 @@ const DesignDevelopment = () => {
             <div className="text-center mb-12 sm:mb-16 md:mb-20">
               <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-[#3B82F6] bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full mb-6 sm:mb-8 backdrop-blur-sm">
                 <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3B82F6] rounded-full mr-2 animate-pulse"></span>
-                🎨 Our Caring Services
+                Services
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#e7e7e7] mb-4 sm:mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                  Team as a Service
+                  Your Development Team, When You Need It
                 </span>
               </h2>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                Like a caring family that grows with you, we provide expert teams of back-end, front-end, and DevOps developers as a service to nurture your projects. Our specialists focus on crafting robust infrastructures, intuitive interfaces, and promoting efficient workflows, operating as an extension of your business. With us, you're not just outsourcing; you're gaining loving partners dedicated to achieving your vision. Together, we'll transform your ideas into powerful digital solutions with gentle care.
-              </p>
+              We provide skilled back-end, front-end developers to support and grow your projects. Our team builds strong infrastructures, 
+              creates user-friendly interfaces, and streamlines workflows, working as an extension of your business. With us, 
+              you’re not just outsourcing; you’re gaining partners dedicated to turning your ideas into reliable digital solutions.              </p>
             </div>
 
             {/* Services Grid */}
@@ -185,8 +185,7 @@ const DesignDevelopment = () => {
                 </span>
               </h2>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                Like a gentle journey through your digital dreams, we follow a proven methodology that brings your vision to life with loving care and attention to every detail.
-              </p>
+          We follow a clear and proven approach that turns your ideas into reality. Every step is handled with care and attention to detail, making sure your vision comes to life the right way              </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
