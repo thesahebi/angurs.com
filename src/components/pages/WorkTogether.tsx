@@ -113,7 +113,7 @@ function WorkTogether() {
               </svg>
             </a>
             <a
-              href="/contact"
+              href="/#/contact"
               className="inline-flex items-center justify-center w-full sm:w-1/2 px-6 py-3 text-base font-semibold text-[#e7e7e7] border-2 border-[#1E293B] hover:border-[#3B82F6] rounded-xl transition-all duration-200 hover:text-[#3B82F6]"
             >
               Contact Us
