@@ -28,7 +28,7 @@ const Virtualization: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#e7e7e7] mb-3 sm:mb-4 leading-tight">
-              Transform Your IT Infrastructure with Expert
+              Complete 
               <span className="relative block mt-1 sm:mt-2">
                 <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
                   Virtualization Solutions
@@ -38,11 +38,10 @@ const Virtualization: React.FC = () => {
             </h1>
             
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-              Unlock efficiency, scalability, and security by building robust VMs, vSphere clusters, and vCenter environments tailored to your business needs. Reduce costs by up to 50% while accelerating your digital transformation.
-            </p>
-            
+               We design and build full virtualization environments, on-premises or in the cloud. From virtual machines to vSphere clusters and vCenter, our solutions deliver efficiency, scalability, and security tailored to your business.</p>
+
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
+            {/* <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse"></div>
                 <span>Always Efficient</span>
@@ -55,7 +54,7 @@ const Virtualization: React.FC = () => {
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse delay-700"></div>
                 <span>Gentle Innovation</span>
               </div>
-            </div>
+            </div> */}
             
             <div className="flex justify-center mt-8 sm:mt-10">
               <a
