@@ -132,7 +132,7 @@ const FooterV1 = () => {
                   to="https://x.com/ZivaraSolutions"
                   onClick={scrollToTheTopOfPage}
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
-                  title="Visit our homepage"
+                  title="Visit our X page"
                 >
                   <FaTwitter className="text-lg group-hover:text-white transition-colors" />
                 </Link>
