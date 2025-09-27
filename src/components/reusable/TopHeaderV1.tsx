@@ -58,16 +58,16 @@ const TopHeaderV1 = () => {
     {
       label: "Solutions",
       children: [
-        { path: "/#/solutions/design-development", label: "Design & Development" },
-        { path: "/#/solutions/cloud", label: "Cloud" },
-        { path: "/#/solutions/virtualization", label: "Virtualization" },
-        { path: "/#/solutions/backup", label: "Backup" },
-        { path: "/#/solutions/networking", label: "Networking" },
+        { path: "/solutions/design-development", label: "Design & Development" },
+        { path: "/solutions/cloud", label: "Cloud" },
+        { path: "/solutions/virtualization", label: "Virtualization" },
+        { path: "/solutions/backup", label: "Backup" },
+        { path: "/solutions/networking", label: "Networking" },
         {
           label: "Automation",
           children: [
-            { path: "/#/automation/devops", label: "DevOps" },
-            { path: "/#/automation/it", label: "IT" },
+            { path: "/automation/devops", label: "DevOps" },
+            { path: "/automation/it", label: "IT" },
           ]
         },
       ]
@@ -75,18 +75,18 @@ const TopHeaderV1 = () => {
     {
       label: "Resources",
       children: [
-        { path: "/#/resources/blog", label: "Blog" },
-        { path: "/#/resources/case-studies", label: "Case Studies" },
+        { path: "/resources/blog", label: "Blog" },
+        { path: "/resources/case-studies", label: "Case Studies" },
       ]
     },
     {
       label: "About Us",
       children: [
-        { path: "/#/about", label: "About" },
-        { path: "/#/about/careers", label: "Careers" },
+        { path: "/about", label: "About" },
+        { path: "/about/careers", label: "Careers" },
       ]
     },
-    { path: "/#/contact", label: "Contact Us" }
+    { path: "/contact", label: "Contact Us" }
   ];
 
 
@@ -363,8 +363,8 @@ const TopHeaderV1 = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <a
-              href="/#/contact"
+            <Link
+              to="/contact"
               className="group relative inline-flex items-center justify-center px-3 py-2 text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
               style={{ backgroundColor: '#1e40af' }}
               role="button"
@@ -374,7 +374,7 @@ const TopHeaderV1 = () => {
               <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -510,8 +510,8 @@ const TopHeaderV1 = () => {
               </div>
             ))}
             <div className="p-4 mt-6">
-              <a
-                href="/#/contact"
+              <Link
+                to="/contact"
                 className="group relative block w-full text-center px-4 py-2 text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-300"
                 style={{ backgroundColor: '#1e40af' }}
                 role="button"
@@ -522,7 +522,7 @@ const TopHeaderV1 = () => {
                 <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </nav>
         </div>
