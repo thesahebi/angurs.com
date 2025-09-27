@@ -15,27 +15,27 @@ function HeroV2() {
   // Solutions data
   const solutions = [
     {
-      name: "Cloud Garden",
-      description: "Peaceful cloud infrastructure",
-      href: "/#/solutions/cloud",
+      name: "Cloud Solutions",
+      description: "Scalable cloud infrastructure",
+      href: "/solutions/cloud",
       icon: "☁️"
     },
     {
-      name: "Data Sanctuary",
-      description: "Gentle data protection",
-      href: "/#/solutions/backup",
+      name: "Data Protection",
+      description: "Comprehensive backup & recovery",
+      href: "/solutions/backup",
       icon: "💾"
     },
     {
-      name: "Virtual Harmony",
-      description: "Loving resource management",
-      href: "/#/solutions/virtualization",
+      name: "Virtualization",
+      description: "Efficient resource management",
+      href: "/solutions/virtualization",
       icon: "🖥️"
     },
     {
-      name: "Network Peace",
-      description: "Gentle network infrastructure",
-      href: "/#/solutions/networking",
+      name: "Network Infrastructure",
+      description: "Reliable network solutions",
+      href: "/solutions/networking",
       icon: "🌐"
     }
   ];
@@ -220,7 +220,7 @@ function HeroV2() {
                       href="#features"
                       className="text-xs font-medium text-[#3B82F6] hover:text-[#e7e7e7] transition-colors duration-200"
                     >
-                      Explore All Gardens →
+                      Explore All Solutions →
                     </a>
                   </div>
                 </div>
