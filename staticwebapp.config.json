@@ -12,10 +12,18 @@
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,jpeg,gif,svg}", "/css/*", "/js/*", "/api/*", "*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot}"]
+    "exclude": [
+      "/images/*.{png,jpg,jpeg,gif,svg,webp}",
+      "/assets/*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot,webp}",
+      "/css/*",
+      "/js/*",
+      "/api/*",
+      "*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot,webp,json}"
+    ]
   },
   "mimeTypes": {
-    ".json": "application/json"
+    ".json": "application/json",
+    ".webp": "image/webp"
   },
   "globalHeaders": {
     "Cache-Control": "no-cache"
