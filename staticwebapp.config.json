@@ -12,9 +12,12 @@
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,jpeg,gif,svg}", "/css/*", "/js/*", "/api/*"]
+    "exclude": ["/images/*.{png,jpg,jpeg,gif,svg}", "/css/*", "/js/*", "/api/*", "*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot}"]
   },
   "mimeTypes": {
     ".json": "application/json"
+  },
+  "globalHeaders": {
+    "Cache-Control": "no-cache"
   }
 }
