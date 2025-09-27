@@ -29,10 +29,10 @@ const ResourcesBlog: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#e7e7e7] mb-3 sm:mb-4 md:mb-6 leading-tight">
-              Your Journey to
+              
               <span className="relative block mt-2">
                 <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                  Digital Wisdom
+                  Blog
                 </span>
                 <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] rounded-full opacity-60"></div>
               </span>
@@ -45,7 +45,7 @@ const ResourcesBlog: React.FC = () => {
             
             
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
+            {/* <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-[#3b82f6] rounded-full animate-pulse"></div>
                 <span>Expert Insights</span>
@@ -58,7 +58,7 @@ const ResourcesBlog: React.FC = () => {
                 <div className="w-2 h-2 bg-[#3b82f6] rounded-full animate-pulse delay-700"></div>
                 <span>Trusted Knowledge</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

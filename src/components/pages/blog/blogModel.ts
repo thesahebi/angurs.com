@@ -38,11 +38,6 @@ export const articles: Article[] = [
           text: "Graphic design is an ever-evolving field where success is redefined by the creative ingenuity of individuals. The ability to adapt to trends while maintaining a unique style is key to standing out in this industry.",
         },
         {
-          type: "image",
-          url: "https://images.unsplash.com/photo-1560807707-8cc77767d783",
-          caption: "A creative workspace filled with inspiration.",
-        },
-        {
           type: "paragraph",
           text: "For aspiring visual artists, breaking into the graphic design world often means understanding the delicate balance between creative freedom and client demands. This article explores strategies for success.",
         },
@@ -58,11 +53,6 @@ export const articles: Article[] = [
         {
           type: "paragraph",
           text: "Networking is another vital aspect. Attending industry events, joining online communities, and building meaningful relationships can open doors to new opportunities and collaborations.",
-        },
-        {
-          type: "image",
-          url: "https://plus.unsplash.com/premium_photo-1661284836545-3a6ec65fcffc",
-          caption: "A designer presenting their work to a client.",
         },
         {
           type: "paragraph",
@@ -137,87 +127,8 @@ export const articles: Article[] = [
       ],
     },
   },
-  {
-    id: 4,
-    category: "Automation",
-    date: "April 09, 2022",
-    title: "Lessons and insights from 8 years of Pixelgrade",
-    image: "https://plus.unsplash.com/premium_photo-1661274202754-abde708db7d0",
-    details: {
-      content: [
-        {
-          type: "paragraph",
-          text: "Pixelgrade’s journey over the last 8 years has been filled with challenges, growth, and invaluable lessons. This retrospective shares key insights.",
-        },
-        {
-          type: "list",
-          items: [
-            "How to build a user-first approach in design.",
-            "Navigating challenges in a competitive industry.",
-            "Scaling a business while staying true to core values.",
-          ],
-        },
-        {
-          type: "paragraph",
-          text: "Discover how Pixelgrade transformed its vision into a thriving business while staying innovative.",
-        },
-      ],
-    },
-  },
-  {
-    id: 5,
-    category: "Networking",
-    date: "April 09, 2022",
-    title: "Travelling as a way of self-discovery and progress",
-    image: "https://plus.unsplash.com/premium_photo-1661284836545-3a6ec65fcffc",
-    details: {
-      content: [
-        {
-          type: "paragraph",
-          text: "Traveling isn't just about exploring new places—it's a journey inward, helping you discover more about yourself.",
-        },
-        {
-          type: "list",
-          items: [
-            "How travel broadens your perspective.",
-            "The link between travel and personal growth.",
-            "Tips for meaningful and reflective travel experiences.",
-          ],
-        },
-        {
-          type: "paragraph",
-          text: "This article explores the transformative power of travel and how it can lead to personal and professional growth.",
-        },
-      ],
-    },
-  },
-  {
-    id: 6,
-    category: "Security",
-    date: "April 09, 2022",
-    title: "The unseen of spending three years at Pixelgrade",
-    image: "https://plus.unsplash.com/premium_photo-1661277712617-1e46eac647e8",
-    details: {
-      content: [
-        {
-          type: "paragraph",
-          text: "Spending three years at Pixelgrade has brought both challenges and achievements. This article provides a behind-the-scenes look at the journey.",
-        },
-        {
-          type: "list",
-          items: [
-            "The importance of building a strong team culture.",
-            "Innovative projects that shaped the company’s identity.",
-            "Lessons learned from client interactions and feedback.",
-          ],
-        },
-        {
-          type: "paragraph",
-          text: "Gain a deeper understanding of the experiences that have defined Pixelgrade’s mission and vision.",
-        },
-      ],
-    },
-  }
+
+  
  
   
 ];
