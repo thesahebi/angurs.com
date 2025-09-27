@@ -1,1 +1,9 @@
+# Handle client-side routing
 /*    /index.html   200
+
+# Specific routes for better compatibility
+/contact    /index.html   200
+/about    /index.html   200
+/solutions/*    /index.html   200
+/automation/*    /index.html   200
+/resources/*    /index.html   200
