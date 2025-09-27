@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 
 function HeroV2() {
@@ -189,12 +190,13 @@ function HeroV2() {
                 >
                   <div className="p-1 sm:p-2">
                     {solutions.map((solution) => (
-                      <a
+                      <Link
                         key={solution.name}
-                        href={solution.href}
+                        to={solution.href}
                         role="menuitem"
                         aria-label={`${solution.name} - ${solution.description}`}
                         className="flex items-center p-2 sm:p-3 rounded-lg sm:rounded-xl hover:bg-[#1E293B]/50 transition-all duration-200 group/item"
+                        onClick={() => setIsDropdownOpen(false)}
                       >
                         <div className="text-lg sm:text-xl mr-2 sm:mr-3 group-hover/item:scale-110 transition-transform duration-200">
                           {solution.icon}
@@ -210,7 +212,7 @@ function HeroV2() {
                         <svg className="w-3 h-3 sm:w-4 sm:h-4 text-[#e7e7e7] group-hover/item:text-[#3B82F6] group-hover/item:translate-x-1 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   
