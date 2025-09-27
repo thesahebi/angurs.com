@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const DesignDevelopment = () => {
 
   return (
@@ -41,15 +43,15 @@ const DesignDevelopment = () => {
             
             
             <div className="flex justify-center mt-8 sm:mt-10">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-[#e7e7e7] bg-[#3B82F6] border border-[#3B82F6] rounded-xl transition-all duration-300 hover:bg-[#2563eb] hover:border-[#2563eb] hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Free Demo and Consultation
                 <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

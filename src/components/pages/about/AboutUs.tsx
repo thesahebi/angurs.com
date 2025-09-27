@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs: React.FC = () => {
   return (
@@ -14,8 +15,8 @@ const AboutUs: React.FC = () => {
               We are a team of passionate technology experts dedicated to transforming businesses through innovative infrastructure solutions and digital excellence.
             </p>
             <div className="flex justify-center mt-6 sm:mt-8">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 text-sm sm:text-base md:text-lg text-[#e7e7e7] font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl min-h-[48px]"
                 style={{ backgroundColor: '#1e40af' }}
               >
@@ -23,7 +24,7 @@ const AboutUs: React.FC = () => {
                 <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

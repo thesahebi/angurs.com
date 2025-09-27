@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PageHero from "../../reusable/PageHero";
 
 const Automation: React.FC = () => {
@@ -117,15 +118,15 @@ const Automation: React.FC = () => {
                   Blue-Green Deployments
                 </li>
               </ul>
-              <a
-                href="/automation/devops"
+              <Link
+                to="/automation/devops"
                 className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mt-4"
               >
                 Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Infrastructure Automation */}
@@ -160,15 +161,15 @@ const Automation: React.FC = () => {
                   Configuration Management
                 </li>
               </ul>
-              <a
-                href="/automation/it"
+              <Link
+                to="/automation/it"
                 className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold mt-4"
               >
                 Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Monitoring & Observability */}
@@ -203,15 +204,15 @@ const Automation: React.FC = () => {
                   Log Aggregation
                 </li>
               </ul>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold mt-4"
               >
                 Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Security Automation */}
@@ -246,15 +247,15 @@ const Automation: React.FC = () => {
                   Incident Response
                 </li>
               </ul>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center text-red-600 hover:text-red-700 font-semibold mt-4"
               >
                 Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Data & Analytics Automation */}
@@ -289,15 +290,15 @@ const Automation: React.FC = () => {
                   Data Quality Checks
                 </li>
               </ul>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold mt-4"
               >
                 Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Business Process Automation */}
@@ -332,15 +333,15 @@ const Automation: React.FC = () => {
                   Approval Workflows
                 </li>
               </ul>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold mt-4"
               >
                 Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -426,12 +427,12 @@ const Automation: React.FC = () => {
             Let's discuss how automation can transform your business processes, 
             reduce costs, and accelerate your digital transformation journey.
           </p>
-          <a
-            href="/contact"
+            <Link
+              to="/contact"
             className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-green-600 bg-[#1E293B] rounded-full hover:bg-gray-50 transition-colors shadow-lg"
           >
             Start Automating Today
-          </a>
+          </Link>
         </div>
       </section>
     </div>
