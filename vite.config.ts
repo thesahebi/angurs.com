@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
  
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/',
   build: {
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
@@ -19,5 +19,8 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  server: {
+    historyApiFallback: true,
   },
 });

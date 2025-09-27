@@ -5,31 +5,6 @@
       "allowedRoles": ["anonymous"]
     },
     {
-      "route": "/contact",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/about",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/solutions/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/automation/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/resources/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
       "route": "/*",
       "serve": "/index.html",
       "statusCode": 200
@@ -52,8 +27,5 @@
   },
   "globalHeaders": {
     "Cache-Control": "no-cache"
-  },
-  "platform": {
-    "apiRuntime": "node:18"
   }
 }
