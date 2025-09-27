@@ -27,21 +27,21 @@ const ITAutomation: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[#e7e7e7] mb-3 sm:mb-4 leading-tight">
-              Trust our expert team to bring comfort, guidance, and confidence to your
+              
               <span className="relative block mt-1 sm:mt-2">
                 <span className="bg-gradient-to-r from-[#3b82f6] via-[#8B5CF6] to-[#3b82f6] bg-clip-text text-transparent">
-                  IT automation
+                  Effortless IT Automation
                 </span>
                 <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-[#3b82f6] to-[#8B5CF6] rounded-full opacity-60"></div>
               </span>
             </h1>
             
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#e7e7e7] max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-              Streamline operations, reduce costs, and improve reliability with our comprehensive IT automation solutions.
+              Trust our experts to simplify and optimize your IT operations. We help you streamline workflows, cut costs, and boost reliability with automation solutions designed to fit your business.
             </p>
             
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
+            {/* <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#e7e7e7]/70 px-2 sm:px-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse"></div>
                 <span>Always Efficient</span>
@@ -54,7 +54,7 @@ const ITAutomation: React.FC = () => {
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#3b82f6] rounded-full animate-pulse delay-700"></div>
                 <span>Gentle Innovation</span>
               </div>
-            </div>
+            </div> */}
             
             <div className="flex justify-center mt-8 sm:mt-10">
               <a

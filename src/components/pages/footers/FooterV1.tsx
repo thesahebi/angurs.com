@@ -200,7 +200,7 @@ const FooterV1 = () => {
                 <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#3b82f6]"></div>
               </h3>
               <ul className="space-y-4">
-                <li>
+                {/* <li>
                   <Link
                     to="/automation"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
@@ -208,7 +208,7 @@ const FooterV1 = () => {
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     Automation
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     to="/automation/devops"
