@@ -156,7 +156,7 @@ const FooterV1 = () => {
               <ul className="space-y-4">
                 <li>
                   <Link
-                    to="/Solutions/Cloud"
+                    to="/solutions/cloud"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -165,7 +165,7 @@ const FooterV1 = () => {
                 </li>
                 <li>
                   <Link
-                    to="/Solutions/Virtualization"
+                    to="/solutions/virtualization"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -174,7 +174,7 @@ const FooterV1 = () => {
                 </li>
                 <li>
                   <Link
-                    to="/Solutions/Backup"
+                    to="/solutions/backup"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -183,7 +183,7 @@ const FooterV1 = () => {
                 </li>
                 <li>
                   <Link
-                    to="/Solutions/Networking"
+                    to="/solutions/networking"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -202,7 +202,7 @@ const FooterV1 = () => {
               <ul className="space-y-4">
                 <li>
                   <Link
-                    to="/Automation"
+                    to="/automation"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -211,7 +211,7 @@ const FooterV1 = () => {
                 </li>
                 <li>
                   <Link
-                    to="/Automation/DevOps"
+                    to="/automation/devops"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -220,7 +220,7 @@ const FooterV1 = () => {
                 </li>
                 <li>
                   <Link
-                    to="/Automation/IT"
+                    to="/automation/it"
                     className="group flex items-center text-[#e7e7e7] hover:text-[#e7e7e7] transition-colors duration-200"
                   >
                     <FaArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />

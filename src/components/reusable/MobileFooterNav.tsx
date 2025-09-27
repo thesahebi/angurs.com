@@ -31,7 +31,7 @@ const MobileFooterNav = () => {
     {
       label: "Solutions",
       icon: <GoProjectRoadmap className="w-6 h-6" />,
-      path: "/Solutions"
+      path: "/solutions/design-development"
     },
     {
       label: "About",

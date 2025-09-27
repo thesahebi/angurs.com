@@ -58,7 +58,7 @@ const CookieConsent: React.FC = () => {
             By clicking "Accept all cookies", you agree we can store cookies on your
             device and disclose information in accordance with our{" "}
             <a 
-              href="/#/cookie-policy" 
+              href="/cookies" 
               className="text-[#e95420] hover:text-[#ff6b35] underline transition-colors duration-200"
             >
               Cookie Policy

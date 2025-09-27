@@ -58,7 +58,7 @@ const Virtualization: React.FC = () => {
             
             <div className="flex justify-center mt-8 sm:mt-10">
               <a
-                href="/#/contact"
+                href="/contact"
                 className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-[#e7e7e7] bg-[#3B82F6] border border-[#3B82F6] rounded-xl transition-all duration-300 hover:bg-[#2563eb] hover:border-[#2563eb] hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Get Your Free Consultation

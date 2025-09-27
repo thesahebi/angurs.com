@@ -363,8 +363,8 @@ const TopHeaderV1 = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <a
-              href="#/contact"
+            <Link
+              to="/contact"
               className="group relative inline-flex items-center justify-center px-3 py-2 text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
               style={{ backgroundColor: '#1e40af' }}
               role="button"
@@ -374,7 +374,7 @@ const TopHeaderV1 = () => {
               <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -510,8 +510,8 @@ const TopHeaderV1 = () => {
               </div>
             ))}
             <div className="p-4 mt-6">
-              <a
-                href="#/contact"
+              <Link
+                to="/contact"
                 className="group relative block w-full text-center px-4 py-2 text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-300"
                 style={{ backgroundColor: '#1e40af' }}
                 role="button"
@@ -522,7 +522,7 @@ const TopHeaderV1 = () => {
                 <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </nav>
         </div>
