@@ -100,7 +100,7 @@ const ContactUs: React.FC = () => {
 
                   <div>
                     <label htmlFor="businessEmail" className="block mb-2 text-sm sm:text-base font-semibold text-[#e7e7e7]">
-                      Business Email <span className="text-red-500">*</span>
+                      Email <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="email"
@@ -109,7 +109,7 @@ const ContactUs: React.FC = () => {
                       value={formData.businessEmail}
                       onChange={handleChange}
                       className="w-full p-4 sm:p-5 text-base bg-[#0A0A0A] border-2 border-gray-600 rounded-xl sm:rounded-2xl focus:border-[#3b82f6] focus:ring-4 focus:ring-[#3b82f6]/20 transition-all duration-300 placeholder-gray-400 text-[#e7e7e7] min-h-[48px]"
-                      placeholder="john@company.com"
+                      placeholder="your.email@example.com"
                       required
                       aria-required="true"
                     />
