@@ -113,18 +113,18 @@ const FooterV1 = () => {
               {/* Social Media */}
               <div className="flex items-center space-x-4">
                 <Link
-                  to="/"
-                  onClick={scrollToTheTopOfPage}
-                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
-                  title="Visit our homepage"
-                >
-                  <FaInstagram className="text-lg group-hover:text-white transition-colors" />
-                </Link>
-                <Link
                   to="https://www.instagram.com/zivarasolutions/"
                   onClick={scrollToTheTopOfPage}
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Visit our Instagram"
+                >
+                  <FaInstagram className="text-lg group-hover:text-white transition-colors" />
+                </Link>
+                <Link
+                  to="/"
+                  onClick={scrollToTheTopOfPage}
+                  className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
+                  title="Visit our Homepage"
                 >
                   <FaLinkedin className="text-lg group-hover:text-white transition-colors" />
                 </Link>
