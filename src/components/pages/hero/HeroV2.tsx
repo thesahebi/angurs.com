@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 
@@ -10,36 +10,7 @@ function HeroV2() {
   const buttonRef = useRef<HTMLAnchorElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   
-  // State for dropdown
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Solutions data
-  const solutions = [
-    {
-      name: "Cloud Solutions",
-      description: "Scalable cloud infrastructure",
-      href: "/solutions/cloud",
-      icon: "☁️"
-    },
-    {
-      name: "Data Protection",
-      description: "Comprehensive backup & recovery",
-      href: "/solutions/backup",
-      icon: "💾"
-    },
-    {
-      name: "Virtualization",
-      description: "Efficient resource management",
-      href: "/solutions/virtualization",
-      icon: "🖥️"
-    },
-    {
-      name: "Network Infrastructure",
-      description: "Reliable network solutions",
-      href: "/solutions/networking",
-      icon: "🌐"
-    }
-  ];
 
   useEffect(() => {
     // Create a timeline for smooth sequential animations
@@ -152,81 +123,15 @@ function HeroV2() {
             </p>
 
             <div className="mt-4 sm:mt-6 md:mt-8 lg:mt-10 flex justify-center">
-              <div className="relative group">
-                <button
-                  onMouseEnter={() => setIsDropdownOpen(true)}
-                  onMouseLeave={() => setIsDropdownOpen(false)}
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      setIsDropdownOpen(!isDropdownOpen);
-                    }
-                    if (e.key === 'Escape') {
-                      setIsDropdownOpen(false);
-                    }
-                  }}
-                  aria-expanded={isDropdownOpen}
-                  aria-haspopup="true"
-                  aria-label="Solutions dropdown menu"
-                  className="btn-primary inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-base font-semibold text-white bg-[#1e40af] border border-[#1e40af] rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#1d4ed8] hover:border-[#1d4ed8] focus:outline-none focus:ring-2 focus:ring-[#1e40af]/50"
-                >
-                  Our Solution
-                  <svg className={`w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                
-                {/* Dropdown Menu - Responsive */}
-                <div 
-                  className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-64 sm:w-72 md:w-80 bg-[#1A1A1A] rounded-xl sm:rounded-2xl shadow-2xl border border-[#1E293B] overflow-hidden transition-all duration-300 z-50 ${
-                    isDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-                  }`}
-                  onMouseEnter={() => setIsDropdownOpen(true)}
-                  onMouseLeave={() => setIsDropdownOpen(false)}
-                  role="menu"
-                  aria-label="Solutions menu"
-                  aria-hidden={!isDropdownOpen}
-                >
-                  <div className="p-1 sm:p-2">
-                    {solutions.map((solution) => (
-                      <Link
-                        key={solution.name}
-                        to={solution.href}
-                        role="menuitem"
-                        aria-label={`${solution.name} - ${solution.description}`}
-                        className="flex items-center p-2 sm:p-3 rounded-lg sm:rounded-xl hover:bg-[#1E293B]/50 transition-all duration-200 group/item"
-                        onClick={() => setIsDropdownOpen(false)}
-                      >
-                        <div className="text-lg sm:text-xl mr-2 sm:mr-3 group-hover/item:scale-110 transition-transform duration-200">
-                          {solution.icon}
-                        </div>
-                        <div className="flex-1">
-                          <div className="font-semibold text-xs sm:text-sm text-[#e7e7e7] group-hover/item:text-[#3B82F6] transition-colors duration-200">
-                            {solution.name}
-                          </div>
-                          <div className="text-xs text-[#e7e7e7]/80">
-                            {solution.description}
-                          </div>
-                        </div>
-                        <svg className="w-3 h-3 sm:w-4 sm:h-4 text-[#e7e7e7] group-hover/item:text-[#3B82F6] group-hover/item:translate-x-1 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    ))}
-                  </div>
-                  
-                  {/* Footer */}
-                  <div className="px-2 sm:px-3 py-1.5 sm:py-2 bg-[#1A1A1A] border-t border-[#1E293B]">
-                    <a
-                      href="#features"
-                      className="text-xs font-medium text-[#3B82F6] hover:text-[#e7e7e7] transition-colors duration-200"
-                    >
-                      Explore All Solutions →
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <Link
+                to="/solutions/design-development"
+                className="btn-primary inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 text-base font-semibold text-white bg-[#1e40af] border border-[#1e40af] rounded-lg sm:rounded-xl transition-all duration-200 hover:bg-[#1d4ed8] hover:border-[#1d4ed8] focus:outline-none focus:ring-2 focus:ring-[#1e40af]/50"
+              >
+                Our Solution
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
             </div>
 
           </div>
