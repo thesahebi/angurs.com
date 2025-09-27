@@ -9,7 +9,7 @@ const OurCompany: React.FC = () => {
         subtitle="Passionate technology experts"
         description="We are a team of passionate technology experts dedicated to transforming businesses through innovative infrastructure solutions and digital excellence."
         primaryButtonText="Work With Us"
-        primaryButtonLink="/contact"
+        primaryButtonLink="/#/contact"
         secondaryButtonText="Our Story"
         secondaryButtonLink="#story"
         accentColor="var(--color-primary)"
