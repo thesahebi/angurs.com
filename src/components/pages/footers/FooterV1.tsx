@@ -107,7 +107,7 @@ const FooterV1 = () => {
               </Link>
               
               <p className="text-[#e7e7e7] text-base leading-relaxed mb-6 max-w-sm">
-                Transforming businesses through innovative cloud solutions, automation, and cutting-edge technology infrastructure.
+                Expert Web Design and Development, Cloud solutions, Backup & Recovery, Networking, Microservices to help your business grow with confidence.
               </p>
               
               {/* Social Media */}
@@ -129,7 +129,7 @@ const FooterV1 = () => {
                   <FaLinkedin className="text-lg group-hover:text-white transition-colors" />
                 </Link>
                 <Link
-                  to="/"
+                  to="https://x.com/ZivaraSolutions"
                   onClick={scrollToTheTopOfPage}
                   className="group flex items-center justify-center w-12 h-12 bg-[#1E293B]/50 rounded-xl hover:bg-[#3b82f6] transition-all duration-300 hover:scale-110"
                   title="Visit our homepage"
