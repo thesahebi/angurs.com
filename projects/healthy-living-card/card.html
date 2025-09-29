@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Card - Stunning Health Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%),
+                linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .card-container {
+            perspective: 1200px;
+            position: relative;
+        }
+
+        .vitality-card {
+            width: 380px;
+            height: 520px;
+            background: 
+                linear-gradient(135deg, 
+                    rgba(16, 185, 129, 0.9) 0%, 
+                    rgba(5, 150, 105, 0.95) 25%,
+                    rgba(34, 197, 94, 0.9) 50%,
+                    rgba(59, 130, 246, 0.85) 75%,
+                    rgba(147, 51, 234, 0.9) 100%);
+            border-radius: 32px;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.25),
+                0 15px 35px rgba(16, 185, 129, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .vitality-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                linear-gradient(45deg, 
+                    rgba(255, 255, 255, 0.1) 0%, 
+                    transparent 25%, 
+                    transparent 75%, 
+                    rgba(255, 255, 255, 0.1) 100%);
+            transform: rotate(45deg);
+            transition: all 0.8s ease;
+            opacity: 0;
+        }
+
+        .vitality-card:hover::before {
+            opacity: 1;
+            animation: shimmer 2s ease-in-out infinite;
+        }
+
+        .vitality-card:hover {
+            transform: rotateY(-8deg) rotateX(8deg) scale(1.05);
+            box-shadow: 
+                0 35px 70px rgba(0, 0, 0, 0.4),
+                0 25px 50px rgba(16, 185, 129, 0.3),
+                0 15px 30px rgba(147, 51, 234, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 35px;
+            transition: all 0.8s ease;
+        }
+
+        .vitality-card:hover .card-content {
+            transform: translateY(-15px);
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .vitality-icon {
+            width: 100px;
+            height: 100px;
+            background: 
+                linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.25) 0%, 
+                    rgba(255, 255, 255, 0.1) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 48px;
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vitality-icon::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .vitality-card:hover .vitality-icon::before {
+            opacity: 1;
+            animation: iconShine 1.5s ease-in-out;
+        }
+
+        .vitality-card:hover .vitality-icon {
+            transform: scale(1.15) rotate(15deg);
+            background: 
+                linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.4) 0%, 
+                    rgba(255, 255, 255, 0.2) 100%);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.2),
+                0 0 30px rgba(255, 255, 255, 0.3);
+        }
+
+        .card-title {
+            color: white;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            transition: all 0.8s ease;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .vitality-card:hover .card-title {
+            transform: translateY(-8px) scale(1.05);
+            text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-subtitle {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.8s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .vitality-card:hover .card-subtitle {
+            transform: translateY(-8px);
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .vitality-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .stat-item {
+            background: 
+                linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.15) 0%, 
+                    rgba(255, 255, 255, 0.05) 100%);
+            padding: 25px 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: all 0.6s ease;
+        }
+
+        .vitality-card:hover .stat-item::before {
+            left: 100%;
+        }
+
+        .vitality-card:hover .stat-item {
+            transform: translateY(-12px) scale(1.05);
+            background: 
+                linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.25) 0%, 
+                    rgba(255, 255, 255, 0.1) 100%);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .stat-number {
+            color: white;
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            transition: all 0.8s ease;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .vitality-card:hover .stat-number {
+            transform: scale(1.15);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.8s ease;
+        }
+
+        .vitality-card:hover .stat-label {
+            color: rgba(255, 255, 255, 1);
+            transform: translateY(-2px);
+        }
+
+        .card-description {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            transition: all 0.8s ease;
+            font-weight: 400;
+        }
+
+        .vitality-card:hover .card-description {
+            transform: translateY(-8px);
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .cta-button {
+            background: 
+                linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.2) 0%, 
+                    rgba(255, 255, 255, 0.1) 100%);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 18px 35px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+            backdrop-filter: blur(20px);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: all 0.6s ease;
+        }
+
+        .vitality-card:hover .cta-button::before {
+            left: 100%;
+        }
+
+        .vitality-card:hover .cta-button {
+            background: 
+                linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.3) 0%, 
+                    rgba(255, 255, 255, 0.2) 100%);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 
+                0 15px 35px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            overflow: hidden;
+            border-radius: 32px;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: 
+                linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.15) 0%, 
+                    rgba(255, 255, 255, 0.05) 100%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+            backdrop-filter: blur(10px);
+        }
+
+        .floating-element:nth-child(1) {
+            width: 25px;
+            height: 25px;
+            top: 15%;
+            left: 8%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 18px;
+            height: 18px;
+            top: 65%;
+            right: 12%;
+            animation-delay: 2.5s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 30px;
+            height: 30px;
+            bottom: 15%;
+            left: 15%;
+            animation-delay: 5s;
+        }
+
+        .floating-element:nth-child(4) {
+            width: 20px;
+            height: 20px;
+            top: 35%;
+            right: 8%;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+                opacity: 0.4;
+            }
+            50% {
+                transform: translateY(-25px) rotate(180deg) scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) rotate(45deg);
+            }
+        }
+
+        @keyframes iconShine {
+            0% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) rotate(45deg);
+            }
+        }
+
+        .vitality-card:hover .floating-element {
+            animation-duration: 4s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .vitality-card {
+                width: 320px;
+                height: 450px;
+            }
+            
+            .card-content {
+                padding: 30px 25px;
+            }
+            
+            .card-title {
+                font-size: 26px;
+            }
+            
+            .vitality-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="vitality-card">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+            
+            <div class="card-content">
+                <div class="card-header">
+                    <div class="vitality-icon">💚</div>
+                    <h2 class="card-title">Vitality</h2>
+                    <p class="card-subtitle">Unlock Your Peak Performance</p>
+                </div>
+                
+                <div class="card-body">
+                    <div class="vitality-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12K+</div>
+                            <div class="stat-label">Daily Steps</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Energy Level</div>
+                        </div>
+                    </div>
+                    
+                    <p class="card-description">
+                        Elevate your wellness journey with cutting-edge health tracking. 
+                        Achieve peak performance through personalized insights and smart recommendations.
+                    </p>
+                    
+                    <button class="cta-button">Boost Vitality</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced interactive JavaScript for premium feel
+        const card = document.querySelector('.vitality-card');
+        const icon = document.querySelector('.vitality-icon');
+        const title = document.querySelector('.card-title');
+        const button = document.querySelector('.cta-button');
+        
+        // Mouse tracking for dynamic 3D effect
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+        });
+        
+        // Enhanced click effect with ripple
+        card.addEventListener('click', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Create ripple effect
+            const ripple = document.createElement('div');
+            ripple.style.position = 'absolute';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.style.width = '0px';
+            ripple.style.height = '0px';
+            ripple.style.background = 'rgba(255, 255, 255, 0.3)';
+            ripple.style.borderRadius = '50%';
+            ripple.style.transform = 'translate(-50%, -50%)';
+            ripple.style.animation = 'ripple 0.6s ease-out';
+            ripple.style.pointerEvents = 'none';
+            
+            card.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+        
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    width: 200px;
+                    height: 200px;
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Icon pulse animation on hover
+        card.addEventListener('mouseenter', () => {
+            icon.style.animation = 'pulse 2s ease-in-out infinite';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            icon.style.animation = 'none';
+        });
+        
+        // Add pulse animation
+        const pulseStyle = document.createElement('style');
+        pulseStyle.textContent = `
+            @keyframes pulse {
+                0%, 100% { transform: scale(1.15) rotate(15deg); }
+                50% { transform: scale(1.25) rotate(20deg); }
+            }
+        `;
+        document.head.appendChild(pulseStyle);
+    </script>
+</body>
+</html>

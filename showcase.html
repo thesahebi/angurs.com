@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zivara Solutions - Web Design & Development Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffffff, #a855f7, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #7c3aed, #06b6d4);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.4);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .feature-desc {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fbbf24;
+            border-radius: 50%;
+            animation: sparkle 2s infinite;
+        }
+        .sparkle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .sparkle:nth-child(2) { top: 60%; right: 15%; animation-delay: 0.5s; }
+        .sparkle:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 1s; }
+        .sparkle:nth-child(4) { top: 40%; right: 30%; animation-delay: 1.5s; }
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    
+    <div class="container">
+        <div class="logo floating">Zivara Solutions</div>
+        <div class="subtitle">Web Design & Development</div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <div class="feature-title">UI/UX Design</div>
+                <div class="feature-desc">Beautiful, intuitive interfaces</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-title">Fast Development</div>
+                <div class="feature-desc">Modern, responsive applications</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-title">Secure & Reliable</div>
+                <div class="feature-desc">Enterprise-grade solutions</div>
+            </div>
+        </div>
+        
+        <a href="/showcase" class="cta-button">View Full Showcase →</a>
+    </div>
+</body>
+</html>

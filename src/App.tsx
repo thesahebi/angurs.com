@@ -31,6 +31,7 @@ import PrivacyPolicy from "./components/pages/legal/PrivacyPolicy";
 import TermsOfService from "./components/pages/legal/TermsOfService";
 import CookiePolicy from "./components/pages/legal/CookiePolicy";
 import ScrollToTopAl from "./lib/ScrollToTop";
+import ShowcasePage from "./components/ShowcasePage";
 
 function App() {
   useEffect(() => {
@@ -69,6 +70,7 @@ function App() {
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/cookies" element={<CookiePolicy />} />
           </Route>
+          <Route path="/showcase" element={<ShowcasePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>

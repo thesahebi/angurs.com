@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneGear Pro - Premium Phone Accessories</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #ffffff 0%, #fef3c7 50%, #ffffff 100%);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .hero-container {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .floating-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            opacity: 0.1;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .floating-element:nth-child(4) {
+            width: 80px;
+            height: 80px;
+            top: 30%;
+            right: 30%;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #f59e0b;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .main-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #1f2937 0%, #f59e0b 50%, #1f2937 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% { filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.3)); }
+            100% { filter: drop-shadow(0 0 40px rgba(245, 158, 11, 0.6)); }
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: #6b7280;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            color: white;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #1f2937;
+            border: 2px solid #f59e0b;
+        }
+
+        .btn-secondary:hover {
+            background: #f59e0b;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .phone-showcase {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .phone-mockup {
+            width: 300px;
+            height: 600px;
+            background: linear-gradient(145deg, #1f2937, #374151);
+            border-radius: 40px;
+            position: relative;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            border: 8px solid #f59e0b;
+        }
+
+        .phone-screen {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            background: linear-gradient(135deg, #ffffff, #fef3c7);
+            border-radius: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .accessory-icons {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .accessory-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .accessory-icon:nth-child(2) { animation-delay: 0.2s; }
+        .accessory-icon:nth-child(3) { animation-delay: 0.4s; }
+        .accessory-icon:nth-child(4) { animation-delay: 0.6s; }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .phone-text {
+            text-align: center;
+            color: #1f2937;
+        }
+
+        .phone-text h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .phone-text p {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .floating-accessories {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-accessory {
+            position: absolute;
+            font-size: 2rem;
+            animation: floatAccessory 6s ease-in-out infinite;
+        }
+
+        .floating-accessory:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-accessory:nth-child(2) {
+            top: 30%;
+            right: 15%;
+            animation-delay: 1s;
+        }
+
+        .floating-accessory:nth-child(3) {
+            bottom: 30%;
+            left: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-accessory:nth-child(4) {
+            bottom: 20%;
+            right: 20%;
+            animation-delay: 3s;
+        }
+
+        @keyframes floatAccessory {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+            50% { transform: translateY(-20px) rotate(10deg); opacity: 1; }
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #f59e0b;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fbbf24;
+            border-radius: 50%;
+            animation: sparkle 2s infinite;
+        }
+
+        .sparkle:nth-child(1) { top: 15%; left: 20%; animation-delay: 0s; }
+        .sparkle:nth-child(2) { top: 25%; right: 25%; animation-delay: 0.5s; }
+        .sparkle:nth-child(3) { bottom: 25%; left: 30%; animation-delay: 1s; }
+        .sparkle:nth-child(4) { bottom: 15%; right: 15%; animation-delay: 1.5s; }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .phone-mockup {
+                width: 250px;
+                height: 500px;
+            }
+            
+            .accessory-icons {
+                gap: 1rem;
+            }
+            
+            .accessory-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <!-- Floating Background Elements -->
+        <div class="floating-bg">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+
+        <!-- Sparkles -->
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+
+        <div class="hero-content">
+            <div class="logo">PhoneGear Pro</div>
+            
+            <h1 class="main-title">Premium Phone Accessories</h1>
+            
+            <p class="subtitle">
+                Elevate your mobile experience with our premium collection of phone cases, 
+                chargers, and accessories designed for the modern lifestyle.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Shop Now</a>
+                <a href="#" class="btn btn-secondary">View Collection</a>
+            </div>
+
+            <div class="phone-showcase">
+                <div class="floating-accessories">
+                    <div class="floating-accessory">📱</div>
+                    <div class="floating-accessory">🔋</div>
+                    <div class="floating-accessory">🎧</div>
+                    <div class="floating-accessory">📷</div>
+                </div>
+
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="accessory-icons">
+                            <div class="accessory-icon">📱</div>
+                            <div class="accessory-icon">🔋</div>
+                            <div class="accessory-icon">🎧</div>
+                            <div class="accessory-icon">📷</div>
+                        </div>
+                        <div class="phone-text">
+                            <h3>Premium Quality</h3>
+                            <p>Protect & enhance your device</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Products</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Main title animation
+        gsap.from(".main-title", {
+            duration: 1.5,
+            y: 100,
+            opacity: 0,
+            ease: "power3.out"
+        });
+
+        // Subtitle animation
+        gsap.from(".subtitle", {
+            duration: 1.5,
+            y: 50,
+            opacity: 0,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+
+        // CTA buttons animation
+        gsap.from(".cta-buttons", {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            delay: 0.6,
+            ease: "power3.out"
+        });
+
+        // Phone mockup animation
+        gsap.from(".phone-mockup", {
+            duration: 2,
+            scale: 0.8,
+            opacity: 0,
+            delay: 0.9,
+            ease: "back.out(1.7)"
+        });
+
+        // Stats animation
+        gsap.from(".stat-item", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            delay: 1.2,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        // Floating accessories animation
+        gsap.from(".floating-accessory", {
+            duration: 1.5,
+            scale: 0,
+            opacity: 0,
+            delay: 1.5,
+            stagger: 0.1,
+            ease: "back.out(1.7)"
+        });
+
+        // Continuous floating animation for accessories
+        gsap.to(".floating-accessory", {
+            y: -20,
+            rotation: 10,
+            duration: 3,
+            ease: "power2.inOut",
+            yoyo: true,
+            repeat: -1,
+            stagger: 0.5
+        });
+
+        // Button hover effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                gsap.to(btn, { scale: 1.05, duration: 0.3, ease: "power2.out" });
+            });
+            
+            btn.addEventListener('mouseleave', () => {
+                gsap.to(btn, { scale: 1, duration: 0.3, ease: "power2.out" });
+            });
+        });
+
+        // Phone mockup hover effect
+        document.querySelector('.phone-mockup').addEventListener('mouseenter', () => {
+            gsap.to('.phone-mockup', { 
+                scale: 1.05, 
+                rotationY: 5,
+                duration: 0.5, 
+                ease: "power2.out" 
+            });
+        });
+
+        document.querySelector('.phone-mockup').addEventListener('mouseleave', () => {
+            gsap.to('.phone-mockup', { 
+                scale: 1, 
+                rotationY: 0,
+                duration: 0.5, 
+                ease: "power2.out" 
+            });
+        });
+    </script>
+</body>
+</html>
