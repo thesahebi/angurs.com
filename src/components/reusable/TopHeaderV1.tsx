@@ -94,6 +94,25 @@ const TopHeaderV1 = () => {
     return location.pathname === path;
   };
 
+  // Google Calendar integration
+  const handleBookAppointment = () => {
+    // Create a calendar event URL
+    const eventDetails = {
+      action: 'TEMPLATE',
+      text: 'Zivara Consultation - Free Assessment',
+      dates: '', // Will be filled by user
+      details: 'Free 30-minute consultation with Zivara experts to discuss your business needs and explore customized solutions.',
+      location: 'Online Meeting',
+      trp: 'false'
+    };
+    
+    // For now, we'll use a simple calendar link that opens Google Calendar
+    const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventDetails.text)}&details=${encodeURIComponent(eventDetails.details)}&location=${encodeURIComponent(eventDetails.location)}`;
+    
+    // Open Google Calendar in a new tab
+    window.open(calendarUrl, '_blank');
+  };
+
   return (
     <header className="fixed mx-auto w-[100%] bg-[#0A0A0A]/95 backdrop-blur-md z-20 border-b border-[#1E293B]/50 shadow-lg">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
@@ -363,18 +382,18 @@ const TopHeaderV1 = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Link
-              to="/contact"
+            <button
+              onClick={handleBookAppointment}
               className="group relative inline-flex items-center justify-center px-3 py-2 text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/80"
               style={{ backgroundColor: '#1e40af' }}
               role="button"
             >
-              <span className="relative z-10">Free Consulting</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg className="w-4 h-4 mr-2 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-            </Link>
+              <span className="relative z-10">Book Appointment</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </button>
           </div>
         </div>
 
@@ -510,19 +529,21 @@ const TopHeaderV1 = () => {
               </div>
             ))}
             <div className="p-4 mt-6">
-              <Link
-                to="/contact"
+              <button
+                onClick={() => {
+                  handleBookAppointment();
+                  setIsMenuOpen(false);
+                }}
                 className="group relative block w-full text-center px-4 py-2 text-base font-semibold text-white border border-white/20 rounded-lg sm:rounded-xl transition-all duration-300"
                 style={{ backgroundColor: '#1e40af' }}
                 role="button"
-                onClick={() => setIsMenuOpen(false)}
               >
-                <span className="relative z-10">Free Consulting</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <svg className="w-3 h-3 ml-1 relative z-10 transition-transform duration-300 group-hover:translate-x-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <svg className="w-4 h-4 mr-2 relative z-10 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-              </Link>
+                <span className="relative z-10">Book Appointment</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </button>
             </div>
           </nav>
         </div>

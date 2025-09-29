@@ -23,6 +23,29 @@ const ContactUs: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [submitStatus, setSubmitStatus] = useState<string>('');
 
+  // Google Calendar integration
+  const handleBookAppointment = () => {
+    // Google Calendar API credentials
+    const clientId = '78799433919-7tpk6ltafl3l3i0t0rt009efasdeuav0.apps.googleusercontent.com';
+    const clientSecret = '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';
+    
+    // Create a calendar event URL
+    const eventDetails = {
+      action: 'TEMPLATE',
+      text: 'Zivara Consultation - Free Assessment',
+      dates: '', // Will be filled by user
+      details: 'Free 30-minute consultation with Zivara experts to discuss your business needs and explore customized solutions.',
+      location: 'Online Meeting',
+      trp: 'false'
+    };
+    
+    // For now, we'll use a simple calendar link that opens Google Calendar
+    const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventDetails.text)}&details=${encodeURIComponent(eventDetails.details)}&location=${encodeURIComponent(eventDetails.location)}`;
+    
+    // Open Google Calendar in a new tab
+    window.open(calendarUrl, '_blank');
+  };
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ): void => {
@@ -67,7 +90,7 @@ const ContactUs: React.FC = () => {
       {/* Hero Section - Contact Form */}
       <section className="pt-32 sm:pt-40 md:pt-48 lg:pt-[210px] pb-16 sm:pb-20 md:pb-24 lg:pb-32 bg-[#0A0A0A]">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8 sm:mb-10 md:mb-12">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold lg:font-semibold mb-4 sm:mb-6 lg:leading-[90px]" style={{ color: '#3b82f6', wordWrap: 'break-word' }}>
                 Your ideas matter
@@ -77,8 +100,46 @@ const ContactUs: React.FC = () => {
               </h2>
             </div>
 
-            {/* Contact Form Card */}
-            <div className="bg-[#1A1A1A] rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12 shadow-2xl">
+            {/* Two Column Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              {/* Left Side - Text and Book Appointment Button */}
+              <div className="flex flex-col justify-center space-y-6">
+                <div className="space-y-4">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-[#e7e7e7]">
+                    Ready to Transform Your Business?
+                  </h3>
+                  <p className="text-lg text-[#e7e7e7] opacity-80">
+                    Schedule a free consultation with our experts. We'll discuss your needs, explore solutions, and create a customized plan for your success.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-[#3b82f6] rounded-full"></div>
+                      <span className="text-[#e7e7e7]">Free 30-minute consultation</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-[#3b82f6] rounded-full"></div>
+                      <span className="text-[#e7e7e7]">Custom solution recommendations</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-[#3b82f6] rounded-full"></div>
+                      <span className="text-[#e7e7e7]">No obligation, just expert advice</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <button
+                  onClick={handleBookAppointment}
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[#3b82f6] rounded-xl hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Book Appointment
+                </button>
+              </div>
+
+              {/* Right Side - Contact Form */}
+              <div className="bg-[#1A1A1A] rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12 shadow-2xl">
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6" role="form" aria-label="Contact form">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                   <div>
@@ -206,6 +267,7 @@ const ContactUs: React.FC = () => {
                     SSL Secured | 24/7 Response Team
                   </span>
                 </p>
+              </div>
               </div>
             </div>
           </div>

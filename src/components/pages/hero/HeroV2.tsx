@@ -9,6 +9,7 @@ function HeroV2() {
   const taglineRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLAnchorElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
+
   
 
 
