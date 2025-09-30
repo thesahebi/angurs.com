@@ -42,7 +42,7 @@ const FeatureV1 = () => {
               </span>
               <br />
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                with Smart Technology
+                with Zivara Solutions
               </span>
             </h2>
             <p className="text-xl text-secondary max-w-4xl mx-auto leading-relaxed mb-16 md:mb-20">
