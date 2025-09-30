@@ -88,21 +88,36 @@
     }
     </script>
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK43YCW342"></script>
+    <!-- Google tag (gtag.js) - Deferred loading -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-CK43YCW342');
+      // Preload Google Analytics
+      const gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-CK43YCW342';
+      document.head.appendChild(gtagScript);
+      
+      // Initialize GA after page load
+      window.addEventListener('load', function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CK43YCW342');
+      });
     </script>
   </head>
   <body >
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Tidio Chatbot -->
-    <script src="//code.tidio.co/9eywxfazfo5jgldmq8xugq8or2ft2v4i.js" async></script>
+    <!-- Tidio Chatbot - Deferred loading -->
+    <script>
+      // Load Tidio chatbot after page load
+      window.addEventListener('load', function() {
+        const tidioScript = document.createElement('script');
+        tidioScript.async = true;
+        tidioScript.src = '//code.tidio.co/9eywxfazfo5jgldmq8xugq8or2ft2v4i.js';
+        document.head.appendChild(tidioScript);
+      });
+    </script>
   </body>
 </html>

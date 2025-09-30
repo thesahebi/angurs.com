@@ -10,10 +10,16 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom', 'gsap'],
+          vendor: ['react', 'react-dom'],
+          gsap: ['gsap'],
+          router: ['react-router-dom'],
         }
       }
-    }
+    },
+    // Enable CSS code splitting
+    cssCodeSplit: true,
+    // Optimize assets
+    assetsInlineLimit: 4096,
   },
   resolve: {
     alias: {
@@ -22,5 +28,9 @@ export default defineConfig({
   },
   server: {
     historyApiFallback: true,
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom'],
   },
 });
