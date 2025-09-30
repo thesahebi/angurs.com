@@ -49,6 +49,21 @@ jobs:
           name: site-dist
           path: dist
 
+      - name: Verify SEO files are present
+        run: |
+          echo "Checking for required SEO files..."
+          ls -la ./dist/
+          echo ""
+          echo "Checking specific files:"
+          [ -f "./dist/robots.txt" ] && echo "✅ robots.txt found" || echo "❌ robots.txt missing"
+          [ -f "./dist/sitemap.xml" ] && echo "✅ sitemap.xml found" || echo "❌ sitemap.xml missing"
+          [ -f "./dist/404.html" ] && echo "✅ 404.html found" || echo "❌ 404.html missing"
+          [ -f "./dist/staticwebapp.config.json" ] && echo "✅ staticwebapp.config.json found" || echo "❌ staticwebapp.config.json missing"
+          [ -f "./dist/web.config" ] && echo "✅ web.config found" || echo "❌ web.config missing"
+          echo ""
+          echo "File sizes:"
+          ls -lh ./dist/robots.txt ./dist/sitemap.xml ./dist/404.html ./dist/staticwebapp.config.json ./dist/web.config 2>/dev/null || echo "Some files missing"
+
       - name: Azure Login
         uses: azure/login@v1
         with:
@@ -58,9 +73,66 @@ jobs:
         uses: azure/cli@v1
         with:
           inlineScript: |
+            # List files before deployment for debugging
+            echo "Files to be deployed:"
+            ls -la ./dist/
+            
+            # Deploy all files with proper content types
             az storage blob upload-batch \
               --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
               --destination '$web' \
               --source ./dist \
               --auth-mode login \
               --overwrite true
+            
+            # Set specific content types for SEO files
+            echo "Setting content types for SEO files..."
+            
+            # Set robots.txt content type
+            az storage blob update \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --name 'robots.txt' \
+              --content-type 'text/plain' \
+              --auth-mode login
+            
+            # Set sitemap.xml content type
+            az storage blob update \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --name 'sitemap.xml' \
+              --content-type 'application/xml' \
+              --auth-mode login
+            
+            # Set 404.html content type
+            az storage blob update \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --name '404.html' \
+              --content-type 'text/html' \
+              --auth-mode login
+            
+            # Set staticwebapp.config.json content type
+            az storage blob update \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --name 'staticwebapp.config.json' \
+              --content-type 'application/json' \
+              --auth-mode login
+            
+            # Set web.config content type
+            az storage blob update \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --name 'web.config' \
+              --content-type 'application/xml' \
+              --auth-mode login
+            
+            # Verify deployment
+            echo "Verifying deployment..."
+            az storage blob list \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --auth-mode login \
+              --query '[].{Name:name, ContentType:properties.contentSettings.contentType}' \
+              --output table
