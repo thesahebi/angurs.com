@@ -1,15 +1,4 @@
 {
-  "routes": [
-    {
-      "route": "/api/*",
-      "allowedRoles": ["anonymous"]
-    },
-    {
-      "route": "/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    }
-  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
@@ -20,6 +9,9 @@
       "/api/*",
       "/robots.txt",
       "/sitemap.xml",
+      "/404.html",
+      "/staticwebapp.config.json",
+      "/web.config",
       "*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot,webp,json,txt,xml}"
     ]
   },
