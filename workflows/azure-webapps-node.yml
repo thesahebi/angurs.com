@@ -32,6 +32,18 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "Build output verification:"
+          ls -la ./dist/
+          echo ""
+          echo "Checking for SEO files in build output:"
+          [ -f "./dist/robots.txt" ] && echo "✅ robots.txt in dist" || echo "❌ robots.txt missing from dist"
+          [ -f "./dist/sitemap.xml" ] && echo "✅ sitemap.xml in dist" || echo "❌ sitemap.xml missing from dist"
+          [ -f "./dist/404.html" ] && echo "✅ 404.html in dist" || echo "❌ 404.html missing from dist"
+          [ -f "./dist/staticwebapp.config.json" ] && echo "✅ staticwebapp.config.json in dist" || echo "❌ staticwebapp.config.json missing from dist"
+          [ -f "./dist/web.config" ] && echo "✅ web.config in dist" || echo "❌ web.config missing from dist"
+
       - name: Upload dist folder
         uses: actions/upload-artifact@v4
         with:
@@ -77,7 +89,8 @@ jobs:
             echo "Files to be deployed:"
             ls -la ./dist/
             
-            # Deploy all files with proper content types
+            # First, deploy all files using upload-batch
+            echo "Deploying all files..."
             az storage blob upload-batch \
               --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
               --destination '$web' \
@@ -85,48 +98,73 @@ jobs:
               --auth-mode login \
               --overwrite true
             
-            # Set specific content types for SEO files
-            echo "Setting content types for SEO files..."
+            # Now upload SEO files individually to ensure they're deployed
+            echo "Uploading SEO files individually..."
             
-            # Set robots.txt content type
-            az storage blob update \
-              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
-              --container-name '$web' \
-              --name 'robots.txt' \
-              --content-type 'text/plain' \
-              --auth-mode login
+            # Upload robots.txt
+            if [ -f "./dist/robots.txt" ]; then
+              echo "Uploading robots.txt..."
+              az storage blob upload \
+                --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+                --container-name '$web' \
+                --name 'robots.txt' \
+                --file './dist/robots.txt' \
+                --content-type 'text/plain' \
+                --auth-mode login \
+                --overwrite
+            fi
             
-            # Set sitemap.xml content type
-            az storage blob update \
-              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
-              --container-name '$web' \
-              --name 'sitemap.xml' \
-              --content-type 'application/xml' \
-              --auth-mode login
+            # Upload sitemap.xml
+            if [ -f "./dist/sitemap.xml" ]; then
+              echo "Uploading sitemap.xml..."
+              az storage blob upload \
+                --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+                --container-name '$web' \
+                --name 'sitemap.xml' \
+                --file './dist/sitemap.xml' \
+                --content-type 'application/xml' \
+                --auth-mode login \
+                --overwrite
+            fi
             
-            # Set 404.html content type
-            az storage blob update \
-              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
-              --container-name '$web' \
-              --name '404.html' \
-              --content-type 'text/html' \
-              --auth-mode login
+            # Upload 404.html
+            if [ -f "./dist/404.html" ]; then
+              echo "Uploading 404.html..."
+              az storage blob upload \
+                --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+                --container-name '$web' \
+                --name '404.html' \
+                --file './dist/404.html' \
+                --content-type 'text/html' \
+                --auth-mode login \
+                --overwrite
+            fi
             
-            # Set staticwebapp.config.json content type
-            az storage blob update \
-              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
-              --container-name '$web' \
-              --name 'staticwebapp.config.json' \
-              --content-type 'application/json' \
-              --auth-mode login
+            # Upload staticwebapp.config.json
+            if [ -f "./dist/staticwebapp.config.json" ]; then
+              echo "Uploading staticwebapp.config.json..."
+              az storage blob upload \
+                --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+                --container-name '$web' \
+                --name 'staticwebapp.config.json' \
+                --file './dist/staticwebapp.config.json' \
+                --content-type 'application/json' \
+                --auth-mode login \
+                --overwrite
+            fi
             
-            # Set web.config content type
-            az storage blob update \
-              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
-              --container-name '$web' \
-              --name 'web.config' \
-              --content-type 'application/xml' \
-              --auth-mode login
+            # Upload web.config
+            if [ -f "./dist/web.config" ]; then
+              echo "Uploading web.config..."
+              az storage blob upload \
+                --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+                --container-name '$web' \
+                --name 'web.config' \
+                --file './dist/web.config' \
+                --content-type 'application/xml' \
+                --auth-mode login \
+                --overwrite
+            fi
             
             # Verify deployment
             echo "Verifying deployment..."
@@ -136,3 +174,17 @@ jobs:
               --auth-mode login \
               --query '[].{Name:name, ContentType:properties.contentSettings.contentType}' \
               --output table
+            
+            # Test specific SEO files
+            echo "Testing SEO file accessibility..."
+            echo "robots.txt URL: https://${{ env.AZURE_STORAGE_ACCOUNT_NAME }}.z13.web.core.windows.net/robots.txt"
+            echo "sitemap.xml URL: https://${{ env.AZURE_STORAGE_ACCOUNT_NAME }}.z13.web.core.windows.net/sitemap.xml"
+            
+            # Wait a moment for CDN propagation
+            echo "Waiting for CDN propagation..."
+            sleep 10
+            
+            # Test if files are accessible
+            echo "Testing file accessibility..."
+            curl -I "https://${{ env.AZURE_STORAGE_ACCOUNT_NAME }}.z13.web.core.windows.net/robots.txt" || echo "robots.txt not accessible yet"
+            curl -I "https://${{ env.AZURE_STORAGE_ACCOUNT_NAME }}.z13.web.core.windows.net/sitemap.xml" || echo "sitemap.xml not accessible yet"
