@@ -188,6 +188,16 @@ jobs:
               --query '[].{Name:name, ContentType:properties.contentSettings.contentType}' \
               --output table
             
+            # Check for staticwebapp.config.json specifically
+            echo "Checking for staticwebapp.config.json in deployment:"
+            az storage blob show \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --name 'staticwebapp.config.json' \
+              --auth-mode login \
+              --query '{Name:name, ContentType:properties.contentSettings.contentType}' \
+              --output table || echo "staticwebapp.config.json not found in deployment"
+            
             # Test specific SEO files
             echo "Testing SEO file accessibility..."
             echo "robots.txt URL: https://${{ env.AZURE_STORAGE_ACCOUNT_NAME }}.z13.web.core.windows.net/robots.txt"

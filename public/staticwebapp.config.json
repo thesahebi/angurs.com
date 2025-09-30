@@ -1,4 +1,61 @@
 {
+  "routes": [
+    {
+      "route": "/contact",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/about",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/solutions/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/automation/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/resources/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/portfolio",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/blogs/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/privacy",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/terms",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/cookies",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/showcase",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
@@ -11,7 +68,6 @@
       "/sitemap.xml",
       "/404.html",
       "/staticwebapp.config.json",
-      "/web.config",
       "*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot,webp,json,txt,xml}"
     ]
   },
