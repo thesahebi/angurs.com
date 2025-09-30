@@ -18,12 +18,16 @@
       "/css/*",
       "/js/*",
       "/api/*",
-      "*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot,webp,json}"
+      "/robots.txt",
+      "/sitemap.xml",
+      "*.{css,js,ico,png,jpg,jpeg,gif,svg,woff,woff2,ttf,eot,webp,json,txt,xml}"
     ]
   },
   "mimeTypes": {
     ".json": "application/json",
-    ".webp": "image/webp"
+    ".webp": "image/webp",
+    ".txt": "text/plain",
+    ".xml": "application/xml"
   },
   "globalHeaders": {
     "Cache-Control": "no-cache"
