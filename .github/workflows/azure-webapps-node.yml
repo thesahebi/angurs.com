@@ -32,6 +32,25 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Debug build process
+        run: |
+          echo "=== DEBUGGING BUILD PROCESS ==="
+          echo "Current directory: $(pwd)"
+          echo "Contents of current directory:"
+          ls -la
+          echo ""
+          echo "Contents of public directory:"
+          ls -la ./public/
+          echo ""
+          echo "Contents of dist directory:"
+          ls -la ./dist/ || echo "dist directory does not exist"
+          echo ""
+          echo "Build command output:"
+          npm run build
+          echo ""
+          echo "Contents of dist directory after build:"
+          ls -la ./dist/
+
       - name: Verify build output
         run: |
           echo "Build output verification:"
