@@ -1,61 +1,4 @@
 {
-  "routes": [
-    {
-      "route": "/contact",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/about",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/solutions/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/automation/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/resources/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/portfolio",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/blogs/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/privacy",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/terms",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/cookies",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/showcase",
-      "serve": "/index.html",
-      "statusCode": 200
-    }
-  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
@@ -82,8 +25,8 @@
   },
   "responseOverrides": {
     "404": {
-      "rewrite": "/404.html",
-      "statusCode": 404
+      "rewrite": "/index.html",
+      "statusCode": 200
     }
   }
 }
