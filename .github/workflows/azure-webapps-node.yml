@@ -205,6 +205,21 @@ jobs:
               --query '{Name:name, ContentType:properties.contentSettings.contentType}' \
               --output table || echo "staticwebapp.config.json not found in deployment"
             
+            # Download and check the actual content of staticwebapp.config.json
+            echo "Downloading and checking staticwebapp.config.json content:"
+            az storage blob download \
+              --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --container-name '$web' \
+              --name 'staticwebapp.config.json' \
+              --file './downloaded-config.json' \
+              --auth-mode login || echo "Failed to download staticwebapp.config.json"
+            
+            if [ -f "./downloaded-config.json" ]; then
+              echo "Content of deployed staticwebapp.config.json:"
+              cat ./downloaded-config.json
+              echo ""
+            fi
+            
             # Test specific SEO files
             echo "Testing SEO file accessibility..."
             echo "robots.txt URL: https://${{ env.AZURE_STORAGE_ACCOUNT_NAME }}.z13.web.core.windows.net/robots.txt"
