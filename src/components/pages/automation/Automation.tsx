@@ -1,10 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PageHero from "../../reusable/PageHero";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const Automation: React.FC = () => {
+  const serviceSchema = createServiceSchema(
+    "Intelligent Automation Services",
+    "Transform your operations with Zivara's intelligent automation solutions. AI-powered workflows, process automation, and intelligent systems for modern businesses.",
+    "https://zivara.io/automation"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Automation", url: "https://zivara.io/automation" }
+  ]);
+
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <>
+      <SEOHead
+        title="Intelligent Automation Services"
+        description="Transform your operations with Zivara's intelligent automation solutions. AI-powered workflows, process automation, and intelligent systems for modern businesses."
+        keywords="intelligent automation, AI automation, process automation, workflow automation, business automation, intelligent systems, automation consulting"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <div className="min-h-screen bg-[#0A0A0A]">
       <PageHero
         title="Intelligent Automation"
         subtitle="Transform your operations"
@@ -436,6 +456,7 @@ const Automation: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

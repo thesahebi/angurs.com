@@ -1,9 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const ITAutomation: React.FC = () => {
+  const serviceSchema = createServiceSchema(
+    "IT Automation Services",
+    "Streamline your IT operations with Zivara's IT automation solutions. Server management, monitoring automation, and intelligent IT infrastructure management.",
+    "https://zivara.io/automation/it"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Automation", url: "https://zivara.io/automation" },
+    { name: "IT Automation", url: "https://zivara.io/automation/it" }
+  ]);
+
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
+    <>
+      <SEOHead
+        title="IT Automation Services"
+        description="Streamline your IT operations with Zivara's IT automation solutions. Server management, monitoring automation, and intelligent IT infrastructure management."
+        keywords="IT automation, server automation, infrastructure automation, IT operations, monitoring automation, IT management, automation consulting"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -182,6 +203,7 @@ const ITAutomation: React.FC = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

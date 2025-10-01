@@ -1,9 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const DevOps: React.FC = () => {
+  const serviceSchema = createServiceSchema(
+    "DevOps Services",
+    "Accelerate your software delivery with Zivara's DevOps solutions. CI/CD pipelines, infrastructure as code, monitoring, and deployment automation.",
+    "https://zivara.io/automation/devops"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Automation", url: "https://zivara.io/automation" },
+    { name: "DevOps", url: "https://zivara.io/automation/devops" }
+  ]);
+
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <>
+      <SEOHead
+        title="DevOps Services"
+        description="Accelerate your software delivery with Zivara's DevOps solutions. CI/CD pipelines, infrastructure as code, monitoring, and deployment automation."
+        keywords="DevOps services, CI/CD pipelines, infrastructure as code, deployment automation, DevOps consulting, software delivery, monitoring solutions"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <div className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         {/* Animated Background */}
@@ -434,6 +455,7 @@ const DevOps: React.FC = () => {
       </section>
 
     </div>
+    </>
   );
 };
 
