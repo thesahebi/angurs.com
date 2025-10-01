@@ -1,9 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEOHead from "../../seo/SEOHead";
+import { createBreadcrumbSchema } from "../../seo/schemas";
 
 const AboutUs: React.FC = () => {
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "About Us", url: "https://zivara.io/about" }
+  ]);
+
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <>
+      <SEOHead
+        title="About Zivara - Expert IT Infrastructure & Cloud Services"
+        description="Learn about Zivara's mission to transform businesses through expert IT infrastructure, cloud migration, and automation solutions. Trusted by leading companies worldwide."
+        keywords="about Zivara, IT company, cloud services company, IT infrastructure experts, business technology solutions, company history, team expertise"
+        schema={breadcrumbSchema}
+      />
+      <div className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
       <section className="pt-24 sm:pt-32 md:pt-40 lg:pt-[210px] pb-16 sm:pb-20 md:pb-24 lg:pb-32 bg-[#0A0A0A]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -347,6 +361,7 @@ const AboutUs: React.FC = () => {
       </section>
 
     </div>
+    </>
   );
 };
 

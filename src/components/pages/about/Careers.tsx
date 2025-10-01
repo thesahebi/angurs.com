@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import SEOHead from "../../seo/SEOHead";
+import { createBreadcrumbSchema } from "../../seo/schemas";
 
 const Careers: React.FC = () => {
   const navigate = useNavigate();
@@ -8,8 +10,21 @@ const Careers: React.FC = () => {
     navigate(jobPath);
   };
 
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "About", url: "https://zivara.io/about" },
+    { name: "Careers", url: "https://zivara.io/about/careers" }
+  ]);
+
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <>
+      <SEOHead
+        title="Careers at Zivara - Join Our IT Infrastructure Team"
+        description="Join Zivara's team of IT infrastructure experts. Explore career opportunities in cloud migration, automation, and cutting-edge technology solutions."
+        keywords="careers at Zivara, IT jobs, cloud engineer jobs, automation engineer, DevOps jobs, IT infrastructure careers, technology careers"
+        schema={breadcrumbSchema}
+      />
+      <div className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         {/* Animated Background */}
@@ -283,6 +298,7 @@ const Careers: React.FC = () => {
       </section>
 
     </div>
+    </>
   );
 };
 
