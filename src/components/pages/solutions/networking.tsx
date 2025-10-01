@@ -1,8 +1,29 @@
 import React from "react";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const Networking: React.FC = () => {
+  const serviceSchema = createServiceSchema(
+    "Networking Services",
+    "Build robust, secure networks with Zivara's networking solutions. Network design, security, monitoring, and optimization for enterprise environments.",
+    "https://zivara.io/solutions/networking"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Solutions", url: "https://zivara.io/solutions" },
+    { name: "Networking", url: "https://zivara.io/solutions/networking" }
+  ]);
+
   return (
-    <main className="min-h-screen bg-[#0A0A0A]">
+    <>
+      <SEOHead
+        title="Networking Services"
+        description="Build robust, secure networks with Zivara's networking solutions. Network design, security, monitoring, and optimization for enterprise environments."
+        keywords="networking services, network design, network security, network monitoring, enterprise networking, IT infrastructure, network optimization"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <main className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -191,6 +212,7 @@ const Networking: React.FC = () => {
 
 
     </main>
+    </>
   );
 };
 

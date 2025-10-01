@@ -1,9 +1,29 @@
 import { Link } from "react-router-dom";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const DesignDevelopment = () => {
+  const serviceSchema = createServiceSchema(
+    "Design & Development Services",
+    "Custom software development and UI/UX design services by Zivara. Build modern, scalable applications with expert design and development teams.",
+    "https://zivara.io/solutions/design-development"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Solutions", url: "https://zivara.io/solutions" },
+    { name: "Design & Development", url: "https://zivara.io/solutions/design-development" }
+  ]);
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
+    <>
+      <SEOHead
+        title="Design & Development Services"
+        description="Custom software development and UI/UX design services by Zivara. Build modern, scalable applications with expert design and development teams."
+        keywords="software development, UI/UX design, custom applications, web development, mobile development, design services, development consulting"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -241,6 +261,7 @@ const DesignDevelopment = () => {
 
 
     </main>
+    </>
   );
 };
 

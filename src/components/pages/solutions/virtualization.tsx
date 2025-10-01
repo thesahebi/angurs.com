@@ -1,10 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const Virtualization: React.FC = () => {
+  const serviceSchema = createServiceSchema(
+    "Virtualization Services",
+    "Optimize your infrastructure with Zivara's virtualization solutions. VMware, Hyper-V, and containerization services for improved efficiency and cost savings.",
+    "https://zivara.io/solutions/virtualization"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Solutions", url: "https://zivara.io/solutions" },
+    { name: "Virtualization", url: "https://zivara.io/solutions/virtualization" }
+  ]);
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A]" style={{ wordWrap: 'break-word' }}>
+    <>
+      <SEOHead
+        title="Virtualization Services"
+        description="Optimize your infrastructure with Zivara's virtualization solutions. VMware, Hyper-V, and containerization services for improved efficiency and cost savings."
+        keywords="virtualization services, VMware, Hyper-V, containerization, server virtualization, infrastructure optimization, IT efficiency"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <main className="min-h-screen bg-[#0A0A0A]" style={{ wordWrap: 'break-word' }}>
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -176,6 +196,7 @@ const Virtualization: React.FC = () => {
 
 
     </main>
+    </>
   );
 };
 

@@ -1,8 +1,29 @@
 import React from "react";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const Backup: React.FC = () => {
+  const serviceSchema = createServiceSchema(
+    "Backup & Recovery Services",
+    "Protect your business data with Zivara's comprehensive backup and disaster recovery solutions. Automated backups, cloud storage, and rapid recovery services.",
+    "https://zivara.io/solutions/backup"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Solutions", url: "https://zivara.io/solutions" },
+    { name: "Backup & Recovery", url: "https://zivara.io/solutions/backup" }
+  ]);
+
   return (
-    <main className="min-h-screen bg-[#0A0A0A]">
+    <>
+      <SEOHead
+        title="Backup & Recovery Services"
+        description="Protect your business data with Zivara's comprehensive backup and disaster recovery solutions. Automated backups, cloud storage, and rapid recovery services."
+        keywords="backup services, disaster recovery, data protection, cloud backup, business continuity, data recovery, IT backup solutions"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <main className="min-h-screen bg-[#0A0A0A]">
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -256,6 +277,7 @@ const Backup: React.FC = () => {
       </section> */}
 
     </main>
+    </>
   );
 };
 
