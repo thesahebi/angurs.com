@@ -1,4 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import SEOHead from '../../seo/SEOHead';
+import { createBreadcrumbSchema } from '../../seo/schemas';
 
 export interface FormData {
   fullName: string;
@@ -22,6 +24,11 @@ const ContactUs: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [submitStatus, setSubmitStatus] = useState<string>('');
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Contact", url: "https://zivara.io/contact" }
+  ]);
 
   // Google Calendar integration
   const handleBookAppointment = () => {
@@ -86,7 +93,14 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A]" style={{ wordWrap: 'break-word' }}>
+    <>
+      <SEOHead
+        title="Contact Us"
+        description="Get in touch with Zivara's expert IT team. Schedule a free consultation to discuss your cloud migration, infrastructure, and automation needs."
+        keywords="contact Zivara, IT consultation, cloud migration consultation, IT services contact, business IT support"
+        schema={breadcrumbSchema}
+      />
+      <main className="min-h-screen bg-[#0A0A0A]" style={{ wordWrap: 'break-word' }}>
       {/* Hero Section - Contact Form */}
       <section className="pt-32 sm:pt-40 md:pt-48 lg:pt-[210px] pb-16 sm:pb-20 md:pb-24 lg:pb-32 bg-[#0A0A0A]">
         <div className="container mx-auto px-4 sm:px-6">
@@ -343,6 +357,7 @@ const ContactUs: React.FC = () => {
       </section>
 
     </main>
+    </>
   );
 };
 

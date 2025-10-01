@@ -1,9 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEOHead from "../../seo/SEOHead";
+import { createServiceSchema, createBreadcrumbSchema } from "../../seo/schemas";
 
 const Cloud: React.FC = () => {
+  const serviceSchema = createServiceSchema(
+    "Cloud Migration Services",
+    "Migrate to the cloud securely with Zivara Solutions. We provide Azure and hybrid-cloud expertise to ensure performance, security, and scalability.",
+    "https://zivara.io/solutions/cloud"
+  );
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://zivara.io" },
+    { name: "Solutions", url: "https://zivara.io/solutions" },
+    { name: "Cloud Migration", url: "https://zivara.io/solutions/cloud" }
+  ]);
+
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
+    <>
+      <SEOHead
+        title="Cloud Migration Services"
+        description="Migrate to the cloud securely with Zivara Solutions. We provide Azure and hybrid-cloud expertise to ensure performance, security, and scalability."
+        keywords="cloud migration, Azure migration, hybrid cloud, cloud services, IT infrastructure, cloud consulting"
+        schema={[serviceSchema, breadcrumbSchema]}
+      />
+      <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -192,6 +213,7 @@ const Cloud: React.FC = () => {
       </section>
 
     </main>
+    </>
   );
 };
 

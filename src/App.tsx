@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import LandingPage from "./components/pages/LandingPage";
 // import AboutPage from "./components/pages/about/AboutPage";
 import "./App.css";
@@ -40,11 +41,12 @@ function App() {
   }, []);
   
   return (
-    <div>
-      <CookieConsent />
-      <Router>
-        <ScrollToTopAl/>
-        <Routes>
+    <HelmetProvider>
+      <div>
+        <CookieConsent />
+        <Router>
+          <ScrollToTopAl/>
+          <Routes>
           <Route path="/" element={<LayoutPage />}>
             <Route index element={<LandingPage />} />
             <Route path="/solutions/backup" element={<Backup />} />
@@ -75,6 +77,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+    </HelmetProvider>
   );
 }
 
