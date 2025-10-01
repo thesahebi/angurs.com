@@ -107,7 +107,7 @@ const FooterV1 = () => {
               </Link>
               
               <p className="text-[#e7e7e7] text-base leading-relaxed mb-6 max-w-sm">
-                Expert Web Design and Development, Cloud solutions, Backup & Recovery, Networking, Microservices to help your business grow with confidence.
+                Startup Expert Web Design and Development, Cloud solutions, Backup & Recovery, Networking, Microservices to help your business grow with confidence.
               </p>
               
               {/* Social Media */}
