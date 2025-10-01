@@ -98,6 +98,7 @@ const ContactUs: React.FC = () => {
         title="Contact Us"
         description="Get in touch with Zivara's expert IT team. Schedule a free consultation to discuss your cloud migration, infrastructure, and automation needs."
         keywords="contact Zivara, IT consultation, cloud migration consultation, IT services contact, business IT support"
+        canonical="https://zivara.io/contact"
         schema={breadcrumbSchema}
       />
       <main className="min-h-screen bg-[#0A0A0A]" style={{ wordWrap: 'break-word' }}>

@@ -22,6 +22,7 @@ const Cloud: React.FC = () => {
         title="Cloud Migration Services"
         description="Migrate to the cloud securely with Zivara Solutions. We provide Azure and hybrid-cloud expertise to ensure performance, security, and scalability."
         keywords="cloud migration, Azure migration, hybrid cloud, cloud services, IT infrastructure, cloud consulting"
+        canonical="https://zivara.io/solutions/cloud"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">

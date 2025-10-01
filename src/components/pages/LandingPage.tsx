@@ -16,6 +16,7 @@ const LandingPage = () => {
         title="Zivara LLC - Expert IT Infrastructure & Cloud Services"
         description="Transform your business with Zivara's expert IT solutions. Cloud migration, virtualization, backup & recovery, networking, and automation services. Trusted by leading companies."
         keywords="IT services, cloud migration, virtualization, backup recovery, networking, automation, IT infrastructure, business technology solutions"
+        canonical="https://zivara.io/"
         schema={organizationSchema}
       />
       <main>
