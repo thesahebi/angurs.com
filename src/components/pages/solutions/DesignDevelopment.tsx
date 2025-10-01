@@ -21,6 +21,7 @@ const DesignDevelopment = () => {
         title="Design & Development Services"
         description="Custom software development and UI/UX design services by Zivara. Build modern, scalable applications with expert design and development teams."
         keywords="software development, UI/UX design, custom applications, web development, mobile development, design services, development consulting"
+        canonical="https://zivara.io/solutions/design-development"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">

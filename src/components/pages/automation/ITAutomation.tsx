@@ -22,6 +22,7 @@ const ITAutomation: React.FC = () => {
         title="IT Automation Services"
         description="Streamline your IT operations with Zivara's IT automation solutions. Server management, monitoring automation, and intelligent IT infrastructure management."
         keywords="IT automation, server automation, infrastructure automation, IT operations, monitoring automation, IT management, automation consulting"
+        canonical="https://zivara.io/automation/it"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <main className="min-h-screen bg-[#0A0A0A] text-[#e7e7e7]">

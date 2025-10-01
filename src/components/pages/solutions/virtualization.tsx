@@ -22,6 +22,7 @@ const Virtualization: React.FC = () => {
         title="Virtualization Services"
         description="Optimize your infrastructure with Zivara's virtualization solutions. VMware, Hyper-V, and containerization services for improved efficiency and cost savings."
         keywords="virtualization services, VMware, Hyper-V, containerization, server virtualization, infrastructure optimization, IT efficiency"
+        canonical="https://zivara.io/solutions/virtualization"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <main className="min-h-screen bg-[#0A0A0A]" style={{ wordWrap: 'break-word' }}>

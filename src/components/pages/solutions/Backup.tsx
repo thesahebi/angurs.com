@@ -21,6 +21,7 @@ const Backup: React.FC = () => {
         title="Backup & Recovery Services"
         description="Protect your business data with Zivara's comprehensive backup and disaster recovery solutions. Automated backups, cloud storage, and rapid recovery services."
         keywords="backup services, disaster recovery, data protection, cloud backup, business continuity, data recovery, IT backup solutions"
+        canonical="https://zivara.io/solutions/backup"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <main className="min-h-screen bg-[#0A0A0A]">

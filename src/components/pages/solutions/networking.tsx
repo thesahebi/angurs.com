@@ -21,6 +21,7 @@ const Networking: React.FC = () => {
         title="Networking Services"
         description="Build robust, secure networks with Zivara's networking solutions. Network design, security, monitoring, and optimization for enterprise environments."
         keywords="networking services, network design, network security, network monitoring, enterprise networking, IT infrastructure, network optimization"
+        canonical="https://zivara.io/solutions/networking"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <main className="min-h-screen bg-[#0A0A0A]">

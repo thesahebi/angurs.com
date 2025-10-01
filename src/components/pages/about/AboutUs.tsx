@@ -15,6 +15,7 @@ const AboutUs: React.FC = () => {
         title="About Zivara - Expert IT Infrastructure & Cloud Services"
         description="Learn about Zivara's mission to transform businesses through expert IT infrastructure, cloud migration, and automation solutions. Trusted by leading companies worldwide."
         keywords="about Zivara, IT company, cloud services company, IT infrastructure experts, business technology solutions, company history, team expertise"
+        canonical="https://zivara.io/about"
         schema={breadcrumbSchema}
       />
       <div className="min-h-screen bg-[#0A0A0A]">

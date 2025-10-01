@@ -22,6 +22,7 @@ const Automation: React.FC = () => {
         title="Intelligent Automation Services"
         description="Transform your operations with Zivara's intelligent automation solutions. AI-powered workflows, process automation, and intelligent systems for modern businesses."
         keywords="intelligent automation, AI automation, process automation, workflow automation, business automation, intelligent systems, automation consulting"
+        canonical="https://zivara.io/automation"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <div className="min-h-screen bg-[#0A0A0A]">

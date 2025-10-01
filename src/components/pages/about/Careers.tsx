@@ -22,6 +22,7 @@ const Careers: React.FC = () => {
         title="Careers at Zivara - Join Our IT Infrastructure Team"
         description="Join Zivara's team of IT infrastructure experts. Explore career opportunities in cloud migration, automation, and cutting-edge technology solutions."
         keywords="careers at Zivara, IT jobs, cloud engineer jobs, automation engineer, DevOps jobs, IT infrastructure careers, technology careers"
+        canonical="https://zivara.io/about/careers"
         schema={breadcrumbSchema}
       />
       <div className="min-h-screen bg-[#0A0A0A]">

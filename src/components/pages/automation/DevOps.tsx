@@ -22,6 +22,7 @@ const DevOps: React.FC = () => {
         title="DevOps Services"
         description="Accelerate your software delivery with Zivara's DevOps solutions. CI/CD pipelines, infrastructure as code, monitoring, and deployment automation."
         keywords="DevOps services, CI/CD pipelines, infrastructure as code, deployment automation, DevOps consulting, software delivery, monitoring solutions"
+        canonical="https://zivara.io/automation/devops"
         schema={[serviceSchema, breadcrumbSchema]}
       />
       <div className="min-h-screen bg-[#0A0A0A]">
